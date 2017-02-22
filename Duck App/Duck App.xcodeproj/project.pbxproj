@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B812D7F51E5D3DF2002152D7 /* ViewControllerSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812D7F41E5D3DF2002152D7 /* ViewControllerSS.swift */; };
 		B88B2F3E1E47B64100384A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F3D1E47B64100384A02 /* AppDelegate.swift */; };
 		B88B2F401E47B64100384A02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F3F1E47B64100384A02 /* ViewController.swift */; };
 		B88B2F431E47B64100384A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88B2F411E47B64100384A02 /* Main.storyboard */; };
 		B88B2F451E47B64100384A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88B2F441E47B64100384A02 /* Assets.xcassets */; };
 		B88B2F481E47B64100384A02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88B2F461E47B64100384A02 /* LaunchScreen.storyboard */; };
 		B88B2F531E47B64100384A02 /* Duck_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F521E47B64100384A02 /* Duck_AppTests.swift */; };
+		B88B2F741E5D24EE00384A02 /* ViewControllerDuckGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F731E5D24EE00384A02 /* ViewControllerDuckGallery.swift */; };
+		B88B2F761E5D32A000384A02 /* ViewControllerDuckCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F751E5D32A000384A02 /* ViewControllerDuckCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B812D7F41E5D3DF2002152D7 /* ViewControllerSS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSS.swift; sourceTree = "<group>"; };
 		B88B2F3A1E47B64100384A02 /* Duck App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duck App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88B2F3D1E47B64100384A02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B88B2F3F1E47B64100384A02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +40,8 @@
 		B88B2F4E1E47B64100384A02 /* Duck AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Duck AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88B2F521E47B64100384A02 /* Duck_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duck_AppTests.swift; sourceTree = "<group>"; };
 		B88B2F541E47B64100384A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B88B2F731E5D24EE00384A02 /* ViewControllerDuckGallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDuckGallery.swift; sourceTree = "<group>"; };
+		B88B2F751E5D32A000384A02 /* ViewControllerDuckCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDuckCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				B88B2F3D1E47B64100384A02 /* AppDelegate.swift */,
+				B812D7F41E5D3DF2002152D7 /* ViewControllerSS.swift */,
 				B88B2F3F1E47B64100384A02 /* ViewController.swift */,
+				B88B2F731E5D24EE00384A02 /* ViewControllerDuckGallery.swift */,
+				B88B2F751E5D32A000384A02 /* ViewControllerDuckCard.swift */,
 				B88B2F411E47B64100384A02 /* Main.storyboard */,
 				B88B2F441E47B64100384A02 /* Assets.xcassets */,
 				B88B2F461E47B64100384A02 /* LaunchScreen.storyboard */,
@@ -146,7 +155,7 @@
 				TargetAttributes = {
 					B88B2F391E47B64100384A02 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					B88B2F4D1E47B64100384A02 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -199,8 +208,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B88B2F741E5D24EE00384A02 /* ViewControllerDuckGallery.swift in Sources */,
 				B88B2F401E47B64100384A02 /* ViewController.swift in Sources */,
+				B812D7F51E5D3DF2002152D7 /* ViewControllerSS.swift in Sources */,
 				B88B2F3E1E47B64100384A02 /* AppDelegate.swift in Sources */,
+				B88B2F761E5D32A000384A02 /* ViewControllerDuckCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +351,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Duck App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Auburn.Duck-App";
@@ -351,6 +365,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Duck App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Auburn.Duck-App";
@@ -406,6 +422,7 @@
 				B88B2F591E47B64100384A02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B88B2F5A1E47B64100384A02 /* Build configuration list for PBXNativeTarget "Duck AppTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +431,7 @@
 				B88B2F5C1E47B64100384A02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
