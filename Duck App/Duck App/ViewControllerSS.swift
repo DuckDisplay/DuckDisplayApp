@@ -10,11 +10,24 @@ import Foundation
 import UIKit
 
 class ViewScreenSaver : ViewController {
-    
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.yellow
+        
+        setBackground()
+        
+        
+    }
+    
+    override func setBackground() {
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "mmbackground")?.draw(in: self.view.bounds)
+        
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        
+        UIGraphicsEndImageContext()
+        
+        self.view.backgroundColor = UIColor(patternImage: image)
     }
 }

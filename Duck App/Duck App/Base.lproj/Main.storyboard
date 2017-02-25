@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,97 +24,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mAQ-ka-gMl">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAQ-ka-gMl">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Main Menu" id="zbD-kd-KSA"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Message " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJK-YX-op4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Message " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJK-YX-op4">
                                 <rect key="frame" x="312" y="87" width="400" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="do4-4U-4We">
-                                <rect key="frame" x="739" y="177" width="238" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPC-2D-pLQ">
-                                        <rect key="frame" x="27" y="21" width="181" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Play Duck Trivia Game"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qik-ys-IY6">
-                                <rect key="frame" x="0.0" y="722" width="1024" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More Duck Facts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxa-Zc-sdZ">
-                                        <rect key="frame" x="53" y="-2" width="919" height="51"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UON-N3-XB7">
-                                <rect key="frame" x="59" y="177" width="238" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlT-ZS-1i0">
-                                        <rect key="frame" x="53" y="14" width="132" height="49"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Duck Facts"/>
-                                        <connections>
-                                            <segue destination="Q1j-wr-arr" kind="show" id="xAy-hd-INW"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1VC-a9-dEw">
-                                <rect key="frame" x="802" y="459" width="113" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Show Next Duck"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0G-HB-LW5">
-                                <rect key="frame" x="112" y="459" width="132" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Show Previus Duck"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzY-ke-RGc">
-                                <rect key="frame" x="401" y="655" width="261" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Go to (Corresponding Duck) Info Page"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fiu-Qq-bkj">
-                                <rect key="frame" x="353" y="313" width="359" height="321"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fiu-Qq-bkj">
+                                <rect key="frame" x="0.0" y="479" width="1024" height="289"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bF-LS-Zz2">
-                                <rect key="frame" x="439" y="162" width="194" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Duck Calls" image="Flying Duck">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yw5-1j-Rly" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="406" y="175" width="230" height="114"/>
+                                <state key="normal" title="Duck Info Cards"/>
+                                <connections>
+                                    <segue destination="Q1j-wr-arr" kind="show" id="Dvf-e4-zJM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opG-mk-UUs" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="739" y="175" width="212" height="114"/>
+                                <state key="normal" title="Duck Calls"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PT3-NK-Ndd" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="356" y="318" width="329" height="102"/>
+                                <state key="normal" title="Play Trivia Game "/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Cu-7x-tVD" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="100" y="175" width="200" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="VTL-vj-n70"/>
+                                </constraints>
+                                <state key="normal" title="Media"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Cu-7x-tVD" firstAttribute="height" secondItem="Yw5-1j-Rly" secondAttribute="height" id="2e0-g9-gth"/>
+                            <constraint firstItem="PT3-NK-Ndd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="336" id="4Rl-15-8ja"/>
+                            <constraint firstItem="mAQ-ka-gMl" firstAttribute="leading" secondItem="fiu-Qq-bkj" secondAttribute="leading" id="8LY-t8-ggb"/>
+                            <constraint firstItem="fiu-Qq-bkj" firstAttribute="top" secondItem="1Cu-7x-tVD" secondAttribute="bottom" constant="190" id="8eV-uh-fnN"/>
+                            <constraint firstItem="opG-mk-UUs" firstAttribute="width" secondItem="Yw5-1j-Rly" secondAttribute="width" constant="-18" id="EID-3N-JZE"/>
+                            <constraint firstItem="1Cu-7x-tVD" firstAttribute="baseline" secondItem="Yw5-1j-Rly" secondAttribute="firstBaseline" id="EW6-vc-unL"/>
+                            <constraint firstItem="mAQ-ka-gMl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Fur-HR-NmM"/>
+                            <constraint firstItem="mAQ-ka-gMl" firstAttribute="centerX" secondItem="yJK-YX-op4" secondAttribute="centerX" id="GCC-ck-OB4"/>
+                            <constraint firstItem="Yw5-1j-Rly" firstAttribute="leading" secondItem="1Cu-7x-tVD" secondAttribute="trailing" constant="106" id="GXM-7G-UJP"/>
+                            <constraint firstItem="opG-mk-UUs" firstAttribute="height" secondItem="Yw5-1j-Rly" secondAttribute="height" id="Hvy-Xa-VBO"/>
+                            <constraint firstItem="fiu-Qq-bkj" firstAttribute="top" secondItem="PT3-NK-Ndd" secondAttribute="bottom" constant="59" id="MPo-cE-Yb2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PT3-NK-Ndd" secondAttribute="trailing" constant="319" id="MeE-KB-bjg"/>
+                            <constraint firstItem="yJK-YX-op4" firstAttribute="top" secondItem="xIB-2e-L7P" secondAttribute="bottom" constant="23" id="OWl-OG-Qax"/>
+                            <constraint firstItem="fiu-Qq-bkj" firstAttribute="top" secondItem="opG-mk-UUs" secondAttribute="bottom" constant="190" id="U25-0W-37w"/>
+                            <constraint firstItem="opG-mk-UUs" firstAttribute="leading" secondItem="Yw5-1j-Rly" secondAttribute="trailing" constant="103" id="VLO-2e-tbt"/>
+                            <constraint firstItem="opG-mk-UUs" firstAttribute="top" secondItem="xIB-2e-L7P" secondAttribute="bottom" constant="111" id="ZGa-nj-Pmg"/>
+                            <constraint firstItem="1Cu-7x-tVD" firstAttribute="top" secondItem="yJK-YX-op4" secondAttribute="bottom" constant="38" id="Zrc-70-bmi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="opG-mk-UUs" secondAttribute="trailing" constant="53" id="be3-oh-nK8"/>
+                            <constraint firstItem="PT3-NK-Ndd" firstAttribute="top" secondItem="Yw5-1j-Rly" secondAttribute="bottom" constant="29" id="dVx-G7-hi4"/>
+                            <constraint firstItem="mAQ-ka-gMl" firstAttribute="trailing" secondItem="fiu-Qq-bkj" secondAttribute="trailing" id="eTl-aw-mhi"/>
+                            <constraint firstItem="mAQ-ka-gMl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fIc-8J-Pi3"/>
+                            <constraint firstItem="Yw5-1j-Rly" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m0D-oO-0ZK"/>
+                            <constraint firstItem="1Cu-7x-tVD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="q3g-SC-kLZ"/>
+                            <constraint firstItem="1Cu-7x-tVD" firstAttribute="width" secondItem="Yw5-1j-Rly" secondAttribute="width" constant="-30" id="rgz-uN-RYg"/>
+                            <constraint firstItem="fiu-Qq-bkj" firstAttribute="bottom" secondItem="XqD-FK-esD" secondAttribute="top" id="tCj-qY-bxf"/>
+                            <constraint firstItem="1Cu-7x-tVD" firstAttribute="top" secondItem="yJK-YX-op4" secondAttribute="bottom" constant="38" id="unf-wy-HAa"/>
+                            <constraint firstItem="yJK-YX-op4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="292" id="vWn-fp-v1H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yJK-YX-op4" secondAttribute="trailing" constant="292" id="vns-mh-BCl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="adI-Mk-X9L"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Rkd-Sw-TQH"/>
             </objects>
-            <point key="canvasLocation" x="1167.1875" y="185.9375"/>
+            <point key="canvasLocation" x="1891.4062499999998" y="185.9375"/>
         </scene>
         <!--View Gallery-->
         <scene sceneID="pUj-Sg-66U">
@@ -214,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Zx-rx-eN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1910.7421874999998" y="173.4375"/>
+            <point key="canvasLocation" x="2634.9609375" y="173.4375"/>
         </scene>
         <!--View Duck Card-->
         <scene sceneID="CDh-xL-AZl">
@@ -298,43 +285,54 @@
                                     <navigationItem title="Title" id="wAF-Qt-6d8"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0f-ul-c40">
-                                <rect key="frame" x="489" y="379" width="46" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Random Image of Duck" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8G-3g-4JI">
+                                <rect key="frame" x="302" y="215" width="421" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="CGq-Gz-adb" kind="show" id="X01-3v-ABV"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap Anywhere to Continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GN-i4-nNq">
+                                <rect key="frame" x="388" y="390" width="293" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="XLP-EF-jPw" appends="YES" id="8Te-Nu-gA9"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xU0-6Y-61F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="XLP-EF-jPw">
+                    <connections>
+                        <segue destination="bKm-CM-luT" kind="show" id="jMU-rr-RQL"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-236.1328125" y="185.9375"/>
+            <point key="canvasLocation" x="385.546875" y="185.9375"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="aWi-Ce-Llk">
+        <scene sceneID="yeO-0D-RRA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CGq-Gz-adb" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bKm-CM-luT" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zjz-qY-Qpp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zpb-UA-XnA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2Bb-4p-wGE"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Noz-BO-7dl"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T8o-NX-kqQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KBQ-gw-yra" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="442.96874999999994" y="185.9375"/>
+            <point key="canvasLocation" x="1167.1875" y="185.9375"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Flying Duck" width="100" height="100"/>
-    </resources>
 </document>

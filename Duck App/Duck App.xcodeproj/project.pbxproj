@@ -16,6 +16,7 @@
 		B88B2F531E47B64100384A02 /* Duck_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F521E47B64100384A02 /* Duck_AppTests.swift */; };
 		B88B2F741E5D24EE00384A02 /* ViewControllerDuckGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F731E5D24EE00384A02 /* ViewControllerDuckGallery.swift */; };
 		B88B2F761E5D32A000384A02 /* ViewControllerDuckCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F751E5D32A000384A02 /* ViewControllerDuckCard.swift */; };
+		B8F61C791E6219FE00699A0E /* DuckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F61C781E6219FE00699A0E /* DuckButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		B88B2F541E47B64100384A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B88B2F731E5D24EE00384A02 /* ViewControllerDuckGallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDuckGallery.swift; sourceTree = "<group>"; };
 		B88B2F751E5D32A000384A02 /* ViewControllerDuckCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDuckCard.swift; sourceTree = "<group>"; };
+		B8F61C781E6219FE00699A0E /* DuckButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				B88B2F441E47B64100384A02 /* Assets.xcassets */,
 				B88B2F461E47B64100384A02 /* LaunchScreen.storyboard */,
 				B88B2F491E47B64100384A02 /* Info.plist */,
+				B8F61C771E6219DC00699A0E /* Custom Buttons */,
 			);
 			path = "Duck App";
 			sourceTree = "<group>";
@@ -103,6 +106,14 @@
 				B88B2F541E47B64100384A02 /* Info.plist */,
 			);
 			path = "Duck AppTests";
+			sourceTree = "<group>";
+		};
+		B8F61C771E6219DC00699A0E /* Custom Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				B8F61C781E6219FE00699A0E /* DuckButton.swift */,
+			);
+			name = "Custom Buttons";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8F61C791E6219FE00699A0E /* DuckButton.swift in Sources */,
 				B88B2F741E5D24EE00384A02 /* ViewControllerDuckGallery.swift in Sources */,
 				B88B2F401E47B64100384A02 /* ViewController.swift in Sources */,
 				B812D7F51E5D3DF2002152D7 /* ViewControllerSS.swift in Sources */,
