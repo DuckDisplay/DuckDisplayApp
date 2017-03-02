@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B812D7F51E5D3DF2002152D7 /* ViewControllerSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812D7F41E5D3DF2002152D7 /* ViewControllerSS.swift */; };
 		B88B2F3E1E47B64100384A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F3D1E47B64100384A02 /* AppDelegate.swift */; };
-		B88B2F401E47B64100384A02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F3F1E47B64100384A02 /* ViewController.swift */; };
+		B88B2F401E47B64100384A02 /* ViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F3F1E47B64100384A02 /* ViewControllerMain.swift */; };
 		B88B2F431E47B64100384A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88B2F411E47B64100384A02 /* Main.storyboard */; };
 		B88B2F451E47B64100384A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88B2F441E47B64100384A02 /* Assets.xcassets */; };
 		B88B2F481E47B64100384A02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88B2F461E47B64100384A02 /* LaunchScreen.storyboard */; };
@@ -17,6 +17,7 @@
 		B88B2F741E5D24EE00384A02 /* ViewControllerDuckGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F731E5D24EE00384A02 /* ViewControllerDuckGallery.swift */; };
 		B88B2F761E5D32A000384A02 /* ViewControllerDuckCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F751E5D32A000384A02 /* ViewControllerDuckCard.swift */; };
 		B8F61C791E6219FE00699A0E /* DuckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F61C781E6219FE00699A0E /* DuckButton.swift */; };
+		B8F61C7D1E67BB5900699A0E /* DuckCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F61C7C1E67BB5900699A0E /* DuckCardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +34,7 @@
 		B812D7F41E5D3DF2002152D7 /* ViewControllerSS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSS.swift; sourceTree = "<group>"; };
 		B88B2F3A1E47B64100384A02 /* Duck App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duck App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88B2F3D1E47B64100384A02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B88B2F3F1E47B64100384A02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B88B2F3F1E47B64100384A02 /* ViewControllerMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMain.swift; sourceTree = "<group>"; };
 		B88B2F421E47B64100384A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B88B2F441E47B64100384A02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B88B2F471E47B64100384A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		B88B2F731E5D24EE00384A02 /* ViewControllerDuckGallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDuckGallery.swift; sourceTree = "<group>"; };
 		B88B2F751E5D32A000384A02 /* ViewControllerDuckCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDuckCard.swift; sourceTree = "<group>"; };
 		B8F61C781E6219FE00699A0E /* DuckButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckButton.swift; sourceTree = "<group>"; };
+		B8F61C7C1E67BB5900699A0E /* DuckCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckCardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +89,9 @@
 			children = (
 				B88B2F3D1E47B64100384A02 /* AppDelegate.swift */,
 				B812D7F41E5D3DF2002152D7 /* ViewControllerSS.swift */,
-				B88B2F3F1E47B64100384A02 /* ViewController.swift */,
+				B88B2F3F1E47B64100384A02 /* ViewControllerMain.swift */,
+				B8F61C801E67BF1300699A0E /* Duck Cards */,
 				B88B2F731E5D24EE00384A02 /* ViewControllerDuckGallery.swift */,
-				B88B2F751E5D32A000384A02 /* ViewControllerDuckCard.swift */,
 				B88B2F411E47B64100384A02 /* Main.storyboard */,
 				B88B2F441E47B64100384A02 /* Assets.xcassets */,
 				B88B2F461E47B64100384A02 /* LaunchScreen.storyboard */,
@@ -114,6 +116,15 @@
 				B8F61C781E6219FE00699A0E /* DuckButton.swift */,
 			);
 			name = "Custom Buttons";
+			sourceTree = "<group>";
+		};
+		B8F61C801E67BF1300699A0E /* Duck Cards */ = {
+			isa = PBXGroup;
+			children = (
+				B88B2F751E5D32A000384A02 /* ViewControllerDuckCard.swift */,
+				B8F61C7C1E67BB5900699A0E /* DuckCardTableViewCell.swift */,
+			);
+			name = "Duck Cards";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,9 +232,10 @@
 			files = (
 				B8F61C791E6219FE00699A0E /* DuckButton.swift in Sources */,
 				B88B2F741E5D24EE00384A02 /* ViewControllerDuckGallery.swift in Sources */,
-				B88B2F401E47B64100384A02 /* ViewController.swift in Sources */,
+				B88B2F401E47B64100384A02 /* ViewControllerMain.swift in Sources */,
 				B812D7F51E5D3DF2002152D7 /* ViewControllerSS.swift in Sources */,
 				B88B2F3E1E47B64100384A02 /* AppDelegate.swift in Sources */,
+				B8F61C7D1E67BB5900699A0E /* DuckCardTableViewCell.swift in Sources */,
 				B88B2F761E5D32A000384A02 /* ViewControllerDuckCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

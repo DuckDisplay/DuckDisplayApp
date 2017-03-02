@@ -31,31 +31,31 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Message " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJK-YX-op4">
-                                <rect key="frame" x="312" y="87" width="400" height="50"/>
+                                <rect key="frame" x="312" y="43" width="400" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fiu-Qq-bkj">
-                                <rect key="frame" x="0.0" y="479" width="1024" height="289"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenWingTeal" translatesAutoresizingMaskIntoConstraints="NO" id="fiu-Qq-bkj">
+                                <rect key="frame" x="0.0" y="435" width="1024" height="333"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yw5-1j-Rly" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="406" y="175" width="230" height="114"/>
+                                <rect key="frame" x="406" y="131" width="230" height="114"/>
                                 <state key="normal" title="Duck Info Cards"/>
                                 <connections>
-                                    <segue destination="Q1j-wr-arr" kind="show" id="Dvf-e4-zJM"/>
+                                    <segue destination="91r-wj-eqQ" kind="show" id="vX3-n1-r3T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opG-mk-UUs" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="739" y="175" width="212" height="114"/>
+                                <rect key="frame" x="739" y="131" width="212" height="114"/>
                                 <state key="normal" title="Duck Calls"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PT3-NK-Ndd" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="356" y="318" width="329" height="102"/>
+                                <rect key="frame" x="356" y="274" width="329" height="102"/>
                                 <state key="normal" title="Play Trivia Game "/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Cu-7x-tVD" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="100" y="175" width="200" height="114"/>
+                                <rect key="frame" x="100" y="131" width="200" height="114"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="114" id="VTL-vj-n70"/>
                                 </constraints>
@@ -122,14 +122,6 @@
                                             <constraint firstAttribute="height" constant="1000" id="3Xh-uK-jfO"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etj-bP-dpN">
-                                        <rect key="frame" x="95" y="57" width="80" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Duck Cards"/>
-                                        <connections>
-                                            <segue destination="Wgj-BF-0Nh" kind="show" id="S3O-wX-3Ib"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeQ-Zy-5XE">
                                         <rect key="frame" x="114" y="912" width="42" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -137,41 +129,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XVg-gv-wCI">
-                                        <rect key="frame" x="15" y="124" width="257" height="156"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scroll view for potential conservations slide???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSV-3u-c9E">
+                                        <rect key="frame" x="158" y="311" width="721" height="141"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHr-JD-FE7">
-                                        <rect key="frame" x="280" y="124" width="725" height="69"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                        <state key="normal" title="Wood Duck">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuA-VG-dYD">
-                                        <rect key="frame" x="280" y="201" width="725" height="79"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D6W-wa-puA">
-                                        <rect key="frame" x="15" y="288" width="257" height="146"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAD-yf-Frs">
-                                        <rect key="frame" x="280" y="288" width="725" height="84"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                        <state key="normal" title="Mallard">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lQ-i6-E2O">
-                                        <rect key="frame" x="293" y="351" width="723" height="83"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -195,13 +156,56 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1024" height="1000"/>
-                    <connections>
-                        <outlet property="woodDuck" destination="BHr-JD-FE7" id="aE0-Ni-Pyh"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Zx-rx-eN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2634.9609375" y="173.4375"/>
+            <point key="canvasLocation" x="2534.765625" y="1019.53125"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Nhh-L9-Y0X">
+            <objects>
+                <tableViewController id="91r-wj-eqQ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="sRk-iu-H58">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DuckCardsTableViewCell" rowHeight="100" id="jba-Cc-Uvc" customClass="DuckCardTableViewCell" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="1024" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jba-Cc-Uvc" id="ZfI-rE-VAi">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WoodDuck" translatesAutoresizingMaskIntoConstraints="NO" id="RgO-mE-mBv">
+                                            <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qps-X4-FpF">
+                                            <rect key="frame" x="121" y="8" width="485" height="83"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="Wood Duck">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellButton" destination="Qps-X4-FpF" id="gXn-ac-u11"/>
+                                    <outlet property="cellImage" destination="RgO-mE-mBv" id="F7t-ym-WZH"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="91r-wj-eqQ" id="cwe-xP-IHJ"/>
+                            <outlet property="delegate" destination="91r-wj-eqQ" id="CUV-tr-vRx"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hUK-ms-tds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="1020"/>
         </scene>
         <!--View Duck Card-->
         <scene sceneID="CDh-xL-AZl">
@@ -212,7 +216,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Zxd-hF-Ube"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8w3-54-3qv">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QhB-Rd-8c6">
@@ -221,7 +225,7 @@
                                     <navigationItem title="(Insert Name of Duck) Facts" id="732-MW-EXp"/>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XOt-A4-JnP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="XOt-A4-JnP">
                                 <rect key="frame" x="0.0" y="44" width="378" height="410"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3R-DO-fgh">
@@ -264,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wDR-sc-bsy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="442.96874999999994" y="1019.53125"/>
+            <point key="canvasLocation" x="1706" y="1020"/>
         </scene>
         <!--View Screen Saver-->
         <scene sceneID="fkM-H1-mzg">
@@ -335,4 +339,9 @@
             <point key="canvasLocation" x="1167.1875" y="185.9375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GreenWingTeal" width="275" height="220"/>
+        <image name="WoodDuck" width="301" height="200"/>
+        <image name="defaultPhoto" width="540" height="540"/>
+    </resources>
 </document>
