@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,6 +12,106 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="5cI-ZC-yq7">
+            <objects>
+                <viewController id="yMy-ej-eeJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nxk-aM-qZu"/>
+                        <viewControllerLayoutGuide type="bottom" id="W1y-zg-ZXk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nn1-f0-5By">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ao-df-XgP">
+                                <rect key="frame" x="0.0" y="0.0" width="1044" height="44"/>
+                                <items>
+                                    <navigationItem title="Duck Trivia" id="w1s-HA-zrb"/>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2zf-4B-HdT">
+                                <rect key="frame" x="20" y="250" width="240" height="268"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnX-MV-1YQ">
+                                <rect key="frame" x="270" y="247" width="158" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="KSz-Tr-zJ4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Answer A"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCA-QZ-Di8">
+                                <rect key="frame" x="296" y="313" width="106" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Answer B"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujF-OW-zVx">
+                                <rect key="frame" x="296" y="389" width="112" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Answer C"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4n4-b4-H7h">
+                                <rect key="frame" x="299" y="476" width="107" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Answer D"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khh-2v-uSz">
+                                <rect key="frame" x="584" y="647" width="302" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mNn-K5-Zjf"/>
+                                    <constraint firstAttribute="width" constant="302" id="oOl-tf-2Is"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="View Leaderboard"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYF-eL-R6w">
+                                <rect key="frame" x="20" y="73" width="156" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="To Main Menu"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Insert question Here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WOV-kb-PxR">
+                                <rect key="frame" x="296" y="168" width="590" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="QWf-2l-1xA"/>
+                                    <constraint firstAttribute="width" constant="590" id="Vox-Xd-J0F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NnX-MV-1YQ" firstAttribute="top" secondItem="WOV-kb-PxR" secondAttribute="bottom" constant="30" id="4dw-Nk-DQC"/>
+                            <constraint firstItem="0Ao-df-XgP" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leading" id="5Si-qC-NEa"/>
+                            <constraint firstItem="qYF-eL-R6w" firstAttribute="top" secondItem="0Ao-df-XgP" secondAttribute="bottom" constant="29" id="5vG-ml-sr1"/>
+                            <constraint firstItem="2zf-4B-HdT" firstAttribute="centerY" secondItem="Nn1-f0-5By" secondAttribute="centerY" id="9AJ-2Q-Egd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Ao-df-XgP" secondAttribute="trailing" constant="-40" id="Aeb-24-Wad"/>
+                            <constraint firstItem="qYF-eL-R6w" firstAttribute="leading" secondItem="2zf-4B-HdT" secondAttribute="leading" id="Btd-lR-Bmt"/>
+                            <constraint firstItem="WOV-kb-PxR" firstAttribute="top" secondItem="Nn1-f0-5By" secondAttribute="top" constant="168" id="CE3-pA-YCP"/>
+                            <constraint firstItem="ujF-OW-zVx" firstAttribute="centerX" secondItem="4n4-b4-H7h" secondAttribute="centerX" id="Dgc-IS-RqD"/>
+                            <constraint firstItem="qYF-eL-R6w" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leadingMargin" id="DjE-fP-gsL"/>
+                            <constraint firstItem="SCA-QZ-Di8" firstAttribute="leading" secondItem="2zf-4B-HdT" secondAttribute="trailing" constant="36" id="NV1-gN-Fir"/>
+                            <constraint firstItem="0Ao-df-XgP" firstAttribute="top" secondItem="Nn1-f0-5By" secondAttribute="top" id="QP1-PU-C7k"/>
+                            <constraint firstItem="W1y-zg-ZXk" firstAttribute="top" secondItem="khh-2v-uSz" secondAttribute="bottom" constant="91" id="Rf7-C5-StN"/>
+                            <constraint firstItem="WOV-kb-PxR" firstAttribute="leading" secondItem="SCA-QZ-Di8" secondAttribute="leading" id="VMU-hP-dfp"/>
+                            <constraint firstItem="NnX-MV-1YQ" firstAttribute="leading" secondItem="2zf-4B-HdT" secondAttribute="trailing" constant="10" id="Wo5-xb-222"/>
+                            <constraint firstItem="WOV-kb-PxR" firstAttribute="trailing" secondItem="khh-2v-uSz" secondAttribute="trailing" id="XWT-Vs-AMx"/>
+                            <constraint firstItem="2zf-4B-HdT" firstAttribute="bottom" secondItem="4n4-b4-H7h" secondAttribute="bottom" id="Xbo-C2-xIF"/>
+                            <constraint firstItem="SCA-QZ-Di8" firstAttribute="top" secondItem="NnX-MV-1YQ" secondAttribute="bottom" constant="30" id="YV2-iX-GlL"/>
+                            <constraint firstItem="4n4-b4-H7h" firstAttribute="top" secondItem="ujF-OW-zVx" secondAttribute="bottom" constant="43" id="bJz-aa-vIp"/>
+                            <constraint firstItem="WOV-kb-PxR" firstAttribute="leading" secondItem="ujF-OW-zVx" secondAttribute="leading" id="fk8-9t-uLz"/>
+                            <constraint firstItem="ujF-OW-zVx" firstAttribute="top" secondItem="SCA-QZ-Di8" secondAttribute="bottom" constant="34" id="gfa-wa-ome"/>
+                            <constraint firstItem="NnX-MV-1YQ" firstAttribute="centerX" secondItem="SCA-QZ-Di8" secondAttribute="centerX" id="iJq-lR-mvL"/>
+                            <constraint firstItem="WOV-kb-PxR" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leading" constant="296" id="mLh-b5-CXO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yQq-6W-xR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1880.8593749999998" y="-662.5"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -53,6 +153,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PT3-NK-Ndd" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
                                 <rect key="frame" x="356" y="274" width="329" height="102"/>
                                 <state key="normal" title="Play Trivia Game "/>
+                                <connections>
+                                    <segue destination="yMy-ej-eeJ" kind="show" id="3xJ-hm-MfP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Cu-7x-tVD" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
                                 <rect key="frame" x="100" y="131" width="200" height="114"/>
