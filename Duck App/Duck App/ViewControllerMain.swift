@@ -9,11 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
    
-    @IBOutlet weak var duckCallButton: UIButton!
+
     
     override func viewDidLoad() {
         
-      setBackground()
+        setBackground()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -22,14 +22,34 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func setBackground() {
+   func setBackground() {
         UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "mmbackground")?.draw(in: self.view.bounds)
+        UIImage(named: "MallardFlying")?.draw(in: self.view.bounds)
         
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
-        
+   
         UIGraphicsEndImageContext()
         
         self.view.backgroundColor = UIColor(patternImage: image)
+    
+        addBlurEffect()
+    
+        }
+    
+    //Function to blur background
+    func addBlurEffect()
+    {
+        
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = view.frame
+        
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
+        view.addSubview(blurEffectView)
+        
     }
+    
+
+    
 }
+

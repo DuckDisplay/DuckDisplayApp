@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -120,88 +118,87 @@
                         <viewControllerLayoutGuide type="top" id="xIB-2e-L7P"/>
                         <viewControllerLayoutGuide type="bottom" id="XqD-FK-esD"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" alpha="0.90000000000000002" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Main">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAQ-ka-gMl">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mAQ-ka-gMl">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Main Menu" id="zbD-kd-KSA"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Message " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJK-YX-op4">
-                                <rect key="frame" x="312" y="43" width="400" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Message " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJK-YX-op4">
+                                <rect key="frame" x="312" y="57" width="400" height="33.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenWingTeal" translatesAutoresizingMaskIntoConstraints="NO" id="fiu-Qq-bkj">
-                                <rect key="frame" x="0.0" y="435" width="1024" height="333"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yw5-1j-Rly" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="406" y="131" width="230" height="114"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yw5-1j-Rly" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="387" y="123" width="250" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Duck Info Cards"/>
                                 <connections>
                                     <segue destination="91r-wj-eqQ" kind="show" id="vX3-n1-r3T"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opG-mk-UUs" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="739" y="131" width="212" height="114"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opG-mk-UUs" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="387" y="267" width="250" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Duck Calls"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PT3-NK-Ndd" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="356" y="274" width="329" height="102"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PT3-NK-Ndd" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="312" y="590" width="400" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Play Trivia Game "/>
                                 <connections>
                                     <segue destination="yMy-ej-eeJ" kind="show" id="3xJ-hm-MfP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Cu-7x-tVD" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="100" y="131" width="200" height="114"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="114" id="VTL-vj-n70"/>
-                                </constraints>
-                                <state key="normal" title="Media"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Cu-7x-tVD" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="387" y="410" width="250" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Conservations"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WoodDuck" translatesAutoresizingMaskIntoConstraints="NO" id="4c5-NQ-JQa">
+                                <rect key="frame" x="59" y="192" width="277" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="KUC-5k-FzX">
+                                <rect key="frame" x="693" y="192" width="261" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insert Duck Call Pic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryg-sA-yGG">
+                                <rect key="frame" x="749" y="267" width="149" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Em1-ax-0Fn">
+                                <rect key="frame" x="176" y="511" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="1Cu-7x-tVD" firstAttribute="height" secondItem="Yw5-1j-Rly" secondAttribute="height" id="2e0-g9-gth"/>
-                            <constraint firstItem="PT3-NK-Ndd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="336" id="4Rl-15-8ja"/>
-                            <constraint firstItem="mAQ-ka-gMl" firstAttribute="leading" secondItem="fiu-Qq-bkj" secondAttribute="leading" id="8LY-t8-ggb"/>
-                            <constraint firstItem="fiu-Qq-bkj" firstAttribute="top" secondItem="1Cu-7x-tVD" secondAttribute="bottom" constant="190" id="8eV-uh-fnN"/>
-                            <constraint firstItem="opG-mk-UUs" firstAttribute="width" secondItem="Yw5-1j-Rly" secondAttribute="width" constant="-18" id="EID-3N-JZE"/>
-                            <constraint firstItem="1Cu-7x-tVD" firstAttribute="baseline" secondItem="Yw5-1j-Rly" secondAttribute="firstBaseline" id="EW6-vc-unL"/>
-                            <constraint firstItem="mAQ-ka-gMl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Fur-HR-NmM"/>
-                            <constraint firstItem="mAQ-ka-gMl" firstAttribute="centerX" secondItem="yJK-YX-op4" secondAttribute="centerX" id="GCC-ck-OB4"/>
-                            <constraint firstItem="Yw5-1j-Rly" firstAttribute="leading" secondItem="1Cu-7x-tVD" secondAttribute="trailing" constant="106" id="GXM-7G-UJP"/>
-                            <constraint firstItem="opG-mk-UUs" firstAttribute="height" secondItem="Yw5-1j-Rly" secondAttribute="height" id="Hvy-Xa-VBO"/>
-                            <constraint firstItem="fiu-Qq-bkj" firstAttribute="top" secondItem="PT3-NK-Ndd" secondAttribute="bottom" constant="59" id="MPo-cE-Yb2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="PT3-NK-Ndd" secondAttribute="trailing" constant="319" id="MeE-KB-bjg"/>
-                            <constraint firstItem="yJK-YX-op4" firstAttribute="top" secondItem="xIB-2e-L7P" secondAttribute="bottom" constant="23" id="OWl-OG-Qax"/>
-                            <constraint firstItem="fiu-Qq-bkj" firstAttribute="top" secondItem="opG-mk-UUs" secondAttribute="bottom" constant="190" id="U25-0W-37w"/>
-                            <constraint firstItem="opG-mk-UUs" firstAttribute="leading" secondItem="Yw5-1j-Rly" secondAttribute="trailing" constant="103" id="VLO-2e-tbt"/>
-                            <constraint firstItem="opG-mk-UUs" firstAttribute="top" secondItem="xIB-2e-L7P" secondAttribute="bottom" constant="111" id="ZGa-nj-Pmg"/>
-                            <constraint firstItem="1Cu-7x-tVD" firstAttribute="top" secondItem="yJK-YX-op4" secondAttribute="bottom" constant="38" id="Zrc-70-bmi"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="opG-mk-UUs" secondAttribute="trailing" constant="53" id="be3-oh-nK8"/>
-                            <constraint firstItem="PT3-NK-Ndd" firstAttribute="top" secondItem="Yw5-1j-Rly" secondAttribute="bottom" constant="29" id="dVx-G7-hi4"/>
-                            <constraint firstItem="mAQ-ka-gMl" firstAttribute="trailing" secondItem="fiu-Qq-bkj" secondAttribute="trailing" id="eTl-aw-mhi"/>
-                            <constraint firstItem="mAQ-ka-gMl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fIc-8J-Pi3"/>
-                            <constraint firstItem="Yw5-1j-Rly" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m0D-oO-0ZK"/>
-                            <constraint firstItem="1Cu-7x-tVD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="q3g-SC-kLZ"/>
-                            <constraint firstItem="1Cu-7x-tVD" firstAttribute="width" secondItem="Yw5-1j-Rly" secondAttribute="width" constant="-30" id="rgz-uN-RYg"/>
-                            <constraint firstItem="fiu-Qq-bkj" firstAttribute="bottom" secondItem="XqD-FK-esD" secondAttribute="top" id="tCj-qY-bxf"/>
-                            <constraint firstItem="1Cu-7x-tVD" firstAttribute="top" secondItem="yJK-YX-op4" secondAttribute="bottom" constant="38" id="unf-wy-HAa"/>
-                            <constraint firstItem="yJK-YX-op4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="292" id="vWn-fp-v1H"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yJK-YX-op4" secondAttribute="trailing" constant="292" id="vns-mh-BCl"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="adI-Mk-X9L"/>
+                    <connections>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="F3X-mE-pk9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1891.4062499999998" y="185.9375"/>
+            <point key="canvasLocation" x="2615.625" y="185.9375"/>
         </scene>
         <!--View Gallery-->
         <scene sceneID="pUj-Sg-66U">
@@ -410,40 +407,39 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="XLP-EF-jPw" appends="YES" id="8Te-Nu-gA9"/>
+                            <outletCollection property="gestureRecognizers" destination="uz3-0V-qaq" appends="YES" id="0RK-kN-n3J"/>
                         </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xU0-6Y-61F" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="XLP-EF-jPw">
+                <tapGestureRecognizer id="uz3-0V-qaq">
                     <connections>
-                        <segue destination="bKm-CM-luT" kind="show" id="jMU-rr-RQL"/>
+                        <segue destination="Ehl-Fd-Zx4" kind="show" id="E0B-dg-Y0Z"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="385.546875" y="185.9375"/>
+            <point key="canvasLocation" x="948" y="186"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="yeO-0D-RRA">
+        <scene sceneID="yMm-E7-ras">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bKm-CM-luT" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ehl-Fd-Zx4" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zpb-UA-XnA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0ru-ba-CG2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Noz-BO-7dl"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4Oo-Re-37E"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KBQ-gw-yra" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oEN-sP-00L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1167.1875" y="185.9375"/>
+            <point key="canvasLocation" x="1891.4062499999998" y="185.9375"/>
         </scene>
     </scenes>
     <resources>
-        <image name="GreenWingTeal" width="275" height="220"/>
         <image name="WoodDuck" width="301" height="200"/>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
