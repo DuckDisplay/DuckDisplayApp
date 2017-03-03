@@ -9,12 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
    
+    @IBOutlet weak var mainMenuLImage: UIImageView! //left image view
+    @IBOutlet weak var mainMenuRImage: UIImageView! //right image view
 
     
     override func viewDidLoad() {
         
         setBackground()
-        // Do any additional setup after loading the view, typically from a nib.
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,8 +33,10 @@ class ViewController: UIViewController {
         UIGraphicsEndImageContext()
         
         self.view.backgroundColor = UIColor(patternImage: image)
+        mainMenuLImage.layer.borderWidth = 5
+        mainMenuRImage.layer.borderWidth = 5
     
-        addBlurEffect()
+        //addBlurEffect()
     
         }
     
@@ -40,14 +44,15 @@ class ViewController: UIViewController {
     func addBlurEffect()
     {
         
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.regular)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = view.frame
         
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
         view.addSubview(blurEffectView)
-        
-    }
+        self.view.insertSubview(blurEffectView, at: 0)
+ 
+        }
     
 
     
