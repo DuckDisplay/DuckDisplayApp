@@ -15,7 +15,6 @@ class ViewGallery : ViewController {
     
     
     override func viewDidLoad() {
-        woodDuck.layer.borderWidth = 2
         
     }
 }

@@ -22,7 +22,7 @@ class ViewScreenSaver : ViewController {
     
     override func setBackground() {
         UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "mmbackground")?.draw(in: self.view.bounds)
+        UIImage(named: "PairMallards")?.draw(in: self.view.bounds)
         
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         

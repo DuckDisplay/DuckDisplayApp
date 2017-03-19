@@ -26,7 +26,7 @@ class ViewController: UIViewController {
 
    func setBackground() {
         UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "MallardFlying")?.draw(in: self.view.bounds)
+        UIImage(named: "mmbackground")?.draw(in: self.view.bounds)
         
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
    
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         mainMenuLImage.layer.borderWidth = 5
         mainMenuRImage.layer.borderWidth = 5
     
-        //addBlurEffect()
+        addBlurEffect()
     
         }
     
