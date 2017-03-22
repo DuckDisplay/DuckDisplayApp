@@ -18,5 +18,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func userIdle() {
+        //set active view to the starting screen
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "FirstView") as! ViewController
+        present(vc, animated: true, completion: nil)
+    }
 }

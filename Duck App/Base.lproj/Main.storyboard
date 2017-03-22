@@ -102,15 +102,15 @@
             </objects>
             <point key="canvasLocation" x="-79.1015625" y="138.28125"/>
         </scene>
-        <!--View Controller-->
+        <!--FirstView-->
         <scene sceneID="QtU-5L-lDE">
             <objects>
-                <viewController id="GHk-BE-pLp" sceneMemberID="viewController">
+                <viewController title="FirstView" id="GHk-BE-pLp" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PlB-vP-Ieq"/>
                         <viewControllerLayoutGuide type="bottom" id="EQD-9c-cPe"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Dsf-bW-cpX">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="FirstView" id="Dsf-bW-cpX">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -128,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ss-MN-VgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-771" y="138"/>
+            <point key="canvasLocation" x="-800" y="172"/>
         </scene>
     </scenes>
 </document>
