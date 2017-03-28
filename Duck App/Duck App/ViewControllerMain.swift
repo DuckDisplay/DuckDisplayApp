@@ -41,11 +41,11 @@ class ViewController: UIViewController {
         }
     
     //Function to blur background
-    func addBlurEffect()
+   func addBlurEffect()
     {
         
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.regular)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+       let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.regular)
+       let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = view.frame
         
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
