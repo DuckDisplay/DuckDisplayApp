@@ -1,7 +1,0 @@
-#!bin/sh
-
-# script/bootstrap: Resolve project dependencies needed to run
-
-set -e
-
-git submodule update

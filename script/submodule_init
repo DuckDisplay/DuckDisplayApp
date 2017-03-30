@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# script/submdodule_init: Resolve project dependencies needed to run
+
+git submodule init
+git submodule update
