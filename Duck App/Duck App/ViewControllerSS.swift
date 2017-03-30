@@ -12,13 +12,11 @@ import UIKit
 class ViewScreenSaver : ViewController {
     
 //Assign Variables Below
-    var timer: Timer!
     var ducks = ["AmericanBlackDuck","AmericanWigeon","BlueWingedTeal"]
     var ss = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(setBackground), userInfo: nil,repeats: true)
         
         setBackground()
         
