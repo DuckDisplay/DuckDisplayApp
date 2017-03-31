@@ -10,6 +10,9 @@
 		2D391A631E89ACFF00480DFF /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D391A561E89ACFA00480DFF /* SQLite.framework */; };
 		2D391A641E89AD0600480DFF /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D391A561E89ACFA00480DFF /* SQLite.framework */; };
 		2D391A651E89AD0600480DFF /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D391A561E89ACFA00480DFF /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D720AA21E8DCBE900B797A4 /* DuckDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D720AA11E8DCBE900B797A4 /* DuckDatabase.swift */; };
+		2D720AB41E8DDEAC00B797A4 /* duck.db in Resources */ = {isa = PBXBuildFile; fileRef = 2D720AB31E8DDEAC00B797A4 /* duck.db */; };
+		2D720AB61E8DDF0900B797A4 /* duck.db in Resources */ = {isa = PBXBuildFile; fileRef = 2D720AB31E8DDEAC00B797A4 /* duck.db */; };
 		B2A89A191E8C312B001C8E27 /* Trivia Screen 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A89A181E8C312B001C8E27 /* Trivia Screen 1.swift */; };
 		B812D7F51E5D3DF2002152D7 /* ViewControllerSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812D7F41E5D3DF2002152D7 /* ViewControllerSS.swift */; };
 		B88B2F3E1E47B64100384A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F3D1E47B64100384A02 /* AppDelegate.swift */; };
@@ -106,6 +109,8 @@
 
 /* Begin PBXFileReference section */
 		2D391A4B1E89ACFA00480DFF /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = ../SQLite.swift/SQLite.xcodeproj; sourceTree = "<group>"; };
+		2D720AA11E8DCBE900B797A4 /* DuckDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DuckDatabase.swift; path = DatabaseBackend/DuckDatabase.swift; sourceTree = "<group>"; };
+		2D720AB31E8DDEAC00B797A4 /* duck.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = duck.db; path = "Duck App/Assets.xcassets/Databases/duck.db"; sourceTree = "<group>"; };
 		B2A89A181E8C312B001C8E27 /* Trivia Screen 1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trivia Screen 1.swift"; sourceTree = "<group>"; };
 		B812D7F41E5D3DF2002152D7 /* ViewControllerSS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSS.swift; sourceTree = "<group>"; };
 		B88B2F3A1E47B64100384A02 /* Duck App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duck App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,9 +171,26 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2D720AA91E8DCC1300B797A4 /* DatabaseBackend */ = {
+			isa = PBXGroup;
+			children = (
+				2D720AA11E8DCBE900B797A4 /* DuckDatabase.swift */,
+			);
+			name = DatabaseBackend;
+			sourceTree = "<group>";
+		};
+		2D720AB71E8DDFFE00B797A4 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				2D720AB31E8DDEAC00B797A4 /* duck.db */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
 		B88B2F311E47B64100384A02 = {
 			isa = PBXGroup;
 			children = (
+				2D720AB71E8DDFFE00B797A4 /* Database */,
 				B88B2F3C1E47B64100384A02 /* Duck App */,
 				B88B2F511E47B64100384A02 /* Duck AppTests */,
 				B88B2F3B1E47B64100384A02 /* Products */,
@@ -194,6 +216,7 @@
 				B88B2F3F1E47B64100384A02 /* ViewControllerMain.swift */,
 				B8F61C801E67BF1300699A0E /* Duck Cards */,
 				B88B2F731E5D24EE00384A02 /* ViewControllerDuckGallery.swift */,
+				2D720AA91E8DCC1300B797A4 /* DatabaseBackend */,
 				B88B2F411E47B64100384A02 /* Main.storyboard */,
 				B88B2F441E47B64100384A02 /* Assets.xcassets */,
 				B88B2F461E47B64100384A02 /* LaunchScreen.storyboard */,
@@ -372,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D720AB41E8DDEAC00B797A4 /* duck.db in Resources */,
 				B88B2F481E47B64100384A02 /* LaunchScreen.storyboard in Resources */,
 				B88B2F451E47B64100384A02 /* Assets.xcassets in Resources */,
 				B88B2F431E47B64100384A02 /* Main.storyboard in Resources */,
@@ -382,6 +406,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D720AB61E8DDF0900B797A4 /* duck.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +422,7 @@
 				B88B2F741E5D24EE00384A02 /* ViewControllerDuckGallery.swift in Sources */,
 				B88B2F401E47B64100384A02 /* ViewControllerMain.swift in Sources */,
 				B812D7F51E5D3DF2002152D7 /* ViewControllerSS.swift in Sources */,
+				2D720AA21E8DCBE900B797A4 /* DuckDatabase.swift in Sources */,
 				B88B2F3E1E47B64100384A02 /* AppDelegate.swift in Sources */,
 				B8F61C7D1E67BB5900699A0E /* DuckCardTableViewCell.swift in Sources */,
 				B88B2F761E5D32A000384A02 /* ViewControllerDuckCard.swift in Sources */,
