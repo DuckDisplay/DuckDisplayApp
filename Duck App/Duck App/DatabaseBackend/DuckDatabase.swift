@@ -55,14 +55,6 @@ class DuckDatabase {
         static let picture = Expression<String>("Picture")
     }
     
-    // Constants to access leaderboards
-    struct LeaderboardTable {
-        static let leaderboard = Table("leaderboard")
-        static let id = Expression<Int32>("Entry")
-        static let name = Expression<String>("Name")
-        static let score = Expression<Int32>("Score")
-        static let location = Expression<String>("Location")
-    }
     
     // MARK: Initialize
     init() {
