@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -687,101 +687,46 @@
             </objects>
             <point key="canvasLocation" x="1650.5859375" y="1407.8125"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Duck Gallery Table View Controller-->
         <scene sceneID="Nhh-L9-Y0X">
             <objects>
-                <tableViewController id="91r-wj-eqQ" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="sRk-iu-H58">
+                <tableViewController id="91r-wj-eqQ" customClass="DuckGalleryTableViewController" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="sRk-iu-H58">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection id="c8f-vi-RPb">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DuckCardsTableViewCell" rowHeight="100" id="jba-Cc-Uvc" customClass="DuckCardTableViewCell" customModule="Duck_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="100"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jba-Cc-Uvc" id="ZfI-rE-VAi">
-                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="100"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WoodDuck" translatesAutoresizingMaskIntoConstraints="NO" id="RgO-mE-mBv">
-                                                    <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qps-X4-FpF">
-                                                    <rect key="frame" x="121" y="8" width="485" height="83"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                    <state key="normal" title="Wood Duck">
-                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <segue destination="pC8-EJ-7Rz" kind="show" id="Hwt-gd-HQa"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="cellButton" destination="Qps-X4-FpF" id="gXn-ac-u11"/>
-                                            <outlet property="cellImage" destination="RgO-mE-mBv" id="F7t-ym-WZH"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DuckCardsTableViewCell" rowHeight="100" id="sHX-tA-pDJ" customClass="DuckCardTableViewCell" customModule="Duck_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="100" width="1024" height="100"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sHX-tA-pDJ" id="KAd-Ff-yxR">
-                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="100"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mallard" translatesAutoresizingMaskIntoConstraints="NO" id="MTR-8R-6s8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0t-Kx-NgP">
-                                                    <rect key="frame" x="121" y="8" width="485" height="83"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                    <state key="normal" title="Mallard">
-                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="cellButton" destination="C0t-Kx-NgP" id="KIo-mu-zgE"/>
-                                            <outlet property="cellImage" destination="MTR-8R-6s8" id="kB7-5u-ao7"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DuckCardsTableViewCell" rowHeight="100" id="Yt5-WS-qOc" customClass="DuckCardTableViewCell" customModule="Duck_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="200" width="1024" height="100"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yt5-WS-qOc" id="HIy-D2-Ue1">
-                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="100"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gadwall" translatesAutoresizingMaskIntoConstraints="NO" id="CpI-Lj-Jmh">
-                                                    <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDF-pq-MLm">
-                                                    <rect key="frame" x="121" y="8" width="485" height="83"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                    <state key="normal" title="Gadwall">
-                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="cellButton" destination="CDF-pq-MLm" id="geF-YS-aAg"/>
-                                            <outlet property="cellImage" destination="CpI-Lj-Jmh" id="9bW-IR-zy4"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DuckCardTableViewCell" rowHeight="100" id="jba-Cc-Uvc" userLabel="DuckCardTableViewCell" customClass="DuckCardTableViewCell" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="1024" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jba-Cc-Uvc" id="ZfI-rE-VAi">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RgO-mE-mBv">
+                                            <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qps-X4-FpF">
+                                            <rect key="frame" x="121" y="8" width="485" height="83"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="Default Title">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="pC8-EJ-7Rz" kind="show" id="Hwt-gd-HQa"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellButton" destination="Qps-X4-FpF" id="gXn-ac-u11"/>
+                                    <outlet property="cellImage" destination="RgO-mE-mBv" id="F7t-ym-WZH"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="91r-wj-eqQ" id="cwe-xP-IHJ"/>
                             <outlet property="delegate" destination="91r-wj-eqQ" id="CUV-tr-vRx"/>
@@ -834,7 +779,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LV-MA-tpI">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LV-MA-tpI">
                                 <rect key="frame" x="159" y="644" width="295" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="hgQ-st-BMX"/>
@@ -936,7 +881,6 @@
     </scenes>
     <resources>
         <image name="DCIcon" width="50" height="48"/>
-        <image name="Gadwall" width="220" height="176"/>
         <image name="Mallard" width="220" height="176"/>
         <image name="WoodDuck" width="301" height="200"/>
         <image name="defaultPhoto" width="540" height="540"/>

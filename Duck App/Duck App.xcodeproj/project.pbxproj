@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D326DF31E92E7D500992FFA /* DuckGalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D326DF21E92E7D500992FFA /* DuckGalleryTableViewController.swift */; };
+		2D326DF51E92E88C00992FFA /* DuckPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D326DF41E92E88C00992FFA /* DuckPreview.swift */; };
 		2D391A631E89ACFF00480DFF /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D391A561E89ACFA00480DFF /* SQLite.framework */; };
 		2D391A641E89AD0600480DFF /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D391A561E89ACFA00480DFF /* SQLite.framework */; };
 		2D391A651E89AD0600480DFF /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D391A561E89ACFA00480DFF /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -21,7 +23,6 @@
 		B88B2F451E47B64100384A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88B2F441E47B64100384A02 /* Assets.xcassets */; };
 		B88B2F481E47B64100384A02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88B2F461E47B64100384A02 /* LaunchScreen.storyboard */; };
 		B88B2F531E47B64100384A02 /* Duck_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F521E47B64100384A02 /* Duck_AppTests.swift */; };
-		B88B2F741E5D24EE00384A02 /* ViewControllerDuckGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F731E5D24EE00384A02 /* ViewControllerDuckGallery.swift */; };
 		B88B2F761E5D32A000384A02 /* ViewControllerDuckCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F751E5D32A000384A02 /* ViewControllerDuckCard.swift */; };
 		B8F61C791E6219FE00699A0E /* DuckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F61C781E6219FE00699A0E /* DuckButton.swift */; };
 		B8F61C7D1E67BB5900699A0E /* DuckCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F61C7C1E67BB5900699A0E /* DuckCardTableViewCell.swift */; };
@@ -108,6 +109,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2D326DF21E92E7D500992FFA /* DuckGalleryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckGalleryTableViewController.swift; sourceTree = "<group>"; };
+		2D326DF41E92E88C00992FFA /* DuckPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckPreview.swift; sourceTree = "<group>"; };
 		2D391A4B1E89ACFA00480DFF /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = ../SQLite.swift/SQLite.xcodeproj; sourceTree = "<group>"; };
 		2D720AA11E8DCBE900B797A4 /* DuckDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DuckDatabase.swift; path = DatabaseBackend/DuckDatabase.swift; sourceTree = "<group>"; };
 		2D720AB31E8DDEAC00B797A4 /* duck.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = duck.db; path = "Duck App/Assets.xcassets/Databases/duck.db"; sourceTree = "<group>"; };
@@ -123,7 +126,6 @@
 		B88B2F4E1E47B64100384A02 /* Duck AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Duck AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88B2F521E47B64100384A02 /* Duck_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duck_AppTests.swift; sourceTree = "<group>"; };
 		B88B2F541E47B64100384A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B88B2F731E5D24EE00384A02 /* ViewControllerDuckGallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDuckGallery.swift; sourceTree = "<group>"; };
 		B88B2F751E5D32A000384A02 /* ViewControllerDuckCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDuckCard.swift; sourceTree = "<group>"; };
 		B8F61C781E6219FE00699A0E /* DuckButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckButton.swift; sourceTree = "<group>"; };
 		B8F61C7C1E67BB5900699A0E /* DuckCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckCardTableViewCell.swift; sourceTree = "<group>"; };
@@ -215,7 +217,6 @@
 				B812D7F41E5D3DF2002152D7 /* ViewControllerSS.swift */,
 				B88B2F3F1E47B64100384A02 /* ViewControllerMain.swift */,
 				B8F61C801E67BF1300699A0E /* Duck Cards */,
-				B88B2F731E5D24EE00384A02 /* ViewControllerDuckGallery.swift */,
 				2D720AA91E8DCC1300B797A4 /* DatabaseBackend */,
 				B88B2F411E47B64100384A02 /* Main.storyboard */,
 				B88B2F441E47B64100384A02 /* Assets.xcassets */,
@@ -246,6 +247,8 @@
 		B8F61C801E67BF1300699A0E /* Duck Cards */ = {
 			isa = PBXGroup;
 			children = (
+				2D326DF21E92E7D500992FFA /* DuckGalleryTableViewController.swift */,
+				2D326DF41E92E88C00992FFA /* DuckPreview.swift */,
 				B88B2F751E5D32A000384A02 /* ViewControllerDuckCard.swift */,
 				B8F61C7C1E67BB5900699A0E /* DuckCardTableViewCell.swift */,
 			);
@@ -419,12 +422,13 @@
 			files = (
 				B2A89A191E8C312B001C8E27 /* Trivia Screen 1.swift in Sources */,
 				B8F61C791E6219FE00699A0E /* DuckButton.swift in Sources */,
-				B88B2F741E5D24EE00384A02 /* ViewControllerDuckGallery.swift in Sources */,
 				B88B2F401E47B64100384A02 /* ViewControllerMain.swift in Sources */,
+				2D326DF51E92E88C00992FFA /* DuckPreview.swift in Sources */,
 				B812D7F51E5D3DF2002152D7 /* ViewControllerSS.swift in Sources */,
 				2D720AA21E8DCBE900B797A4 /* DuckDatabase.swift in Sources */,
 				B88B2F3E1E47B64100384A02 /* AppDelegate.swift in Sources */,
 				B8F61C7D1E67BB5900699A0E /* DuckCardTableViewCell.swift in Sources */,
+				2D326DF31E92E7D500992FFA /* DuckGalleryTableViewController.swift in Sources */,
 				B88B2F761E5D32A000384A02 /* ViewControllerDuckCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

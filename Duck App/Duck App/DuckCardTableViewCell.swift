@@ -10,7 +10,7 @@ import UIKit
 
 class DuckCardTableViewCell: UITableViewCell {
 
-    //Properties
+    //MARK: Properties
     @IBOutlet weak var cellImage: UIImageView!  //Table view cell image
     @IBOutlet weak var cellButton: UIButton!    //Table view cell button
     
