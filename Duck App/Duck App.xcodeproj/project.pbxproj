@@ -10,7 +10,7 @@
 		2D391A631E89ACFF00480DFF /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D391A561E89ACFA00480DFF /* SQLite.framework */; };
 		2D391A641E89AD0600480DFF /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D391A561E89ACFA00480DFF /* SQLite.framework */; };
 		2D391A651E89AD0600480DFF /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D391A561E89ACFA00480DFF /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B2A89A191E8C312B001C8E27 /* Trivia Screen 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A89A181E8C312B001C8E27 /* Trivia Screen 1.swift */; };
+		3483C0351E92E2170090EE58 /* TriviaScreen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3483C0341E92E2170090EE58 /* TriviaScreen1.swift */; };
 		B2DDBE561E92C2E200C7B0EF /* TriviaStartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DDBE551E92C2E200C7B0EF /* TriviaStartScreenViewController.swift */; };
 		B812D7F51E5D3DF2002152D7 /* ViewControllerSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812D7F41E5D3DF2002152D7 /* ViewControllerSS.swift */; };
 		B88B2F3E1E47B64100384A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F3D1E47B64100384A02 /* AppDelegate.swift */; };
@@ -107,7 +107,7 @@
 
 /* Begin PBXFileReference section */
 		2D391A4B1E89ACFA00480DFF /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = ../SQLite.swift/SQLite.xcodeproj; sourceTree = "<group>"; };
-		B2A89A181E8C312B001C8E27 /* Trivia Screen 1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Trivia Screen 1.swift"; sourceTree = "<group>"; };
+		3483C0341E92E2170090EE58 /* TriviaScreen1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaScreen1.swift; sourceTree = "<group>"; };
 		B2DDBE551E92C2E200C7B0EF /* TriviaStartScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaStartScreenViewController.swift; sourceTree = "<group>"; };
 		B812D7F41E5D3DF2002152D7 /* ViewControllerSS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSS.swift; sourceTree = "<group>"; };
 		B88B2F3A1E47B64100384A02 /* Duck App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duck App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,12 +191,12 @@
 			isa = PBXGroup;
 			children = (
 				B2DDBE551E92C2E200C7B0EF /* TriviaStartScreenViewController.swift */,
-				B2A89A181E8C312B001C8E27 /* Trivia Screen 1.swift */,
 				B88B2F3D1E47B64100384A02 /* AppDelegate.swift */,
 				B812D7F41E5D3DF2002152D7 /* ViewControllerSS.swift */,
 				B88B2F3F1E47B64100384A02 /* ViewControllerMain.swift */,
 				B8F61C801E67BF1300699A0E /* Duck Cards */,
 				B88B2F731E5D24EE00384A02 /* ViewControllerDuckGallery.swift */,
+				3483C0341E92E2170090EE58 /* TriviaScreen1.swift */,
 				B88B2F411E47B64100384A02 /* Main.storyboard */,
 				B88B2F441E47B64100384A02 /* Assets.xcassets */,
 				B88B2F461E47B64100384A02 /* LaunchScreen.storyboard */,
@@ -395,13 +395,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2A89A191E8C312B001C8E27 /* TriviaScreen1.swift in Sources */,
 				B8F61C791E6219FE00699A0E /* DuckButton.swift in Sources */,
 				B88B2F741E5D24EE00384A02 /* ViewControllerDuckGallery.swift in Sources */,
 				B88B2F401E47B64100384A02 /* ViewControllerMain.swift in Sources */,
 				B812D7F51E5D3DF2002152D7 /* ViewControllerSS.swift in Sources */,
 				B88B2F3E1E47B64100384A02 /* AppDelegate.swift in Sources */,
 				B8F61C7D1E67BB5900699A0E /* DuckCardTableViewCell.swift in Sources */,
+				3483C0351E92E2170090EE58 /* TriviaScreen1.swift in Sources */,
 				B88B2F761E5D32A000384A02 /* ViewControllerDuckCard.swift in Sources */,
 				B2DDBE561E92C2E200C7B0EF /* TriviaStartScreenViewController.swift in Sources */,
 			);
