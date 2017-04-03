@@ -38,6 +38,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="answerASelected:" destination="yMy-ej-eeJ" eventType="touchUpInside" id="JbW-af-CXL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khh-2v-uSz" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
                                 <rect key="frame" x="702" y="678" width="302" height="70"/>
@@ -66,6 +69,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="answerBSelected:" destination="yMy-ej-eeJ" eventType="touchUpInside" id="DTN-bS-tfW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ6-WA-4G3" userLabel="Insert Answer D" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
                                 <rect key="frame" x="270" y="473" width="295" height="61"/>
@@ -76,6 +82,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="asnwerCSelected:" destination="yMy-ej-eeJ" eventType="touchUpInside" id="aZe-qJ-JeU"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Insert question Here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WOV-kb-PxR">
                                 <rect key="frame" x="262" y="172" width="590" height="49"/>
@@ -96,6 +105,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="asnwerDSelected:" destination="yMy-ej-eeJ" eventType="touchUpInside" id="JKo-mK-2Ym"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYF-eL-R6w" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
                                 <rect key="frame" x="22" y="73" width="170" height="42"/>
@@ -137,6 +149,10 @@
                             <constraint firstItem="QN7-8l-7TB" firstAttribute="leading" secondItem="rbV-a7-EZe" secondAttribute="leading" id="v0b-Ra-CHT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="questionImage" destination="2zf-4B-HdT" id="Cld-yd-Z7R"/>
+                        <outlet property="questionText" destination="WOV-kb-PxR" id="8xG-vT-PmR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQq-6W-xR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

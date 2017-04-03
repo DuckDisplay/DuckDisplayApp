@@ -395,7 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2A89A191E8C312B001C8E27 /* Trivia Screen 1.swift in Sources */,
+				B2A89A191E8C312B001C8E27 /* TriviaScreen1.swift in Sources */,
 				B8F61C791E6219FE00699A0E /* DuckButton.swift in Sources */,
 				B88B2F741E5D24EE00384A02 /* ViewControllerDuckGallery.swift in Sources */,
 				B88B2F401E47B64100384A02 /* ViewControllerMain.swift in Sources */,
