@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import SQLite
 
 class DuckGalleryTableViewController: UITableViewController {
     
     // MARK: Properties
-    var ducksPreviewSections = ["Section 1", "Section 2"]
-    var ducksPreviewList = [[DuckPreview]]()
+    var ducksPreviewSections = ["Section 1"]
+    var ducksPreviewList = [DuckPreview]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,14 +34,14 @@ class DuckGalleryTableViewController: UITableViewController {
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // Attempting 2 sections here
+        // Attempting 1 section here
         return ducksPreviewSections.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ducksPreviewList[section].count
+        //return ducksPreviewList[section].count
+        return ducksPreviewList.count
     }
-
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "DuckCardTableViewCell"
@@ -49,7 +50,8 @@ class DuckGalleryTableViewController: UITableViewController {
         }
 
         // Fetch duck preview from previews array
-        let duckPreview = ducksPreviewList[indexPath.section][indexPath.row]
+        //let duckPreview = ducksPreviewList[indexPath.section][indexPath.row]
+        let duckPreview = ducksPreviewList[indexPath.row]
         
         // Set properties of table cell with fetched data
         cell.cellImage.image = duckPreview.duckImage
@@ -106,31 +108,54 @@ class DuckGalleryTableViewController: UITableViewController {
     // MARK: Private Methods
     
     private func loadDucksFromDatabase() {
-        // Start by sample ducks first, just to get code working
-        let duckPhoto1 = UIImage(named: "AmericanBlackDuck")
-        let duckPhoto2 = UIImage(named: "AmericanWigeon")
-        let duckPhoto3 = UIImage(named: "BlueWingedTeal")
-        let duckPhoto4 = UIImage(named: "Canadagoose")
+        // Create query to access duck data, alphabetically. Only need name and image path
+        let query_nameImage_alpha = DuckDatabase.DuckFactsTable.duckFacts.select(DuckDatabase.DuckFactsTable.name,
+                                                                                 DuckDatabase.DuckFactsTable.photoPath)  // Select Name, Photo Path
+                                                                         .order(DuckDatabase.DuckFactsTable.name)   // Alphabetical
         
-        // Init the duck preview objects
-        guard let duckPreview1 = DuckPreview(duckName: "American Black Duck", duckImage: duckPhoto1) else {
-            fatalError("Unable to instantiate duck preview 1")
+        // Access database, add to duck list
+        do {
+            for duck in try DuckDatabase.duckDB!.prepare(query_nameImage_alpha) {
+                let thisDuckPhoto = UIImage(named: duck[DuckDatabase.DuckFactsTable.photoPath])
+                let thisDuckName = duck[DuckDatabase.DuckFactsTable.name]
+                
+                guard let thisDuckPreview = DuckPreview(duckName: thisDuckName, duckImage: thisDuckPhoto) else {
+                    fatalError("Unable to instantiate duck: \(duck[DuckDatabase.DuckFactsTable.name]) with image: \(duck[DuckDatabase.DuckFactsTable.photoPath])")
+                }
+                
+                // Add to duck preview list
+                ducksPreviewList += [thisDuckPreview]
+            }
+        } catch {
+            print("Error populating duck list from database")
         }
+            
         
-        guard let duckPreview2 = DuckPreview(duckName: "American Wigeon", duckImage: duckPhoto2) else {
-            fatalError("Unable to instantiate duck preview 2")
-        }
-        
-        guard let duckPreview3 = DuckPreview(duckName: "Blue Winged Teal", duckImage: duckPhoto3) else {
-            fatalError("Unable to instantiate duck preview 3")
-        }
-        
-        guard let duckPreview4 = DuckPreview(duckName: "Canada Goose", duckImage: duckPhoto4) else {
-            fatalError("Unable to instantiate duck preview 4")
-        }
-        
-        // Add sample duck previews to the array
-        ducksPreviewList += [[duckPreview1, duckPreview2], [duckPreview3, duckPreview4]]
+//        // Start by sample ducks first, just to get code working
+//        let duckPhoto1 = UIImage(named: "AmericanBlackDuck")
+//        let duckPhoto2 = UIImage(named: "AmericanWigeon")
+//        let duckPhoto3 = UIImage(named: "BlueWingedTeal")
+//        let duckPhoto4 = UIImage(named: "Canadagoose")
+//        
+//        // Init the duck preview objects
+//        guard let duckPreview1 = DuckPreview(duckName: "American Black Duck", duckImage: duckPhoto1) else {
+//            fatalError("Unable to instantiate duck preview 1")
+//        }
+//        
+//        guard let duckPreview2 = DuckPreview(duckName: "American Wigeon", duckImage: duckPhoto2) else {
+//            fatalError("Unable to instantiate duck preview 2")
+//        }
+//        
+//        guard let duckPreview3 = DuckPreview(duckName: "Blue Winged Teal", duckImage: duckPhoto3) else {
+//            fatalError("Unable to instantiate duck preview 3")
+//        }
+//        
+//        guard let duckPreview4 = DuckPreview(duckName: "Canada Goose", duckImage: duckPhoto4) else {
+//            fatalError("Unable to instantiate duck preview 4")
+//        }
+//        
+//        // Add sample duck previews to the array
+//        ducksPreviewList += [[duckPreview1, duckPreview2], [duckPreview3, duckPreview4]]
     }
 
 }

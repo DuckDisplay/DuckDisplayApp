@@ -57,7 +57,7 @@ class DuckDatabase {
     
     
     // MARK: Initialize
-    init() {
+    static func init_db() {
         // Connect to database
         do {
             DuckDatabase.duckDB = try Connection(DuckDBfile.dbFilePath!)
