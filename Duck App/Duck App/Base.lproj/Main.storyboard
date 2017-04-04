@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Trivia Screen1-->
         <scene sceneID="5cI-ZC-yq7">
             <objects>
-                <viewController id="yMy-ej-eeJ" sceneMemberID="viewController">
+                <viewController id="yMy-ej-eeJ" customClass="Trivia_Screen_1" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nxk-aM-qZu"/>
                         <viewControllerLayoutGuide type="bottom" id="W1y-zg-ZXk"/>
@@ -28,115 +28,140 @@
                                     <navigationItem title="Duck Trivia" id="w1s-HA-zrb"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QN7-8l-7TB">
-                                <rect key="frame" x="284" y="244" width="295" height="61"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QN7-8l-7TB" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="270" y="247" width="295" height="61"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="295" id="jiu-Ze-gqx"/>
-                                    <constraint firstAttribute="height" constant="61" id="pEn-Hc-mp8"/>
+                                    <constraint firstAttribute="width" constant="295" id="j8s-S7-hRo"/>
+                                    <constraint firstAttribute="height" constant="61" id="rSp-0p-Nor"/>
                                 </constraints>
-                                <state key="normal" title="   Insert Answer A " image="DCIcon">
+                                <state key="normal" title="Insert Answer A ">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="answerASelected:" destination="yMy-ej-eeJ" eventType="touchUpInside" id="JbW-af-CXL"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khh-2v-uSz">
-                                <rect key="frame" x="584" y="647" width="302" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khh-2v-uSz" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="702" y="678" width="302" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="XAG-zD-JEM"/>
-                                    <constraint firstAttribute="width" constant="302" id="YFx-1X-pFV"/>
+                                    <constraint firstAttribute="width" constant="302" id="JyV-ZW-8Ht"/>
+                                    <constraint firstAttribute="height" constant="70" id="ofd-ch-SgE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="View Leaderboard"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYF-eL-R6w">
-                                <rect key="frame" x="20" y="73" width="156" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="To Main Menu"/>
+                                <connections>
+                                    <segue destination="Zoj-G7-hVc" kind="show" id="rND-Yq-01m"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2zf-4B-HdT">
                                 <rect key="frame" x="22" y="247" width="240" height="287"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="IN7-VP-ev4"/>
-                                    <constraint firstAttribute="height" constant="287" id="eHn-6h-lfp"/>
+                                    <constraint firstAttribute="width" constant="240" id="kKj-T0-YjB"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbV-a7-EZe">
-                                <rect key="frame" x="284" y="323" width="295" height="61"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbV-a7-EZe" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="270" y="317" width="295" height="61"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="61" id="chQ-9u-rKA"/>
+                                    <constraint firstAttribute="height" constant="61" id="acJ-UB-TDL"/>
                                 </constraints>
-                                <state key="normal" title="   Insert Answer B" image="DCIcon">
+                                <state key="normal" title="Insert Answer B">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="answerBSelected:" destination="yMy-ej-eeJ" eventType="touchUpInside" id="DTN-bS-tfW"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVQ-hI-RzK">
-                                <rect key="frame" x="284" y="398" width="295" height="61"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ6-WA-4G3" userLabel="Insert Answer D" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="270" y="473" width="295" height="61"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="61" id="8L2-Ro-t0l"/>
+                                    <constraint firstAttribute="height" constant="61" id="geS-dc-Qn1"/>
                                 </constraints>
-                                <state key="normal" title="   Insert Answer C" image="DCIcon">
+                                <state key="normal" title="Insert Answer D">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ6-WA-4G3">
-                                <rect key="frame" x="284" y="473" width="295" height="61"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="61" id="dOa-na-Bab"/>
-                                </constraints>
-                                <state key="normal" title="   Insert Answer D" image="DCIcon">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                </state>
+                                <connections>
+                                    <action selector="asnwerCSelected:" destination="yMy-ej-eeJ" eventType="touchUpInside" id="aZe-qJ-JeU"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Insert question Here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WOV-kb-PxR">
-                                <rect key="frame" x="262" y="166" width="590" height="49"/>
+                                <rect key="frame" x="262" y="172" width="590" height="49"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="590" id="LRj-G3-UlB"/>
-                                    <constraint firstAttribute="height" constant="49" id="anC-B6-Ytn"/>
+                                    <constraint firstAttribute="height" constant="49" id="Uyg-A6-QEd"/>
+                                    <constraint firstAttribute="width" constant="590" id="oTF-pX-tDF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVQ-hI-RzK" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="270" y="395" width="295" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="yB5-gJ-hZ2"/>
+                                </constraints>
+                                <state key="normal" title="Insert Answer C">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="asnwerDSelected:" destination="yMy-ej-eeJ" eventType="touchUpInside" id="JKo-mK-2Ym"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYF-eL-R6w" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="22" y="73" width="170" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="lSX-FF-CnT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="To Main Menu"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="g9B-TJ-Mpf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
                         <constraints>
-                            <constraint firstItem="LVQ-hI-RzK" firstAttribute="leading" secondItem="2zf-4B-HdT" secondAttribute="trailing" constant="22" id="1AI-KK-8Em"/>
-                            <constraint firstItem="WOV-kb-PxR" firstAttribute="trailing" secondItem="khh-2v-uSz" secondAttribute="trailing" constant="-34" id="2fd-No-q9S"/>
-                            <constraint firstItem="aQ6-WA-4G3" firstAttribute="top" secondItem="LVQ-hI-RzK" secondAttribute="bottom" constant="14" id="4nb-OO-Z5A"/>
-                            <constraint firstItem="qYF-eL-R6w" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leadingMargin" id="C3X-8o-SD0"/>
-                            <constraint firstItem="rbV-a7-EZe" firstAttribute="top" secondItem="QN7-8l-7TB" secondAttribute="bottom" constant="18" id="Cj7-rJ-tYC"/>
-                            <constraint firstItem="2zf-4B-HdT" firstAttribute="bottom" secondItem="aQ6-WA-4G3" secondAttribute="bottom" id="Dzi-nF-npM"/>
-                            <constraint firstItem="W1y-zg-ZXk" firstAttribute="top" secondItem="2zf-4B-HdT" secondAttribute="bottom" constant="234" id="HfO-GW-DaP"/>
-                            <constraint firstItem="qYF-eL-R6w" firstAttribute="top" secondItem="0Ao-df-XgP" secondAttribute="bottom" constant="29" id="ObF-0n-JCg"/>
-                            <constraint firstItem="0Ao-df-XgP" firstAttribute="top" secondItem="Nn1-f0-5By" secondAttribute="top" id="Pwg-vi-2h8"/>
-                            <constraint firstItem="0Ao-df-XgP" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leading" id="TZf-e0-7CO"/>
-                            <constraint firstItem="QN7-8l-7TB" firstAttribute="trailing" secondItem="rbV-a7-EZe" secondAttribute="trailing" id="UU0-M3-j9x"/>
-                            <constraint firstItem="2zf-4B-HdT" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leadingMargin" constant="2" id="Vbt-gW-jMJ"/>
-                            <constraint firstItem="LVQ-hI-RzK" firstAttribute="top" secondItem="rbV-a7-EZe" secondAttribute="bottom" constant="14" id="X4n-NX-6Vc"/>
-                            <constraint firstItem="QN7-8l-7TB" firstAttribute="top" secondItem="WOV-kb-PxR" secondAttribute="bottom" constant="29" id="XUv-gL-Mac"/>
-                            <constraint firstItem="rbV-a7-EZe" firstAttribute="leading" secondItem="aQ6-WA-4G3" secondAttribute="leading" id="ZXb-oO-yrn"/>
-                            <constraint firstItem="rbV-a7-EZe" firstAttribute="trailing" secondItem="LVQ-hI-RzK" secondAttribute="trailing" id="aE0-0c-d2a"/>
-                            <constraint firstItem="LVQ-hI-RzK" firstAttribute="trailing" secondItem="aQ6-WA-4G3" secondAttribute="trailing" id="bMY-Sf-hoa"/>
-                            <constraint firstItem="WOV-kb-PxR" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leading" constant="262" id="gej-Bz-1Je"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0Ao-df-XgP" secondAttribute="trailing" constant="-40" id="hJe-Yu-9hA"/>
-                            <constraint firstItem="W1y-zg-ZXk" firstAttribute="top" secondItem="khh-2v-uSz" secondAttribute="bottom" constant="91" id="hSk-Rd-asT"/>
-                            <constraint firstItem="rbV-a7-EZe" firstAttribute="centerX" secondItem="LVQ-hI-RzK" secondAttribute="centerX" id="l0r-Zx-Hd3"/>
-                            <constraint firstItem="QN7-8l-7TB" firstAttribute="leading" secondItem="rbV-a7-EZe" secondAttribute="leading" id="mNm-Dn-2JK"/>
+                            <constraint firstItem="QN7-8l-7TB" firstAttribute="leading" secondItem="2zf-4B-HdT" secondAttribute="trailing" constant="8" symbolic="YES" id="1ZS-xn-ivj"/>
+                            <constraint firstItem="W1y-zg-ZXk" firstAttribute="top" secondItem="2zf-4B-HdT" secondAttribute="bottom" constant="234" id="1xQ-F9-cwQ"/>
+                            <constraint firstItem="LVQ-hI-RzK" firstAttribute="leading" secondItem="aQ6-WA-4G3" secondAttribute="leading" id="2af-G1-I1n"/>
+                            <constraint firstItem="QN7-8l-7TB" firstAttribute="top" secondItem="WOV-kb-PxR" secondAttribute="bottom" constant="26" id="3Cv-Mg-Eci"/>
+                            <constraint firstItem="2zf-4B-HdT" firstAttribute="top" secondItem="QN7-8l-7TB" secondAttribute="top" id="4zR-T5-in5"/>
+                            <constraint firstItem="0Ao-df-XgP" firstAttribute="top" secondItem="Nn1-f0-5By" secondAttribute="top" id="5jd-hm-zpf"/>
+                            <constraint firstItem="LVQ-hI-RzK" firstAttribute="top" secondItem="rbV-a7-EZe" secondAttribute="bottom" constant="17" id="6uj-bj-q2I"/>
+                            <constraint firstItem="LVQ-hI-RzK" firstAttribute="trailing" secondItem="aQ6-WA-4G3" secondAttribute="trailing" id="8en-i6-iJf"/>
+                            <constraint firstItem="qYF-eL-R6w" firstAttribute="leading" secondItem="2zf-4B-HdT" secondAttribute="leading" id="9l1-rj-mXv"/>
+                            <constraint firstItem="qYF-eL-R6w" firstAttribute="top" secondItem="0Ao-df-XgP" secondAttribute="bottom" constant="29" id="Dv8-ES-8JA"/>
+                            <constraint firstItem="rbV-a7-EZe" firstAttribute="leading" secondItem="LVQ-hI-RzK" secondAttribute="leading" id="J3S-mp-zaW"/>
+                            <constraint firstItem="0Ao-df-XgP" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leading" id="NNY-T7-o0W"/>
+                            <constraint firstItem="QN7-8l-7TB" firstAttribute="trailing" secondItem="rbV-a7-EZe" secondAttribute="trailing" id="Rzd-V0-68S"/>
+                            <constraint firstItem="rbV-a7-EZe" firstAttribute="top" secondItem="QN7-8l-7TB" secondAttribute="bottom" constant="9" id="Sp0-WP-xq0"/>
+                            <constraint firstItem="khh-2v-uSz" firstAttribute="trailing" secondItem="Nn1-f0-5By" secondAttribute="trailingMargin" id="TYY-uW-DVC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Ao-df-XgP" secondAttribute="trailing" constant="-40" id="Uk4-CC-9Jx"/>
+                            <constraint firstItem="aQ6-WA-4G3" firstAttribute="top" secondItem="LVQ-hI-RzK" secondAttribute="bottom" constant="17" id="YNj-k4-gNr"/>
+                            <constraint firstItem="2zf-4B-HdT" firstAttribute="bottom" secondItem="aQ6-WA-4G3" secondAttribute="bottom" id="YbN-dd-zDB"/>
+                            <constraint firstItem="2zf-4B-HdT" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leadingMargin" constant="2" id="cy0-TU-kdt"/>
+                            <constraint firstAttribute="bottom" secondItem="khh-2v-uSz" secondAttribute="bottom" constant="20" symbolic="YES" id="eYl-SP-fDv"/>
+                            <constraint firstItem="WOV-kb-PxR" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leading" constant="262" id="hed-Yg-fVH"/>
+                            <constraint firstItem="rbV-a7-EZe" firstAttribute="trailing" secondItem="LVQ-hI-RzK" secondAttribute="trailing" id="mFr-rY-3To"/>
+                            <constraint firstItem="QN7-8l-7TB" firstAttribute="leading" secondItem="rbV-a7-EZe" secondAttribute="leading" id="v0b-Ra-CHT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="questionImage" destination="2zf-4B-HdT" id="Cld-yd-Z7R"/>
+                        <outlet property="questionText" destination="WOV-kb-PxR" id="8xG-vT-PmR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQq-6W-xR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1876.7578124999998" y="-546.09375"/>
         </scene>
-        <!--View Controller-->
+        <!--Trivia Start Screen View Controller-->
         <scene sceneID="wNq-Wv-bHZ">
             <objects>
-                <viewController id="wrY-xF-vtH" sceneMemberID="viewController">
+                <viewController id="wrY-xF-vtH" customClass="TriviaStartScreenViewController" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xAz-mS-0aP"/>
                         <viewControllerLayoutGuide type="bottom" id="NHd-4C-idk"/>
@@ -145,34 +170,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duck Trivia Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eim-Zv-0ch">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Duck Trivia Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eim-Zv-0ch">
                                 <rect key="frame" x="235" y="339" width="555" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="72"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mg-9J-nXT">
-                                <rect key="frame" x="434" y="438" width="157" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mg-9J-nXT" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="404" y="438" width="218" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="iP1-Tg-Xl9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="56"/>
                                 <state key="normal" title="PLAY!"/>
                                 <connections>
                                     <segue destination="yMy-ej-eeJ" kind="show" id="ahF-iH-Db0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hI-NK-yNJ">
-                                <rect key="frame" x="717" y="697" width="287" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hI-NK-yNJ" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="704" y="688" width="300" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="06n-mu-wLz"/>
+                                    <constraint firstAttribute="width" constant="300" id="cGJ-gm-Q9e"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Go to Duck Species "/>
                                 <connections>
                                     <segue destination="91r-wj-eqQ" kind="show" id="Bxl-u5-rtY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5L-Np-RGV">
-                                <rect key="frame" x="739" y="58" width="265" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5L-Np-RGV" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="20" y="62" width="288" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="HGw-81-sR3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Go to Leaderboard"/>
                                 <connections>
@@ -181,11 +212,21 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3mg-9J-nXT" firstAttribute="centerX" secondItem="eim-Zv-0ch" secondAttribute="centerX" id="5Nb-FY-iW0"/>
+                            <constraint firstItem="NHd-4C-idk" firstAttribute="top" secondItem="3mg-9J-nXT" secondAttribute="bottom" constant="251" id="5lC-j9-LaU"/>
+                            <constraint firstItem="3mg-9J-nXT" firstAttribute="top" secondItem="eim-Zv-0ch" secondAttribute="bottom" constant="8" symbolic="YES" id="HkQ-k3-b4a"/>
+                            <constraint firstItem="N5L-Np-RGV" firstAttribute="leading" secondItem="y8d-QN-6Y5" secondAttribute="leadingMargin" id="P1r-FH-bLw"/>
+                            <constraint firstItem="4hI-NK-yNJ" firstAttribute="trailing" secondItem="y8d-QN-6Y5" secondAttribute="trailingMargin" id="QTc-WR-enN"/>
+                            <constraint firstItem="3mg-9J-nXT" firstAttribute="leading" secondItem="y8d-QN-6Y5" secondAttribute="leading" constant="404" id="jGb-wr-fj2"/>
+                            <constraint firstAttribute="bottom" secondItem="4hI-NK-yNJ" secondAttribute="bottom" constant="20" symbolic="YES" id="yth-8b-Rrc"/>
+                            <constraint firstItem="N5L-Np-RGV" firstAttribute="top" secondItem="xAz-mS-0aP" secondAttribute="bottom" constant="42" id="yzE-yB-T24"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VK9-rr-BkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="783" y="-546"/>
+            <point key="canvasLocation" x="782.8125" y="-546.09375"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pRH-gg-9qn">
@@ -687,101 +728,46 @@
             </objects>
             <point key="canvasLocation" x="1650.5859375" y="1407.8125"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Duck Gallery Table View Controller-->
         <scene sceneID="Nhh-L9-Y0X">
             <objects>
-                <tableViewController id="91r-wj-eqQ" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="sRk-iu-H58">
+                <tableViewController id="91r-wj-eqQ" customClass="DuckGalleryTableViewController" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="sRk-iu-H58">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection id="c8f-vi-RPb">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DuckCardsTableViewCell" rowHeight="100" id="jba-Cc-Uvc" customClass="DuckCardTableViewCell" customModule="Duck_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="100"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jba-Cc-Uvc" id="ZfI-rE-VAi">
-                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="99.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WoodDuck" translatesAutoresizingMaskIntoConstraints="NO" id="RgO-mE-mBv">
-                                                    <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qps-X4-FpF">
-                                                    <rect key="frame" x="121" y="8" width="485" height="83"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                    <state key="normal" title="Wood Duck">
-                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <segue destination="pC8-EJ-7Rz" kind="show" id="Hwt-gd-HQa"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="cellButton" destination="Qps-X4-FpF" id="gXn-ac-u11"/>
-                                            <outlet property="cellImage" destination="RgO-mE-mBv" id="F7t-ym-WZH"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DuckCardsTableViewCell" rowHeight="100" id="sHX-tA-pDJ" customClass="DuckCardTableViewCell" customModule="Duck_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="100" width="1024" height="100"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sHX-tA-pDJ" id="KAd-Ff-yxR">
-                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="99.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mallard" translatesAutoresizingMaskIntoConstraints="NO" id="MTR-8R-6s8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0t-Kx-NgP">
-                                                    <rect key="frame" x="121" y="8" width="485" height="83"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                    <state key="normal" title="Mallard">
-                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="cellButton" destination="C0t-Kx-NgP" id="KIo-mu-zgE"/>
-                                            <outlet property="cellImage" destination="MTR-8R-6s8" id="kB7-5u-ao7"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DuckCardsTableViewCell" rowHeight="100" id="Yt5-WS-qOc" customClass="DuckCardTableViewCell" customModule="Duck_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="200" width="1024" height="100"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yt5-WS-qOc" id="HIy-D2-Ue1">
-                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="99.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gadwall" translatesAutoresizingMaskIntoConstraints="NO" id="CpI-Lj-Jmh">
-                                                    <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDF-pq-MLm">
-                                                    <rect key="frame" x="121" y="8" width="485" height="83"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                    <state key="normal" title="Gadwall">
-                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="cellButton" destination="CDF-pq-MLm" id="geF-YS-aAg"/>
-                                            <outlet property="cellImage" destination="CpI-Lj-Jmh" id="9bW-IR-zy4"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DuckCardTableViewCell" rowHeight="100" id="jba-Cc-Uvc" userLabel="DuckCardTableViewCell" customClass="DuckCardTableViewCell" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="1024" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jba-Cc-Uvc" id="ZfI-rE-VAi">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="RgO-mE-mBv">
+                                            <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qps-X4-FpF">
+                                            <rect key="frame" x="121" y="8" width="485" height="83"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="Default Title">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="pC8-EJ-7Rz" kind="show" id="Hwt-gd-HQa"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellButton" destination="Qps-X4-FpF" id="gXn-ac-u11"/>
+                                    <outlet property="cellImage" destination="RgO-mE-mBv" id="F7t-ym-WZH"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="91r-wj-eqQ" id="cwe-xP-IHJ"/>
                             <outlet property="delegate" destination="91r-wj-eqQ" id="CUV-tr-vRx"/>
@@ -834,6 +820,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LV-MA-tpI">
+                                <rect key="frame" x="159" y="644" width="295" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="hgQ-st-BMX"/>
+                                </constraints>
+                                <state key="normal" title="   Insert Answer C" image="DCIcon">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -858,7 +854,7 @@
         <!--View Screen Saver-->
         <scene sceneID="fkM-H1-mzg">
             <objects>
-                <viewController id="UYA-dJ-Ufi" customClass="ViewScreenSaver" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScreenSaverView" id="UYA-dJ-Ufi" customClass="ViewScreenSaver" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aas-2H-J3Z"/>
                         <viewControllerLayoutGuide type="bottom" id="9Hy-LU-EBB"/>
@@ -926,12 +922,13 @@
     </scenes>
     <resources>
         <image name="DCIcon" width="50" height="48"/>
-        <image name="Gadwall" width="220" height="176"/>
         <image name="Mallard" width="220" height="176"/>
         <image name="WoodDuck" width="301" height="200"/>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1Tl-si-8RK"/>
+        <segue reference="Bxl-u5-rtY"/>
+        <segue reference="g9B-TJ-Mpf"/>
+        <segue reference="NSt-8h-2Zn"/>
     </inferredMetricsTieBreakers>
 </document>
