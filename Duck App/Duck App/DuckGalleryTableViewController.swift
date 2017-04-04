@@ -129,33 +129,6 @@ class DuckGalleryTableViewController: UITableViewController {
         } catch {
             print("Error populating duck list from database")
         }
-            
-        
-//        // Start by sample ducks first, just to get code working
-//        let duckPhoto1 = UIImage(named: "AmericanBlackDuck")
-//        let duckPhoto2 = UIImage(named: "AmericanWigeon")
-//        let duckPhoto3 = UIImage(named: "BlueWingedTeal")
-//        let duckPhoto4 = UIImage(named: "Canadagoose")
-//        
-//        // Init the duck preview objects
-//        guard let duckPreview1 = DuckPreview(duckName: "American Black Duck", duckImage: duckPhoto1) else {
-//            fatalError("Unable to instantiate duck preview 1")
-//        }
-//        
-//        guard let duckPreview2 = DuckPreview(duckName: "American Wigeon", duckImage: duckPhoto2) else {
-//            fatalError("Unable to instantiate duck preview 2")
-//        }
-//        
-//        guard let duckPreview3 = DuckPreview(duckName: "Blue Winged Teal", duckImage: duckPhoto3) else {
-//            fatalError("Unable to instantiate duck preview 3")
-//        }
-//        
-//        guard let duckPreview4 = DuckPreview(duckName: "Canada Goose", duckImage: duckPhoto4) else {
-//            fatalError("Unable to instantiate duck preview 4")
-//        }
-//        
-//        // Add sample duck previews to the array
-//        ducksPreviewList += [[duckPreview1, duckPreview2], [duckPreview3, duckPreview4]]
     }
 
 }

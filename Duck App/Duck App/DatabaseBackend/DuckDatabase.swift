@@ -64,10 +64,5 @@ class DuckDatabase {
         } catch {
             print("Error: Cannot open database file: \(error)")
         }
-        
-        // Attempt to access data to ensure connection
-//        for duck in try! DuckDatabase.duckDB!.prepare(DuckFactsTable.duckFacts) {
-//            print("name: \(duck[DuckFactsTable.name])\n\tscience name: \(duck[DuckFactsTable.scientificName])")
-//        }
     }
 }
