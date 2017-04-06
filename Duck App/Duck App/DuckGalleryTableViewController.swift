@@ -12,8 +12,8 @@ import SQLite
 class DuckGalleryTableViewController: UITableViewController {
     
     // MARK: Properties
-    var ducksPreviewSections = ["Section 1"]
-    var ducksPreviewList = [DuckPreview]()
+    var ducksPreviewSections = [String]()
+    var ducksPreviewList = [[DuckPreview]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,13 +34,11 @@ class DuckGalleryTableViewController: UITableViewController {
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // Attempting 1 section here
         return ducksPreviewSections.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return ducksPreviewList[section].count
-        return ducksPreviewList.count
+        return ducksPreviewList[section].count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -50,8 +48,7 @@ class DuckGalleryTableViewController: UITableViewController {
         }
 
         // Fetch duck preview from previews array
-        //let duckPreview = ducksPreviewList[indexPath.section][indexPath.row]
-        let duckPreview = ducksPreviewList[indexPath.row]
+        let duckPreview = ducksPreviewList[indexPath.section][indexPath.row]
         
         // Set properties of table cell with fetched data
         cell.cellImage.image = duckPreview.duckImage
@@ -59,26 +56,6 @@ class DuckGalleryTableViewController: UITableViewController {
 
         return cell
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
 
     /*
     // Override to support rearranging the table view.
@@ -108,23 +85,41 @@ class DuckGalleryTableViewController: UITableViewController {
     // MARK: Private Methods
     
     private func loadDucksFromDatabase() {
-        // Create query to access duck data, alphabetically. Only need name and image path
-        let query_nameImage_alpha = DuckDatabase.DuckFactsTable.duckFacts.select(DuckDatabase.DuckFactsTable.name,
-                                                                                 DuckDatabase.DuckFactsTable.photoPath)  // Select Name, Photo Path
-                                                                         .order(DuckDatabase.DuckFactsTable.name)   // Alphabetical
+        // Create query to access duck data, alphabetically. Only need name, image path, and duck type
+        let query_nameImageType_alpha = DuckDatabase.DuckFactsTable.duckFacts.select(DuckDatabase.DuckFactsTable.name,
+                                                                                     DuckDatabase.DuckFactsTable.photoPath,
+                                                                                     DuckDatabase.DuckFactsTable.type)
+                                                                                    // Select Name, Photo Path, Type
+                                                                            .order(DuckDatabase.DuckFactsTable.type,
+                                                                                   DuckDatabase.DuckFactsTable.name)
+                                                                                    // Sort Alphabetically, by section & name
         
         // Access database, add to duck list
         do {
-            for duck in try DuckDatabase.duckDB!.prepare(query_nameImage_alpha) {
+            for duck in try DuckDatabase.duckDB!.prepare(query_nameImageType_alpha) {
                 let thisDuckPhoto = UIImage(named: duck[DuckDatabase.DuckFactsTable.photoPath])
                 let thisDuckName = duck[DuckDatabase.DuckFactsTable.name]
+                let thisDuckType = duck[DuckDatabase.DuckFactsTable.type]
                 
                 guard let thisDuckPreview = DuckPreview(duckName: thisDuckName, duckImage: thisDuckPhoto) else {
                     fatalError("Unable to instantiate duck: \(duck[DuckDatabase.DuckFactsTable.name]) with image: \(duck[DuckDatabase.DuckFactsTable.photoPath])")
                 }
                 
-                // Add to duck preview list
-                ducksPreviewList += [thisDuckPreview]
+                if !ducksPreviewSections.contains(thisDuckType) {
+                    // If section headers do not have this type, add it to the list
+                    ducksPreviewSections += [thisDuckType]
+                    ducksPreviewList.append([DuckPreview]())
+                }
+                
+                // Get index of section heading in array
+                let typeIndex = ducksPreviewSections.index(of: thisDuckType)
+                
+                // Add to duck preview list, depending on type of duck
+                if typeIndex! < ducksPreviewList.count {
+                    ducksPreviewList[typeIndex!] += [thisDuckPreview]
+                } else {
+                    fatalError("Unable to find section heading, \(thisDuckType), for duck: \(thisDuckPreview.duckName)")
+                }
             }
         } catch {
             print("Error populating duck list from database")
