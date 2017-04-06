@@ -39,6 +39,7 @@ class DuckDatabase {
         static let photoPath = Expression<String>("PhotoPath")
         static let soundPath = Expression<String>("SoundPath")
         static let mapPath = Expression<String>("MapPath")
+        static let type = Expression<String>("Type")
     }
     
     // Constants to access trivia questions/answers
