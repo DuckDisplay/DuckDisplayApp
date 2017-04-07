@@ -316,10 +316,10 @@
             </objects>
             <point key="canvasLocation" x="2615.625" y="185.9375"/>
         </scene>
-        <!--Duck Card View Controller-->
+        <!--Duck Information-->
         <scene sceneID="okx-lg-Nk9">
             <objects>
-                <viewController id="pC8-EJ-7Rz" customClass="DuckCardViewController" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Duck Information" id="pC8-EJ-7Rz" customClass="DuckCardViewController" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fgk-Gp-Pae"/>
                         <viewControllerLayoutGuide type="bottom" id="Vs5-TT-Buu"/>
@@ -486,6 +486,7 @@
                             <constraint firstItem="6YP-0a-RIj" firstAttribute="top" secondItem="lrS-f8-bUQ" secondAttribute="top" id="zPD-fa-SYP"/>
                         </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1024" height="1750"/>
                     <connections>
@@ -507,10 +508,10 @@
             </objects>
             <point key="canvasLocation" x="1650.5859375" y="1407.8125"/>
         </scene>
-        <!--Duck Gallery Table View Controller-->
+        <!--Duck Species Gallery-->
         <scene sceneID="Nhh-L9-Y0X">
             <objects>
-                <tableViewController id="91r-wj-eqQ" customClass="DuckGalleryTableViewController" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Duck Species Gallery" id="91r-wj-eqQ" customClass="DuckGalleryTableViewController" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="sRk-iu-H58">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -552,6 +553,7 @@
                             <outlet property="delegate" destination="91r-wj-eqQ" id="CUV-tr-vRx"/>
                         </connections>
                     </tableView>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUK-ms-tds" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -835,7 +837,7 @@
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="g9B-TJ-Mpf"/>
         <segue reference="1Tl-si-8RK"/>
+        <segue reference="4Oo-Re-37E"/>
     </inferredMetricsTieBreakers>
 </document>
