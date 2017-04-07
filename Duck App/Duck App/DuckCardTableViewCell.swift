@@ -12,7 +12,8 @@ class DuckCardTableViewCell: UITableViewCell {
 
     //MARK: Properties
     @IBOutlet weak var cellImage: UIImageView!  //Table view cell image
-    @IBOutlet weak var cellButton: UIButton!    //Table view cell button
+    @IBOutlet weak var cellLabel: UILabel!      //Table view cell label
+
     
     
     override func awakeFromNib() {

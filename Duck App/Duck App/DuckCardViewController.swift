@@ -26,11 +26,30 @@ class DuckCardViewController: UIViewController {
     @IBOutlet weak var duckCardConservation: UITextView!
     @IBOutlet weak var duckCardFunFacts: UITextView!
     
+    // Stores the duck info object displayed on screen
+    var duckInfo: DuckInfo?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Setup views for a Duck
+        if let duck = duckInfo {
+            duckCardImageView.image = duck.duckImage
+            duckCardImageLabel.text = duck.duckImageLabel
+            
+            //duckCardAudioButton.setTitle(duck.duckAudioPath + " Audio File", for: .normal)
+            
+            duckCardName.text = duck.duckName
+            duckCardScienceName.text = duck.duckScienceName
+            
+            duckCardDesc.text = duck.duckDesc
+            duckCardBehavior.text = duck.duckBehavior
+            duckCardFood.text = duck.duckFood
+            duckCardHabitat.text = duck.duckHabitat
+            duckCardNesting.text = duck.duckNesting
+            duckCardConservation.text = duck.duckConservation
+            duckCardFunFacts.text = duck.duckFunFacts
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,14 +58,5 @@ class DuckCardViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

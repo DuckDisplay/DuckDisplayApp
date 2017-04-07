@@ -15,6 +15,7 @@ class DuckInfo {
     // MARK: Constants
     
     // Indices needed to construct text information array
+    static let NUM_TEXT_SLOTS = 11
     enum TextInfoIndices: Int {
         case imageLabel
         case audioPath
