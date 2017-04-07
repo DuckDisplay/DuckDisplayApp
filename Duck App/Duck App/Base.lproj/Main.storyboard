@@ -488,6 +488,20 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1024" height="1750"/>
+                    <connections>
+                        <outlet property="duckCardAudioButton" destination="NXh-II-WMG" id="oRB-Rq-0Kb"/>
+                        <outlet property="duckCardBehavior" destination="sdP-DU-whw" id="09s-aK-vXz"/>
+                        <outlet property="duckCardConservation" destination="kR2-NA-vHs" id="dcP-Vq-kZ2"/>
+                        <outlet property="duckCardDesc" destination="DfA-Y4-yms" id="Fzg-KR-g5x"/>
+                        <outlet property="duckCardFood" destination="Ny4-36-Qpd" id="qFY-St-6bE"/>
+                        <outlet property="duckCardFunFacts" destination="beH-zS-M23" id="muR-6X-QAF"/>
+                        <outlet property="duckCardHabitat" destination="qkx-FN-6xL" id="Fqs-9q-JMP"/>
+                        <outlet property="duckCardImageLabel" destination="ON7-Mg-OKG" id="2GX-Zx-ihf"/>
+                        <outlet property="duckCardImageView" destination="lQ4-Lr-4OA" id="Lko-Eh-c6T"/>
+                        <outlet property="duckCardName" destination="58D-r2-82I" id="Ch7-ul-keN"/>
+                        <outlet property="duckCardNesting" destination="8tr-Lq-wZ8" id="JnP-8b-l1r"/>
+                        <outlet property="duckCardScienceName" destination="P7I-4e-gaT" id="JFV-xi-gBo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJK-DV-R7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

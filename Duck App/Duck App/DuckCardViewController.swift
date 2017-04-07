@@ -9,7 +9,24 @@
 import UIKit
 
 class DuckCardViewController: UIViewController {
-
+    
+    // MARK: Properties
+    @IBOutlet weak var duckCardImageView: UIImageView!
+    @IBOutlet weak var duckCardImageLabel: UILabel!
+    @IBOutlet weak var duckCardAudioButton: UIButton!
+    
+    @IBOutlet weak var duckCardName: UILabel!
+    @IBOutlet weak var duckCardScienceName: UILabel!
+    
+    @IBOutlet weak var duckCardDesc: UITextView!
+    @IBOutlet weak var duckCardBehavior: UITextView!
+    @IBOutlet weak var duckCardFood: UITextView!
+    @IBOutlet weak var duckCardHabitat: UITextView!
+    @IBOutlet weak var duckCardNesting: UITextView!
+    @IBOutlet weak var duckCardConservation: UITextView!
+    @IBOutlet weak var duckCardFunFacts: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
