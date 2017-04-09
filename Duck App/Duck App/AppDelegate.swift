@@ -17,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         // Connect the database file to the DuckDatabase class
         DuckDatabase.init_db()
+        let pageController = UIPageControl.appearance()
+        pageController.pageIndicatorTintColor = UIColor.lightGray
+        pageController.currentPageIndicatorTintColor = UIColor.black
+        pageController.backgroundColor = UIColor.white
+        
         
         return true
     }
