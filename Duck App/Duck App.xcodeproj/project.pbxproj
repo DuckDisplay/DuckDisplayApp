@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2D326DF31E92E7D500992FFA /* DuckGalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D326DF21E92E7D500992FFA /* DuckGalleryTableViewController.swift */; };
 		2D326DF51E92E88C00992FFA /* DuckPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D326DF41E92E88C00992FFA /* DuckPreview.swift */; };
-		2D391A631E89ACFF00480DFF /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D391A561E89ACFA00480DFF /* SQLite.framework */; };
 		2D391A641E89AD0600480DFF /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D391A561E89ACFA00480DFF /* SQLite.framework */; };
 		2D391A651E89AD0600480DFF /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D391A561E89ACFA00480DFF /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D720AA21E8DCBE900B797A4 /* DuckDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D720AA11E8DCBE900B797A4 /* DuckDatabase.swift */; };
@@ -19,13 +18,18 @@
 		34DAD0A51E95827D004197DF /* TriviaQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DAD0A41E95827D004197DF /* TriviaQuestion.swift */; };
 		B2DDBE561E92C2E200C7B0EF /* TriviaStartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DDBE551E92C2E200C7B0EF /* TriviaStartScreenViewController.swift */; };
 		B812D7F51E5D3DF2002152D7 /* ViewControllerSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812D7F41E5D3DF2002152D7 /* ViewControllerSS.swift */; };
+		B840E75F1E96E0A700E820D0 /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840E75B1E96E0A700E820D0 /* Leaderboard.swift */; };
+		B840E7601E96E0A700E820D0 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840E75C1E96E0A700E820D0 /* Users.swift */; };
+		B840E7611E96E0A700E820D0 /* LeaderboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840E75D1E96E0A700E820D0 /* LeaderboardTableViewCell.swift */; };
+		B840E7621E96E0A700E820D0 /* LeaderboardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840E75E1E96E0A700E820D0 /* LeaderboardTableViewController.swift */; };
+		B840E7781E992EEC00E820D0 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840E7771E992EEC00E820D0 /* ContentViewController.swift */; };
+		B840E77A1E992F3A00E820D0 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840E7791E992F3A00E820D0 /* MainMenuViewController.swift */; };
 		B88B2F3E1E47B64100384A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F3D1E47B64100384A02 /* AppDelegate.swift */; };
 		B88B2F401E47B64100384A02 /* ViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F3F1E47B64100384A02 /* ViewControllerMain.swift */; };
 		B88B2F431E47B64100384A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88B2F411E47B64100384A02 /* Main.storyboard */; };
 		B88B2F451E47B64100384A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88B2F441E47B64100384A02 /* Assets.xcassets */; };
 		B88B2F481E47B64100384A02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88B2F461E47B64100384A02 /* LaunchScreen.storyboard */; };
 		B88B2F531E47B64100384A02 /* Duck_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F521E47B64100384A02 /* Duck_AppTests.swift */; };
-		B88B2F761E5D32A000384A02 /* ViewControllerDuckCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F751E5D32A000384A02 /* ViewControllerDuckCard.swift */; };
 		B8F61C791E6219FE00699A0E /* DuckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F61C781E6219FE00699A0E /* DuckButton.swift */; };
 		B8F61C7D1E67BB5900699A0E /* DuckCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F61C7C1E67BB5900699A0E /* DuckCardTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -120,6 +124,12 @@
 		34DAD0A41E95827D004197DF /* TriviaQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaQuestion.swift; sourceTree = "<group>"; };
 		B2DDBE551E92C2E200C7B0EF /* TriviaStartScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaStartScreenViewController.swift; sourceTree = "<group>"; };
 		B812D7F41E5D3DF2002152D7 /* ViewControllerSS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSS.swift; sourceTree = "<group>"; };
+		B840E75B1E96E0A700E820D0 /* Leaderboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
+		B840E75C1E96E0A700E820D0 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		B840E75D1E96E0A700E820D0 /* LeaderboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewCell.swift; sourceTree = "<group>"; };
+		B840E75E1E96E0A700E820D0 /* LeaderboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewController.swift; sourceTree = "<group>"; };
+		B840E7771E992EEC00E820D0 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		B840E7791E992F3A00E820D0 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		B88B2F3A1E47B64100384A02 /* Duck App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duck App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88B2F3D1E47B64100384A02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B88B2F3F1E47B64100384A02 /* ViewControllerMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMain.swift; sourceTree = "<group>"; };
@@ -130,7 +140,6 @@
 		B88B2F4E1E47B64100384A02 /* Duck AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Duck AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88B2F521E47B64100384A02 /* Duck_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duck_AppTests.swift; sourceTree = "<group>"; };
 		B88B2F541E47B64100384A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B88B2F751E5D32A000384A02 /* ViewControllerDuckCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDuckCard.swift; sourceTree = "<group>"; };
 		B8F61C781E6219FE00699A0E /* DuckButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckButton.swift; sourceTree = "<group>"; };
 		B8F61C7C1E67BB5900699A0E /* DuckCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckCardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,7 +150,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D391A641E89AD0600480DFF /* SQLite.framework in Frameworks */,
-				2D391A631E89ACFF00480DFF /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +201,26 @@
 			name = Database;
 			sourceTree = "<group>";
 		};
+		B840E7631E96E0B100E820D0 /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+				B840E75C1E96E0A700E820D0 /* Users.swift */,
+				B840E75B1E96E0A700E820D0 /* Leaderboard.swift */,
+				B840E75D1E96E0A700E820D0 /* LeaderboardTableViewCell.swift */,
+				B840E75E1E96E0A700E820D0 /* LeaderboardTableViewController.swift */,
+			);
+			name = Leaderboard;
+			sourceTree = "<group>";
+		};
+		B840E7761E992EBB00E820D0 /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				B840E7791E992F3A00E820D0 /* MainMenuViewController.swift */,
+				B840E7771E992EEC00E820D0 /* ContentViewController.swift */,
+			);
+			name = "Main Menu";
+			sourceTree = "<group>";
+		};
 		B88B2F311E47B64100384A02 = {
 			isa = PBXGroup;
 			children = (
@@ -216,7 +244,6 @@
 		B88B2F3C1E47B64100384A02 /* Duck App */ = {
 			isa = PBXGroup;
 			children = (
-				B2DDBE551E92C2E200C7B0EF /* TriviaStartScreenViewController.swift */,
 				B88B2F3D1E47B64100384A02 /* AppDelegate.swift */,
 				B812D7F41E5D3DF2002152D7 /* ViewControllerSS.swift */,
 				B88B2F3F1E47B64100384A02 /* ViewControllerMain.swift */,
@@ -250,15 +277,16 @@
 			name = "Custom Buttons";
 			sourceTree = "<group>";
 		};
-		B8F61C801E67BF1300699A0E /* Duck Cards */ = {
+		B8F61C801E67BF1300699A0E /* DuckCards */ = {
 			isa = PBXGroup;
 			children = (
 				2D326DF21E92E7D500992FFA /* DuckGalleryTableViewController.swift */,
+				2D7E0C031E973A20006C53C0 /* DuckInfo.swift */,
 				2D326DF41E92E88C00992FFA /* DuckPreview.swift */,
-				B88B2F751E5D32A000384A02 /* ViewControllerDuckCard.swift */,
 				B8F61C7C1E67BB5900699A0E /* DuckCardTableViewCell.swift */,
+				2DD514871E972A2B00843DDA /* DuckCardViewController.swift */,
 			);
-			name = "Duck Cards";
+			name = DuckCards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,18 +454,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B840E77A1E992F3A00E820D0 /* MainMenuViewController.swift in Sources */,
 				B8F61C791E6219FE00699A0E /* DuckButton.swift in Sources */,
+				B840E75F1E96E0A700E820D0 /* Leaderboard.swift in Sources */,
+				B840E7781E992EEC00E820D0 /* ContentViewController.swift in Sources */,
 				B88B2F401E47B64100384A02 /* ViewControllerMain.swift in Sources */,
 				2D326DF51E92E88C00992FFA /* DuckPreview.swift in Sources */,
 				B812D7F51E5D3DF2002152D7 /* ViewControllerSS.swift in Sources */,
+				B840E7621E96E0A700E820D0 /* LeaderboardTableViewController.swift in Sources */,
 				2D720AA21E8DCBE900B797A4 /* DuckDatabase.swift in Sources */,
 				B88B2F3E1E47B64100384A02 /* AppDelegate.swift in Sources */,
 				B8F61C7D1E67BB5900699A0E /* DuckCardTableViewCell.swift in Sources */,
 				3483C0351E92E2170090EE58 /* TriviaScreen1.swift in Sources */,
+				B840E7601E96E0A700E820D0 /* Users.swift in Sources */,
 				2D326DF31E92E7D500992FFA /* DuckGalleryTableViewController.swift in Sources */,
 				B88B2F761E5D32A000384A02 /* ViewControllerDuckCard.swift in Sources */,
 				34DAD0A51E95827D004197DF /* TriviaQuestion.swift in Sources */,
 				B2DDBE561E92C2E200C7B0EF /* TriviaStartScreenViewController.swift in Sources */,
+				2DD514881E972A2B00843DDA /* DuckCardViewController.swift in Sources */,
+				B840E7611E96E0A700E820D0 /* LeaderboardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

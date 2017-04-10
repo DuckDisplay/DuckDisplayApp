@@ -24,7 +24,7 @@ class DuckDatabase {
     // Constants to access duck facts table and the columns within it
     struct DuckFactsTable {
         static let duckFacts = Table("duck_facts")
-        static let id = Expression<Int32>("ID")
+        static let id = Expression<Int>("ID")
         static let name = Expression<String>("Name")
         static let scientificName = Expression<String>("ScientificName")
         static let conservation = Expression<String>("Conservation")
@@ -39,6 +39,7 @@ class DuckDatabase {
         static let photoPath = Expression<String>("PhotoPath")
         static let soundPath = Expression<String>("SoundPath")
         static let mapPath = Expression<String>("MapPath")
+        static let type = Expression<String>("Type")
     }
     
     // Constants to access trivia questions/answers

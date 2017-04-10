@@ -1,25 +1,25 @@
 //
-//  DuckCardTableViewCell.swift
+//  LeaderboardTableViewCell.swift
 //  Duck App
 //
-//  Created by Austin Mills on 3/1/17.
+//  Created by Austin Mills on 4/2/17.
 //  Copyright © 2017 Auburn University. All rights reserved.
 //
 
 import UIKit
 
-class DuckCardTableViewCell: UITableViewCell {
+class LeaderboardTableViewCell: UITableViewCell {
 
     //MARK: Properties
-    @IBOutlet weak var cellImage: UIImageView!  //Table view cell image
-    @IBOutlet weak var cellLabel: UILabel!      //Table view cell label
-
-    
+    @IBOutlet weak var leaderboardPlace: UILabel!
+    @IBOutlet weak var leaderboardName: UILabel!
+    @IBOutlet weak var leaderboardState: UILabel!
+    @IBOutlet weak var leaderboardScore: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-    
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
