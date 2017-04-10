@@ -52,7 +52,7 @@ class DuckDatabase {
         static let ans3 = Expression<String>("Ans3")
         static let ans4 = Expression<String>("Ans4")
         static let correct = Expression<String>("Correct")
-        static let points = Expression<Int32>("Points")
+        static let points = Expression<Int>("Points")
         static let picture = Expression<String>("Picture")
     }
     
