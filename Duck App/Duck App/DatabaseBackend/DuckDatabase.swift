@@ -44,14 +44,14 @@ class DuckDatabase {
     // Constants to access trivia questions/answers
     struct TriviaDataTable {
         static let triviaData = Table("trivia_data")
-        static let id = Expression<Int32>("Entry")
+        static let id = Expression<Int>("Entry")
         static let question = Expression<String>("Question")
         static let ans1 = Expression<String>("Ans1")
         static let ans2 = Expression<String>("Ans2")
         static let ans3 = Expression<String>("Ans3")
         static let ans4 = Expression<String>("Ans4")
         static let correct = Expression<String>("Correct")
-        static let points = Expression<Int32>("Points")
+        static let points = Expression<Int>("Points")
         static let picture = Expression<String>("Picture")
     }
     

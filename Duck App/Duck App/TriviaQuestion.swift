@@ -18,11 +18,11 @@ class TriviaQuestion: NSObject {
     var ans3 : String
     var ans4 : String
     var correct : String
-    var points : Int32
+    var points : Int
     var picture : String?
     
     // MARK: Initialization
-    init? (question: String, ans1: String, ans2: String, ans3: String, ans4: String, correct: String, points: Int32, picture: String?) {
+    init? (question: String, ans1: String, ans2: String, ans3: String, ans4: String, correct: String, points: Int, picture: String?) {
         // Init fails if no question provided
         guard !question.isEmpty else {
             return nil

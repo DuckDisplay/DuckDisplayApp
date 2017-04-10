@@ -12,8 +12,20 @@ import SQLite
 class TriviaScreen1: UIViewController {
     //timer to determine when the game is over
     var gameTimer: Timer!
-    var score = 0;
+    var score: Int32 = 0
     var chances = 3 //game will end when no more chances are available to prevent guess spamming
+    var randNum: Int = Int(arc4random_uniform(44))//check this bound against rows in table
+    
+    //variables for current trivia question handling
+    var thisTriviaQuestion: TriviaQuestion?
+    var thisQuestion: String = ""
+    var thisAns1: String = ""
+    var thisAns2: String = ""
+    var thisAns3: String = ""
+    var thisAns4: String = ""
+    var thisCorrect: String = ""
+    var thisPoints: Int = 0
+    var thisPicture: String = ""
     
     override func viewDidAppear(_ animated: Bool) {
         //load question and start timer
@@ -74,8 +86,8 @@ class TriviaScreen1: UIViewController {
     @IBAction func answerAChosen(_ sender: Any) {
         if (thisAns1 != thisCorrect) {
             buttonA.backgroundColor = UIColor.red
-            chances--
-            if (chances = 0) {
+            chances -= 1
+            if (chances == 0) {
                 gameIsOver()
             }
         }
@@ -92,8 +104,8 @@ class TriviaScreen1: UIViewController {
     @IBAction func answerBChosen(_ sender: Any) {
         if (thisAns2 != thisCorrect) {
             buttonB.backgroundColor = UIColor.red
-            chances--
-            if (chances = 0) {
+            chances -= 1
+            if (chances == 0) {
                 gameIsOver()
             }
         }
@@ -110,8 +122,8 @@ class TriviaScreen1: UIViewController {
     @IBAction func answerCChosen(_ sender: Any) {
         if (thisAns3 != thisCorrect) {
             buttonC.backgroundColor = UIColor.red
-            chances--
-            if (chances = 0) {
+            chances -= 1
+            if (chances == 0) {
                 gameIsOver()
             }
         }
@@ -128,8 +140,8 @@ class TriviaScreen1: UIViewController {
     @IBAction func answerDChosen(_ sender: Any) {
         if (thisAns4 != thisCorrect) {
             buttonD.backgroundColor = UIColor.red
-            chances--
-            if (chances = 0) {
+            chances -= 1
+            if (chances == 0) {
                 gameIsOver()
             }
         }
@@ -143,18 +155,31 @@ class TriviaScreen1: UIViewController {
     
     //gets the next question info from the database
     func getNextQuestion() {
-        //need to figure out how to get from random row still
         
-        let thisQuestion = [DuckDatabase.TriviaDataTable.question]
-        let thisAns1 = [DuckDatabase.TriviaDataTable.ans1]
-        let thisAns2 = [DuckDatabase.TriviaDataTable.ans2]
-        let thisAns3 = [DuckDatabase.TriviaDataTable.ans3]
-        let thisAns4 = [DuckDatabase.TriviaDataTable.ans4]
-        let thisCorrect = [DuckDatabase.TriviaDataTable.correct]
-        let thisPoints = [DuckDatabase.TriviaDataTable.points]
-        let thisPicture = [DuckDatabase.TriviaDataTable.picture]
+        randNum = Int(arc4random_uniform(44))//re-randomize to get a new question
         
-        let thisTriviQuestion = TriviaQuestion(question: thisQuestion, ans1: thisAns1, ans2: thisAns2, ans3: thisAns3, ans4: thisAns4, correct: thisCorrect, points: thisPoints, picture: thisPicture)
+        let trivia_query = DuckDatabase.TriviaDataTable.triviaData.filter(DuckDatabase.TriviaDataTable.id == randNum)
+        do{
+            if let questionToBePlucked = try DuckDatabase.duckDB?.pluck(trivia_query) {
+
+                thisQuestion = questionToBePlucked[DuckDatabase.TriviaDataTable.question]
+                thisAns1 = questionToBePlucked[DuckDatabase.TriviaDataTable.ans1]
+                thisAns2 = questionToBePlucked[DuckDatabase.TriviaDataTable.ans2]
+                thisAns3 = questionToBePlucked[DuckDatabase.TriviaDataTable.ans3]
+                thisAns4 = questionToBePlucked[DuckDatabase.TriviaDataTable.ans4]
+                thisCorrect = questionToBePlucked[DuckDatabase.TriviaDataTable.correct]
+                thisPoints = questionToBePlucked[DuckDatabase.TriviaDataTable.points]
+                thisPicture = questionToBePlucked[DuckDatabase.TriviaDataTable.picture]
+
+            }
+        }
+            
+        catch {
+        //stuff
+        }
+        
+        
+        thisTriviaQuestion = TriviaQuestion(question: thisQuestion, ans1: thisAns1, ans2: thisAns2, ans3: thisAns3, ans4: thisAns4, correct: thisCorrect, points: thisPoints, picture: thisPicture)!
         
         populateFields()
 
@@ -163,19 +188,19 @@ class TriviaScreen1: UIViewController {
     
     //puts the data intothe proper locations
     func populateFields() {
-        questionText.insertText(text: thisTriviQuestion.questionText) //set question text
+        questionText.insertText((thisTriviaQuestion?.question)!) //set question text
         
-        if (thisTriviQuestion.picture != nil) { //set image, if there is none hide imageview
-            questionImage = thisTriviQuestion.picture
+        if (thisTriviaQuestion?.picture != nil) { //set image, if there is none hide imageview
+            //questionImage = thisTriviaQuestion.picture
         }
         else {
-            questionImage.hidden = true
+            questionImage.isHidden = true
         }
         
-        buttonA.setTitle(title: thisAns1, for: .Normal)
-        buttonB.setTitle(title: thisAns2, for: .Normal)
-        buttonC.setTitle(title: thisAns3, for: .Normal)
-        buttonD.setTitle(title: thisAns4, for: .Normal)
+        buttonA.setTitle(thisAns1, for: .normal)
+        buttonB.setTitle(thisAns2, for: .normal)
+        buttonC.setTitle(thisAns3, for: .normal)
+        buttonD.setTitle(thisAns4, for: .normal)
         
     }
 
