@@ -18,7 +18,7 @@ class ContentViewController: UIViewController {
     var pageIndex: Int!
     var titleText: String!
     var descriptionText: String!
-    var changeViews: UIButton!
+    var segueID: String!
     
     
     
@@ -26,7 +26,6 @@ class ContentViewController: UIViewController {
         super.viewDidLoad()
         self.titleLabel.text = self.titleText
         self.descriptionLabel.text = self.descriptionText
-        self.changeView = self.changeViews
     
         // Do any additional setup after loading the view.
     }
@@ -46,6 +45,11 @@ class ContentViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-         
+    
+    // MARK: Actions
+    
+    @IBAction func segueToSelectedScreen(_ sender: Any) {
+        performSegue(withIdentifier: segueID, sender: sender)
+    }
 
 }

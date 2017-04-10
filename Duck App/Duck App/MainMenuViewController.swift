@@ -15,6 +15,7 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
     var newViewController : UIViewController!
     var pageTitles : NSArray!
     var pageDesciption: NSArray!
+    var segueIdentifiers: NSArray!
     var changeView: UIButton!
     
     override func viewDidLoad() {
@@ -22,15 +23,16 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
 
         self.pageTitles = NSArray (objects: "Duck Species", "Trivia Game", "Conservation")
         self.pageDesciption = NSArray(objects:"Learn about 15 different species of ducks.", "Test you knowledge on ducks and their habibtat!", "Our nations wetlands face their greatest risk in 35 years.")
+        self.segueIdentifiers = NSArray(objects: "DuckSpecies", "TriviaGame", "Conservation")
         
         self.pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "PageViewController") as? UIPageViewController
         
         self.pageViewController.dataSource = self
         
-        var startVC = self.viewControllerAtIndex(index: 0) as ContentViewController
-        var viewControllers = NSArray(object: startVC)
+        let startVC = self.viewControllerAtIndex(index: 0) as ContentViewController
+        let viewControllers = NSArray(object: startVC)
         
-        self.pageViewController.setViewControllers(viewControllers as! [UIViewController], direction: .forward, animated: true, completion: nil)
+        self.pageViewController.setViewControllers(viewControllers as? [UIViewController], direction: .forward, animated: true, completion: nil)
         
         self.pageViewController.view.frame = CGRect(x:0, y:30, width:self.view.frame.width, height:self.view.frame.size.height - 30)
         
@@ -57,7 +59,7 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
         
         vc.titleText = self.pageTitles[index] as! String
         vc.descriptionText = self.pageDesciption[index] as! String
-        vc.changeViews = self.changeView
+        vc.segueID = self.segueIdentifiers[index] as! String
         vc.pageIndex = index
         
         return vc
