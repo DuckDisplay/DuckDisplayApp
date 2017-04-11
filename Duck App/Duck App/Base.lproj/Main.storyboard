@@ -113,9 +113,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="To Main Menu"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="g9B-TJ-Mpf"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -153,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQq-6W-xR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1876.7578124999998" y="-546.09375"/>
+            <point key="canvasLocation" x="2600.9765625" y="-546.09375"/>
         </scene>
         <!--Trivia Start Screen View Controller-->
         <scene sceneID="wNq-Wv-bHZ">
@@ -192,12 +189,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Go to Duck Species "/>
-                                <connections>
-                                    <segue destination="91r-wj-eqQ" kind="show" id="Bxl-u5-rtY"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5L-Np-RGV" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="20" y="62" width="288" height="51"/>
+                                <rect key="frame" x="20" y="106" width="288" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="HGw-81-sR3"/>
                                 </constraints>
@@ -220,104 +214,13 @@
                             <constraint firstItem="N5L-Np-RGV" firstAttribute="top" secondItem="xAz-mS-0aP" secondAttribute="bottom" constant="42" id="yzE-yB-T24"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="RkK-f3-IY4">
+                        <barButtonItem key="rightBarButtonItem" title="Main Menu" id="v5u-aC-bhc"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VK9-rr-BkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782.8125" y="-546.09375"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Duck_App" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xIB-2e-L7P"/>
-                        <viewControllerLayoutGuide type="bottom" id="XqD-FK-esD"/>
-                    </layoutGuides>
-                    <view key="view" alpha="0.90000000000000002" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Main">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mAQ-ka-gMl">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Main Menu" id="zbD-kd-KSA"/>
-                                </items>
-                            </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Message " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJK-YX-op4">
-                                <rect key="frame" x="312" y="57" width="400" height="33.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opG-mk-UUs" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="387" y="301" width="250" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Duck Calls"/>
-                                <connections>
-                                    <segue destination="d9W-sb-twv" kind="show" id="3jR-Kh-eGO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Cu-7x-tVD" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="387" y="430" width="250" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Conservation"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WoodDuck" translatesAutoresizingMaskIntoConstraints="NO" id="4c5-NQ-JQa">
-                                <rect key="frame" x="59" y="192" width="277" height="299"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mallard" translatesAutoresizingMaskIntoConstraints="NO" id="KUC-5k-FzX">
-                                <rect key="frame" x="693" y="192" width="261" height="299"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wood Duck" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Em1-ax-0Fn">
-                                <rect key="frame" x="147" y="499" width="100" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mallard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJj-lB-PWF">
-                                <rect key="frame" x="793" y="499" width="60" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PT3-NK-Ndd" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="229" y="575" width="566" height="133"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
-                                <state key="normal" title="Play Trivia Game "/>
-                                <connections>
-                                    <segue destination="wrY-xF-vtH" kind="show" id="gaw-GD-jvl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yw5-1j-Rly" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="387" y="172" width="250" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Duck Species"/>
-                                <connections>
-                                    <segue destination="91r-wj-eqQ" kind="show" id="1Tl-si-8RK"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="adI-Mk-X9L"/>
-                    <connections>
-                        <outlet property="mainMenuLImage" destination="4c5-NQ-JQa" id="x6J-2B-gXx"/>
-                        <outlet property="mainMenuRImage" destination="KUC-5k-FzX" id="JzM-Fg-eXm"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2615.625" y="185.9375"/>
+            <point key="canvasLocation" x="1507.03125" y="-546.09375"/>
         </scene>
         <!--Duck Information-->
         <scene sceneID="okx-lg-Nk9">
@@ -344,113 +247,130 @@
                                                     <constraint firstAttribute="width" constant="655" id="gH2-73-jUb"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scroll through multiple duck photos??" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ON7-Mg-OKG">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scroll through multiple duck photos??" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ON7-Mg-OKG">
                                                 <rect key="frame" x="186" y="345" width="655" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Duck Name Field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58D-r2-82I">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duck Name Field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58D-r2-82I">
                                                 <rect key="frame" x="100" y="420" width="824" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="a6J-yQ-djY"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Duck Scientific Name Field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7I-4e-gaT">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duck Scientific Name Field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7I-4e-gaT">
                                                 <rect key="frame" x="100" y="463" width="450" height="21"/>
                                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Desciption:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nM3-b1-m8J">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desciption:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nM3-b1-m8J">
                                                 <rect key="frame" x="100" y="514" width="87" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Behavior:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ko-ua-GW4">
-                                                <rect key="frame" x="105" y="704" width="87" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Behavior:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ko-ua-GW4">
+                                                <rect key="frame" x="100" y="582.5" width="824" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXh-II-WMG">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXh-II-WMG">
                                                 <rect key="frame" x="468" y="382" width="91" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Irr-Bg-h6u"/>
+                                                    <constraint firstAttribute="width" constant="91" id="pTM-BB-iYF"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Audio File"/>
                                             </button>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Insert Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DfA-Y4-yms">
-                                                <rect key="frame" x="100" y="538" width="815" height="150"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Insert Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DfA-Y4-yms">
+                                                <rect key="frame" x="100" y="537" width="824" height="35.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="824" id="idC-Wi-MhF"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Insert Behavior" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sdP-DU-whw">
-                                                <rect key="frame" x="105" y="725" width="815" height="100"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Insert Behavior" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sdP-DU-whw">
+                                                <rect key="frame" x="100" y="605.5" width="824" height="35.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="824" id="4cL-4i-Au9"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Habitat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3D-ZV-RUH">
-                                                <rect key="frame" x="104" y="980" width="74" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Habitat:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3D-ZV-RUH">
+                                                <rect key="frame" x="100" y="719.5" width="73" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Insert Food" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ny4-36-Qpd">
-                                                <rect key="frame" x="100" y="872" width="815" height="100"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Insert Food" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ny4-36-Qpd">
+                                                <rect key="frame" x="100" y="674" width="824" height="35.5"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="824" id="sIa-sd-ZE2"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Food:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qog-kH-ya6">
-                                                <rect key="frame" x="105" y="850" width="73" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qog-kH-ya6">
+                                                <rect key="frame" x="100" y="651" width="73" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="73" id="7h0-rV-U5m"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Insert Nesting" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8tr-Lq-wZ8">
-                                                <rect key="frame" x="99" y="1164" width="816" height="100"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Insert Nesting" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8tr-Lq-wZ8">
+                                                <rect key="frame" x="100" y="811" width="824" height="35.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Nesting:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XT-6x-u2L">
-                                                <rect key="frame" x="104" y="1135" width="90" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nesting:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XT-6x-u2L">
+                                                <rect key="frame" x="100" y="788" width="825" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Insert Conservation" translatesAutoresizingMaskIntoConstraints="NO" id="kR2-NA-vHs">
-                                                <rect key="frame" x="100" y="1327" width="815" height="100"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Insert Conservation" translatesAutoresizingMaskIntoConstraints="NO" id="kR2-NA-vHs">
+                                                <rect key="frame" x="100" y="879.5" width="824" height="35.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Conservation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nan-wo-Hiz">
-                                                <rect key="frame" x="104" y="1298" width="134" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conservation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nan-wo-Hiz">
+                                                <rect key="frame" x="100" y="856.5" width="134" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="134" id="c7c-cg-FIh"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Insert Fun Facts" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="beH-zS-M23">
-                                                <rect key="frame" x="104" y="1528" width="815" height="100"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Insert Fun Facts" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="beH-zS-M23">
+                                                <rect key="frame" x="100" y="953" width="823" height="35.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Fun Facts:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqx-5C-y6r">
-                                                <rect key="frame" x="105" y="1480" width="115" height="26"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fun Facts:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqx-5C-y6r">
+                                                <rect key="frame" x="100" y="925" width="115" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="CNQ-JX-1lC"/>
+                                                    <constraint firstAttribute="width" constant="115" id="OwQ-Xm-vtC"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" text="Insert Habitat" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qkx-FN-6xL">
-                                                <rect key="frame" x="100" y="1015" width="815" height="100"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Insert Habitat" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qkx-FN-6xL">
+                                                <rect key="frame" x="100" y="742.5" width="824" height="35.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="824" id="P9r-pR-GPk"/>
                                                 </constraints>
@@ -460,6 +380,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="58D-r2-82I" firstAttribute="centerX" secondItem="beH-zS-M23" secondAttribute="centerX" id="0YI-Sh-MN0"/>
                                             <constraint firstItem="P7I-4e-gaT" firstAttribute="top" secondItem="58D-r2-82I" secondAttribute="bottom" constant="8" id="1XG-oN-ItC"/>
                                             <constraint firstItem="D3D-ZV-RUH" firstAttribute="leading" secondItem="VNU-XR-sDX" secondAttribute="leading" constant="100" id="4TJ-RU-KqW"/>
                                             <constraint firstItem="8tr-Lq-wZ8" firstAttribute="top" secondItem="4XT-6x-u2L" secondAttribute="bottom" constant="2" id="4op-1E-wI9"/>
@@ -468,10 +389,13 @@
                                             <constraint firstItem="Qog-kH-ya6" firstAttribute="top" secondItem="sdP-DU-whw" secondAttribute="bottom" constant="10" id="9T1-M0-Jyh"/>
                                             <constraint firstAttribute="trailing" secondItem="1Ko-ua-GW4" secondAttribute="trailing" constant="100" id="A2S-Rf-9Ji"/>
                                             <constraint firstItem="sdP-DU-whw" firstAttribute="top" secondItem="1Ko-ua-GW4" secondAttribute="bottom" constant="2" id="AKI-lt-LGp"/>
+                                            <constraint firstItem="qkx-FN-6xL" firstAttribute="trailing" secondItem="8tr-Lq-wZ8" secondAttribute="trailing" id="Ajg-My-65E"/>
                                             <constraint firstItem="Tqx-5C-y6r" firstAttribute="leading" secondItem="VNU-XR-sDX" secondAttribute="leading" constant="100" id="BCP-fb-oeI"/>
                                             <constraint firstItem="nM3-b1-m8J" firstAttribute="leading" secondItem="VNU-XR-sDX" secondAttribute="leading" constant="100" id="CEt-Ka-TcK"/>
                                             <constraint firstItem="kR2-NA-vHs" firstAttribute="top" secondItem="Nan-wo-Hiz" secondAttribute="bottom" constant="2" id="CPC-Sb-Fvh"/>
                                             <constraint firstItem="4XT-6x-u2L" firstAttribute="leading" secondItem="VNU-XR-sDX" secondAttribute="leading" constant="100" id="DkX-bX-ben"/>
+                                            <constraint firstItem="NXh-II-WMG" firstAttribute="top" secondItem="ON7-Mg-OKG" secondAttribute="bottom" constant="16" id="GQt-mn-Avg"/>
+                                            <constraint firstItem="ON7-Mg-OKG" firstAttribute="centerX" secondItem="NXh-II-WMG" secondAttribute="centerX" id="KJV-nD-nvU"/>
                                             <constraint firstItem="Tqx-5C-y6r" firstAttribute="top" secondItem="kR2-NA-vHs" secondAttribute="bottom" constant="10" id="KkK-2e-9M1"/>
                                             <constraint firstAttribute="trailing" secondItem="lQ4-Lr-4OA" secondAttribute="trailing" constant="183" id="MSB-Bc-Wrm"/>
                                             <constraint firstItem="qkx-FN-6xL" firstAttribute="top" secondItem="D3D-ZV-RUH" secondAttribute="bottom" constant="2" id="QGy-fs-CpC"/>
@@ -481,24 +405,31 @@
                                             <constraint firstItem="DfA-Y4-yms" firstAttribute="leading" secondItem="VNU-XR-sDX" secondAttribute="leading" constant="100" id="VJF-AZ-1y9"/>
                                             <constraint firstAttribute="trailing" secondItem="nM3-b1-m8J" secondAttribute="trailing" constant="837" id="VPu-Gv-Sq8"/>
                                             <constraint firstItem="Qog-kH-ya6" firstAttribute="leading" secondItem="VNU-XR-sDX" secondAttribute="leading" constant="100" id="Vbt-Cd-J59"/>
+                                            <constraint firstItem="ON7-Mg-OKG" firstAttribute="leading" secondItem="lQ4-Lr-4OA" secondAttribute="leading" id="Y8w-2P-J3n"/>
                                             <constraint firstItem="sdP-DU-whw" firstAttribute="leading" secondItem="VNU-XR-sDX" secondAttribute="leading" constant="100" id="YbN-dS-y7c"/>
                                             <constraint firstItem="lQ4-Lr-4OA" firstAttribute="leading" secondItem="VNU-XR-sDX" secondAttribute="leading" constant="186" id="bh0-RV-kXl"/>
                                             <constraint firstItem="qkx-FN-6xL" firstAttribute="leading" secondItem="VNU-XR-sDX" secondAttribute="leading" constant="100" id="btl-1I-EPg"/>
                                             <constraint firstItem="Nan-wo-Hiz" firstAttribute="top" secondItem="8tr-Lq-wZ8" secondAttribute="bottom" constant="10" id="cCZ-M2-XZ4"/>
                                             <constraint firstItem="58D-r2-82I" firstAttribute="top" secondItem="NXh-II-WMG" secondAttribute="bottom" constant="8" id="dhg-a7-vFP"/>
+                                            <constraint firstItem="ON7-Mg-OKG" firstAttribute="trailing" secondItem="lQ4-Lr-4OA" secondAttribute="trailing" id="eWU-eI-YhE"/>
                                             <constraint firstItem="D3D-ZV-RUH" firstAttribute="top" secondItem="Ny4-36-Qpd" secondAttribute="bottom" constant="10" id="ezK-J0-TS2"/>
-                                            <constraint firstItem="beH-zS-M23" firstAttribute="top" secondItem="Tqx-5C-y6r" secondAttribute="bottom" constant="10" id="gMi-kH-jwJ"/>
+                                            <constraint firstItem="Ny4-36-Qpd" firstAttribute="leading" secondItem="qkx-FN-6xL" secondAttribute="leading" id="g20-tD-h8q"/>
+                                            <constraint firstItem="beH-zS-M23" firstAttribute="top" secondItem="Tqx-5C-y6r" secondAttribute="bottom" constant="2" id="gMi-kH-jwJ"/>
                                             <constraint firstAttribute="trailing" secondItem="58D-r2-82I" secondAttribute="trailing" constant="100" id="hHN-VZ-dQG"/>
                                             <constraint firstItem="4XT-6x-u2L" firstAttribute="top" secondItem="qkx-FN-6xL" secondAttribute="bottom" constant="10" id="hVu-y8-PyR"/>
                                             <constraint firstItem="nM3-b1-m8J" firstAttribute="top" secondItem="P7I-4e-gaT" secondAttribute="bottom" constant="30" id="i9M-Zw-n0z"/>
                                             <constraint firstAttribute="trailing" secondItem="P7I-4e-gaT" secondAttribute="trailing" constant="474" id="iTF-X7-ZaH"/>
+                                            <constraint firstItem="1Ko-ua-GW4" firstAttribute="centerX" secondItem="4XT-6x-u2L" secondAttribute="centerX" id="isb-hF-PfV"/>
                                             <constraint firstAttribute="height" constant="1750" id="jdm-HC-L5E"/>
+                                            <constraint firstItem="NXh-II-WMG" firstAttribute="top" secondItem="lQ4-Lr-4OA" secondAttribute="bottom" constant="8" symbolic="YES" id="kTi-3U-l3D"/>
                                             <constraint firstItem="58D-r2-82I" firstAttribute="leading" secondItem="VNU-XR-sDX" secondAttribute="leading" constant="100" id="nWP-Gb-Gqy"/>
                                             <constraint firstItem="P7I-4e-gaT" firstAttribute="leading" secondItem="VNU-XR-sDX" secondAttribute="leading" constant="100" id="nah-aX-1WA"/>
                                             <constraint firstItem="lQ4-Lr-4OA" firstAttribute="top" secondItem="VNU-XR-sDX" secondAttribute="top" constant="30" id="ndc-0a-fNn"/>
                                             <constraint firstItem="DfA-Y4-yms" firstAttribute="top" secondItem="nM3-b1-m8J" secondAttribute="bottom" constant="2" id="pqo-pA-k3m"/>
                                             <constraint firstItem="1Ko-ua-GW4" firstAttribute="leading" secondItem="VNU-XR-sDX" secondAttribute="leading" constant="100" id="rAz-nA-wXM"/>
                                             <constraint firstItem="8tr-Lq-wZ8" firstAttribute="leading" secondItem="VNU-XR-sDX" secondAttribute="leading" constant="100" id="tBn-dw-M3r"/>
+                                            <constraint firstItem="8tr-Lq-wZ8" firstAttribute="trailing" secondItem="kR2-NA-vHs" secondAttribute="trailing" id="uFx-XT-opK"/>
+                                            <constraint firstItem="Qog-kH-ya6" firstAttribute="trailing" secondItem="D3D-ZV-RUH" secondAttribute="trailing" id="yRn-nR-Lwn"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -539,7 +470,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJK-DV-R7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1720.8984375" y="1495.3125"/>
+            <point key="canvasLocation" x="3169.3359375" y="1495.3125"/>
         </scene>
         <!--Duck Species Gallery-->
         <scene sceneID="Nhh-L9-Y0X">
@@ -583,11 +514,18 @@
                             <outlet property="delegate" destination="91r-wj-eqQ" id="CUV-tr-vRx"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="LKj-v2-MJ8">
+                        <barButtonItem key="rightBarButtonItem" title="Main Menu" id="Ji3-Wc-pPC">
+                            <connections>
+                                <segue destination="d9W-sb-twv" kind="show" id="IR4-A5-KcF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUK-ms-tds" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="734" y="1197"/>
+            <point key="canvasLocation" x="2182.03125" y="1196.875"/>
         </scene>
         <!--View Screen Saver-->
         <scene sceneID="fkM-H1-mzg">
@@ -633,29 +571,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xU0-6Y-61F" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="uz3-0V-qaq">
                     <connections>
-                        <segue destination="Ehl-Fd-Zx4" kind="show" id="E0B-dg-Y0Z"/>
+                        <segue destination="d9W-sb-twv" kind="show" id="ySH-GK-seA"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="948" y="186"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="yMm-E7-ras">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ehl-Fd-Zx4" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0ru-ba-CG2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4Oo-Re-37E"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oEN-sP-00L" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1891.4062499999998" y="185.9375"/>
+            <point key="canvasLocation" x="1657" y="186"/>
         </scene>
         <!--Leaderboard-->
         <scene sceneID="8Rw-ja-oAY">
@@ -712,7 +632,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KTA-Im-zfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2685" y="-547"/>
+            <point key="canvasLocation" x="3408.984375" y="-547.65625"/>
         </scene>
         <!--Leaderboard Table View Controller-->
         <scene sceneID="KyJ-jp-ZxK">
@@ -779,7 +699,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02W-af-f3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3509" y="-546"/>
+            <point key="canvasLocation" x="4232.8125" y="-546.484375"/>
         </scene>
         <!--Main Menu View Controller-->
         <scene sceneID="2Sm-oI-kLS">
@@ -795,10 +715,11 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                     </view>
+                    <navigationItem key="navigationItem" id="Wrv-k2-6fK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gC8-wr-haD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3434.765625" y="691.40625"/>
+            <point key="canvasLocation" x="2719.921875" y="185.9375"/>
         </scene>
         <!--Content View Controller-->
         <scene sceneID="f1n-Bp-n48">
@@ -843,13 +764,13 @@
                         <outlet property="changeView" destination="A6a-eF-UI0" id="nqp-H2-RUi"/>
                         <outlet property="descriptionLabel" destination="Es8-XH-D7R" id="1sZ-Fy-RpL"/>
                         <outlet property="titleLabel" destination="5Ps-Rf-8Ti" id="Kw8-sm-ork"/>
-                        <segue destination="wrY-xF-vtH" kind="show" identifier="TriviaGame" id="Vgl-vB-6aW"/>
-                        <segue destination="91r-wj-eqQ" kind="show" identifier="DuckSpecies" id="sPs-ML-9Yd"/>
+                        <segue destination="wrY-xF-vtH" kind="show" identifier="TriviaGame" id="0p6-5d-yiO"/>
+                        <segue destination="aCP-rl-oq6" kind="show" identifier="DuckSpecies" id="LSF-Wt-laQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ak9-PR-nu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3763.4765624999995" y="1444.53125"/>
+            <point key="canvasLocation" x="3549.0234374999995" y="185.9375"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="uAK-1R-Ntn">
@@ -857,96 +778,31 @@
                 <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ZaP-IM-SBJ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nXe-4W-jAx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4084" y="673"/>
+            <point key="canvasLocation" x="4812.890625" y="185.9375"/>
         </scene>
-        <!--Main Menu-->
-        <scene sceneID="txg-UN-KlS">
+        <!--Navigation Controller-->
+        <scene sceneID="tbp-lP-tn5">
             <objects>
-                <viewController title="Main Menu" id="b3o-96-7oO" customClass="ViewController" customModule="Duck_App" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="stF-mJ-Fqp"/>
-                        <viewControllerLayoutGuide type="bottom" id="5Xm-vz-Xu4"/>
-                    </layoutGuides>
-                    <view key="view" alpha="0.89999997615814209" contentMode="scaleToFill" id="Qp2-b4-ztX" userLabel="Main">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmP-Sj-X7N" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="387" y="301" width="250" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Duck Calls"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hL6-on-5gK" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="387" y="430" width="250" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Conservation"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WoodDuck" translatesAutoresizingMaskIntoConstraints="NO" id="OO0-M8-epe">
-                                <rect key="frame" x="59" y="192" width="277" height="299"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mallard" translatesAutoresizingMaskIntoConstraints="NO" id="Ied-NX-llS">
-                                <rect key="frame" x="693" y="192" width="261" height="299"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wood Duck" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4op-zB-N99">
-                                <rect key="frame" x="147" y="499" width="100" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mallard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFP-59-nbX">
-                                <rect key="frame" x="793" y="499" width="60" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rP8-kI-GKx" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="229" y="575" width="566" height="133"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
-                                <state key="normal" title="Play Trivia Game "/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzc-WL-IWb" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="387" y="172" width="250" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Duck Species"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Message " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDw-vx-eKz">
-                                <rect key="frame" x="312" y="72" width="400" height="33.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Main Menu" id="XZe-ZG-GZR"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aCP-rl-oq6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RQe-TU-4la">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <outlet property="mainMenuLImage" destination="OO0-M8-epe" id="iWt-b5-Cnl"/>
-                        <outlet property="mainMenuRImage" destination="Ied-NX-llS" id="DWI-K7-BfF"/>
+                        <segue destination="91r-wj-eqQ" kind="relationship" relationship="rootViewController" id="2gS-GT-SBQ"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zeh-wJ-NCW" sceneMemberID="firstResponder"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pep-0g-T4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2615.625" y="185.9375"/>
+            <point key="canvasLocation" x="1457.8125" y="1196.875"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Mallard" width="220" height="176"/>
-        <image name="WoodDuck" width="301" height="200"/>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Vgl-vB-6aW"/>
-        <segue reference="sPs-ML-9Yd"/>
-        <segue reference="4Oo-Re-37E"/>
+        <segue reference="ySH-GK-seA"/>
     </inferredMetricsTieBreakers>
 </document>

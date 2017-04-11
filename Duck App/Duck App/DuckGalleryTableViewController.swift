@@ -102,7 +102,7 @@ class DuckGalleryTableViewController: UITableViewController {
             duckInfoViewController.duckInfo = getSelectedDuckInformation(duckPreview: selectedDuckPreview)
             
         } else {
-            fatalError("Unexpected segue identifier: \(segue.identifier ?? "")")
+            //fatalError("Unexpected segue identifier: \(segue.identifier ?? "")")
         }
     }
 

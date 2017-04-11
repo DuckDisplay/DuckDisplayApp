@@ -69,6 +69,8 @@ class DuckCardViewController: UIViewController {
         newFrame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
         textView[i].frame = newFrame
         i = i + 1
+    
+            
         }
     }
 

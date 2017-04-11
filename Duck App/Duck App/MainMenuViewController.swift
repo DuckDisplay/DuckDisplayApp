@@ -21,6 +21,7 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //self.navigationController!.viewControllers.removeAll()
         self.pageTitles = NSArray (objects: "Duck Species", "Trivia Game", "Conservation")
         self.pageDesciption = NSArray(objects:"Learn about 15 different species of ducks.", "Test you knowledge on ducks and their habibtat!", "Our nations wetlands face their greatest risk in 35 years.")
         self.segueIdentifiers = NSArray(objects: "DuckSpecies", "TriviaGame", "Conservation")
