@@ -49,6 +49,7 @@ class DuckCardViewController: UIViewController {
             duckCardNesting.text = duck.duckNesting
             duckCardConservation.text = duck.duckConservation
             duckCardFunFacts.text = duck.duckFunFacts
+            resize()
         }
     }
 
@@ -57,6 +58,19 @@ class DuckCardViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func resize(){
+        var i = 1
+        var textView: Array<UITextView>! = [duckCardDesc, duckCardBehavior, duckCardFood, duckCardHabitat, duckCardNesting, duckCardConservation, duckCardFunFacts]
+        while (i <= 6){
+        let fixedWidth = textView[i].frame.size.width
+        textView[i].sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
+        let newSize = textView[i].sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
+        var newFrame = textView[i].frame
+        newFrame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
+        textView[i].frame = newFrame
+        i = i + 1
+        }
+    }
 
 
 }
