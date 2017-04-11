@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class DuckCardViewController: UIViewController {
     
@@ -14,7 +15,6 @@ class DuckCardViewController: UIViewController {
     @IBOutlet weak var duckCardImageView: UIImageView!
     @IBOutlet weak var duckCardImageLabel: UILabel!
     @IBOutlet weak var duckCardAudioButton: UIButton!
-    
     @IBOutlet weak var duckCardName: UILabel!
     @IBOutlet weak var duckCardScienceName: UILabel!
     
@@ -26,13 +26,15 @@ class DuckCardViewController: UIViewController {
     @IBOutlet weak var duckCardConservation: UITextView!
     @IBOutlet weak var duckCardFunFacts: UITextView!
     
+    var duckSound: AVAudioPlayer!
+    
     // Stores the duck info object displayed on screen
     var duckInfo: DuckInfo?
     
+    // Setup views for a Duck
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Setup views for a Duck
+        
         if let duck = duckInfo {
             duckCardImageView.image = duck.duckImage
             duckCardImageLabel.text = duck.duckImageLabel
@@ -52,10 +54,28 @@ class DuckCardViewController: UIViewController {
             resize()
         }
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if duckSound != nil {
+            duckSound.stop()
+            duckSound = nil
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    @IBAction func audioButtonPressed(_ sender: Any) {
+        if duckSound != nil {
+            duckSound.stop()
+            duckSound = nil
+        }
+        else if let duck = duckInfo {
+            duckSound = playSound(nameOfAudioFileInAssetCatalog: duck.duckAudioPath)
+        }
     }
     
     func resize(){
@@ -73,6 +93,18 @@ class DuckCardViewController: UIViewController {
             
         }
     }
-
+    
+    func playSound(nameOfAudioFileInAssetCatalog: String) -> AVAudioPlayer? {
+        var audioPlayer: AVAudioPlayer?
+        if let sound = NSDataAsset(name: nameOfAudioFileInAssetCatalog) {
+            do {
+                try audioPlayer = AVAudioPlayer(data: sound.data, fileTypeHint: AVFileTypeMPEGLayer3)
+                audioPlayer!.play()
+            } catch {
+                print("error initializing AVAudioPlayer")
+            }
+        }
+        return audioPlayer
+    }
 
 }
