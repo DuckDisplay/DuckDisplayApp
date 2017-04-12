@@ -13,12 +13,12 @@
         <!--Trivia Screen1-->
         <scene sceneID="5cI-ZC-yq7">
             <objects>
-                <viewController id="yMy-ej-eeJ" customClass="Trivia_Screen_1" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yMy-ej-eeJ" customClass="TriviaScreen1" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nxk-aM-qZu"/>
                         <viewControllerLayoutGuide type="bottom" id="W1y-zg-ZXk"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Nn1-f0-5By" customClass="TriviaScreen1">
+                    <view key="view" contentMode="scaleToFill" id="Nn1-f0-5By">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -39,7 +39,7 @@
                                     <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="answerAChosen:" destination="Nn1-f0-5By" eventType="touchUpInside" id="Niv-hw-cgc"/>
+                                    <action selector="answerAChosen:" destination="yMy-ej-eeJ" eventType="touchUpInside" id="ezg-ek-IQm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khh-2v-uSz" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
@@ -67,7 +67,7 @@
                                     <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="answerBChosen:" destination="Nn1-f0-5By" eventType="touchUpInside" id="UcU-jh-HfD"/>
+                                    <action selector="answerBChosen:" destination="yMy-ej-eeJ" eventType="touchUpInside" id="bj3-eM-6sr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ6-WA-4G3" userLabel="Insert Answer D" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
@@ -80,10 +80,10 @@
                                     <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="answerDChosen:" destination="Nn1-f0-5By" eventType="touchUpInside" id="RD0-B8-wj5"/>
+                                    <action selector="answerDChosen:" destination="yMy-ej-eeJ" eventType="touchUpInside" id="wsx-qF-yao"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Insert question Here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WOV-kb-PxR">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WOV-kb-PxR">
                                 <rect key="frame" x="262" y="172" width="590" height="49"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -103,7 +103,7 @@
                                     <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="answerCChosen:" destination="Nn1-f0-5By" eventType="touchUpInside" id="xHE-nX-lUF"/>
+                                    <action selector="answerCChosen:" destination="yMy-ej-eeJ" eventType="touchUpInside" id="4nt-Kn-Uyw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYF-eL-R6w" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
@@ -145,15 +145,15 @@
                             <constraint firstItem="rbV-a7-EZe" firstAttribute="trailing" secondItem="LVQ-hI-RzK" secondAttribute="trailing" id="mFr-rY-3To"/>
                             <constraint firstItem="QN7-8l-7TB" firstAttribute="leading" secondItem="rbV-a7-EZe" secondAttribute="leading" id="v0b-Ra-CHT"/>
                         </constraints>
-                        <connections>
-                            <outlet property="buttonA" destination="QN7-8l-7TB" id="dyd-N9-fDf"/>
-                            <outlet property="buttonB" destination="rbV-a7-EZe" id="FXj-B1-LFV"/>
-                            <outlet property="buttonC" destination="LVQ-hI-RzK" id="9ax-Tr-0Cz"/>
-                            <outlet property="buttonD" destination="aQ6-WA-4G3" id="FgG-FL-Gi6"/>
-                            <outlet property="questionImage" destination="2zf-4B-HdT" id="I1n-Aj-8ot"/>
-                            <outlet property="questionText" destination="WOV-kb-PxR" id="Rs0-gy-UU0"/>
-                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="buttonA" destination="QN7-8l-7TB" id="eKo-Ik-IdT"/>
+                        <outlet property="buttonB" destination="rbV-a7-EZe" id="23U-Lj-8iG"/>
+                        <outlet property="buttonC" destination="LVQ-hI-RzK" id="Lwb-H6-ZTf"/>
+                        <outlet property="buttonD" destination="aQ6-WA-4G3" id="6It-a8-3fQ"/>
+                        <outlet property="questionImage" destination="2zf-4B-HdT" id="HsA-Mk-FeR"/>
+                        <outlet property="questionText" destination="WOV-kb-PxR" id="a6o-4H-MSw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQq-6W-xR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -521,7 +521,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jba-Cc-Uvc" id="ZfI-rE-VAi">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="RgO-mE-mBv">
@@ -554,7 +554,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUK-ms-tds" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-92" y="993"/>
+            <point key="canvasLocation" x="734" y="1197"/>
         </scene>
         <!--View Duck Card-->
         <scene sceneID="CDh-xL-AZl">
@@ -767,7 +767,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HWx-s9-hP7" id="IRY-8V-dhj">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="89.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRi-xq-n5Q">
@@ -838,7 +838,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gC8-wr-haD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3434.765625" y="691.40625"/>
+            <point key="canvasLocation" x="3431" y="636"/>
         </scene>
         <!--Content View Controller-->
         <scene sceneID="f1n-Bp-n48">
@@ -980,13 +980,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="DCIcon" width="50" height="48"/>
         <image name="Mallard" width="220" height="176"/>
         <image name="WoodDuck" width="301" height="200"/>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Bxl-u5-rtY"/>
         <segue reference="g9B-TJ-Mpf"/>
-        <segue reference="rND-Yq-01m"/>
+        <segue reference="Vgl-vB-6aW"/>
+        <segue reference="Bxl-u5-rtY"/>
     </inferredMetricsTieBreakers>
 </document>

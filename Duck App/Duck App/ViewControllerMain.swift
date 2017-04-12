@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var mainMenuLImage: UIImageView! //left image view
     @IBOutlet weak var mainMenuRImage: UIImageView! //right image view
-    var timer: Timer!
+    var timer: Timer?
     
     override func viewDidLoad() {
         
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        timer = Timer.scheduledTimer(timeInterval: 120, target: self, selector: #selector(showScreenSaver), userInfo: nil, repeats: true)
+       // timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(showScreenSaver), userInfo: nil, repeats: false)
         
     }
     
@@ -61,16 +61,16 @@ class ViewController: UIViewController {
     
     //Function that detects touches and resets timer when detected
     override func touchesBegan(_ touches: Set<UITouch>?, with event: UIEvent?) {
-        if touches != nil {
+        if (touches != nil) {
             //reset timer
-            timer.invalidate()
-            timer = Timer.scheduledTimer(timeInterval: 120, target: self, selector: #selector(showScreenSaver), userInfo: nil, repeats: true)
+            timer?.invalidate()
+            timer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(showScreenSaver), userInfo: nil, repeats: false)
         }
     }
     
     //Presents screen saver ViewController when timer runs out
     func showScreenSaver() {
-        timer.invalidate()
+        timer?.invalidate()
         let vc = self.storyboard!.instantiateViewController(withIdentifier: "ScreenSaverView") as! ViewController
         
         self.present(vc, animated: true, completion: nil)
