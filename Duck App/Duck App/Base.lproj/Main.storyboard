@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -87,15 +87,6 @@
                                     <action selector="answerCChosen:" destination="yMy-ej-eeJ" eventType="touchUpInside" id="4nt-Kn-Uyw"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Insert Question" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xJx-41-LlY">
-                                <rect key="frame" x="270" y="172" width="734" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="D9X-Gy-KGZ"/>
-                                </constraints>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="00:00" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SbT-S8-dTw">
                                 <rect key="frame" x="920" y="702" width="84" height="46"/>
                                 <constraints>
@@ -105,6 +96,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Insert Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dcq-o7-2CG">
+                                <rect key="frame" x="270" y="134" width="628" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="AjS-LH-3Vo"/>
+                                    <constraint firstAttribute="width" constant="628" id="d5v-L1-zeK"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lives: 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j30-g1-b9f">
+                                <rect key="frame" x="876" y="134" width="107" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
@@ -112,15 +120,13 @@
                             <constraint firstItem="QN7-8l-7TB" firstAttribute="leading" secondItem="2zf-4B-HdT" secondAttribute="trailing" constant="8" symbolic="YES" id="1ZS-xn-ivj"/>
                             <constraint firstItem="W1y-zg-ZXk" firstAttribute="top" secondItem="2zf-4B-HdT" secondAttribute="bottom" constant="234" id="1xQ-F9-cwQ"/>
                             <constraint firstItem="LVQ-hI-RzK" firstAttribute="leading" secondItem="aQ6-WA-4G3" secondAttribute="leading" id="2af-G1-I1n"/>
+                            <constraint firstItem="Dcq-o7-2CG" firstAttribute="leading" secondItem="QN7-8l-7TB" secondAttribute="leading" id="3ZE-Y7-xxV"/>
                             <constraint firstItem="2zf-4B-HdT" firstAttribute="top" secondItem="QN7-8l-7TB" secondAttribute="top" id="4zR-T5-in5"/>
                             <constraint firstItem="0Ao-df-XgP" firstAttribute="top" secondItem="Nn1-f0-5By" secondAttribute="top" id="5jd-hm-zpf"/>
                             <constraint firstItem="LVQ-hI-RzK" firstAttribute="top" secondItem="rbV-a7-EZe" secondAttribute="bottom" constant="17" id="6uj-bj-q2I"/>
                             <constraint firstItem="LVQ-hI-RzK" firstAttribute="trailing" secondItem="aQ6-WA-4G3" secondAttribute="trailing" id="8en-i6-iJf"/>
-                            <constraint firstItem="QN7-8l-7TB" firstAttribute="top" secondItem="xJx-41-LlY" secondAttribute="bottom" constant="39" id="CIE-qL-xDc"/>
-                            <constraint firstItem="xJx-41-LlY" firstAttribute="trailing" secondItem="SbT-S8-dTw" secondAttribute="trailing" id="FhE-tM-2fI"/>
                             <constraint firstItem="rbV-a7-EZe" firstAttribute="leading" secondItem="LVQ-hI-RzK" secondAttribute="leading" id="J3S-mp-zaW"/>
                             <constraint firstItem="0Ao-df-XgP" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leading" id="NNY-T7-o0W"/>
-                            <constraint firstItem="xJx-41-LlY" firstAttribute="leading" secondItem="QN7-8l-7TB" secondAttribute="leading" id="QMS-CF-V52"/>
                             <constraint firstItem="QN7-8l-7TB" firstAttribute="trailing" secondItem="rbV-a7-EZe" secondAttribute="trailing" id="Rzd-V0-68S"/>
                             <constraint firstItem="rbV-a7-EZe" firstAttribute="top" secondItem="QN7-8l-7TB" secondAttribute="bottom" constant="9" id="Sp0-WP-xq0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0Ao-df-XgP" secondAttribute="trailing" constant="-40" id="Uk4-CC-9Jx"/>
@@ -128,13 +134,22 @@
                             <constraint firstItem="2zf-4B-HdT" firstAttribute="bottom" secondItem="aQ6-WA-4G3" secondAttribute="bottom" id="YbN-dd-zDB"/>
                             <constraint firstItem="2zf-4B-HdT" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leadingMargin" constant="2" id="cy0-TU-kdt"/>
                             <constraint firstAttribute="bottom" secondItem="SbT-S8-dTw" secondAttribute="bottom" constant="20" symbolic="YES" id="dr4-64-1DD"/>
+                            <constraint firstItem="QN7-8l-7TB" firstAttribute="top" secondItem="Dcq-o7-2CG" secondAttribute="bottom" constant="8" symbolic="YES" id="jJ9-19-b5B"/>
                             <constraint firstItem="rbV-a7-EZe" firstAttribute="trailing" secondItem="LVQ-hI-RzK" secondAttribute="trailing" id="mFr-rY-3To"/>
                             <constraint firstItem="SbT-S8-dTw" firstAttribute="trailing" secondItem="Nn1-f0-5By" secondAttribute="trailingMargin" id="umR-tC-CFr"/>
                             <constraint firstItem="QN7-8l-7TB" firstAttribute="leading" secondItem="rbV-a7-EZe" secondAttribute="leading" id="v0b-Ra-CHT"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="questionImage" destination="2zf-4B-HdT" id="Cld-yd-Z7R"/>
+                        <outlet property="buttonA" destination="QN7-8l-7TB" id="eKo-Ik-IdT"/>
+                        <outlet property="buttonB" destination="rbV-a7-EZe" id="23U-Lj-8iG"/>
+                        <outlet property="buttonC" destination="LVQ-hI-RzK" id="Lwb-H6-ZTf"/>
+                        <outlet property="buttonD" destination="aQ6-WA-4G3" id="6It-a8-3fQ"/>
+                        <outlet property="livesCounter" destination="j30-g1-b9f" id="w3Q-rm-vlE"/>
+                        <outlet property="questionImage" destination="2zf-4B-HdT" id="HsA-Mk-FeR"/>
+                        <outlet property="questionText" destination="Dcq-o7-2CG" id="Gyv-V5-5Zi"/>
+                        <outlet property="timerOutlet" destination="SbT-S8-dTw" id="7XN-or-2y0"/>
+                        <segue destination="5rc-lT-Mu8" kind="show" identifier="gameOver" id="8PB-ep-K12"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQq-6W-xR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -477,7 +492,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jba-Cc-Uvc" id="ZfI-rE-VAi">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="100"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="RgO-mE-mBv">
@@ -712,7 +727,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HWx-s9-hP7" id="IRY-8V-dhj">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="90"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRi-xq-n5Q">
@@ -865,9 +880,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="DCIcon" width="50" height="48"/>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="8PB-ep-K12"/>
         <segue reference="ySH-GK-seA"/>
     </inferredMetricsTieBreakers>
 </document>
