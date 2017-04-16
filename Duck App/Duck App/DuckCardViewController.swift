@@ -34,10 +34,10 @@ class DuckCardViewController: UIViewController {
     // Setup views for a Duck
     override func viewDidLoad() {
         super.viewDidLoad()
+        duckCardAudioButton.setImage(#imageLiteral(resourceName: "PlayIcon"), for: UIControlState.normal)
         
         if let duck = duckInfo {
             duckCardImageView.image = duck.duckImage
-            duckCardImageLabel.text = duck.duckImageLabel
             
             //duckCardAudioButton.setTitle(duck.duckAudioPath + " Audio File", for: .normal)
             
@@ -71,26 +71,21 @@ class DuckCardViewController: UIViewController {
     @IBAction func audioButtonPressed(_ sender: Any) {
         if duckSound != nil {
             duckSound.stop()
+            duckCardAudioButton.setImage(#imageLiteral(resourceName: "PlayIcon"), for: UIControlState.normal)
             duckSound = nil
         }
         else if let duck = duckInfo {
             duckSound = playSound(nameOfAudioFileInAssetCatalog: duck.duckAudioPath)
+            duckCardAudioButton.setImage(#imageLiteral(resourceName: "PauseIcon"), for: UIControlState.normal)
         }
     }
     
     func resize(){
-        var i = 1
-        var textView: Array<UITextView>! = [duckCardDesc, duckCardBehavior, duckCardFood, duckCardHabitat, duckCardNesting, duckCardConservation, duckCardFunFacts]
-        while (i <= 6){
-        let fixedWidth = textView[i].frame.size.width
-        textView[i].sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
-        let newSize = textView[i].sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
-        var newFrame = textView[i].frame
-        newFrame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
-        textView[i].frame = newFrame
-        i = i + 1
-    
-            
+        let textView: Array<UITextView>! = [duckCardDesc, duckCardBehavior, duckCardFood, duckCardHabitat, duckCardNesting, duckCardConservation, duckCardFunFacts]
+        for view in textView {
+            let fixedWidth = view.frame.size.width
+            let newSize = view.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
+            view.frame.size = CGSize(width: fixedWidth, height: newSize.height)
         }
     }
     
