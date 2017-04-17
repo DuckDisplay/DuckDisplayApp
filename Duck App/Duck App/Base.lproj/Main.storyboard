@@ -464,7 +464,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJK-DV-R7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3169.3359375" y="1495.3125"/>
+            <point key="canvasLocation" x="3082" y="1197"/>
         </scene>
         <!--Duck Species Gallery-->
         <scene sceneID="Nhh-L9-Y0X">
@@ -541,18 +541,18 @@
                                     <navigationItem title="Title" id="wAF-Qt-6d8"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duck Commander Duck Exhibit " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8G-3g-4JI">
-                                <rect key="frame" x="232" y="278" width="560" height="104"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duck Commander Duck Exhibit " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8G-3g-4JI">
+                                <rect key="frame" x="141" y="278" width="742" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="48"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap Anywhere to Continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GN-i4-nNq">
-                                <rect key="frame" x="366" y="390" width="293" height="21"/>
+                                <rect key="frame" x="366" y="390" width="293" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -562,6 +562,10 @@
                             <outletCollection property="gestureRecognizers" destination="uz3-0V-qaq" appends="YES" id="0RK-kN-n3J"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="ssAction" destination="6GN-i4-nNq" id="hcA-DT-WHK"/>
+                        <outlet property="ssTitle" destination="F8G-3g-4JI" id="n9e-zr-Ico"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xU0-6Y-61F" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="uz3-0V-qaq">
@@ -570,7 +574,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1657" y="186"/>
+            <point key="canvasLocation" x="1656.4453125" y="185.9375"/>
         </scene>
         <!--Leaderboard-->
         <scene sceneID="8Rw-ja-oAY">
@@ -884,9 +888,9 @@
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kJa-lM-lrz"/>
         <segue reference="8PB-ep-K12"/>
+        <segue reference="kJa-lM-lrz"/>
         <segue reference="qW8-xb-N1N"/>
-        <segue reference="IR4-A5-KcF"/>
+        <segue reference="ySH-GK-seA"/>
     </inferredMetricsTieBreakers>
 </document>

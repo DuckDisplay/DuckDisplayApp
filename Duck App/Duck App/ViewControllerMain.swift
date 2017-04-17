@@ -9,13 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var mainMenuLImage: UIImageView! //left image view
-    @IBOutlet weak var mainMenuRImage: UIImageView! //right image view
+    //@IBOutlet weak var mainMenuLImage: UIImageView! //left image view
+   // @IBOutlet weak var mainMenuRImage: UIImageView! //right image view
     var timer: Timer?
     
     override func viewDidLoad() {
         
-        setBackground()
+       // setBackground()
         
     }
     
@@ -38,8 +38,8 @@ class ViewController: UIViewController {
         UIGraphicsEndImageContext()
         
         self.view.backgroundColor = UIColor(patternImage: image)
-        mainMenuLImage.layer.borderWidth = 5
-        mainMenuRImage.layer.borderWidth = 5
+       // mainMenuLImage.layer.borderWidth = 5
+        //mainMenuRImage.layer.borderWidth = 5
         
         addBlurEffect()
         
