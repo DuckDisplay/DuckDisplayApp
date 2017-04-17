@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2D326DF31E92E7D500992FFA /* DuckGalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D326DF21E92E7D500992FFA /* DuckGalleryTableViewController.swift */; };
 		2D326DF51E92E88C00992FFA /* DuckPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D326DF41E92E88C00992FFA /* DuckPreview.swift */; };
+		2D5FB00B1EA554730092E706 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5FAFFE1EA5543D0092E706 /* SQLite.framework */; };
+		2D5FB00C1EA554850092E706 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5FAFFE1EA5543D0092E706 /* SQLite.framework */; };
+		2D5FB00D1EA554850092E706 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5FAFFE1EA5543D0092E706 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D720AA21E8DCBE900B797A4 /* DuckDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D720AA11E8DCBE900B797A4 /* DuckDatabase.swift */; };
 		2D720AB41E8DDEAC00B797A4 /* duck.db in Resources */ = {isa = PBXBuildFile; fileRef = 2D720AB31E8DDEAC00B797A4 /* duck.db */; };
 		2D720AB61E8DDF0900B797A4 /* duck.db in Resources */ = {isa = PBXBuildFile; fileRef = 2D720AB31E8DDEAC00B797A4 /* duck.db */; };
@@ -84,6 +87,13 @@
 			remoteGlobalIDString = A121AC451CA35C79005A31D1;
 			remoteInfo = "SQLite watchOS";
 		};
+		2D5FB00E1EA554850092E706 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 345CFB811EA023310073DD09 /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
 		B88B2F4F1E47B64100384A02 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B88B2F321E47B64100384A02 /* Project object */;
@@ -100,6 +110,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2D5FB00D1EA554850092E706 /* SQLite.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +154,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D5FB00C1EA554850092E706 /* SQLite.framework in Frameworks */,
+				2D5FB00B1EA554730092E706 /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +321,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2D5FB00F1EA554850092E706 /* PBXTargetDependency */,
 			);
 			name = "Duck App";
 			productName = "Duck App";
@@ -490,6 +504,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2D5FB00F1EA554850092E706 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = 2D5FB00E1EA554850092E706 /* PBXContainerItemProxy */;
+		};
 		B88B2F501E47B64100384A02 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B88B2F391E47B64100384A02 /* Duck App */;
