@@ -16,6 +16,8 @@
 		2D720AB41E8DDEAC00B797A4 /* duck.db in Resources */ = {isa = PBXBuildFile; fileRef = 2D720AB31E8DDEAC00B797A4 /* duck.db */; };
 		2D720AB61E8DDF0900B797A4 /* duck.db in Resources */ = {isa = PBXBuildFile; fileRef = 2D720AB31E8DDEAC00B797A4 /* duck.db */; };
 		2D7E0C041E973A20006C53C0 /* DuckInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E0C031E973A20006C53C0 /* DuckInfo.swift */; };
+		2DC655101EA558C700834ED2 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC6550F1EA558C700834ED2 /* CreditsViewController.swift */; };
+		2DC655181EA55DDE00834ED2 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC655171EA55DDE00834ED2 /* WelcomeScreenViewController.swift */; };
 		2DD514881E972A2B00843DDA /* DuckCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD514871E972A2B00843DDA /* DuckCardViewController.swift */; };
 		344E17861E9C36D3007E10EB /* TriviaQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344E17851E9C36D3007E10EB /* TriviaQuestion.swift */; };
 		34DDCB531E9EBE62002507D9 /* TriviaScreen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DDCB521E9EBE62002507D9 /* TriviaScreen1.swift */; };
@@ -123,6 +125,8 @@
 		2D720AA11E8DCBE900B797A4 /* DuckDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DuckDatabase.swift; path = DatabaseBackend/DuckDatabase.swift; sourceTree = "<group>"; };
 		2D720AB31E8DDEAC00B797A4 /* duck.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = duck.db; path = "Duck App/Assets.xcassets/Databases/duck.db"; sourceTree = "<group>"; };
 		2D7E0C031E973A20006C53C0 /* DuckInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckInfo.swift; sourceTree = "<group>"; };
+		2DC6550F1EA558C700834ED2 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
+		2DC655171EA55DDE00834ED2 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
 		2DD514871E972A2B00843DDA /* DuckCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckCardViewController.swift; sourceTree = "<group>"; };
 		344E17851E9C36D3007E10EB /* TriviaQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaQuestion.swift; sourceTree = "<group>"; };
 		345CFB811EA023310073DD09 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = ../SQLite.swift/SQLite.xcodeproj; sourceTree = "<group>"; };
@@ -233,6 +237,8 @@
 			children = (
 				B840E7791E992F3A00E820D0 /* MainMenuViewController.swift */,
 				B840E7771E992EEC00E820D0 /* ContentViewController.swift */,
+				2DC655171EA55DDE00834ED2 /* WelcomeScreenViewController.swift */,
+				2DC6550F1EA558C700834ED2 /* CreditsViewController.swift */,
 			);
 			name = "Main Menu";
 			sourceTree = "<group>";
@@ -476,6 +482,7 @@
 				B840E75F1E96E0A700E820D0 /* Leaderboard.swift in Sources */,
 				B840E7781E992EEC00E820D0 /* ContentViewController.swift in Sources */,
 				B88B2F401E47B64100384A02 /* ViewControllerMain.swift in Sources */,
+				2DC655181EA55DDE00834ED2 /* WelcomeScreenViewController.swift in Sources */,
 				2D326DF51E92E88C00992FFA /* DuckPreview.swift in Sources */,
 				B812D7F51E5D3DF2002152D7 /* ViewControllerSS.swift in Sources */,
 				B840E7621E96E0A700E820D0 /* LeaderboardTableViewController.swift in Sources */,
@@ -490,6 +497,7 @@
 				B2DDBE561E92C2E200C7B0EF /* TriviaStartScreenViewController.swift in Sources */,
 				2DD514881E972A2B00843DDA /* DuckCardViewController.swift in Sources */,
 				B840E7611E96E0A700E820D0 /* LeaderboardTableViewCell.swift in Sources */,
+				2DC655101EA558C700834ED2 /* CreditsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
