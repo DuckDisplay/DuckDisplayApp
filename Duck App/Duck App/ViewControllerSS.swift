@@ -11,23 +11,27 @@ import UIKit
 
 class ViewScreenSaver : ViewController {
     
-    @IBOutlet weak var ssTitle: UILabel!
+    
     @IBOutlet weak var ssAction: UILabel!
     
 //Assign Variables Below
     var screenTimer: Timer!
     var blinkTimer: Timer!
     var ducks = ["AmericanBlackDuck","AmericanWigeon","BlueWingedTeal","Canvasback","cinnamonteal","Mallard",
-                 "Gadwall","GreenWingedTeal","LesserScaup","NorthernPintail","NorthernShoveler","RedHead","RingNeck", "WoodDuck"]
+                 "Gadwall","GreenWingTeal","LesserScaup","NorthernPintail","NorthernShoveler","RedHead","RingNeck", "WoodDuck"]
     var ss = 0
     var blinkingStatus = 0
     var backgroundImage = UIImageView(frame: UIScreen.main.bounds)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        blinkTimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(blinkingLabel), userInfo: nil, repeats: true)
-        screenTimer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(transitionBackground), userInfo: nil, repeats: true)
+        //blinkTimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(blinkingLabel), userInfo: nil, repeats: true)
+        screenTimer = Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(transitionBackground), userInfo: nil, repeats: true)
         background()
+        
+        self.ssAction.layer.borderWidth = 2
+        self.ssAction.layer.cornerRadius = 6
+        self.ssAction.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
         
         
     }
@@ -39,7 +43,14 @@ class ViewScreenSaver : ViewController {
     }
     
     func transitionBackground(){
-        let ss2 = ss + 1
+        var ss2 = ss
+        if (ss2 < 13) {
+            ss2 = ss2 + 1
+        }
+        else {
+            ss2 = 0
+        }
+        
         let oldImage = UIImageView(frame: UIScreen.main.bounds)
         oldImage.image = UIImage(named:ducks[ss])
         oldImage.contentMode = UIViewContentMode.scaleAspectFill
@@ -58,26 +69,18 @@ class ViewScreenSaver : ViewController {
             //self.backgroundImage.removeFromSuperview()
             
             })
-       
+    
         
-        
-        if (ss < 12) {
-            ss = ss + 1
+        ss = ss2
         }
-        else {
-        ss = 0
-        }
-    }
     
     func blinkingLabel () {
         if (blinkingStatus == 0){
-            ssTitle.textColor = UIColor.white
-            ssAction.textColor = UIColor.white
+            ssAction.backgroundColor = UIColor.clear
             blinkingStatus = 1
         }
         else {
-            ssTitle.textColor = UIColor.black
-            ssAction.textColor = UIColor.black
+            ssAction.backgroundColor = UIColor.blue
             blinkingStatus = 0
         }
     }

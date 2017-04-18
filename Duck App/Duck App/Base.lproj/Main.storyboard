@@ -182,38 +182,44 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mg-9J-nXT" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mg-9J-nXT">
                                 <rect key="frame" x="404" y="438" width="218" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="218" id="iP1-Tg-Xl9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="56"/>
-                                <state key="normal" title="PLAY!"/>
+                                <state key="normal" title="PLAY!">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="TRU-aj-9KR" kind="show" id="ahF-iH-Db0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hI-NK-yNJ" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="704" y="688" width="300" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5L-Np-RGV">
+                                <rect key="frame" x="0.0" y="72" width="288" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="HGw-81-sR3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="View Leaderboard">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wdG-Q5-FrF" kind="show" id="nyD-ln-Khx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hI-NK-yNJ">
+                                <rect key="frame" x="724" y="700" width="300" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="06n-mu-wLz"/>
                                     <constraint firstAttribute="width" constant="300" id="cGJ-gm-Q9e"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="View Duck Species"/>
+                                <state key="normal" title="View Duck Species">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="aCP-rl-oq6" kind="show" id="qW8-xb-N1N"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5L-Np-RGV" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="20" y="106" width="288" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="288" id="HGw-81-sR3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="View Leaderboard"/>
-                                <connections>
-                                    <segue destination="wdG-Q5-FrF" kind="show" id="nyD-ln-Khx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -222,11 +228,11 @@
                             <constraint firstItem="3mg-9J-nXT" firstAttribute="centerX" secondItem="eim-Zv-0ch" secondAttribute="centerX" id="5Nb-FY-iW0"/>
                             <constraint firstItem="NHd-4C-idk" firstAttribute="top" secondItem="3mg-9J-nXT" secondAttribute="bottom" constant="251" id="5lC-j9-LaU"/>
                             <constraint firstItem="3mg-9J-nXT" firstAttribute="top" secondItem="eim-Zv-0ch" secondAttribute="bottom" constant="8" symbolic="YES" id="HkQ-k3-b4a"/>
-                            <constraint firstItem="N5L-Np-RGV" firstAttribute="leading" secondItem="y8d-QN-6Y5" secondAttribute="leadingMargin" id="P1r-FH-bLw"/>
-                            <constraint firstItem="4hI-NK-yNJ" firstAttribute="trailing" secondItem="y8d-QN-6Y5" secondAttribute="trailingMargin" id="QTc-WR-enN"/>
+                            <constraint firstItem="N5L-Np-RGV" firstAttribute="leading" secondItem="y8d-QN-6Y5" secondAttribute="leadingMargin" constant="-20" id="P1r-FH-bLw"/>
+                            <constraint firstItem="4hI-NK-yNJ" firstAttribute="trailing" secondItem="y8d-QN-6Y5" secondAttribute="trailingMargin" constant="20" id="QTc-WR-enN"/>
                             <constraint firstItem="3mg-9J-nXT" firstAttribute="leading" secondItem="y8d-QN-6Y5" secondAttribute="leading" constant="404" id="jGb-wr-fj2"/>
-                            <constraint firstAttribute="bottom" secondItem="4hI-NK-yNJ" secondAttribute="bottom" constant="20" symbolic="YES" id="yth-8b-Rrc"/>
-                            <constraint firstItem="N5L-Np-RGV" firstAttribute="top" secondItem="xAz-mS-0aP" secondAttribute="bottom" constant="42" id="yzE-yB-T24"/>
+                            <constraint firstAttribute="bottom" secondItem="4hI-NK-yNJ" secondAttribute="bottom" constant="8" id="yth-8b-Rrc"/>
+                            <constraint firstItem="N5L-Np-RGV" firstAttribute="top" secondItem="xAz-mS-0aP" secondAttribute="bottom" constant="8" id="yzE-yB-T24"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RkK-f3-IY4">
@@ -238,6 +244,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="playButton" destination="3mg-9J-nXT" id="Ew2-W9-WFN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VK9-rr-BkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -534,23 +543,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ny-sC-8iR">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="wAF-Qt-6d8"/>
-                                </items>
-                            </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duck Commander Duck Exhibit " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8G-3g-4JI">
-                                <rect key="frame" x="141" y="278" width="742" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="48"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap Anywhere to Continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GN-i4-nNq">
-                                <rect key="frame" x="366" y="390" width="293" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Anywhere to Continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GN-i4-nNq">
+                                <rect key="frame" x="365" y="679" width="294" height="29"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -558,13 +553,17 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6GN-i4-nNq" firstAttribute="leading" secondItem="WZS-XS-dzK" secondAttribute="leading" constant="365" id="2M8-hq-oEf"/>
+                            <constraint firstAttribute="trailing" secondItem="6GN-i4-nNq" secondAttribute="trailing" constant="365" id="Cy9-Wd-CPe"/>
+                            <constraint firstItem="9Hy-LU-EBB" firstAttribute="top" secondItem="6GN-i4-nNq" secondAttribute="bottom" constant="60" id="epZ-0c-Vjt"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="uz3-0V-qaq" appends="YES" id="0RK-kN-n3J"/>
                         </connections>
                     </view>
                     <connections>
                         <outlet property="ssAction" destination="6GN-i4-nNq" id="hcA-DT-WHK"/>
-                        <outlet property="ssTitle" destination="F8G-3g-4JI" id="n9e-zr-Ico"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xU0-6Y-61F" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -746,32 +745,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duck Species" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ps-Rf-8Ti">
-                                <rect key="frame" x="321" y="320" width="383" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duck Species" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ps-Rf-8Ti">
+                                <rect key="frame" x="20" y="320" width="984" height="67"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="56"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6a-eF-UI0">
-                                <rect key="frame" x="372" y="503" width="281" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn about 15 different species of ducks." textAlignment="center" lineBreakMode="wordWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Es8-XH-D7R">
+                                <rect key="frame" x="20" y="407" width="984" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6a-eF-UI0">
+                                <rect key="frame" x="372" y="465.5" width="281" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Tap to View"/>
                                 <connections>
                                     <action selector="segueToSelectedScreen:" destination="Hp8-ka-aEh" eventType="touchUpInside" id="U78-Qk-bac"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Learn about 15 different species of ducks." textAlignment="center" lineBreakMode="wordWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Es8-XH-D7R">
-                                <rect key="frame" x="20" y="398" width="984" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="5Ps-Rf-8Ti" firstAttribute="top" secondItem="DB1-7h-lov" secondAttribute="bottom" constant="300" id="DEx-V3-BOE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Ps-Rf-8Ti" secondAttribute="trailing" id="OTm-jV-IpB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A6a-eF-UI0" secondAttribute="trailing" constant="351" id="PpK-My-07c"/>
+                            <constraint firstItem="Es8-XH-D7R" firstAttribute="leading" secondItem="7Ru-8i-cZq" secondAttribute="leadingMargin" id="QIg-g1-WQz"/>
+                            <constraint firstItem="Es8-XH-D7R" firstAttribute="trailing" secondItem="7Ru-8i-cZq" secondAttribute="trailingMargin" id="YiO-a8-xZ3"/>
+                            <constraint firstItem="A6a-eF-UI0" firstAttribute="top" secondItem="Es8-XH-D7R" secondAttribute="bottom" constant="20" id="cY6-9o-3QT"/>
+                            <constraint firstItem="5Ps-Rf-8Ti" firstAttribute="leading" secondItem="7Ru-8i-cZq" secondAttribute="leadingMargin" id="gVP-4v-JQ1"/>
+                            <constraint firstItem="A6a-eF-UI0" firstAttribute="leading" secondItem="7Ru-8i-cZq" secondAttribute="leadingMargin" constant="352" id="lRw-sg-OKe"/>
+                            <constraint firstItem="Es8-XH-D7R" firstAttribute="top" secondItem="5Ps-Rf-8Ti" secondAttribute="bottom" constant="20" id="w9T-mt-t22"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="changeView" destination="A6a-eF-UI0" id="nqp-H2-RUi"/>
@@ -888,8 +895,8 @@
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8PB-ep-K12"/>
-        <segue reference="kJa-lM-lrz"/>
+        <segue reference="nyD-ln-Khx"/>
+        <segue reference="FDW-fp-6EF"/>
         <segue reference="qW8-xb-N1N"/>
         <segue reference="ySH-GK-seA"/>
     </inferredMetricsTieBreakers>

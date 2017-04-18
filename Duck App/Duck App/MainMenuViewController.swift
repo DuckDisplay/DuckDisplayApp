@@ -24,7 +24,7 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
         //self.navigationController!.viewControllers.removeAll()
         self.pageTitles = NSArray (objects: "Duck Species", "Trivia Game", "Conservation")
         self.pageDesciption = NSArray(objects:"Learn about 15 different species of ducks.", "Test you knowledge on ducks and their habibtat!", "Our nations wetlands face their greatest risk in 35 years.")
-        self.segueIdentifiers = NSArray(objects: "DuckSpecies", "TriviaGame", "Conservation")
+        self.segueIdentifiers = NSArray(objects:"DuckSpecies", "TriviaGame", "Conservation")
         
         self.pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "PageViewController") as? UIPageViewController
         
@@ -109,15 +109,7 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
         return 0
     }
     
-    func changeViewed(index: Int){
-        if (index == 1){
-            self.performSegue(withIdentifier: "DuckSpecies", sender: self)
-        }
-        else if (index == 2){
-            self.performSegue(withIdentifier: "TriviaGame", sender: self)
-        }
-    }
-    
+       
 }
 
 
