@@ -17,14 +17,16 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
     var pageDesciption: NSArray!
     var segueIdentifiers: NSArray!
     var changeView: UIButton!
+    var backgrounds: NSArray!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Initialize arrays with details for each screen (currently using 5 screens)
         self.pageTitles = NSArray (objects: "Welcome Screen", "Duck Species", "Trivia Game", "Conservation", "Credits")
-        self.pageDesciption = NSArray(objects: "", "Learn about 15 different species of ducks.", "Test you knowledge on ducks and their habibtat!", "Our nations wetlands face their greatest risk in 35 years.", "")
+        self.pageDesciption = NSArray(objects: "", "Learn about 15 different species of ducks.", "Test you knowledge on ducks and their habitat!", "Our nations wetlands face their greatest risk in 35 years.", "")
         self.segueIdentifiers = NSArray(objects: "", "DuckSpecies", "TriviaGame", "Conservation", "")
+        self.backgrounds = NSArray(objects: "","Duck-Camo","mmbackground","Duck-Camo","")
         
         // Instantiate page view controller
         self.pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "PageViewController") as? UIPageViewController
@@ -73,6 +75,7 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
             vc.titleText = self.pageTitles[index] as! String
             vc.descriptionText = self.pageDesciption[index] as! String
             vc.segueID = self.segueIdentifiers[index] as! String
+            vc.background = self.backgrounds[index] as! String
             vc.pageIndex = index
             return vc
         // Final page is the credits page

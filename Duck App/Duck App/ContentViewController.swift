@@ -19,6 +19,7 @@ class ContentViewController: UIViewController {
     var titleText: String!
     var descriptionText: String!
     var segueID: String!
+    var background: String!
     
     
     
@@ -26,8 +27,9 @@ class ContentViewController: UIViewController {
         super.viewDidLoad()
         self.titleLabel.text = self.titleText
         self.descriptionLabel.text = self.descriptionText
+        setBackground(background: background)
     
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,18 +38,31 @@ class ContentViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        func setBackground(background: String) {
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: background)?.draw(in: self.view.bounds)
+        
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        
+        UIGraphicsEndImageContext()
+        
+        self.view.backgroundColor = UIColor(patternImage: image)
+        
+        addBlurEffect()
+        
     }
-    */
-    
-    // MARK: Actions
-    
+    //Function to blur background
+    func addBlurEffect(){
+        
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.regular)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = view.frame
+        
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
+        view.addSubview(blurEffectView)
+        self.view.insertSubview(blurEffectView, at: 0)
+        
+    }
     @IBAction func segueToSelectedScreen(_ sender: Any) {
         performSegue(withIdentifier: segueID, sender: sender)
     }
