@@ -55,7 +55,7 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
     {
         // Error checking: ensure not out of bounds or empty page view
         if ((self.pageTitles.count == 0) || (index >= self.pageTitles.count)){
-            
+
             return ContentViewController()
         }
         
@@ -103,7 +103,8 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
         
         // Error checking: ensure not first view or not found object
         if ((index == 0) || (index == NSNotFound)){
-            return nil
+            
+            index = 5
         }
         
         // Decrement index
@@ -137,7 +138,7 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
         // Check if out-of-bounds
         if (index == self.pageTitles.count)
         {
-            return nil
+            index = 0
         }
         
         return self.viewControllerAtIndex(index: index)
