@@ -9,16 +9,25 @@
 import UIKit
 
 class TriviaStartScreenViewController: UIViewController {
+    
+    @IBOutlet weak var playButton: UIButton!
+    
+    var buttonTimer: Timer!
+    var blinkingStatus = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
           setBackground()
-        // Do any additional setup after loading the view.
+        
+          buttonTimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(blinkingLabel), userInfo: nil, repeats: true)
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        
     }
     
     func setBackground() {
@@ -47,17 +56,17 @@ class TriviaStartScreenViewController: UIViewController {
         self.view.insertSubview(blurEffectView, at: 0)
         
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func blinkingLabel () {
+        if (blinkingStatus == 0){
+            self.playButton.setTitleColor(UIColor.white, for: UIControlState.normal)
+            blinkingStatus = 1
+        }
+        else {
+            self.playButton.setTitleColor(UIColor.black, for: UIControlState.normal)
+            blinkingStatus = 0
+        }
     }
-    */
-
+    
 }
 
 
