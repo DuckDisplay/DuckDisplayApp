@@ -36,13 +36,15 @@ class DuckCardViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        addBackground(backgroundImage: #imageLiteral(resourceName: "duckBackgroundBlur"))
+        
         configurePageControl()
         
         if let duck = duckInfo {
             var imageList : [UIImage] = [duck.duckImage!]
-            if duck.duckExtraPhotos != "" {
-                for extraPhoto in duck.duckExtraPhotos.components(separatedBy: ","){
-                    imageList.append(UIImage(named: extraPhoto)!)
+            for extraPhoto in duck.duckExtraPhotos.components(separatedBy: ","){
+                if let photo = UIImage(named: extraPhoto) {
+                    imageList.append(photo)
                 }
             }
             configureImages(imageList: imageList)
@@ -87,13 +89,28 @@ class DuckCardViewController: UIViewController, UIScrollViewDelegate {
         }
     }
     
+    func addBackground(backgroundImage: UIImage) {
+        // screen width and height:
+        let width = self.view.frame.width
+        let height = self.view.frame.height
+        
+        let imageViewBackground = UIImageView(frame: CGRect(x: 0, y: 0, width: width, height: height))
+        imageViewBackground.image = backgroundImage
+        
+        // you can change the content mode:
+        imageViewBackground.contentMode = UIViewContentMode.scaleAspectFill
+        
+        self.view.addSubview(imageViewBackground)
+        self.view.sendSubview(toBack: imageViewBackground)
+    }
+    
     func configurePageControl() {
         // The total number of pages that are available is based on how many available colors we have.
         self.picturePageControl.currentPage = 0
         self.picturePageControl.tintColor = UIColor.red
-        self.picturePageControl.pageIndicatorTintColor = UIColor.gray
-        self.picturePageControl.currentPageIndicatorTintColor = UIColor.black
-        self.picturePageControl.backgroundColor = UIColor.clear
+        self.picturePageControl.pageIndicatorTintColor = UIColor.darkGray
+        self.picturePageControl.currentPageIndicatorTintColor = UIColor.white
+        self.picturePageControl.backgroundColor = UIColor.gray.withAlphaComponent(0.75)
         self.picturePageControl.addTarget(self, action: #selector(changePage), for: UIControlEvents.valueChanged)
     }
     
