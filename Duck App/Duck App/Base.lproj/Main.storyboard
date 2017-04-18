@@ -430,10 +430,20 @@
                                     <constraint firstItem="cbk-jU-g0U" firstAttribute="top" secondItem="zoW-4e-j4h" secondAttribute="top" constant="27" id="uWd-LM-wYn"/>
                                     <constraint firstItem="rqq-pe-2yp" firstAttribute="top" secondItem="XbI-ll-FtV" secondAttribute="bottom" constant="8" symbolic="YES" id="xd7-YH-mg6"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </scrollView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="NRH-rQ-2kK">
+                            <pageControl opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="NRH-rQ-2kK">
                                 <rect key="frame" x="232" y="546" width="90" height="37"/>
                                 <color key="backgroundColor" red="0.29921478426395942" green="0.29921478426395942" blue="0.29921478426395942" alpha="0.75222067636986301" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="0.67000000000000004" alpha="1" colorSpace="calibratedWhite"/>
@@ -448,12 +458,12 @@
                             <constraint firstItem="NRH-rQ-2kK" firstAttribute="centerX" secondItem="73i-Ad-L2S" secondAttribute="centerX" id="GnZ-Xj-dR2"/>
                             <constraint firstItem="73i-Ad-L2S" firstAttribute="top" secondItem="Fgk-Gp-Pae" secondAttribute="bottom" constant="152" id="Is8-ko-qUE"/>
                             <constraint firstItem="zoW-4e-j4h" firstAttribute="leading" secondItem="lrS-f8-bUQ" secondAttribute="leading" constant="542" id="K3l-pC-Zun"/>
-                            <constraint firstItem="NRH-rQ-2kK" firstAttribute="top" secondItem="73i-Ad-L2S" secondAttribute="bottom" constant="29" id="KLh-vs-Las"/>
+                            <constraint firstItem="NRH-rQ-2kK" firstAttribute="top" secondItem="73i-Ad-L2S" secondAttribute="bottom" constant="8" id="KLh-vs-Las"/>
                             <constraint firstItem="NXh-II-WMG" firstAttribute="top" secondItem="Fgk-Gp-Pae" secondAttribute="bottom" constant="556" id="Mcm-ya-RH9"/>
-                            <constraint firstItem="NXh-II-WMG" firstAttribute="top" secondItem="NRH-rQ-2kK" secondAttribute="bottom" constant="16" id="No4-o4-K8k"/>
+                            <constraint firstItem="NXh-II-WMG" firstAttribute="top" secondItem="NRH-rQ-2kK" secondAttribute="bottom" constant="37" id="No4-o4-K8k"/>
                             <constraint firstItem="zoW-4e-j4h" firstAttribute="trailing" secondItem="lrS-f8-bUQ" secondAttribute="trailingMargin" id="XsK-k4-6hl"/>
                             <constraint firstItem="NXh-II-WMG" firstAttribute="leading" secondItem="lrS-f8-bUQ" secondAttribute="leading" constant="232" id="ZOw-Ua-5ci"/>
-                            <constraint firstItem="NRH-rQ-2kK" firstAttribute="top" secondItem="Fgk-Gp-Pae" secondAttribute="bottom" constant="503" id="cah-V5-hlX"/>
+                            <constraint firstItem="NRH-rQ-2kK" firstAttribute="top" secondItem="Fgk-Gp-Pae" secondAttribute="bottom" constant="482" id="cah-V5-hlX"/>
                             <constraint firstItem="NRH-rQ-2kK" firstAttribute="centerX" secondItem="NXh-II-WMG" secondAttribute="centerX" id="hbZ-uA-CaQ"/>
                             <constraint firstItem="NRH-rQ-2kK" firstAttribute="leading" secondItem="NXh-II-WMG" secondAttribute="leading" id="man-YD-fOr"/>
                             <constraint firstItem="vKJ-Qb-rfW" firstAttribute="top" secondItem="Fgk-Gp-Pae" secondAttribute="bottom" constant="53" id="ok4-Nr-fXK"/>
