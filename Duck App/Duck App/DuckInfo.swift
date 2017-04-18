@@ -15,7 +15,7 @@ class DuckInfo {
     // MARK: Constants
     
     // Indices needed to construct text information array
-    static let NUM_TEXT_SLOTS = 11
+    static let NUM_TEXT_SLOTS = 12
     enum TextInfoIndices: Int {
         case imageLabel
         case audioPath
@@ -28,6 +28,7 @@ class DuckInfo {
         case nesting
         case conservation
         case funFacts
+        case extraPhotos
     }
     
     // MARK: Properties
@@ -43,11 +44,12 @@ class DuckInfo {
     var duckNesting: String
     var duckConservation: String
     var duckFunFacts: String
+    var duckExtraPhotos: String
     
     // MARK: Initialization
     init? (duckImage: UIImage?, textInfoArray: [String]) {
         // Init fails if string array is empty OR improper number of elements present
-        guard !textInfoArray.isEmpty && (textInfoArray.count == 11) else {
+        guard !textInfoArray.isEmpty && (textInfoArray.count == 12) else {
             return nil
         }
         
@@ -66,6 +68,7 @@ class DuckInfo {
         self.duckNesting = textInfoArray[TextInfoIndices.nesting.rawValue]
         self.duckConservation = textInfoArray[TextInfoIndices.conservation.rawValue]
         self.duckFunFacts = textInfoArray[TextInfoIndices.funFacts.rawValue]
+        self.duckExtraPhotos = textInfoArray[TextInfoIndices.extraPhotos.rawValue]
         
     }
 }

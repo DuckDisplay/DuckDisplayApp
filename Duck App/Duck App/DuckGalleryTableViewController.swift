@@ -198,6 +198,9 @@ class DuckGalleryTableViewController: UITableViewController {
                 if let duckFunFacts = String(duckData[DuckDatabase.DuckFactsTable.funFacts]) {
                     duckInfoArray[DuckInfo.TextInfoIndices.funFacts.rawValue] = duckFunFacts
                 }
+                if let duckExtraPictures =  String(duckData[DuckDatabase.DuckFactsTable.extraPhotos]){
+                    duckInfoArray[DuckInfo.TextInfoIndices.extraPhotos.rawValue] = duckExtraPictures
+                }
                 
                 // Grab image
                 duckImage = UIImage(named: duckData[DuckDatabase.DuckFactsTable.photoPath])
