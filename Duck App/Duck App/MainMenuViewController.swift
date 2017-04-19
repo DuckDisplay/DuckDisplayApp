@@ -94,15 +94,8 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
         // Get the index of this view controller
-        // It is stored in the view controller object itself
-        var index: Int = 0
-        if let vc = viewController as? WelcomeScreenViewController {
-            index = vc.pageIndex
-        } else if let vc = viewController as? ContentViewController {
-            index = vc.pageIndex
-        } else if let vc = viewController as? CreditsViewController {
-            index = vc.pageIndex
-        }
+        let vc = viewController as? PageScreenProtocol
+        var index = (vc?.pageIndex)!
         
         // Error checking: ensure not first view or not found object
         if ((index == 0) || (index == NSNotFound)){
@@ -119,15 +112,8 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
         // Get the index of this view controller
-        // It is stored in the view controller object itself
-        var index: Int = 0
-        if let vc = viewController as? WelcomeScreenViewController {
-            index = vc.pageIndex
-        } else if let vc = viewController as? ContentViewController {
-            index = vc.pageIndex
-        } else if let vc = viewController as? CreditsViewController {
-            index = vc.pageIndex
-        }
+        let vc = viewController as? PageScreenProtocol
+        var index = (vc?.pageIndex)!
         
         // Error checking: ensure object is found
         if (index == NSNotFound)
