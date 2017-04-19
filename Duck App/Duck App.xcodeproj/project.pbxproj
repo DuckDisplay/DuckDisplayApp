@@ -10,7 +10,6 @@
 		2D326DF31E92E7D500992FFA /* DuckGalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D326DF21E92E7D500992FFA /* DuckGalleryTableViewController.swift */; };
 		2D326DF51E92E88C00992FFA /* DuckPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D326DF41E92E88C00992FFA /* DuckPreview.swift */; };
 		2D55F9391EA7F193002844B2 /* PageScreenProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D55F9381EA7F193002844B2 /* PageScreenProtocol.swift */; };
-		2D5FB00B1EA554730092E706 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5FAFFE1EA5543D0092E706 /* SQLite.framework */; };
 		2D5FB00C1EA554850092E706 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5FAFFE1EA5543D0092E706 /* SQLite.framework */; };
 		2D5FB00D1EA554850092E706 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5FAFFE1EA5543D0092E706 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D720AA21E8DCBE900B797A4 /* DuckDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D720AA11E8DCBE900B797A4 /* DuckDatabase.swift */; };
@@ -161,7 +160,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D5FB00C1EA554850092E706 /* SQLite.framework in Frameworks */,
-				2D5FB00B1EA554730092E706 /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +360,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Auburn University";
 				TargetAttributes = {
 					B88B2F391E47B64100384A02 = {
