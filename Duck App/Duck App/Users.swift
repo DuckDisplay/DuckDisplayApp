@@ -11,18 +11,16 @@ import UIKit
 class Users{
     //MARK: Properties
     var name: String
-    var score: String
+    var score: Int
     var state: String
-    var place: String
     
     //MARK: Initilization
     
-    init(place: String, name: String, state: String, score: String){
+    init(name: String, state: String, score: Int){
     
     self.name = name
     self.score = score
     self.state = state
-    self.place = place
     }
     
 }

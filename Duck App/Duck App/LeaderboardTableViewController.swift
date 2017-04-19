@@ -8,19 +8,19 @@
 
 import UIKit
 
+var users = [Users]()
+
 class LeaderboardTableViewController: UITableViewController{
     
     //MARK: Properties
-    var users = [Users]()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let vc = storyboard?.instantiateViewController(withIdentifier: "Leaderboard") as! Leaderboard
 
         //Load Users
         loadUsers()
         tableView.rowHeight = 90
-        
         
     }
 
@@ -56,10 +56,9 @@ class LeaderboardTableViewController: UITableViewController{
         
         let user = users[indexPath.row]
         
-        cell.leaderboardPlace.text = user.place
         cell.leaderboardName.text = user.name
         cell.leaderboardState.text = user.state
-        cell.leaderboardScore.text = user.score
+        cell.leaderboardScore.text = String(user.score)
         return cell
     }
     
@@ -109,21 +108,6 @@ class LeaderboardTableViewController: UITableViewController{
     }
     */
     private func loadUsers(){
-    
-        
-        let user1 = Users(place: "1.", name: "User 1", state: "AL", score: "100")
-        //else {fatalError("Unable to instantiate user1")
-        //}
-        
-        let user2 = Users(place: "2.", name: "User 2", state: "GA", score: "99")
-        //else {fatalError("Unable to instantiate user2")
-        //}
-        
-        let user3 = Users(place: "3.", name: "User 3", state: "TN", score: "98")
-        //else {fatalError("Unable to instantiate user3")
-        //}
-        
-        users += [user1,user2,user3]
         
     
     }

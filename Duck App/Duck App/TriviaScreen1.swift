@@ -9,11 +9,13 @@
 import UIKit
 import SQLite
 
+var score: Int = 0
+
 class TriviaScreen1: UIViewController {
     //timer to determine when the game is over
     var gameTimer: Timer!
     var dumbTimer: Timer!
-    var score: Int = 0
+    
     var chances = 3 //game will end when no more chances are available to prevent guess spamming
     var randNum: Int = Int(arc4random_uniform(44)) + 1//check this bound against rows in table
     var secondsRemaining = 120
@@ -28,23 +30,25 @@ class TriviaScreen1: UIViewController {
     var thisCorrect: String = ""
     var thisPoints: Int = 0
     var thisPicture: String = ""
+    var nextQuestion = 0
     
     override func viewDidAppear(_ animated: Bool) {
         //load question and start timer
         getNextQuestion()
-        gameTimer = Timer.scheduledTimer(timeInterval: 120, target: self, selector: #selector(gameIsOver), userInfo: nil, repeats: false)
+       // gameTimer = Timer.scheduledTimer(timeInterval: 120, target: self, selector: #selector(gameIsOver), userInfo: nil, repeats: false)
         dumbTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
 
     }
     
+    //displays score
+    @IBOutlet weak var scoreLabel: UILabel!
+    
     //outlet for the question text to be put into that textview
     @IBOutlet weak var questionText: UITextView!
-    
     
     //outlet for the ImageView for pictures in questions
     @IBOutlet weak var questionImage: UIImageView!
 
-    
     //outlet to show time remaining in the game
     @IBOutlet weak var timerOutlet: UITextView!
     
@@ -92,8 +96,6 @@ class TriviaScreen1: UIViewController {
     //They will decide whether the asnwer is correct and change the buttons to reflect that
     //then score appropriately and call the getNextQuestion function
     
-    
-
     @IBOutlet weak var buttonA: duckButton!
     @IBAction func answerAChosen(_ sender: Any) {
         if (thisAns1 != thisCorrect) {
@@ -106,7 +108,7 @@ class TriviaScreen1: UIViewController {
         }
         else {
             buttonA.backgroundColor = UIColor.green
-            score += thisPoints
+            score += 1
         }
         getNextQuestion()
     }
@@ -124,7 +126,7 @@ class TriviaScreen1: UIViewController {
         }
         else {
             buttonB.backgroundColor = UIColor.green
-            score += thisPoints
+            score += 1
         }
         getNextQuestion()
     }
@@ -142,7 +144,7 @@ class TriviaScreen1: UIViewController {
         }
         else {
             buttonC.backgroundColor = UIColor.green
-            score += thisPoints
+            score += 1
         }
         getNextQuestion()
     }
@@ -160,7 +162,7 @@ class TriviaScreen1: UIViewController {
         }
         else {
             buttonD.backgroundColor = UIColor.green
-            score += thisPoints
+            score += 1
         }
         getNextQuestion()
     }
@@ -177,7 +179,9 @@ class TriviaScreen1: UIViewController {
         
         randNum = Int(arc4random_uniform(44)) + 1//re-randomize to get a new question
         
-        let trivia_query = DuckDatabase.TriviaDataTable.triviaData.filter(DuckDatabase.TriviaDataTable.id == randNum)
+        nextQuestion += 1
+        
+        let trivia_query = DuckDatabase.TriviaDataTable.triviaData.filter(DuckDatabase.TriviaDataTable.id == nextQuestion)
         do{
             if let questionToBePlucked = try DuckDatabase.duckDB?.pluck(trivia_query) {
                 
@@ -207,8 +211,10 @@ class TriviaScreen1: UIViewController {
     
     //puts the data intothe proper locations
     func populateFields() {
-        questionText.text = (thisTriviaQuestion?.question)! //set question text
+        //update score label
+        scoreLabel.text = "Score: " + "\(score)"
         
+        questionText.text = (thisTriviaQuestion?.question)! //set question text
         if (thisTriviaQuestion?.picture != nil) { //set image, if there is none hide imageview
             let realQuestionImage = UIImage(named: thisPicture)
             questionImage.image = realQuestionImage
@@ -232,10 +238,10 @@ class TriviaScreen1: UIViewController {
     
     //Selector method for game timer
     func gameIsOver() {
-        gameTimer.invalidate()
-        score += (chances * 10)
+        //gameTimer.invalidate()
+        //score += (chances * 10)
         //segue to the leaderboard screen
-        self.performSegue(withIdentifier: "gameOver", sender: self)
+        //self.performSegue(withIdentifier: "gameOver", sender: self)
     }
 }
 
