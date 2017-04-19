@@ -8,14 +8,18 @@
 
 import UIKit
 
-class ContentViewController: UIViewController {
+class ContentViewController: UIViewController, PageScreenProtocol {
 
+    
+    // MARK: Properties
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var changeView: UIButton!
 
-    
+    // Required to conform to Page Screen Protocol
     var pageIndex: Int!
+    
     var titleText: String!
     var descriptionText: String!
     var segueID: String!

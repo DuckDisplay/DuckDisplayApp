@@ -15,5 +15,5 @@ import Foundation
 //      Should be implemented by any View Controller used as a page
 //      Needs a page index to determine which page this view controller is in
 protocol PageScreenProtocol {
-    var pageIndex: Int { get set }
+    var pageIndex: Int! { get set }
 }
