@@ -10,14 +10,15 @@ import UIKit
 
 class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
 
+    // MARK: Properties
     
     var pageViewController : UIPageViewController!
-    var newViewController : UIViewController!
+    
+    // Arrays store data for each page on the Main Menu
     var pageTitles : NSArray!
+    var backgrounds: NSArray!
     var pageDesciption: NSArray!
     var segueIdentifiers: NSArray!
-    var changeView: UIButton!
-    var backgrounds: NSArray!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,6 +106,7 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
         // Should never get here
         return nil
     }
+    
     
     //MARK: Page View Controller Data source
     
