@@ -33,6 +33,7 @@ class TriviaScreen1: UIViewController {
     var nextQuestion = 0
     
     override func viewDidAppear(_ animated: Bool) {
+        score = 0
         //load question and start timer
         getNextQuestion()
        // gameTimer = Timer.scheduledTimer(timeInterval: 120, target: self, selector: #selector(gameIsOver), userInfo: nil, repeats: false)
@@ -241,7 +242,7 @@ class TriviaScreen1: UIViewController {
         //gameTimer.invalidate()
         //score += (chances * 10)
         //segue to the leaderboard screen
-        //self.performSegue(withIdentifier: "gameOver", sender: self)
+        self.performSegue(withIdentifier: "gameOver", sender: self)
     }
 }
 

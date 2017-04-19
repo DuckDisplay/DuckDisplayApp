@@ -16,8 +16,13 @@ class LeaderboardTableViewController: UITableViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let vc = storyboard?.instantiateViewController(withIdentifier: "Leaderboard") as! Leaderboard
-
+        
+        //initial user to prevent nil...
+        if(users.count < 1) {
+            let devUser = Users(name: "Development Squad", state: "Domination Station", score: 5000)
+            users.append(devUser)
+        }
+        
         //Load Users
         loadUsers()
         tableView.rowHeight = 90
@@ -107,9 +112,9 @@ class LeaderboardTableViewController: UITableViewController{
         // Pass the selected object to the new view controller.
     }
     */
-    private func loadUsers(){
-        
     
+    private func loadUsers() {
+        //not sure if ill need this method yet
     }
     
 }

@@ -668,7 +668,7 @@
         <!--Leaderboard Table View Controller-->
         <scene sceneID="KyJ-jp-ZxK">
             <objects>
-                <tableViewController id="vYX-h3-L4P" customClass="LeaderboardTableViewController" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="LeaderboardTableViewController" storyboardIdentifier="LeaderboardTableViewController" id="vYX-h3-L4P" customClass="LeaderboardTableViewController" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="IFc-r0-hPG">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="593"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -963,6 +963,6 @@
         <segue reference="LSF-Wt-laQ"/>
         <segue reference="0cy-i2-9fF"/>
         <segue reference="8PB-ep-K12"/>
-        <segue reference="FDW-fp-6EF"/>
+        <segue reference="kJa-lM-lrz"/>
     </inferredMetricsTieBreakers>
 </document>

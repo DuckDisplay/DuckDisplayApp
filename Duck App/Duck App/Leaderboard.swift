@@ -17,14 +17,14 @@ class Leaderboard : ViewController {
         let myScore = score
         let bottomScore = users.last?.score
         
-        /*if (myScore > bottomScore! || users.count < 10) {
+        if (myScore > bottomScore! || users.count < 10) {
             
             createHighScoreAlert(title: "NEW HIGH SCORE!", message: "Your Score: " + String(myScore))
             
         }
         else {
             createGameOverAlert(title: "GAME OVER", message: "Your Score: " + String(myScore))
-        }*/
+        }
         
     }
 
@@ -57,15 +57,7 @@ class Leaderboard : ViewController {
             print("The user entered:%@ & %@", textUser.text!, textState.text!);
             let thisUser = Users(name: textUser.text!, state: textState.text!, score: score)
             
-            
-            //if theres less than 10 users check to see if this one goes on the end
-            if(users.endIndex < 9) {
-                if(thisUser.score < users[users.count - 1].score) {
-                    //add user to the end
-                    users.append(thisUser)
-                }
-            }
-            
+            //find where it goes and put it there
             self.placeUser(thisUser: thisUser)
         }
         
@@ -90,16 +82,16 @@ class Leaderboard : ViewController {
     
     //places the user on the leaderboard in the appropriae place
     func placeUser(thisUser: Users) {
-        var i = 0;
-        
-        for user in users {
-            if(user.score > thisUser.score) {
-                i += 1
-            }
-            else {
-                users[i] = thisUser
-            }
+        //less than 10 on the board, add always
+        if(users.count < 10) {
+            users.append(thisUser)
         }
+        //10 users already, put this one on the bottom and sort by score
+        else {
+            users[9] = thisUser
+        }
+        //sort by score
+        users.sort { $0.score > $1.score}
     }
 }
 
