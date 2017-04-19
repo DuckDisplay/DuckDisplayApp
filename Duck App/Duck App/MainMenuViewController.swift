@@ -23,10 +23,25 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
         super.viewDidLoad()
 
         // Initialize arrays with details for each screen (currently using 5 screens)
-        self.pageTitles = NSArray (objects: "Welcome Screen", "Duck Species", "Trivia Game", "Conservation", "Credits")
-        self.pageDesciption = NSArray(objects: "", "Learn about 15 different species of ducks.", "Test you knowledge on ducks and their habitat!", "Our nations wetlands face their greatest risk in 35 years.", "")
-        self.segueIdentifiers = NSArray(objects: "", "DuckSpecies", "TriviaGame", "Conservation", "")
-        self.backgrounds = NSArray(objects: "","duckBackgroundBlur","Duck-CamoBlur","conservationBackgroundBlur","")
+        self.pageTitles = NSArray(objects: "Welcome Screen",
+                                           "Duck Species",
+                                           "Trivia Game",
+                                           "Conservation",
+                                           "Credits")
+        self.backgrounds = NSArray(objects: "",
+                                            "duckBackgroundBlur",
+                                            "Duck-CamoBlur",
+                                            "conservationBackgroundBlur",
+                                            "")
+        
+        // The following is only for ContentViewController's (the stuff in between WelcomeScreen and Credits)
+        self.pageDesciption = NSArray(objects: "Learn about 15 different species of ducks.",
+                                               "Test you knowledge on ducks and their habitat!",
+                                               "Our nations wetlands face their greatest risk in 35 years.")
+        // These are segues from Main Menu to the different parts of the app
+        self.segueIdentifiers = NSArray(objects: "DuckSpecies",
+                                                 "TriviaGame",
+                                                 "Conservation")
         
         // Instantiate page view controller
         self.pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "PageViewController") as? UIPageViewController
