@@ -68,18 +68,20 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
             vc.pageIndex = index
             return vc
         }
+            
         // Pages 1-3 direct to other parts of the app, the Duck Species, Trivia, or Conservation
-        else if (index > 0 && index < 4) {
+        else if (index > 0 && index < self.pageTitles.count - 1) {
             let vc: ContentViewController = self.storyboard?.instantiateViewController(withIdentifier: "ContentViewController") as! ContentViewController
             
             vc.titleText = self.pageTitles[index] as! String
-            vc.descriptionText = self.pageDesciption[index] as! String
-            vc.segueID = self.segueIdentifiers[index] as! String
             vc.background = self.backgrounds[index] as! String
+            vc.descriptionText = self.pageDesciption[index - 1] as! String
+            vc.segueID = self.segueIdentifiers[index - 1] as! String
             vc.pageIndex = index
             return vc
+            
         // Final page is the credits page
-        } else if (index == 4) {
+        } else if (index == self.pageTitles.count - 1) {
             let vc: CreditsViewController = self.storyboard?.instantiateViewController(withIdentifier: "CreditsViewController") as! CreditsViewController
             vc.pageIndex = index
             return vc
