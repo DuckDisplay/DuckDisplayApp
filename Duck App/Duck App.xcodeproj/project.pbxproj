@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D326DF31E92E7D500992FFA /* DuckGalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D326DF21E92E7D500992FFA /* DuckGalleryTableViewController.swift */; };
 		2D326DF51E92E88C00992FFA /* DuckPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D326DF41E92E88C00992FFA /* DuckPreview.swift */; };
+		2D55F9391EA7F193002844B2 /* PageScreenProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D55F9381EA7F193002844B2 /* PageScreenProtocol.swift */; };
 		2D5FB00B1EA554730092E706 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5FAFFE1EA5543D0092E706 /* SQLite.framework */; };
 		2D5FB00C1EA554850092E706 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5FAFFE1EA5543D0092E706 /* SQLite.framework */; };
 		2D5FB00D1EA554850092E706 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5FAFFE1EA5543D0092E706 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -122,6 +123,7 @@
 /* Begin PBXFileReference section */
 		2D326DF21E92E7D500992FFA /* DuckGalleryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckGalleryTableViewController.swift; sourceTree = "<group>"; };
 		2D326DF41E92E88C00992FFA /* DuckPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckPreview.swift; sourceTree = "<group>"; };
+		2D55F9381EA7F193002844B2 /* PageScreenProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageScreenProtocol.swift; sourceTree = "<group>"; };
 		2D720AA11E8DCBE900B797A4 /* DuckDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DuckDatabase.swift; path = DatabaseBackend/DuckDatabase.swift; sourceTree = "<group>"; };
 		2D720AB31E8DDEAC00B797A4 /* duck.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = duck.db; path = "Duck App/Assets.xcassets/Databases/duck.db"; sourceTree = "<group>"; };
 		2D7E0C031E973A20006C53C0 /* DuckInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckInfo.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				B840E7791E992F3A00E820D0 /* MainMenuViewController.swift */,
+				2D55F9381EA7F193002844B2 /* PageScreenProtocol.swift */,
 				B840E7771E992EEC00E820D0 /* ContentViewController.swift */,
 				2DC655171EA55DDE00834ED2 /* WelcomeScreenViewController.swift */,
 				2DC6550F1EA558C700834ED2 /* CreditsViewController.swift */,
@@ -495,6 +498,7 @@
 				2D326DF31E92E7D500992FFA /* DuckGalleryTableViewController.swift in Sources */,
 				2D7E0C041E973A20006C53C0 /* DuckInfo.swift in Sources */,
 				B2DDBE561E92C2E200C7B0EF /* TriviaStartScreenViewController.swift in Sources */,
+				2D55F9391EA7F193002844B2 /* PageScreenProtocol.swift in Sources */,
 				2DD514881E972A2B00843DDA /* DuckCardViewController.swift in Sources */,
 				B840E7611E96E0A700E820D0 /* LeaderboardTableViewCell.swift in Sources */,
 				2DC655101EA558C700834ED2 /* CreditsViewController.swift in Sources */,

@@ -8,8 +8,11 @@
 
 import UIKit
 
-class CreditsViewController: UIViewController {
+class CreditsViewController: UIViewController, PageScreenProtocol {
 
+    // MARK: Properties
+    
+    // Required to conform to PageScreenProtocol
     var pageIndex: Int!
     
     override func viewDidLoad() {
