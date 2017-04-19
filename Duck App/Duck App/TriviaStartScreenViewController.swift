@@ -20,7 +20,7 @@ class TriviaStartScreenViewController: UIViewController {
         
           setBackground()
         
-          buttonTimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(blinkingLabel), userInfo: nil, repeats: true)
+          buttonTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(blinkingLabel), userInfo: nil, repeats: true)
         
     }
 
@@ -32,7 +32,7 @@ class TriviaStartScreenViewController: UIViewController {
     
     func setBackground() {
         UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "mmbackground")?.draw(in: self.view.bounds)
+        UIImage(named: "Duck-Camo")?.draw(in: self.view.bounds)
         
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         

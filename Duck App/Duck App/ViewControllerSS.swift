@@ -19,7 +19,7 @@ class ViewScreenSaver : ViewController {
     var blinkTimer: Timer!
     var ducks = ["AmericanBlackDuck","AmericanWigeon","BlueWingedTeal","Canvasback","cinnamonteal","Mallard",
                  "Gadwall","GreenWingTeal","LesserScaup","NorthernPintail","NorthernShoveler","RedHead","RingNeck", "WoodDuck"]
-    var ss = 0
+    var ss = Int(arc4random_uniform(14))
     var blinkingStatus = 0
     var backgroundImage = UIImageView(frame: UIScreen.main.bounds)
     

@@ -26,7 +26,7 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
         self.pageTitles = NSArray (objects: "Welcome Screen", "Duck Species", "Trivia Game", "Conservation", "Credits")
         self.pageDesciption = NSArray(objects: "", "Learn about 15 different species of ducks.", "Test you knowledge on ducks and their habitat!", "Our nations wetlands face their greatest risk in 35 years.", "")
         self.segueIdentifiers = NSArray(objects: "", "DuckSpecies", "TriviaGame", "Conservation", "")
-        self.backgrounds = NSArray(objects: "","Duck-Camo","mmbackground","Duck-Camo","")
+        self.backgrounds = NSArray(objects: "","mmbackground","Duck-Camo","conservationBackground","")
         
         // Instantiate page view controller
         self.pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "PageViewController") as? UIPageViewController
