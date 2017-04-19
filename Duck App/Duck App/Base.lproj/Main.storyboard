@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Trivia Screen1-->
+        <!--Trivia Game-->
         <scene sceneID="5cI-ZC-yq7">
             <objects>
                 <viewController id="yMy-ej-eeJ" customClass="TriviaScreen1" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
@@ -140,14 +140,15 @@
                             <constraint firstItem="QN7-8l-7TB" firstAttribute="leading" secondItem="rbV-a7-EZe" secondAttribute="leading" id="v0b-Ra-CHT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="DiB-0f-2Cb">
-                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="xD4-29-cCh">
+                    <navigationItem key="navigationItem" title="Trivia Game" id="DiB-0f-2Cb">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="xD4-29-cCh">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="zug-So-mik" kind="show" id="FDW-fp-6EF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="buttonA" destination="QN7-8l-7TB" id="eKo-Ik-IdT"/>
                         <outlet property="buttonB" destination="rbV-a7-EZe" id="23U-Lj-8iG"/>
@@ -986,9 +987,9 @@
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qW8-xb-N1N"/>
         <segue reference="FDW-fp-6EF"/>
-        <segue reference="8PB-ep-K12"/>
+        <segue reference="qW8-xb-N1N"/>
         <segue reference="xQV-6E-hJ6"/>
+        <segue reference="8PB-ep-K12"/>
     </inferredMetricsTieBreakers>
 </document>

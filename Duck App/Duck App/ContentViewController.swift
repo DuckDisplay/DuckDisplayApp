@@ -48,7 +48,7 @@ class ContentViewController: UIViewController {
         
         self.view.backgroundColor = UIColor(patternImage: image)
         
-        addBlurEffect()
+        //addBlurEffect()
         
     }
     //Function to blur background
