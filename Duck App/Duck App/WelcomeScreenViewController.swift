@@ -25,7 +25,7 @@ class WelcomeScreenViewController: UIViewController {
     }
     func setBackground() {
         UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "mmbackground")?.draw(in: self.view.bounds)
+        UIImage(named: "WelcomeBackground")?.draw(in: self.view.bounds)
         
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         
@@ -33,22 +33,8 @@ class WelcomeScreenViewController: UIViewController {
         
         self.view.backgroundColor = UIColor(patternImage: image)
         
-        addBlurEffect()
+        
         
     }
-    //Function to blur background
-    func addBlurEffect()
-    {
-        
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.regular)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = view.frame
-        
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
-        view.addSubview(blurEffectView)
-        self.view.insertSubview(blurEffectView, at: 0)
-        
-    }
- 
     
 }

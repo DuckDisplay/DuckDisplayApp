@@ -49,7 +49,7 @@ class LeaderboardTableViewController: UITableViewController{
         }
         if (indexPath.row % 2 == 0)
         {
-            cell.backgroundColor = UIColor.lightGray
+            cell.backgroundColor = UIColor.gray.withAlphaComponent(0.4)
         } else {
             cell.backgroundColor = UIColor.white
         }

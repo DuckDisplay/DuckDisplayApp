@@ -62,7 +62,7 @@ class TriviaScreen1: UIViewController {
     
     func setBackground() {
         UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "Duck-Camo")?.draw(in: self.view.bounds)
+        UIImage(named: "Duck-CamoBlur")?.draw(in: self.view.bounds)
         
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         
@@ -70,7 +70,7 @@ class TriviaScreen1: UIViewController {
         
         self.view.backgroundColor = UIColor(patternImage: image)
         
-        addBlurEffect()
+        //addBlurEffect()
         
     }
     
