@@ -62,29 +62,13 @@ class TriviaScreen1: UIViewController {
     
     func setBackground() {
         UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "Duck-Camo")?.draw(in: self.view.bounds)
+        UIImage(named: "Duck-CamoBlur")?.draw(in: self.view.bounds)
         
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         
         UIGraphicsEndImageContext()
         
         self.view.backgroundColor = UIColor(patternImage: image)
-        
-        addBlurEffect()
-        
-    }
-    
-    //Function to blur background
-    func addBlurEffect()
-    {
-        
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.regular)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = view.frame
-        
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
-        view.addSubview(blurEffectView)
-        self.view.insertSubview(blurEffectView, at: 0)
         
     }
     

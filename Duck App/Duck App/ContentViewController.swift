@@ -52,23 +52,10 @@ class ContentViewController: UIViewController, PageScreenProtocol {
         
         self.view.backgroundColor = UIColor(patternImage: image)
         
-        //addBlurEffect()
         
     }
-    //Function to blur background
-    func addBlurEffect(){
-        
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.regular)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = view.frame
-        
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
-        view.addSubview(blurEffectView)
-        self.view.insertSubview(blurEffectView, at: 0)
-        
-    }
+    
     @IBAction func segueToSelectedScreen(_ sender: Any) {
         performSegue(withIdentifier: segueID, sender: sender)
     }
-
 }

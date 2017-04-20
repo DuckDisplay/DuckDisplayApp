@@ -22,6 +22,8 @@
 		344E17861E9C36D3007E10EB /* TriviaQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344E17851E9C36D3007E10EB /* TriviaQuestion.swift */; };
 		34DDCB531E9EBE62002507D9 /* TriviaScreen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DDCB521E9EBE62002507D9 /* TriviaScreen1.swift */; };
 		A9301FE21EA6D37D00DB1B15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9301FE11EA6D37D00DB1B15 /* Assets.xcassets */; };
+		A9DEE1351EA85B7E0018FB36 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DEE1341EA85B7E0018FB36 /* main.swift */; };
+		A9DEE1371EA85BBA0018FB36 /* DuckApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DEE1361EA85BBA0018FB36 /* DuckApplication.swift */; };
 		B2DDBE561E92C2E200C7B0EF /* TriviaStartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DDBE551E92C2E200C7B0EF /* TriviaStartScreenViewController.swift */; };
 		B812D7F51E5D3DF2002152D7 /* ViewControllerSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812D7F41E5D3DF2002152D7 /* ViewControllerSS.swift */; };
 		B840E75F1E96E0A700E820D0 /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840E75B1E96E0A700E820D0 /* Leaderboard.swift */; };
@@ -133,6 +135,8 @@
 		345CFB811EA023310073DD09 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = ../SQLite.swift/SQLite.xcodeproj; sourceTree = "<group>"; };
 		34DDCB521E9EBE62002507D9 /* TriviaScreen1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaScreen1.swift; sourceTree = "<group>"; };
 		A9301FE11EA6D37D00DB1B15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9DEE1341EA85B7E0018FB36 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A9DEE1361EA85BBA0018FB36 /* DuckApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckApplication.swift; sourceTree = "<group>"; };
 		B2DDBE551E92C2E200C7B0EF /* TriviaStartScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaStartScreenViewController.swift; sourceTree = "<group>"; };
 		B812D7F41E5D3DF2002152D7 /* ViewControllerSS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSS.swift; sourceTree = "<group>"; };
 		B840E75B1E96E0A700E820D0 /* Leaderboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
@@ -267,6 +271,8 @@
 		B88B2F3C1E47B64100384A02 /* Duck App */ = {
 			isa = PBXGroup;
 			children = (
+				A9DEE1341EA85B7E0018FB36 /* main.swift */,
+				A9DEE1361EA85BBA0018FB36 /* DuckApplication.swift */,
 				A9301FE11EA6D37D00DB1B15 /* Assets.xcassets */,
 				B88B2F3D1E47B64100384A02 /* AppDelegate.swift */,
 				B812D7F41E5D3DF2002152D7 /* ViewControllerSS.swift */,
@@ -480,6 +486,7 @@
 			files = (
 				B840E77A1E992F3A00E820D0 /* MainMenuViewController.swift in Sources */,
 				B8F61C791E6219FE00699A0E /* DuckButton.swift in Sources */,
+				A9DEE1351EA85B7E0018FB36 /* main.swift in Sources */,
 				B840E75F1E96E0A700E820D0 /* Leaderboard.swift in Sources */,
 				B840E7781E992EEC00E820D0 /* ContentViewController.swift in Sources */,
 				B88B2F401E47B64100384A02 /* ViewControllerMain.swift in Sources */,
@@ -488,6 +495,7 @@
 				B812D7F51E5D3DF2002152D7 /* ViewControllerSS.swift in Sources */,
 				B840E7621E96E0A700E820D0 /* LeaderboardTableViewController.swift in Sources */,
 				34DDCB531E9EBE62002507D9 /* TriviaScreen1.swift in Sources */,
+				A9DEE1371EA85BBA0018FB36 /* DuckApplication.swift in Sources */,
 				2D720AA21E8DCBE900B797A4 /* DuckDatabase.swift in Sources */,
 				B88B2F3E1E47B64100384A02 /* AppDelegate.swift in Sources */,
 				344E17861E9C36D3007E10EB /* TriviaQuestion.swift in Sources */,
