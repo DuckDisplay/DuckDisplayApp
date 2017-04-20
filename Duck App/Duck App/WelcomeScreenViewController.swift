@@ -17,6 +17,7 @@ class WelcomeScreenViewController: UIViewController, PageScreenProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setBackground()
     }
 
     override func didReceiveMemoryWarning() {

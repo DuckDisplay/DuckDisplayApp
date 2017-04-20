@@ -8,13 +8,16 @@
 
 import UIKit
 
-class CreditsViewController: UIViewController {
+class CreditsViewController: UIViewController, PageScreenProtocol {
+
+    // MARK: Properties
     
     //Outlet to vuew that displays information
     @IBOutlet weak var creditsView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var designTeamText: UILabel!
     
+    // Required to conform to PageScreenProtocol
     var pageIndex: Int!
     
     override func viewDidLoad() {
