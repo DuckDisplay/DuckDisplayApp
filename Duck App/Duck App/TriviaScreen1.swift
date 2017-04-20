@@ -32,11 +32,12 @@ class TriviaScreen1: UIViewController {
     var thisPicture: String = ""
     var nextQuestion = 0
     
+    
     override func viewDidAppear(_ animated: Bool) {
         score = 0
         //load question and start timer
         getNextQuestion()
-       // gameTimer = Timer.scheduledTimer(timeInterval: 120, target: self, selector: #selector(gameIsOver), userInfo: nil, repeats: false)
+        gameTimer = Timer.scheduledTimer(timeInterval: 120, target: self, selector: #selector(gameIsOver), userInfo: nil, repeats: false)
         dumbTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
 
     }
@@ -239,11 +240,12 @@ class TriviaScreen1: UIViewController {
     
     //Selector method for game timer
     func gameIsOver() {
-        //gameTimer.invalidate()
-        //score += (chances * 10)
+        gameTimer.invalidate()
+        score += (chances * 10)
         //segue to the leaderboard screen
         self.performSegue(withIdentifier: "gameOver", sender: self)
     }
 }
+
 
 

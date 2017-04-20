@@ -13,11 +13,11 @@ import UIKit
 class Leaderboard : ViewController {
     
     override func viewDidLoad() {
-        //let vc = storyboard?.instantiateViewController(withIdentifier: "TriviaScreen1") as! TriviaScreen1
+        
         let myScore = score
         let bottomScore = users.last?.score
         
-        if (myScore > bottomScore! || users.count < 10) {
+        if(myScore > bottomScore! || users.count < 10) {
             
             createHighScoreAlert(title: "NEW HIGH SCORE!", message: "Your Score: " + String(myScore))
             
@@ -25,22 +25,21 @@ class Leaderboard : ViewController {
         else {
             createGameOverAlert(title: "GAME OVER", message: "Your Score: " + String(myScore))
         }
-        
-    }
 
+    }
 
     //Creates Alert when trivia game ends
     func createGameOverAlert(title: String, message: String){
-    let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { action in alert.dismiss(animated: true, completion: nil)
-    }))
+        }))
         self.present(alert, animated: true, completion: nil)
-}
-    
+    }
+
     //Creates a pop up when user has a new high score
-    
+
     func createHighScoreAlert(title:String, message: String){
-    
+        
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         
         let actionCancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) { (action:UIAlertAction) in
@@ -55,7 +54,7 @@ class Leaderboard : ViewController {
             let textState = alertController.textFields![1] as UITextField   //Variable where users state is saved
             
             print("The user entered:%@ & %@", textUser.text!, textState.text!);
-            let thisUser = Users(name: textUser.text!, state: textState.text!, score: score)
+            let thisUser = Users(place: 0, name: textUser.text!, state: textState.text!, score: score)
             
             //find where it goes and put it there
             self.placeUser(thisUser: thisUser)
@@ -86,12 +85,15 @@ class Leaderboard : ViewController {
         if(users.count < 10) {
             users.append(thisUser)
         }
-        //10 users already, put this one on the bottom and sort by score
+            //10 users already, put this one on the bottom and sort by score
         else {
             users[9] = thisUser
         }
         //sort by score
         users.sort { $0.score > $1.score}
+        
     }
+    
 }
+
 
