@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,10 +29,9 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QN7-8l-7TB" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="270" y="247" width="295" height="61"/>
+                                <rect key="frame" x="316" y="270" width="686" height="61"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="295" id="j8s-S7-hRo"/>
-                                    <constraint firstAttribute="height" constant="61" id="rSp-0p-Nor"/>
+                                    <constraint firstAttribute="height" constant="61" id="xaZ-zb-pbm"/>
                                 </constraints>
                                 <state key="normal" title="Insert Answer A ">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,15 +42,16 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2zf-4B-HdT">
-                                <rect key="frame" x="22" y="247" width="240" height="287"/>
+                                <rect key="frame" x="20" y="270" width="288" height="287"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="kKj-T0-YjB"/>
+                                    <constraint firstAttribute="width" constant="288" id="b5h-4l-kpP"/>
+                                    <constraint firstAttribute="height" constant="287" id="reg-oY-PRT"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbV-a7-EZe" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="270" y="317" width="295" height="61"/>
+                                <rect key="frame" x="316" y="339" width="686" height="61"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="61" id="acJ-UB-TDL"/>
+                                    <constraint firstAttribute="height" constant="61" id="FQ5-pX-7lC"/>
                                 </constraints>
                                 <state key="normal" title="Insert Answer B">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -62,9 +62,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ6-WA-4G3" userLabel="Insert Answer D" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="270" y="473" width="295" height="61"/>
+                                <rect key="frame" x="316" y="495" width="686" height="61"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="61" id="geS-dc-Qn1"/>
+                                    <constraint firstAttribute="height" constant="61" id="kHs-P9-zu8"/>
                                 </constraints>
                                 <state key="normal" title="Insert Answer D">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -75,9 +75,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVQ-hI-RzK" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="270" y="395" width="295" height="61"/>
+                                <rect key="frame" x="316" y="417" width="686" height="61"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="61" id="yB5-gJ-hZ2"/>
+                                    <constraint firstAttribute="height" constant="61" id="N7k-CX-YdJ"/>
                                 </constraints>
                                 <state key="normal" title="Insert Answer C">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -90,54 +90,57 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="00:00" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SbT-S8-dTw">
                                 <rect key="frame" x="920" y="702" width="84" height="46"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="84" id="0Za-Mz-ozK"/>
+                                    <constraint firstAttribute="width" constant="84" id="sIG-XU-l8Q"/>
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Insert Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dcq-o7-2CG">
-                                <rect key="frame" x="270" y="134" width="628" height="105"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lives: 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j30-g1-b9f">
+                                <rect key="frame" x="22" y="683" width="107" height="65"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="105" id="AjS-LH-3Vo"/>
-                                    <constraint firstAttribute="width" constant="628" id="d5v-L1-zeK"/>
+                                    <constraint firstAttribute="width" constant="107" id="ekN-ve-2ru"/>
+                                    <constraint firstAttribute="height" constant="65" id="l4a-YN-xQO"/>
                                 </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lives: 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j30-g1-b9f">
-                                <rect key="frame" x="876" y="134" width="107" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Insert Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dcq-o7-2CG">
+                                <rect key="frame" x="316" y="216" width="686" height="46"/>
+                                <color key="backgroundColor" red="0.42263250998579538" green="0.42059080703900414" blue="0.42467421293258667" alpha="0.74692315924657537" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
                         <constraints>
-                            <constraint firstItem="QN7-8l-7TB" firstAttribute="leading" secondItem="2zf-4B-HdT" secondAttribute="trailing" constant="8" symbolic="YES" id="1ZS-xn-ivj"/>
-                            <constraint firstItem="W1y-zg-ZXk" firstAttribute="top" secondItem="2zf-4B-HdT" secondAttribute="bottom" constant="234" id="1xQ-F9-cwQ"/>
-                            <constraint firstItem="LVQ-hI-RzK" firstAttribute="leading" secondItem="aQ6-WA-4G3" secondAttribute="leading" id="2af-G1-I1n"/>
-                            <constraint firstItem="Dcq-o7-2CG" firstAttribute="leading" secondItem="QN7-8l-7TB" secondAttribute="leading" id="3ZE-Y7-xxV"/>
-                            <constraint firstItem="2zf-4B-HdT" firstAttribute="top" secondItem="QN7-8l-7TB" secondAttribute="top" id="4zR-T5-in5"/>
+                            <constraint firstItem="aQ6-WA-4G3" firstAttribute="top" secondItem="LVQ-hI-RzK" secondAttribute="bottom" constant="17" id="4n9-v7-UNs"/>
                             <constraint firstItem="0Ao-df-XgP" firstAttribute="top" secondItem="Nn1-f0-5By" secondAttribute="top" id="5jd-hm-zpf"/>
-                            <constraint firstItem="LVQ-hI-RzK" firstAttribute="top" secondItem="rbV-a7-EZe" secondAttribute="bottom" constant="17" id="6uj-bj-q2I"/>
-                            <constraint firstItem="LVQ-hI-RzK" firstAttribute="trailing" secondItem="aQ6-WA-4G3" secondAttribute="trailing" id="8en-i6-iJf"/>
-                            <constraint firstItem="rbV-a7-EZe" firstAttribute="leading" secondItem="LVQ-hI-RzK" secondAttribute="leading" id="J3S-mp-zaW"/>
+                            <constraint firstItem="QN7-8l-7TB" firstAttribute="top" secondItem="Dcq-o7-2CG" secondAttribute="bottom" constant="8" symbolic="YES" id="6bG-aB-Vrm"/>
+                            <constraint firstItem="QN7-8l-7TB" firstAttribute="trailing" secondItem="Dcq-o7-2CG" secondAttribute="trailing" id="DWA-H8-IGW"/>
+                            <constraint firstItem="LVQ-hI-RzK" firstAttribute="top" secondItem="rbV-a7-EZe" secondAttribute="bottom" constant="17" id="E28-jG-enb"/>
+                            <constraint firstItem="j30-g1-b9f" firstAttribute="bottom" secondItem="SbT-S8-dTw" secondAttribute="bottom" id="Hkl-AD-gHI"/>
+                            <constraint firstItem="QN7-8l-7TB" firstAttribute="top" secondItem="2zf-4B-HdT" secondAttribute="top" id="K38-5R-7dJ"/>
                             <constraint firstItem="0Ao-df-XgP" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leading" id="NNY-T7-o0W"/>
-                            <constraint firstItem="QN7-8l-7TB" firstAttribute="trailing" secondItem="rbV-a7-EZe" secondAttribute="trailing" id="Rzd-V0-68S"/>
-                            <constraint firstItem="rbV-a7-EZe" firstAttribute="top" secondItem="QN7-8l-7TB" secondAttribute="bottom" constant="9" id="Sp0-WP-xq0"/>
+                            <constraint firstItem="rbV-a7-EZe" firstAttribute="trailing" secondItem="QN7-8l-7TB" secondAttribute="trailing" id="O0F-01-V0v"/>
+                            <constraint firstItem="QN7-8l-7TB" firstAttribute="leading" secondItem="2zf-4B-HdT" secondAttribute="trailing" constant="8" symbolic="YES" id="PYd-to-6yC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dcq-o7-2CG" secondAttribute="trailing" constant="2" id="RLU-De-dlZ"/>
+                            <constraint firstItem="rbV-a7-EZe" firstAttribute="trailing" secondItem="LVQ-hI-RzK" secondAttribute="trailing" id="TCj-IN-eKf"/>
+                            <constraint firstItem="QN7-8l-7TB" firstAttribute="top" secondItem="Nn1-f0-5By" secondAttribute="top" constant="270" id="TSG-ea-SRq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0Ao-df-XgP" secondAttribute="trailing" constant="-40" id="Uk4-CC-9Jx"/>
-                            <constraint firstItem="aQ6-WA-4G3" firstAttribute="top" secondItem="LVQ-hI-RzK" secondAttribute="bottom" constant="17" id="YNj-k4-gNr"/>
-                            <constraint firstItem="2zf-4B-HdT" firstAttribute="bottom" secondItem="aQ6-WA-4G3" secondAttribute="bottom" id="YbN-dd-zDB"/>
-                            <constraint firstItem="2zf-4B-HdT" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leadingMargin" constant="2" id="cy0-TU-kdt"/>
-                            <constraint firstAttribute="bottom" secondItem="SbT-S8-dTw" secondAttribute="bottom" constant="20" symbolic="YES" id="dr4-64-1DD"/>
-                            <constraint firstItem="QN7-8l-7TB" firstAttribute="top" secondItem="Dcq-o7-2CG" secondAttribute="bottom" constant="8" symbolic="YES" id="jJ9-19-b5B"/>
-                            <constraint firstItem="rbV-a7-EZe" firstAttribute="trailing" secondItem="LVQ-hI-RzK" secondAttribute="trailing" id="mFr-rY-3To"/>
-                            <constraint firstItem="SbT-S8-dTw" firstAttribute="trailing" secondItem="Nn1-f0-5By" secondAttribute="trailingMargin" id="umR-tC-CFr"/>
-                            <constraint firstItem="QN7-8l-7TB" firstAttribute="leading" secondItem="rbV-a7-EZe" secondAttribute="leading" id="v0b-Ra-CHT"/>
+                            <constraint firstItem="j30-g1-b9f" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leadingMargin" constant="2" id="Veb-J0-MUg"/>
+                            <constraint firstItem="rbV-a7-EZe" firstAttribute="leading" secondItem="LVQ-hI-RzK" secondAttribute="leading" id="aon-rI-yp6"/>
+                            <constraint firstItem="rbV-a7-EZe" firstAttribute="top" secondItem="QN7-8l-7TB" secondAttribute="bottom" constant="8" symbolic="YES" id="bAU-fV-VxS"/>
+                            <constraint firstItem="SbT-S8-dTw" firstAttribute="trailing" secondItem="Nn1-f0-5By" secondAttribute="trailingMargin" id="bCw-IW-ZMG"/>
+                            <constraint firstItem="QN7-8l-7TB" firstAttribute="leading" secondItem="Dcq-o7-2CG" secondAttribute="leading" id="dKc-L6-vzH"/>
+                            <constraint firstItem="2zf-4B-HdT" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leadingMargin" id="m4d-I5-4wT"/>
+                            <constraint firstItem="rbV-a7-EZe" firstAttribute="leading" secondItem="QN7-8l-7TB" secondAttribute="leading" id="rvd-1k-uDP"/>
+                            <constraint firstAttribute="bottom" secondItem="j30-g1-b9f" secondAttribute="bottom" constant="20" symbolic="YES" id="utG-ar-9e7"/>
+                            <constraint firstItem="LVQ-hI-RzK" firstAttribute="leading" secondItem="aQ6-WA-4G3" secondAttribute="leading" id="wfu-aI-1g1"/>
+                            <constraint firstItem="LVQ-hI-RzK" firstAttribute="trailing" secondItem="aQ6-WA-4G3" secondAttribute="trailing" id="yb0-C1-Jd6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Trivia Game" id="DiB-0f-2Cb">

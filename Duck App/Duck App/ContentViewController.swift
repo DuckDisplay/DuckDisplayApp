@@ -8,14 +8,18 @@
 
 import UIKit
 
-class ContentViewController: UIViewController {
+class ContentViewController: UIViewController, PageScreenProtocol {
 
+    
+    // MARK: Properties
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var changeView: UIButton!
 
-    
+    // Required to conform to Page Screen Protocol
     var pageIndex: Int!
+    
     var titleText: String!
     var descriptionText: String!
     var segueID: String!
@@ -48,23 +52,10 @@ class ContentViewController: UIViewController {
         
         self.view.backgroundColor = UIColor(patternImage: image)
         
-        //addBlurEffect()
         
     }
-    //Function to blur background
-    func addBlurEffect(){
-        
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.regular)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = view.frame
-        
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
-        view.addSubview(blurEffectView)
-        self.view.insertSubview(blurEffectView, at: 0)
-        
-    }
+    
     @IBAction func segueToSelectedScreen(_ sender: Any) {
         performSegue(withIdentifier: segueID, sender: sender)
     }
-
 }

@@ -8,15 +8,15 @@
 
 import UIKit
 
-class WelcomeScreenViewController: UIViewController {
+class WelcomeScreenViewController: UIViewController, PageScreenProtocol {
 
+    // MARK: Properties
+    
+    // Required to conform to PageScreenProtocol
     var pageIndex: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setBackground()
-        
     }
 
     override func didReceiveMemoryWarning() {

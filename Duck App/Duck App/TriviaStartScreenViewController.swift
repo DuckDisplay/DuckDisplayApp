@@ -56,6 +56,7 @@ class TriviaStartScreenViewController: UIViewController {
         self.view.insertSubview(blurEffectView, at: 0)
         
     }
+    
     func blinkingLabel () {
         if (blinkingStatus == 0){
             self.playButton.setTitleColor(UIColor.white, for: UIControlState.normal)
@@ -66,7 +67,6 @@ class TriviaStartScreenViewController: UIViewController {
             blinkingStatus = 0
         }
     }
-    
 }
 
 
