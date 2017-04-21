@@ -59,12 +59,6 @@ class TriviaScreen1: UIViewController {
     
     override func viewDidLoad() {
         setBackground()
-        
-        //initial user to prevent nil...
-        if(users.count < 1) {
-            let devUser = Users(place: 1, name: "Development Squad", state: "Domination Station", score: 5000)
-            users.append(devUser)
-        }
     }
     
     override func didReceiveMemoryWarning() {

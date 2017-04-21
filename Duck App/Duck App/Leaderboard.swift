@@ -12,10 +12,16 @@ import UIKit
 
 class Leaderboard : ViewController {
     
+    // MARK: Properties
+    
+    // Reference embedded table view controller
+    private var leaderboardTable: LeaderboardTableViewController!
+    
     override func viewDidLoad() {
         let myScore = score
         let bottomScore = users.last?.score
         
+        // @todo: Alert should *not* be made if Leaderboard is just viewed from TriviaStartScreen
         if(myScore > bottomScore! || users.count < 10) {
             createHighScoreAlert(title: "NEW HIGH SCORE!", message: "Your Score: " + String(myScore))
         }
@@ -28,6 +34,13 @@ class Leaderboard : ViewController {
         for _ in users {
             users[i].place = i + 1
             i += 1
+        }
+    }
+    
+    // Prepare for segue to get the embedded view controller pointer
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? LeaderboardTableViewController, segue.identifier == "LeaderboardTableViewEmbed" {
+            self.leaderboardTable = vc
         }
     }
     
@@ -50,7 +63,7 @@ class Leaderboard : ViewController {
         }
         
         let actionSubmit = UIAlertAction(title: "Submit", style: UIAlertActionStyle.default) { (action:UIAlertAction) in
-            //This is called when the user presses the login button.
+            //This is called when the user presses the submit button.
             
             let textUser = alertController.textFields![0] as UITextField;   //Variable where users name is saved
             let textState = alertController.textFields![1] as UITextField   //Variable where users state is saved
@@ -60,9 +73,7 @@ class Leaderboard : ViewController {
             //put user into the table
             self.placeUser(thisUser: thisUser)
             
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "LeaderboardTableViewController") as! LeaderboardTableViewController
-            
-            vc.tableView.reloadData()
+            self.leaderboardTable.tableView.reloadData()
             
         }
         

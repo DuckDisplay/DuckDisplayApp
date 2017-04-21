@@ -214,8 +214,8 @@
 		344E178D1E9C395D007E10EB /* Trivia Stuff */ = {
 			isa = PBXGroup;
 			children = (
-				344E17851E9C36D3007E10EB /* TriviaQuestion.swift */,
 				B2DDBE551E92C2E200C7B0EF /* TriviaStartScreenViewController.swift */,
+				344E17851E9C36D3007E10EB /* TriviaQuestion.swift */,
 				34DDCB521E9EBE62002507D9 /* TriviaScreen1.swift */,
 			);
 			name = "Trivia Stuff";
