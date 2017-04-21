@@ -1,0 +1,672 @@
+CREATE TABLE duck_facts
+(
+ID INTEGER PRIMARY KEY AUTOINCREMENT,
+Name TEXT,
+Type TEXT,
+ScientificName TEXT,
+ConservationStatus TEXT,
+Size TEXT,
+Description TEXT,
+Habitat TEXT,
+Food TEXT,
+Nesting TEXT,
+Behavior TEXT,
+Conservation TEXT,
+FunFacts TEXT,
+PhotoPath TEXT,
+SoundPath TEXT,
+ExtraPhotos TEXT
+);
+
+INSERT INTO duck_facts
+(
+Name,
+Type,
+ScientificName,
+ConservationStatus,
+Size,
+Description,
+Habitat,
+Food,
+Nesting,
+Behavior,
+Conservation,
+FunFacts,
+PhotoPath,
+SoundPath,
+ExtraPhotos
+) 
+VALUES 
+(
+'American Wigeon',
+'Dabbling Duck',
+'Anas americana',
+'Least Concern',
+'Length: M-20" F-19"  Weight: M-1.8 lbs F-1.6 lbs',
+'Both males and females have a blackish-blue tinted bill and blue-gray legs and feet.
+Males have a white patch from forehead to crown and an iridescent green band from the eye to the back of the head. The breast and side are pinkish-brown, with white flank feathers seperating them from the black undertail coverts. Most noticeable is their white shoulder patch when in flight.  
+Females have a gray head, brownish-black crown and brown chest and sides.', 
+'Ponds, lakes, and marshes with abundant aquatic vegetation.', 
+'American Wigeon are aquatic grazers and forage on grasses and sedges in wet meadows and pastures.',
+'American Wigeon prefer shallow lakes and marshy sloughs surrounded by dry sedge-lined meadows and contain submergent vegetation. Females lay on average 9 eggs.',
+'These are nervous birds, quick to take alarm. In a flock, their movements have been compared to those of pigeons.',
+'There are conflicting reports on American Wigeon populations. According to the North American Breeding Bird Survey, populations declined by 2.5% per year between 1966 and 2014, resulting in a cumulative decline of 71%. The 2014 State of the Birds listed them as a Common Bird in Steep Decline. However, federal waterfowl surveys show that despite rises and falls in population over the last 60 years, the overall population has remained stable, and since 2005 American Wigeon are on the rise, increasing by about 20 percent per year in 2013 and 2014. Populations declined by approximately 50 percent in the 1980s as a result of extended drought in prairie regions. They are widely hunted in the United States in fall, subject to federal limits. The American Wigeon is often the fifth most commonly harvested duck in the United States.',
+'•   The American Wigeon was formerly known as "Baldpate" because the white stripe resembled a bald man’s head.
+•   The American Wigeon is a rare, but regular straggler to Europe where it turns up in flocks of Eurasian Wigeon.
+
+•   The American Wigeon’s short bill enables it to exert more force at the bill tip than other dabbling ducks, thus permitting efficient dislodging and plucking of vegetation.
+
+•   The America Wigeon is the dabbling duck most likely to leave water and graze on vegetation in fields. However, feeding in fields on grain, such as corn, is rather rare.
+
+•   The American Wigeon’s diet has a higher proportion of plant matter than the diet of any other dabbling duck.
+
+•   The oldest American Wigeon was at least 21 years, 4 months old.',
+'AmericanWigeon',
+'AmericanWigeonSound',
+'FemaleAmericanWigeon,WinterMaleAmericanWigeon'
+);
+
+INSERT INTO duck_facts
+(
+Name,
+Type,
+ScientificName,
+ConservationStatus,
+Size,
+Description,
+Habitat,
+Food,
+Nesting,
+Behavior,
+Conservation,
+FunFacts,
+PhotoPath,
+SoundPath,
+ExtraPhotos
+) 
+VALUES 
+(
+'Northern Pintail',
+'Dabbling Duck',
+'Anas acuta',
+'Least Concern',
+'Length: 20.1"-29.9"  Weight: 1.1 - 3.1 lbs',
+'The Northern Pintail is probably the most graceful and elegant of them all. A lot of old duck hunters call him “bull sprigs, spike-tails, or even pheasant-ducks,” all derived from his long spiky tail feathers. Even his scientific name, Anas acuta, is Latin for “pointed duck.”', 
+'Nests in open country with shallow, seasonal wetlands and low vegetation. Winters in wide variety of shallow inland freshwater and intertidal habitats.', 
+'Grain, seeds, weeds, aquatic insects, crustaceans, and snails.',
+'Scrape in ground in brush or grass, lined with grass and down; usually not near water.',
+'Picks food from surface of ground. Dabbles, filter-feeds at surface of water, tips-up in shallow water.',
+'Northern Pintail populations declined throughout most of their range at a rate of 2.6% per year between 1966 and 2012, resulting in a cumulative decline of 72%, according to the North American Breeding Bird Survey. The 2014 State of the Birds listed them as a Common Bird in Steep Decline.',
+'•   The Northern Pintail is among the earliest nesting ducks in North America, beginning shortly after ice-out in many northern areas.
+
+•   The oldest recorded Northern Pintail was a male and at least 22 years, 3 months old when he was found in Saskatchewan, Canada.',
+'NorthernPintail',
+'NorthernPintailSound',
+'NorthernPintailMaleFemale,NorthernPintailFlying'
+);
+
+INSERT INTO duck_facts
+(
+Name,
+Type,
+ScientificName,
+ConservationStatus,
+Size,
+Description,
+Habitat,
+Food,
+Nesting,
+Behavior,
+Conservation,
+FunFacts,
+PhotoPath,
+SoundPath,
+ExtraPhotos
+) 
+VALUES 
+(
+'Northern Shoveler',
+'Dabbling Duck',
+'Anas clypeata',
+'Least Concern',
+'Length: 19.5"  Weight: 1.5 lbs.',
+'The one thing about a shoveler you simply cannot overlook is its bill. Disproportionately long, flattened, wider at the tip than at the base, this bird’s enormous schnoz is its signature. It’s not that the Cajuns don’t notice all this. They just have a habit of looking one step beyond the obvious. To a Cajun, a shoveler is a “smilin’ mallard.”
+Because of the shoveler’s highly evolved bill it can glean food more efficiently. Animal matter such as microscopic organisms, freshwater snails, aquatic insects, and tiny fishes makes up a third of their diet. No other dabbler eats that much, and that’s why every other dabbler makes better table fare. Even though they are a beautiful duck, let’s face it, as hunters when it’s down to eating shoveler’s times are hard.', 
+'Breeds in open, shallow wetlands. In winter, inhabits both freshwater and saline marshes.', 
+'Small swimming invertebrates and some seeds.',
+'A simple scrape lined with down and usually surrounded on at least three sides by vegetation. Placed in short vegetation near water; The Northern Shoveler’s clutch size can range from 8-12 eggs.',
+'Males exhibit elaborate courtship behavior, including various calls, turns, dips, and wing flaps.Forages by swimming along with bill lowered into the water, straining out small crustaceans and other invertebrates. It does not commonly tip its head and upper body forward into the water.',
+'Northern Shoveler breeding populations appear to be relatively stable, and slightly increased between 1966 and 2014, according to the North American Breeding Bird Survey. They are not listed in the 2014 State of the Birds Report.',
+'•   The bill of the Northern Shoveler is about 6.5 cm (2.5 inches) long. The bill has has about 110 fine projections (called lamellae) along the edges, for straining food from water.
+
+•   Northern Shoveler pairs are monogamous, and remain together longer than pairs of other dabbling duck species.
+
+•   When flushed off the nest, a female Northern Shoveler often defecates on its eggs, apparently to deter predators.
+
+•   The oldest recorded Northern Shoveler was a male, and at least 16 years, 7 months old when he was found in Nevada. he had been banded in California',
+'NorthernShoveler',
+'NorthernShovelerSound',
+'NorthernShovelerMale,NorthernShovelerFemale,NorthernShovelerGroup'
+);
+
+INSERT INTO duck_facts
+(
+Name,
+Type,
+ScientificName,
+ConservationStatus,
+Size,
+Description,
+Habitat,
+Food,
+Nesting,
+Behavior,
+Conservation,
+FunFacts,
+PhotoPath,
+SoundPath,
+ExtraPhotos
+) 
+VALUES 
+(
+'Redhead',
+'Diving Duck',
+'Aythya americana',
+'Least Concern',
+'Length: M-20" F-19"  Weight: M-2.4 lbs  F-2.1 lbs',
+'Redheads are medium-sized ducks with a smoothly rounded head and a moderately large bill. Male, Female, and Immature possess a black-tipped, blue-gray bill, with the Males having slightly brighter colors. Redheads in flight show gray flight feathers.
+Males have a reddish head and upper neck, black lower neck, foreback, and breast. Their bodies are a dark grayish color.
+Females and Immatures tend to be uniformly brown.', 
+'Lake/Ponds: Breed primarily in the seasonal ponds and wetlands of the Midwest, where plants provide food and cover. Also may use reservoirs, sewage ponds, streams, cropland ponds, and large marshes of the Great Basin and Canada. Molting birds gather on freshwater lakes.', 
+'Dive to eat submerged aquatic plants. This can include seeds, rhizomes, tubers of pondweeds, wild celery, water lilies, grasses, and wild rice. They also feed on mollusks, aquatic insects, and small fish.',
+'Females build a floating circular nest on top of vegetation to keep it safe from mammalian predators. Females work on building these nests alone. The nest is 3" deep and about 9"-24" wide, with the rim 7"-10" above water. Females make the nests by weaving plant material into a bowl, then using her own feathers to line the inside.',
+'In migration and winter, look for Redheads in large rafts, often with other  with other species including Canvasbacks, Scaup, Wigeon, and American Coots. They usually dive for their food, although they use shallower water than other diving ducks and may feed by tipping up, like a dabbling duck.'
+'Overall, Redhead populations were stable between 1966 and 2015, according to the North American Breeding Bird Survey. Though some areas had increased numbers during that time, significant declines were noted in the Great Basin, where populations declined by 87%, and in Idaho, where populations fell by 99%. The U.S. Fish and Wildlife Service estimated a North American population of 1.2 million in 2015. This number is up 76% from mid-twentieth-century averages. The species rates a 10 out of 20 on the Continental Concern Score.',
+'•   Many ducks lay some of their eggs in other birds’ nests (a strategy known as “brood parasitism”), but female Redheads are perhaps tops in this department. Their targets include other Redheads as well as Mallard, Canvasback, Northern Pintail, Gadwall, Northern Shoveler, Ruddy Duck, American Wigeon—even Northern Harrier. 
+
+•   Courting male Redheads perform a gymnastic “head throw” display, bending nearly in half with the neck bent far over the back until the head touches the tail. The bird then snaps its neck forward while giving a loud, catlike mee-ow call.
+
+•   Redheads are so exceptionally gregarious they’re referred to as “rafting ducks.” Sometimes they alight at hunting decoys before the hunters have finished setting them up.
+In winter much of the Redhead population forms huge flocks in two Gulf of Mexico bays that share a name, the Laguna Madre of Texas and Laguna Madre of Mexico. Flocks numbering up to 60,000 can occur, feeding on seagrass in the bays.
+
+•   The oldest known Redhead was 20 years and 7 months. It was banded in 1976 as a hatchling in Minnesota and shot in Texas in 1997.',
+'RedHead',
+'RedHeadSound',
+'RedHeadMale,RedHeadFemale'
+);
+
+INSERT INTO duck_facts
+(
+Name,
+Type,
+ScientificName,
+ConservationStatus,
+Size,
+Description,
+Habitat,
+Food,
+Nesting,
+Behavior,
+Conservation,
+FunFacts,
+PhotoPath,
+SoundPath,
+ExtraPhotos
+) 
+VALUES 
+(
+'Wood Duck',
+'Dabbling Duck',
+'Aix sponsa',
+'Least Concern',
+'Length: 19-20"  Weight: 1.4-1.5 lbs',
+'Male Wood Ducks have a crested head that is iridescent green and purple with a white stripe leading from the eye to the end of the crest, and another narrower white stripe from the base of the bill to the tip of the crest. The throat is white and the chest is burgundy with white flecks, gradually grading into a white belly. The bill is brightly patterned black, white, and red. The legs and feet are a dull straw yellow and the iris is red. 
+Female Wood Ducks have a gray-brown head and neck with a brownish, green, glossed crest. A white teardrop shaped patch surrounds the brownish-black eye. The throat is white and the breast is gray-brown stippled with white, fading into the white belly. The back is olive brown with a shimmer of iridescent green. The bill is blue-gray and the legs and feet are dull grayish-yellow.', 
+'Wood Ducks breed across most of the central and eastern United States, southeastern Canada and along the Pacific coast from California to British Columbia. The highest breeding densities occur in the Mississippi Alluvial Valley. In recent decades, the breeding range has expanded westward into the Great Plains region following development of wooded riparian corridors. Wood Ducks prefer riparian habitats, wooded swamps and freshwater marshes.', 
+'Often feeds on acorns, berries, and grapes on the forest floors.',
+'Females nest in tree cavities or nest boxes and lay an average of 12 bone-white eggs.',
+'Wood Duck populations increased between 1966 and 2015 according to the North American Breeding Bird Survey. This is good news considering their dramatic declines in the late 19th century. Wood Ducks can be found throughout the year in the U.S., with some individuals breeding in Canada, and some wintering in Mexico. Wood Duck rates an 8 out of 20 on the Continental Concern Score.',
+'Unlike most waterfowl, Wood Ducks perch and nest in trees and are comfortable flying through woods. Their broad tail and short, broad wings help make them maneuverable. When swimming, the head jerks back and forth much as a walking pigeon’s does. You often see Wood Ducks in small groups (fewer than 20), keeping apart from other waterfowl. Listen for the female’s call when these wary birds flush.',
+'•   Natural cavities for nesting are scarce, and the Wood Duck readily uses nest boxes provided for it. If nest boxes are placed too close together, many females lay eggs in the nests of other females.
+
+•   The Wood Duck nests in trees near water, sometimes directly over water, but other times over a mile away. After hatching, the ducklings jump down from the nest tree and make their way to water. The mother calls them to her, but does not help them in any way. The ducklings may jump from heights of over 50 feet without injury.
+
+•   Wood Ducks pair up in January, and most birds arriving at the breeding grounds in the spring are already paired. The Wood Duck is the only North American duck that regularly produces two broods in one year.',
+'WoodDuck',
+'WoodDuckSound',
+'WoodDuckMale,WoodDuckFemale'
+);
+
+INSERT INTO duck_facts
+(
+Name,
+Type,
+ScientificName,
+ConservationStatus,
+Size,
+Description,
+Habitat,
+Food,
+Nesting,
+Behavior,
+Conservation,
+FunFacts,
+PhotoPath,
+SoundPath,
+ExtraPhotos
+) 
+VALUES
+(
+'Ring-necked Duck',
+'Diving Duck',
+'Aythya collaris',
+'Least Concern',
+'Length: M-17" F-16.6"  Weight: M-1.6 lbs F-1.5 lbs',
+'A compact diving duck with a distinctive head shape—a sloping forehead and peaked rear crown. The crown flattens when they are diving. In flight, Ring-necked Ducks appear large-headed with a thin neck and a short, round body.  
+Males are bold black-and-gray ducks with a dark head, black back, and gray sides with a white hash mark on the chest. Adult males have a prominent white ring on the bill.
+Females are rich brown with a contrastingly pale cheek, a white patch near the bill, and a whitish eye-ring.', 
+'Look for Ring-necked Ducks on smaller bodies of water than other diving ducks. In winter and on migration, this can include beaver ponds, small lakes, marshes, cattle ponds, or even flooded agricultural fields across North America. Ring-necked Ducks breed in freshwater marshes, bogs, and other shallow, often acidic wetlands.', 
+'Ring-necked Ducks eat submerged plants and aquatic invertebrates. The plants they eat include leaves, stems, seeds, and tubers of pondweed, water lilies, wild celery, wild rice, millet, sedges, and arrowhead. They also eat mollusks (swallowing them whole and crushing the shells in their gizzard) as well as snails, caddisflies, dragonfly nymphs, midges, earthworms, and leeches.',
+'Ring-necked Ducks put their nests among dense sedges and other emergent plants in marshes. Pairs choose these sites by swimming at the vegetation edge or by making low circling flights over potential spots. They typically build their nests directly over the water or on floating vegetation; this helps protect the nests from land-based predators.',
+'Ring-necked Ducks are often in small flocks and pairs, diving to feed on mollusks, invertebrates, and submerged aquatic vegetation. Sometimes they flock with scaup; other times you may see them with dabbling ducks.',
+'Duck populations can fluctuate markedly from year to year because of wetland conditions on the breeding grounds. Overall, Ring-necked Duck numbers increased between 1966 and 2014, according to the North American Breeding Bird Survey.',
+'•   This bird’s common name (and its scientific name "collaris" too) refer to the Ring-necked Duck’s hard-to-see chestnut collar on its black neck. It’s not a good field mark to use for identifying the bird, but it jumped out to the nineteenth century biologists that described the species using dead specimens.
+
+•   During fall migration, Ring-necked Ducks can form immense flocks. Several hundred thousand congregate each fall on certain lakes in Minnesota to feed on wild rice.
+
+•   Ring-necked Ducks on their breeding grounds occasionally get attacked by the much larger Common Loon, the Red-necked Grebe, and even the much smaller Pied-billed Grebe.
+
+•   The oldest known Ring-necked Duck was a male, and at least 20 years, 5 months old. He was banded in 1964 in Louisiana and was shot in 1983, in Minnesota.',
+'RingNeck',
+'RingNeckSound',
+'RingNeckFemale,RingNeckMale'
+);
+
+INSERT INTO duck_facts
+(
+Name,
+Type,
+ScientificName,
+ConservationStatus,
+Size,
+Description,
+Habitat,
+Food,
+Nesting,
+Behavior,
+Conservation,
+FunFacts,
+PhotoPath,
+SoundPath,
+ExtraPhotos
+) 
+VALUES
+(
+'Lesser Scaup',
+'Diving Duck',
+'Aythya affinis',
+'Least Concern',
+'Length: M-17" F-16.5"  Weight: M-1.6 lbs F-1.5 lbs',
+'Breeding Males have a black head, neck, upper back, and breast . The head has a purplish iridescence. The back is white, covered with thin, black wavy lines. The rump is black, with a white belly, white sides with some fine dark streaks, and a black undertail.
+Nonbreeding Males are similar to females, but with only a few white feathers on face instead of a large white patch. The head and neck are blackish brown, the breast is dark with some white edging to feathers, and the back is brown with white feather edges. The underparts are mottled brownish and the tail is dark grayish.
+Females have a white area at base of bill. The head and neck are dark brown with some light mottling. The back is darkish brown with white flecks and the breast is a buffy brown color. The bellies are whitish, the sides and flanks are brown, and the tail is a dark brown color.', 
+'Found on lakes and ponds. Winters in fresh or brackish water.', 
+'Lesser Scaup dive to feed on seeds of pondweeds, wigeon grass, wild rice, sedges, and bulrushes. They also feed on clams, snails, crustaceans, aquatic insects.',
+'Females nest in close proximity to open water and lay an average of 9 eggs. They form a bowl of grasses or other vegetation, lined with down. Placed on ground or in mound of vegetation over water. Eggs are pale to dark olive or greenish buff.',
+'Dives under water to capture food. Lesser and Greater Scaup are often seen together, with the smaller size of the Lesser Scaup being obvious. Lesser and Greater Scaup are often counted together, because they are difficult to distinguish during aerial surveys.',
+'Lesser Scaup are common, but populations are declining. Between 1966 and 2015, the species declined by about 60%, according to the North American Breeding Bird Survey. Lesser Scaup rates a 12 out of 20 on the Continental Concern Score. Contaminants, lower female survival and reduced recruitment due to changes in breeding habitat or food resources are thought to be the primary factors contributing to the decline, although causes are little understood.',
+'•   The Lesser Scaup is a regular, if relatively uncommon, visitor to Hawaii, and is the third most abundant duck in the state. Only the Hawaiian Duck actually breeds there.
+
+•   An adult Lesser Scaup may pretend to be dead (immobile with head extended, eyes open, and wings held close to body) when grasped by a red fox.
+
+•   Lesser Scaup chicks are capable of diving under water on their hatching day, but they are too buoyant to stay under for more than just a moment. By the time they are 5 to 7 weeks old they are able to dive for 2-25 seconds and swim underwater for 15-18 meters (50-60 ft).
+
+•   The oldest recorded Lesser Scaup was a male, and at least 17 years, 7 months old when he was shot in Wisconsin in 1973. He had been banded in Maryland in 1956.',
+'LesserScaup',
+'LesserScaupSound',
+'LesserScaupFemale,LesserScaupMale'
+);
+
+INSERT INTO duck_facts
+(
+Name,
+Type,
+ScientificName,
+ConservationStatus,
+Size,
+Description,
+Habitat,
+Food,
+Nesting,
+Behavior,
+Conservation,
+FunFacts,
+PhotoPath,
+SoundPath,
+ExtraPhotos
+) 
+VALUES
+(
+'Green-winged Teal',
+'Dabbling Duck',
+'Anas crecca',
+'Least Concern',
+'Length: M-14.7" F-14"  Weight: M-0.7 lbs F-0.6 lbs',
+'Males have a chestnut head with green to purple patch from the eyes to the nape of the neck. The chest is pinkish-brown with black speckles. The back, sides, and flanks are vermiculated gray, separated from the chest by a white bar. The wing coverts are brownish-gray with a green speculum. The bill is dark slate, and the legs and feet are dark gray.
+Females are mottled brown with a dark brown line that extends from the bill through the eye. The bill is dark gray, and the legs and feet are olive-gray to brownish-gray.', 
+'Found in marsh regions. Breed in isolated river deltas, forest wetlands, and mixed prairie regions. Wintering birds go to shallow wetlands, including coastal marshes and bayous.', 
+'They mainly eat aquatic invertebrates and seeds. They probe mudflats for worms, seed shrimp, and copepods living just above the sediment. Plant foods may include sedge fruit, seeds of pondweeds, grasses, smartweeds, sea purslane, and agricultural crops including corn and rice. Animal prey includes midges, tadpoles, mollusks, and crustaceans.',
+'The female makes a nest by using her feet to carve a bowl in the ground. She then lays the first egg, then adds plant material to build up a nest. She covers the eggs with her down feathers before incubating. Nests are usually built in sedge meadows, grasslands, or brush thickets. The nests are typically within 200 yards of water. The female will lay 6-9 eggs on average. The eggs have a creamy white to pale olive-buff color.',
+'They are fast, agile, buoyant fliers and can take off straight from the water’s surface without running across it. They are dabbling ducks that tip up to feed. Although, they may dive for food and to hide from predators.',
+'Green-winged Teal are numerous and their population has increased over recent decades, according to waterfowl surveys by the U.S. Fish and Wildlife Service. They estimated the North American breeding population in 2015 was at least 4 million, almost double the long-term average.',
+'•   The American and Eurasian forms of the Green-winged Teal were formerly considered different species. The Eurasian teal differ from the American by lacking the vertical white shoulder stripe and having a horizontal white stripe along the back instead. 
+
+•   Eurasian teal show up casually each year along both the Pacific and Atlantic coasts.
+
+•   The Aleutian Islands of Alaska support their own race of Green-winged Teal, Anas crecca nimia. Unlike other Green-winged Teal populations, this race doesn’t migrate. In winter the birds move from summering sites on ponds and lakes to the islands’ beaches, where they forage in tide pools and on shallow-water reefs.
+
+•   Green-winged Teals have closely spaced, comblike projections called lamellae around the inner edge of the bill. They use them to filter tiny invertebrates from the water, allowing the birds to capture smaller food items than other dabbling ducks.
+
+•   Green-winged Teal sometimes switch wintering sites from year to year. One banding study found that individuals wintering in Texas one year went as far away as California in subsequent years. This lack of philopatry, or “faithfulness” to a particular site, may reflect the tendency of males that did not breed the year before to try to find mates among a different set of wintering females.
+
+•   The oldest known Green-winged Teal was at least 20 years and 3 months, based on banding data. It was a female banded in 1941 in Oklahoma, and recovered by a hunter 1960 in Missouri.',
+'GreenWingTeal',
+'GreenWingedTealSound',
+'GreenWingTealMale,GreenWingTealPair'
+);
+
+INSERT INTO duck_facts
+(
+Name,
+Type,
+ScientificName,
+ConservationStatus,
+Size,
+Description,
+Habitat,
+Food,
+Nesting,
+Behavior,
+Conservation,
+FunFacts,
+PhotoPath,
+SoundPath,
+ExtraPhotos
+) 
+VALUES
+(
+'Gadwall',
+'Dabbling Duck',
+'Anas strepera',
+'Least Concern',
+'Length: M-21" F-19"  Weight: M-2.0 lbs F-1.8 lbs',
+'In a world where male ducks sport gleaming patches of green, red, or blue, the Gadwall’s understated elegance can make this common duck easy to overlook. Males are intricately patterned with gray, brown, and black; females resemble female Mallards, although with a thinner, darker bill.', 
+'Gadwall breed mainly in prairie potholes—small ponds scattered throughout the Great Plains and Canadian prairies. Some also breed on tundra, deltas, and wetlands in boreal forests of the far north. In developed areas with few natural ponds, Gadwall may use stock ponds. They choose well-vegetated wetlands with plenty of emergent plants to feed among and take cover in. Equally important for breeding are adjacent uplands with vegetation to conceal nests and for ducklings to hide in. On migration and in winter, look for Gadwalls in fresh and salt water marshes and well-vegetated reservoirs, beaver ponds, farm ponds, and streams.', 
+'Gadwall eat mostly submerged aquatic vegetation such as algae, grasses, rushes, sedges, pondweed, widgeon grass, and water milfoil, including leaves, stems, roots, and seeds. They also eat snails, midges, water beetles, and other invertebrates. During the breeding season, animal matter can account for nearly 50 percent of an adult Gadwall’s diet, but this proportion drops to only about 5 percent animal matter during winter.',
+'Gadwall pairs form during fall migration. Once they return to their breeding grounds, they select their nest site while flying low over dry, grassy areas. The female makes a closer inspection on foot while the male stands guard near her. They typically choose dense brush or grasses at least a foot tall, usually within 200 yards of open water, and nest on islands when possible for greater safety from predators. In heavily cultivated areas, untilled land for nest sites can be a scarce resource.',
+'Gadwall are dabbling ducks—they ride fairly high in the water and they tip forward to graze on submerged plants that they can reach with their outstretched necks. They rarely dive. Gadwall sometimes steal food from American Coots. Like most ducks they often form flocks, and you may see them fidgeting as they swim about each other. These movements are actually a complex series of displays that communicate pair bonds, levels of aggression, and degrees of interest among potential mates.',
+'Gadwall populations increased by over 2.5 percent per year between 1966 and 2010, according to the North American Breeding Bird Survey. Gadwall are the third most hunted duck species (after Mallard and Green-winged Teal), with some 1.7 million of them harvested in 2010. Slightly more than 1 in every 10 ducks shot by U.S. hunters is a Gadwall. Duck harvests are carefully managed, and Gadwall numbers are still strong in part because of the conservation of both wetlands and adjacent upland nesting habitat through the Conservation Reserve Program and the North American Waterfowl Management Plan, as well as the efforts of private conservation groups',
+'•   Gadwall sometimes steal food from American Coots and from other ducks. 
+Gadwall have increased in numbers since the 1980s, partly because of conservation of wetlands and adjacent uplands in their breeding habitat through the Conservation Reserve Program and the North American Waterfowl Management Plan. 
+
+•   Female Gadwall produce an egg a day while they are laying their 7–12-egg clutches. To meet their demand for protein during this stressful time, female Gadwall eat more invertebrates than males during this period—in addition to using reserves of nutrients they’ve stored in their bodies during the winter.
+
+•   The oldest known Gadwall was a male, and at least 19 years, 6 months old. He was banded in Saskatchewan in 1962 and shot during hunting season in Louisiana in 1981.',
+'Gadwall',
+'GadwallSound',
+'GadwallPair'
+);
+
+INSERT INTO duck_facts
+(
+Name,
+Type,
+ScientificName,
+ConservationStatus,
+Size,
+Description,
+Habitat,
+Food,
+Nesting,
+Behavior,
+Conservation,
+FunFacts,
+PhotoPath,
+SoundPath,
+ExtraPhotos
+) 
+VALUES
+(
+'Cinnamon Teal',
+'Dabbling Duck',
+'Anas cyanoptera',
+'Least Concern',
+'Length: M-16" F-15"  Weight: M-0.7 lbs F-0.8 lbs',
+'The adult male has a cinnamon-red head and body with a brown back, a red eye, and a dark bill. The adult female has a mottled brown body, a pale brown head, brown eyes, and a grey bill.', 
+'Freshwater or brackish wetlands of the west side of the Americas', 
+'Aquatic insects, snails, and zooplankton',
+'Depression on the ground near water lined with grasses and down',
+'Dabbles with only bill in water or turns upside down to submerge the entire head while feeding',
+'In North America, cinnamon teal are among the least abundant dabbling ducks with estimated breeding populations ranging from 100,000-300,000. The species appears to have declined between 1966 and 2015, according to the North American Breeding Bird Survey.',
+'•   The Cinnamon Teal is the only duck with separate breeding populations in North and South America.  
+
+•   Conceals nest completely with vegetation draped over it',
+'cinnamonteal',
+'CinnamonTealSound',
+'CinnamonTealFemale,CinnamonTealMale'
+);
+
+INSERT INTO duck_facts
+(
+Name,
+Type,
+ScientificName,
+ConservationStatus,
+Size,
+Description,
+Habitat,
+Food,
+Nesting,
+Behavior,
+Conservation,
+FunFacts,
+PhotoPath,
+SoundPath,
+ExtraPhotos
+) 
+VALUES
+(
+'Mallard',
+'Dabbling Duck',
+'Anas platyrhynchos',
+'Least Concern',
+'Length: M-24.7" F-23"  Weight: M-2.7 lbs F-2.4 lbs',
+'Males have dark, iridescent green heads, with a bright yellow bill. The body is gray, with a brown breast, and black rear. There is a white-bordered, blue “speculum” patch in the wing.
+Females and young are mottled brown, with orange/brown bills. There is a white-bordered, blue “speculum” patch in the wing.', 
+'They live in nearly any wetland habitat, natural or artificial. Some examples include lakes, ponds, marshes, rivers, and coastal habitats, as well as residential backyards.', 
+'Mallards are generalist foragers and will eat a wide variety of food. They don’t dive, but dabble to feed, tipping forward in the water to eat seeds and aquatic vegetation. They also roam around on the shore and pick at vegetation and prey on the ground. During the breeding season, they eat mainly animal matter including aquatic insect larvae, earthworms, snails and freshwater shrimp. During migration, many Mallards consume largely agricultural seed and grain. In city parks, they readily accept handouts from parkgoers.',
+'The female forms a shallow depression or bowl on the ground in moist earth. She does not carry material to the nest but rather pulls vegetation she can reach toward her while sitting on nest. During egg-laying phase, she lines the nest with grasses, leaves, and twigs from nearby. She also pulls tall vegetation over to conceal herself and her nest. Mallards nest on the ground on dry land that is close to water; nests are generally concealed under overhanging grass or other vegetation. Occasionally, Mallards nest in agricultural fields, especially alfalfa but also winter wheat, barley, flax, and oats. Both urban and wild populations readily nest in artificial nesting structures. Occasionally nests are placed on floating mats of vegetation or woven into plant stems that rise out of the water.',
+'Mallards are an abundant city and suburban park duck and because of constant feedings by park visitors, they can become very tame and approachable. In more natural settings and where Mallards are heavily hunted, they can be very wary of approaching people. They commonly associate with and may hybridize with other dabbling ducks. Mallards have a huge variety of displays that can be fascinating to watch and decipher. Most displays are ritualized versions of common motions: males may face off with a head-bob, threaten an aggressor with an open bill, or push against each other, breast to breast. Paired males defend their territories with vigorous acrobatic chases. Males court females by shaking or flicking the head side to side, looking over their shoulder, or raising up in the water and flapping their wings. Several males often gather around a female to display. A female encourages a male by nodding her head back and forth or paddling with her head held low.',
+'Mallards are the most widespread and abundant duck in North America and their populations have been slightly increasing from 1966 to 2014, according to the North American Breeding Bird Survey. Their numbers increase during wet periods and decline when there are droughts in the middle of the continent—over the last 50 years their estimated numbers have cycled between about 5 million and 11 million. The U.S. Fish and Wildlife Service estimates the 2014 North American population at around 11.6 million breeding birds. Mallards are also the most heavily hunted North American ducks, accounting for about 1 of every 3 ducks shot.',
+'•   The Mallard is the ancestor of nearly all domestic duck breeds (everything except the Muscovy Duck). Domestic ducks can be common in city ponds and can be confusing to identify—they may lack the white neck ring, show white on the chest, be all dark, or show oddly shaped crests on the head. 
+
+•   Ducks are strong fliers; migrating flocks of Mallards have been estimated traveling at 55 miles per hour.
+
+•   The standard duck’s quack is the sound of a female Mallard. Males don’t quack; they make a quieter, rasping sound.
+
+•   The oldest known Mallard was a male, and at least 27 years, 7 months old when he was shot in Arkansas in 2008. He had been banded in Louisiana in 1981.',
+'Mallard',
+'MallardSound',
+'MallardFemale,MallardPair'
+);
+
+INSERT INTO duck_facts
+(
+Name,
+Type,
+ScientificName,
+ConservationStatus,
+Size,
+Description,
+Habitat,
+Food,
+Nesting,
+Behavior,
+Conservation,
+FunFacts,
+PhotoPath,
+SoundPath,
+ExtraPhotos
+) 
+VALUES
+(
+'Canvasback',
+'Diving Duck',
+'Aythya valisineria',
+'Least Concern',
+'Length: M-21" F-20"  Weight: M-2.7 lbs F-2.5 lbs',
+'Males have a chestnut-red head head and neck, a black breast, grayish back, black rump, and blackish-brown tail. The sides, flank, and belly are white, while the wing coverts are grayish and vermiculated with black. The bill is blackish and the legs and feet are bluish-gray. The iris is bright red in the spring, but duller in the winter. 
+Females have a light brown head and neck, grading into a darker brown chest and foreback. The sides, flanks, and back are grayish-brown. The bill is blackish and the legs and feet are bluish-gray.', 
+'These ducks harbor up on big open water lakes by the thousands, and decoy fairly easy in the early season.', 
+'Seeds, buds, leaves, tubers, roots, snails, and insect larvae.',
+'Canvasback typically lay 5-11 greenish drab eggs in a floating nest.',
+'The Canvasback feeds mainly by diving but sometimes dabbling. The Canvasback migrates through the Mississippi Flyway to wintering grounds in the mid-Atlantic United States and the Lower Mississippi Alluvial Valley (LMAV), or the Pacific Flyway to wintering grounds along the coast of California.',
+'Canvasback populations have fluctuated widely. Low levels in the 1980s put the Canvasback on lists of special concern, but numbers increased greatly in the 1990s. Overall, average population size has been steady since the 1950s. The North American Breeding Bird Survey indicates that there may have been a small overall increase between 1966 and 2015. In 2015, the U.S. Fish and Wildlife Service estimated a U.S. population between 740,000 and 860,000. The species rates an 11 out of 20 on the Continental Concern Score.',
+'•   The species name of the Canvasback, Aythya valisineria, comes from Vallisneria americana, or wild celery, whose winter buds and rhizomes are its preferred food during the non-breeding period. 
+
+•   The oldest recorded Canvasback was a male and at least 22 years, 7 months old when he was shot in California in 1991. He had been banded in the same state in 1969.',
+'Canvasback',
+'CanvasbackSound',
+'CanvasbackMale,CanvasbackFemale'
+);
+
+INSERT INTO duck_facts
+(
+Name,
+Type,
+ScientificName,
+ConservationStatus,
+Size,
+Description,
+Habitat,
+Food,
+Nesting,
+Behavior,
+Conservation,
+FunFacts,
+PhotoPath,
+SoundPath,
+ExtraPhotos
+) 
+VALUES
+(
+'Canada Goose',
+'Goose',
+'Branta canadensis',
+'Least Concern',
+'Length: M- 25-45" F- 25-45"  Weight: M- 3-13 lbs  F- 3-11 lbs',
+'Both sexes of Canada Geese have a black head and neck except for broad white cheek patches extending from the throat to the rear of the eye. The female of a breeding pair is often smaller. The breast, abdomen, and flanks range in coloring from a light gray to a dark chocolate brown, either blending into the black neck or being separated from it by a white collar. The back and scapulars are darker brown, the rump is blackish, and the tail is blackish-brown with a U-shaped white band on the rump. The bill, legs, and feet are black. Most subspecies are uniformly large and pale and exhibit the characteristic "honking" call.', 
+'Canada Geese live in a great many habitats near water, grassy fields, and grain fields. Canada Geese are particularly drawn to lawns for two reasons: they can digest grass, and when they are feeding with their young, manicured lawns give them a wide, unobstructed view of any approaching predators. So they are especially abundant in parks, airports, golf courses, and other areas with expansive lawns.', 
+'In spring and summer, geese concentrate their feeding on grasses and sedges, including skunk cabbage leaves and eelgrass. During fall and winter, they rely more on berries and seeds, including agricultural grains, and seem especially fond of blueberries. They’re very efficient at removing kernels from dry corn cobs. Two subspecies have adapted to urban environments and graze on domesticated grasses year round.',
+'Nests are a large open cup on the ground, made of dry grasses, lichens, mosses, and other plant material, and lined with down and some body feathers. Females lay 2-8 eggs per clutch.',
+'Canada Geese eat grain from fields, graze on grass, and dabble in shallow water by tipping forward and extending their necks underwater. During much of the year they associate in large flocks, and many of these birds may be related to one another. They mate for life with very low “divorce rates”, and pairs remain together throughout the year. Geese mate “assortatively”, larger birds choosing larger mates and smaller ones choosing smaller mates; in a given pair, the male is usually larger than the female.',
+'Canada Geese are common and increased between 1966 and 2015, according to the North American Breeding Bird Survey. The total North American population in 2015 was between 4.2 million to over 5.6 million. The proliferation of lawns, golf courses, and parks offers Canada Geese such reliable habitat that in some areas the birds stay all year round instead of migrating like they used to do. Recently, some communities have had to begin considering some Canada Geese as nuisances (for eating grass or fouling lawns) or even hazards (around airports, where collisions with planes can be very dangerous). Some 2.6 million Canada Geese are harvested by hunters in North America, but this does not seem to affect its numbers.',
+'•   At least 11 subspecies of Canada Goose have been recognized, although only a couple are distinctive. In general, the geese get smaller as you move northward, and darker as you go westward. The four smallest forms are now considered a different species: the Cackling Goose.
+
+•   Some migratory populations of the Canada Goose are not going as far south in the winter as they used to. This northward range shift has been attributed to changes in farm practices that makes waste grain more available in fall and winter, as well as changes in hunting pressure and changes in weather.
+
+•   Individual Canada Geese from most populations make annual northward migrations after breeding. Nonbreeding geese, or those that lost nests early in the breeding season, may move anywhere from several kilometers to more than 1500 km northward. There they take advantage of vegetation in an earlier state of growth to fuel their molt. Even members of "resident" populations, which do not migrate southward in winter, will move north in late summer to molt.
+
+•   The “giant” Canada Goose, Branta canadensis maxima, bred from central Manitoba to Kentucky but was nearly driven extinct in the early 1900s. Programs to reestablish the subspecies to its original range were in many places so successful that the geese have become a nuisance in many urban and suburban areas.
+
+•   The oldest known wild Canada Goose was a female, and at least 33 years, 3 months old when she was shot in Ontario in 2001. She had been banded in Ohio in 1969.
+
+•   In a pattern biologists call “assortative mating”, birds of both sexes tend to choose mates of a similar size.',
+'Canadagoose',
+'CanadaGooseSound',
+'CanadaGooseGroup,CanadaGooseFlying,CanadaGooseArmy'
+);
+
+INSERT INTO duck_facts
+(
+Name,
+Type,
+ScientificName,
+ConservationStatus,
+Size,
+Description,
+Habitat,
+Food,
+Nesting,
+Behavior,
+Conservation,
+FunFacts,
+PhotoPath,
+SoundPath,
+ExtraPhotos
+) 
+VALUES
+(
+'Blue-winged Teal',
+'Dabbling Duck',
+'Anas discors',
+'Least Concern',
+'Length: M- 16" F- 14"  Weight: M- 1.0 lbs  F- 0.8 lbs',
+'A small dabbling duck, a Blue-winged Teal is dwarfed by a Mallard and only a touch larger than a Green-winged Teal. The head is rounded and the bill is on the large side. Breeding males are brown-bodied with dark speckling on the breast, a slaty-blue head with a white crescent behind the bill, and a small white flank patch in front of their black rear. Females and eclipse males are a cold, patterned brown. In flight, they reveal a bold powder-blue patch on their upperwing coverts.', 
+'Look for Blue-winged Teal on calm bodies of water from marshes to small lakes. The prairie-pothole region is the heart of their breeding range, where they thrive in grassy habitats intermixed with wetlands.', 
+'Blue-winged Teal dabble to feed on the vegetative parts of aquatic plants (algae, duckweeds, pondweeds, etc.), seeds (sedges, pondweeds, grasses, etc.) and large amounts of aquatic invertebrates found in shallowly flooded wetlands.',
+'The female builds the nest by scraping with her feet to make a circular depression. She then lines it with dried grasses picked from around the nest, adding down and breast feathers. Vegetation conceals most nests on all sides and from above. The finished nest is about 8 inches across, with an inside diameter of about 6 inches and 2 inches deep. The female lays about 6-14 eggs.',
+'Blue-winged Teal feed by dabbling—dipping their bill into the water, submerging their entire head, or tipping up to reach for prey or vegetation deeper underwater. They dive rarely. Like many ducks, Blue-winged Teal have a range of exaggerated motions that they use as displays. Often males will make these displays while oriented to the side of the female he is courting. They include pumping the head up and down, dipping the head under water rapidly, and tipping up or dabbling in the water with body feathers raised. Females may respond by "inciting": lowering her head, pointing her bill at the male, and then raising her head. Pair bonds typically dissolve during incubation, and adults form new pair bonds with different mates in the winter or spring.',
+'Blue-winged Teal are the second most abundant duck in North America, behind the Mallard. Populations remained stable between 1966 and 2014, according to the North American Breeding Bird Survey. Their numbers fluctuate between about 2.8 million and 7.4 million birds, mainly as a response to water conditions, with drought causing populations to fall. Blue-winged Teal, like other ducks, are vulnerable to wetland loss or degradation, pesticide contamination (particularly on their wintering grounds, in countries where DDT is still legal), and consumption of lead shot where it is still used.',
+'•   The Blue-winged Teal is among the latest ducks to migrate northward in spring, and one of the first to migrate southward in fall.
+
+•   The Blue-winged Teal migrates over long distances. One individual banded in Alberta was shot in Venezuela a month later.
+
+•   The oldest recorded Blue-winged Teal was a male, and at least 23 years, 3 months old. He had been banded in Saskatchewan and was found in Cuba.',
+'BlueWingedTeal',
+'BlueWingedTealSound',
+'BlueWingedTealFlying,BlueWingedTealPair'
+);
+
+INSERT INTO duck_facts
+(
+Name,
+Type,
+ScientificName,
+ConservationStatus,
+Size,
+Description,
+Habitat,
+Food,
+Nesting,
+Behavior,
+Conservation,
+FunFacts,
+PhotoPath,
+SoundPath,
+ExtraPhotos
+) 
+VALUES
+(
+'American Black Duck',
+'Dabbling Duck',
+'Anas rubripes',
+'Least Concern',
+'Length: M- 22" F- 21"  Weight: M- 2.7 lbs  F- 2.4 lbs',
+'American Black Ducks are similar to mallards in size, and resemble the female mallard in coloration, though the American Black Duck’s plumage is darker. The male and female Black Duck are similar in appearance, but the male’s bill is yellow while the female’s is a dull green. The head is slightly lighter brown than the dark brown body, and the speculum is iridescent violet-blue with predominantly black margins. In flight, the white underwings can be seen in contrast to the dark brown body.', 
+'American Black Ducks nest in eastern wetlands including freshwater and saltmarshes. During migration and winter, they rest and forage in protected ponds, marshes, and bays.', 
+'American Black Ducks dabble in shallow water to feed on plant material and small aquatic animals (insects, amphibians, etc.) in freshwater habitats, and mollusks and crustaceans in maritime habitats.',
+'The female builds the nest on her own, digging with her feet and bill in leaf litter or soil to form a basin 7–8 inches across and 1.5 inches deep. While laying eggs, she adds plant material gathered within reach of the nest, including grass, twigs, leaves, stems, and conifer needles. By the fourth or fifth egg she starts adding down feathers plucked from her own body, until the clutch is fully covered at the beginning of incubation. She lays about 6-14 eggs.',
+'American Black Ducks are slow, heavy fliers but excellent swimmers, diving to avoid predators and sometimes to find food. Mates are monogamous within each breeding season, and the pairs may stay together in subsequent years. They court and form strong pair bonds in the fall and winter before migrating to breeding grounds.',
+'American Black Ducks are common, but the North American Breeding Bird Survey recorded a decline of about 84% between 1966 and 2014. Since 2004, declines have slowed down. Farming, logging, and urbanization in this species’ breeding and wintering habitats, both inland and on the coast, may have contributed to the fall in numbers.',
+'•   As soon as their down feathers dry, newly hatched ducklings are able to leave the nest, a depression on the ground lined with plant materials. They follow their mother to rearing areas with a lot of invertebrates to eat and plenty of vegetation for cover.
+
+•   Normally found in eastern North America, American Black Ducks occasionally show up on the West Coast, Europe, and even Asia. Some of these birds may be escaped pets, but others are known to be wild ducks: for instance, one female banded in New Brunswick, Canada, turned up later in France.
+
+•   Pleistocene fossils of American Black Ducks, at least 11,000 years old, have been unearthed in Florida and Georgia.
+
+•   The oldest American Black Duck on record was 26 years, 5 months old.',
+'AmericanBlackDuck',
+'AmericanBlackDuckSound',
+'AmericanBlackDuckFemale,AmericanBlackDuckFlying'
+);
