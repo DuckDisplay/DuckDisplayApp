@@ -8,30 +8,37 @@
 
 import UIKit
 
-class CreditsViewController: UIViewController {
+class CreditsViewController: UIViewController, PageScreenProtocol {
 
+    // MARK: Properties
+    
+    //Outlet to vuew that displays information
+    @IBOutlet weak var creditsView: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var designTeamText: UILabel!
+    
+    // Required to conform to PageScreenProtocol
     var pageIndex: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setBackground()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setBackground() {
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "CreditsBackground")?.draw(in: self.view.bounds)
+        
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        
+        UIGraphicsEndImageContext()
+        
+        self.view.backgroundColor = UIColor(patternImage: image)
     }
-    */
 
 }

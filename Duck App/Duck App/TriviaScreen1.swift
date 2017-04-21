@@ -12,6 +12,9 @@ import SQLite
 var score: Int = 0
 
 class TriviaScreen1: UIViewController {
+    
+    // MARK: Properties
+    
     //timer to determine when the game is over
     var gameTimer: Timer!
     var dumbTimer: Timer!
@@ -68,7 +71,7 @@ class TriviaScreen1: UIViewController {
     
     func setBackground() {
         UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "mmbackground")?.draw(in: self.view.bounds)
+        UIImage(named: "Duck-CamoBlur")?.draw(in: self.view.bounds)
         
         let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         
@@ -76,7 +79,7 @@ class TriviaScreen1: UIViewController {
         
         self.view.backgroundColor = UIColor(patternImage: image)
         
-        addBlurEffect()
+        //addBlurEffect()
         
     }
     
@@ -184,7 +187,7 @@ class TriviaScreen1: UIViewController {
         nextQuestion += 1
         
         let trivia_query = DuckDatabase.TriviaDataTable.triviaData.filter(DuckDatabase.TriviaDataTable.id == randNum)
-        do{
+        do {
             if let questionToBePlucked = try DuckDatabase.duckDB?.pluck(trivia_query) {
                 
                 thisQuestion = questionToBePlucked[DuckDatabase.TriviaDataTable.question]
@@ -251,6 +254,3 @@ class TriviaScreen1: UIViewController {
     }
     
 }
-
-
-

@@ -28,24 +28,21 @@ class LeaderboardTableViewController: UITableViewController{
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-    
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return users.count
     }
 
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "LeaderboardTableViewCell"
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? LeaderboardTableViewCell else {
             fatalError("The dequeued cell is not an instance of LeaderboardTableViewCell.")
         }
-        if (indexPath.row % 2 == 0)
-        {
-            cell.backgroundColor = UIColor.lightGray
+        
+        if (indexPath.row % 2 == 0) {
+            cell.backgroundColor = UIColor.gray.withAlphaComponent(0.4)
         } else {
             cell.backgroundColor = UIColor.white
         }

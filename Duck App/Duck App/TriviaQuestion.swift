@@ -38,4 +38,5 @@ class TriviaQuestion: NSObject {
         self.points = points
         self.picture = picture
     }
+    
 }

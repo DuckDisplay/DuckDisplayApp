@@ -12,6 +12,7 @@ import SQLite
 class DuckGalleryTableViewController: UITableViewController {
     
     // MARK: Properties
+    
     var ducksPreviewSections = [String]()
     var ducksPreviewList = [[DuckPreview]]()
 
@@ -56,25 +57,9 @@ class DuckGalleryTableViewController: UITableViewController {
 
         return cell
     }
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
+    
     
     // MARK: - Navigation
-
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
@@ -102,7 +87,7 @@ class DuckGalleryTableViewController: UITableViewController {
             duckInfoViewController.duckInfo = getSelectedDuckInformation(duckPreview: selectedDuckPreview)
             
         } else {
-            //fatalError("Unexpected segue identifier: \(segue.identifier ?? "")")
+            // It's a segue to return to the Main Menu
         }
     }
 
@@ -197,6 +182,9 @@ class DuckGalleryTableViewController: UITableViewController {
                 }
                 if let duckFunFacts = String(duckData[DuckDatabase.DuckFactsTable.funFacts]) {
                     duckInfoArray[DuckInfo.TextInfoIndices.funFacts.rawValue] = duckFunFacts
+                }
+                if let duckExtraPictures =  String(duckData[DuckDatabase.DuckFactsTable.extraPhotos]){
+                    duckInfoArray[DuckInfo.TextInfoIndices.extraPhotos.rawValue] = duckExtraPictures
                 }
                 
                 // Grab image

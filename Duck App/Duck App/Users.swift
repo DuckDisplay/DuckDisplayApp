@@ -8,7 +8,8 @@
 
 import UIKit
 
-class Users{
+class Users {
+    
     //MARK: Properties
     var name: String
     var score: Int

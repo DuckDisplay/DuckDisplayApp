@@ -8,14 +8,16 @@
 
 import UIKit
 
-class WelcomeScreenViewController: UIViewController {
+class WelcomeScreenViewController: UIViewController, PageScreenProtocol {
 
+    // MARK: Properties
+    
+    // Required to conform to PageScreenProtocol
     var pageIndex: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setBackground()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,15 +25,15 @@ class WelcomeScreenViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setBackground() {
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "WelcomeBackground")?.draw(in: self.view.bounds)
+        
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        
+        UIGraphicsEndImageContext()
+        
+        self.view.backgroundColor = UIColor(patternImage: image)
     }
-    */
-
+    
 }

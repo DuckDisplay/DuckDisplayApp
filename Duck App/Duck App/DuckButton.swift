@@ -10,14 +10,15 @@ import Foundation
 import UIKit
 
 class duckButton: UIButton {
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
         
         self.layer.borderWidth = 2
-        self.layer.cornerRadius = 20
+        self.layer.cornerRadius = 10
        // self.setImage(UIImage(named: "FlyingDuck"), for: UIControlState.normal)
         self.tintColor = UIColor.black
-        self.backgroundColor = UIColor.white
-       
+        self.backgroundColor = UIColor.clear
     }
+    
 }

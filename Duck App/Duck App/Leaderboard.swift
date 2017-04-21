@@ -7,10 +7,8 @@
 //
 
 import UIKit
-    
 
-
-class Leaderboard : ViewController {
+class Leaderboard : UIViewController {
     
     // MARK: Properties
     
@@ -52,8 +50,8 @@ class Leaderboard : ViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    //Creates a pop up when user has a new high score
-    func createHighScoreAlert(title:String, message: String){
+    // Creates a pop up when user has a new high score
+    func createHighScoreAlert(title:String, message: String) {
         
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         
@@ -65,7 +63,7 @@ class Leaderboard : ViewController {
         let actionSubmit = UIAlertAction(title: "Submit", style: UIAlertActionStyle.default) { (action:UIAlertAction) in
             //This is called when the user presses the submit button.
             
-            let textUser = alertController.textFields![0] as UITextField;   //Variable where users name is saved
+            let textUser = alertController.textFields![0] as UITextField
             let textState = alertController.textFields![1] as UITextField   //Variable where users state is saved
             
             let thisUser = Users(place: 0, name: textUser.text!, state: textState.text!, score: score)
@@ -77,20 +75,27 @@ class Leaderboard : ViewController {
             
         }
         
+        //Add the buttons
+        alertController.addAction(actionCancel)
+        alertController.addAction(actionSubmit)
+        
+        
         alertController.addTextField { (textField) -> Void in
             //Configure the attributes of the first text box.
             textField.placeholder = "Name"
+            NotificationCenter.default.addObserver(forName: NSNotification.Name.UITextFieldTextDidChange, object: textField, queue: OperationQueue.main) { (notification) in
+                actionSubmit.isEnabled = textField.text!.characters.count < 12
+            }
         }
         
         alertController.addTextField { (textField) -> Void in
             //Configure the attributes of the second text box.
             textField.placeholder = "State Initials"
+            NotificationCenter.default.addObserver(forName: NSNotification.Name.UITextFieldTextDidChange, object: textField, queue: OperationQueue.main) { (notification) in
+                actionSubmit.isEnabled = textField.text!.characters.count < 3
+            }
         }
-        
-        //Add the buttons
-        alertController.addAction(actionCancel)
-        alertController.addAction(actionSubmit)
-        
+            
         //Present the alert controller
         self.present(alertController, animated: true, completion:nil)
         
@@ -112,5 +117,3 @@ class Leaderboard : ViewController {
     }
 
 }
-
-

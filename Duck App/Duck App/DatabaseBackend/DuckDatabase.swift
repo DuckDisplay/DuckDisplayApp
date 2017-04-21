@@ -38,7 +38,7 @@ class DuckDatabase {
         static let funFacts = Expression<String>("FunFacts")
         static let photoPath = Expression<String>("PhotoPath")
         static let soundPath = Expression<String>("SoundPath")
-        static let mapPath = Expression<String>("MapPath")
+        static let extraPhotos = Expression<String>("ExtraPhotos")
         static let type = Expression<String>("Type")
     }
     
@@ -66,4 +66,5 @@ class DuckDatabase {
             print("Error: Cannot open database file: \(error)")
         }
     }
+    
 }
