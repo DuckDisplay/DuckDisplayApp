@@ -24,6 +24,7 @@ class WelcomeScreenViewController: UIViewController, PageScreenProtocol {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     func setBackground() {
         UIGraphicsBeginImageContext(self.view.frame.size)
         UIImage(named: "WelcomeBackground")?.draw(in: self.view.bounds)
@@ -33,9 +34,6 @@ class WelcomeScreenViewController: UIViewController, PageScreenProtocol {
         UIGraphicsEndImageContext()
         
         self.view.backgroundColor = UIColor(patternImage: image)
-        
-        
-        
     }
     
 }

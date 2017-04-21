@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class duckButton: UIButton {
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
         
@@ -18,6 +19,6 @@ class duckButton: UIButton {
        // self.setImage(UIImage(named: "FlyingDuck"), for: UIControlState.normal)
         self.tintColor = UIColor.black
         self.backgroundColor = UIColor.clear
-       
     }
+    
 }

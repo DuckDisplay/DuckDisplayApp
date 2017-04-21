@@ -11,9 +11,11 @@ import AVFoundation
 
 class DuckCardViewController: UIViewController, UIScrollViewDelegate {
     
+    // MARK: Properties
+    
     @IBOutlet weak var pictureScrollView: UIScrollView!
     @IBOutlet weak var picturePageControl: UIPageControl!
-    // MARK: Properties
+
     @IBOutlet weak var duckCardAudioButton: UIButton!
     @IBOutlet weak var duckCardName: UILabel!
     @IBOutlet weak var duckCardScienceName: UILabel!

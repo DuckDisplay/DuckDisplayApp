@@ -10,6 +10,9 @@ import UIKit
 import SQLite
 
 class TriviaScreen1: UIViewController {
+    
+    // MARK: Properties
+    
     //timer to determine when the game is over
     var gameTimer: Timer!
     var dumbTimer: Timer!
@@ -40,11 +43,9 @@ class TriviaScreen1: UIViewController {
     //outlet for the question text to be put into that textview
     @IBOutlet weak var questionText: UITextView!
     
-    
     //outlet for the ImageView for pictures in questions
     @IBOutlet weak var questionImage: UIImageView!
 
-    
     //outlet to show time remaining in the game
     @IBOutlet weak var timerOutlet: UITextView!
     
@@ -92,8 +93,6 @@ class TriviaScreen1: UIViewController {
     //They will decide whether the asnwer is correct and change the buttons to reflect that
     //then score appropriately and call the getNextQuestion function
     
-    
-
     @IBOutlet weak var buttonA: duckButton!
     @IBAction func answerAChosen(_ sender: Any) {
         if (thisAns1 != thisCorrect) {
@@ -178,7 +177,7 @@ class TriviaScreen1: UIViewController {
         randNum = Int(arc4random_uniform(44)) + 1//re-randomize to get a new question
         
         let trivia_query = DuckDatabase.TriviaDataTable.triviaData.filter(DuckDatabase.TriviaDataTable.id == randNum)
-        do{
+        do {
             if let questionToBePlucked = try DuckDatabase.duckDB?.pluck(trivia_query) {
                 
                 thisQuestion = questionToBePlucked[DuckDatabase.TriviaDataTable.question]
@@ -237,6 +236,5 @@ class TriviaScreen1: UIViewController {
         //segue to the leaderboard screen
         self.performSegue(withIdentifier: "gameOver", sender: self)
     }
+    
 }
-
-

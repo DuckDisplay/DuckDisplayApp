@@ -7,8 +7,6 @@
 //
 
 import UIKit
-    
-
 
 class Leaderboard : ViewController {
     
@@ -18,25 +16,23 @@ class Leaderboard : ViewController {
             
             createHighScoreAlert(title: "NEW HIGH SCORE!", message: "Your Score:")
         }
-        else {
-            createGameOverAlert(title: "GAME OVER",message: "Your Score:")
-        }
-        
-            }
+//        else {
+//            createGameOverAlert(title: "GAME OVER",message: "Your Score:")
+//        }
+    }
 
 
-    //Creates Alert when trivia game ends
-    func createGameOverAlert(title: String, message: String){
-    let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+    // Creates Alert when trivia game ends
+    func createGameOverAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { action in alert.dismiss(animated: true, completion: nil)
-    }))
+        }))
         self.present(alert, animated: true, completion: nil)
-}
+    }
     
-    //Creates a pop up when user has a new high score
-    
-    func createHighScoreAlert(title:String, message: String){
-    
+    // Creates a pop up when user has a new high score
+    func createHighScoreAlert(title:String, message: String) {
+        
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         
         let actionCancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) { (action:UIAlertAction) in
@@ -48,12 +44,12 @@ class Leaderboard : ViewController {
             //This is called when the user presses the login button.
             
             let textUser = alertController.textFields![0] as UITextField;   //Variable where users name is saved
-        
+            
             let textState = alertController.textFields![1] as UITextField   //Variable where users state is saved
             
             print("The user entered:%@ & %@",textUser.text!,textState.text!);
         }
-       
+        
         //Add the buttons
         alertController.addAction(actionCancel)
         alertController.addAction(actionSubmit)
@@ -63,22 +59,21 @@ class Leaderboard : ViewController {
             //Configure the attributes of the first text box.
             textField.placeholder = "Name"
             NotificationCenter.default.addObserver(forName: NSNotification.Name.UITextFieldTextDidChange, object: textField, queue: OperationQueue.main) { (notification) in
-            actionSubmit.isEnabled = textField.text!.characters.count < 12
-            
-        }
-        
-        alertController.addTextField { (textField) -> Void in
-            //Configure the attributes of the second text box.
-            textField.placeholder = "State Initials"
-            NotificationCenter.default.addObserver(forName: NSNotification.Name.UITextFieldTextDidChange, object: textField, queue: OperationQueue.main) { (notification) in
-                actionSubmit.isEnabled = textField.text!.characters.count < 3
+                actionSubmit.isEnabled = textField.text!.characters.count < 12
+                
             }
+            
+            alertController.addTextField { (textField) -> Void in
+                //Configure the attributes of the second text box.
+                textField.placeholder = "State Initials"
+                NotificationCenter.default.addObserver(forName: NSNotification.Name.UITextFieldTextDidChange, object: textField, queue: OperationQueue.main) { (notification) in
+                    actionSubmit.isEnabled = textField.text!.characters.count < 3
+                }
+            }
+            
+            //Present the alert controller
+            self.present(alertController, animated: true, completion:nil)
         }
-        
-        //Present the alert controller
-        self.present(alertController, animated: true, completion:nil)
     }
     
-    
-}
 }

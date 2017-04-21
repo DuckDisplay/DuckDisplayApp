@@ -26,14 +26,11 @@ class ContentViewController: UIViewController, PageScreenProtocol {
     var background: String!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.titleLabel.text = self.titleText
         self.descriptionLabel.text = self.descriptionText
         setBackground(background: background)
-    
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,8 +38,7 @@ class ContentViewController: UIViewController, PageScreenProtocol {
         // Dispose of any resources that can be recreated.
     }
     
-
-        func setBackground(background: String) {
+    func setBackground(background: String) {
         UIGraphicsBeginImageContext(self.view.frame.size)
         UIImage(named: background)?.draw(in: self.view.bounds)
         
@@ -58,4 +54,5 @@ class ContentViewController: UIViewController, PageScreenProtocol {
     @IBAction func segueToSelectedScreen(_ sender: Any) {
         performSegue(withIdentifier: segueID, sender: sender)
     }
+    
 }

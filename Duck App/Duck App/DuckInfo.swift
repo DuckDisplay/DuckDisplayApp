@@ -69,6 +69,6 @@ class DuckInfo {
         self.duckConservation = textInfoArray[TextInfoIndices.conservation.rawValue]
         self.duckFunFacts = textInfoArray[TextInfoIndices.funFacts.rawValue]
         self.duckExtraPhotos = textInfoArray[TextInfoIndices.extraPhotos.rawValue]
-        
     }
+    
 }

@@ -8,11 +8,11 @@
 
 import UIKit
 
-class LeaderboardTableViewController: UITableViewController{
+class LeaderboardTableViewController: UITableViewController {
     
     //MARK: Properties
-    var users = [Users]()
     
+    var users = [Users]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +20,6 @@ class LeaderboardTableViewController: UITableViewController{
         //Load Users
         loadUsers()
         tableView.rowHeight = 90
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,23 +30,20 @@ class LeaderboardTableViewController: UITableViewController{
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-    
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return users.count
     }
 
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "LeaderboardTableViewCell"
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? LeaderboardTableViewCell else {
             fatalError("The dequeued cell is not an instance of LeaderboardTableViewCell.")
         }
-        if (indexPath.row % 2 == 0)
-        {
+        
+        if (indexPath.row % 2 == 0) {
             cell.backgroundColor = UIColor.gray.withAlphaComponent(0.4)
         } else {
             cell.backgroundColor = UIColor.white
@@ -108,8 +103,10 @@ class LeaderboardTableViewController: UITableViewController{
         // Pass the selected object to the new view controller.
     }
     */
-    private func loadUsers(){
     
+    // MARK: Private Funcitons
+    
+    private func loadUsers(){
         
         let user1 = Users(place: "1.", name: "User 1", state: "AL", score: "100")
         //else {fatalError("Unable to instantiate user1")
@@ -124,8 +121,6 @@ class LeaderboardTableViewController: UITableViewController{
         //}
         
         users += [user1,user2,user3]
-        
-    
     }
     
 }

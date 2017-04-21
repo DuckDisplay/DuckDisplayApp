@@ -11,10 +11,11 @@ import UIKit
 
 class ViewScreenSaver : ViewController {
     
+    // MARK: Properties
     
     @IBOutlet weak var ssAction: UILabel!
     
-//Assign Variables Below
+    // Assign Variables Below
     var screenTimer: Timer!
     var blinkTimer: Timer!
     var ducks = ["AmericanBlackDuck","AmericanWigeon","BlueWingedTeal","Canvasback","cinnamonteal","Mallard",
@@ -22,6 +23,7 @@ class ViewScreenSaver : ViewController {
     var ss = Int(arc4random_uniform(14))
     var blinkingStatus = 0
     var backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +34,6 @@ class ViewScreenSaver : ViewController {
         self.ssAction.layer.borderWidth = 2
         self.ssAction.layer.cornerRadius = 6
         self.ssAction.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
-        
         
     }
     
@@ -68,14 +69,13 @@ class ViewScreenSaver : ViewController {
             oldImage.removeFromSuperview()
             //self.backgroundImage.removeFromSuperview()
             
-            })
-    
+        })
         
         ss = ss2
-        }
+    }
     
     func blinkingLabel () {
-        if (blinkingStatus == 0){
+        if (blinkingStatus == 0) {
             ssAction.backgroundColor = UIColor.clear
             blinkingStatus = 1
         }
@@ -84,5 +84,5 @@ class ViewScreenSaver : ViewController {
             blinkingStatus = 0
         }
     }
+    
 }
-

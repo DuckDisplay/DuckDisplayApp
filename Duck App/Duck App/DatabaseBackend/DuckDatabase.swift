@@ -66,4 +66,5 @@ class DuckDatabase {
             print("Error: Cannot open database file: \(error)")
         }
     }
+    
 }

@@ -22,16 +22,13 @@ class CreditsViewController: UIViewController, PageScreenProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setBackground()
-       
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     func setBackground() {
         UIGraphicsBeginImageContext(self.view.frame.size)
@@ -41,12 +38,7 @@ class CreditsViewController: UIViewController, PageScreenProtocol {
         
         UIGraphicsEndImageContext()
         
-        
         self.view.backgroundColor = UIColor(patternImage: image)
-        
-        
-        
     }
-
 
 }

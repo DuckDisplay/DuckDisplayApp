@@ -42,4 +42,5 @@ class DuckApplication: UIApplication
         appDelegate.window?.rootViewController = initialViewControlleripad
         appDelegate.window?.makeKeyAndVisible()
     }
+    
 }

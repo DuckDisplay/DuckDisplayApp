@@ -8,7 +8,8 @@
 
 import UIKit
 
-class Users{
+class Users {
+    
     //MARK: Properties
     var name: String
     var score: String
@@ -17,12 +18,11 @@ class Users{
     
     //MARK: Initilization
     
-    init(place: String, name: String, state: String, score: String){
-    
-    self.name = name
-    self.score = score
-    self.state = state
-    self.place = place
+    init(place: String, name: String, state: String, score: String) {
+        self.name = name
+        self.score = score
+        self.state = state
+        self.place = place
     }
     
 }

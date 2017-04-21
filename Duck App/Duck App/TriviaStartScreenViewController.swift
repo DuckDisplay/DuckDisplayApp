@@ -10,6 +10,8 @@ import UIKit
 
 class TriviaStartScreenViewController: UIViewController {
     
+    // MARK: Properties
+    
     @IBOutlet weak var playButton: UIButton!
     
     var buttonTimer: Timer!
@@ -26,8 +28,6 @@ class TriviaStartScreenViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
-        
     }
     
     func setBackground() {
@@ -43,6 +43,7 @@ class TriviaStartScreenViewController: UIViewController {
         //addBlurEffect()
         
     }
+    
     //Function to blur background
     func addBlurEffect()
     {
@@ -67,6 +68,5 @@ class TriviaStartScreenViewController: UIViewController {
             blinkingStatus = 0
         }
     }
+    
 }
-
-
