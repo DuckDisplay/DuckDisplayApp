@@ -116,9 +116,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fe-Eo-b9j">
-                                <rect key="frame" x="20" y="106" width="112" height="52"/>
+                                <rect key="frame" x="20" y="106" width="156" height="52"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="112" id="6G1-1M-giD"/>
+                                    <constraint firstAttribute="width" constant="156" id="6G1-1M-giD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -960,9 +960,9 @@
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LSF-Wt-laQ"/>
-        <segue reference="0cy-i2-9fF"/>
+        <segue reference="FDW-fp-6EF"/>
         <segue reference="8PB-ep-K12"/>
-        <segue reference="kJa-lM-lrz"/>
+        <segue reference="0cy-i2-9fF"/>
+        <segue reference="LSF-Wt-laQ"/>
     </inferredMetricsTieBreakers>
 </document>

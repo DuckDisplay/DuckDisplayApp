@@ -37,11 +37,11 @@ class TriviaScreen1: UIViewController {
         score = 0
         //load question and start timer
         getNextQuestion()
-        gameTimer = Timer.scheduledTimer(timeInterval: 120, target: self, selector: #selector(gameIsOver), userInfo: nil, repeats: false)
+        gameTimer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(gameIsOver), userInfo: nil, repeats: false)
         dumbTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
 
     }
-    
+
     //displays score
     @IBOutlet weak var scoreLabel: UILabel!
     
@@ -59,6 +59,12 @@ class TriviaScreen1: UIViewController {
     
     override func viewDidLoad() {
         setBackground()
+        
+        //initial user to prevent nil...
+        if(users.count < 1) {
+            let devUser = Users(place: 1, name: "Development Squad", state: "Domination Station", score: 5000)
+            users.append(devUser)
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -110,7 +116,7 @@ class TriviaScreen1: UIViewController {
         }
         else {
             buttonA.backgroundColor = UIColor.green
-            score += 1
+            score += thisPoints
         }
         getNextQuestion()
     }
@@ -128,7 +134,7 @@ class TriviaScreen1: UIViewController {
         }
         else {
             buttonB.backgroundColor = UIColor.green
-            score += 1
+            score += thisPoints
         }
         getNextQuestion()
     }
@@ -146,7 +152,7 @@ class TriviaScreen1: UIViewController {
         }
         else {
             buttonC.backgroundColor = UIColor.green
-            score += 1
+            score += thisPoints
         }
         getNextQuestion()
     }
@@ -164,7 +170,7 @@ class TriviaScreen1: UIViewController {
         }
         else {
             buttonD.backgroundColor = UIColor.green
-            score += 1
+            score += thisPoints
         }
         getNextQuestion()
     }
@@ -183,7 +189,7 @@ class TriviaScreen1: UIViewController {
         
         nextQuestion += 1
         
-        let trivia_query = DuckDatabase.TriviaDataTable.triviaData.filter(DuckDatabase.TriviaDataTable.id == nextQuestion)
+        let trivia_query = DuckDatabase.TriviaDataTable.triviaData.filter(DuckDatabase.TriviaDataTable.id == randNum)
         do{
             if let questionToBePlucked = try DuckDatabase.duckDB?.pluck(trivia_query) {
                 
@@ -238,13 +244,18 @@ class TriviaScreen1: UIViewController {
         timerOutlet.text = "\(secondsRemaining)"
     }
     
+    
     //Selector method for game timer
     func gameIsOver() {
         gameTimer.invalidate()
         score += (chances * 10)
+        
+        
         //segue to the leaderboard screen
         self.performSegue(withIdentifier: "gameOver", sender: self)
+        
     }
+    
 }
 
 

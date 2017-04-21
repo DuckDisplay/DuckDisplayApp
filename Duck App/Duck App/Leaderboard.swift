@@ -13,21 +13,24 @@ import UIKit
 class Leaderboard : ViewController {
     
     override func viewDidLoad() {
-        
         let myScore = score
         let bottomScore = users.last?.score
         
         if(myScore > bottomScore! || users.count < 10) {
-            
             createHighScoreAlert(title: "NEW HIGH SCORE!", message: "Your Score: " + String(myScore))
-            
         }
         else {
             createGameOverAlert(title: "GAME OVER", message: "Your Score: " + String(myScore))
         }
-
+        
+        //re-create the place column here so that we don't have multiples of 1st place etc
+        var i: Int = 0
+        for _ in users {
+            users[i].place = i + 1
+            i += 1
+        }
     }
-
+    
     //Creates Alert when trivia game ends
     func createGameOverAlert(title: String, message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
@@ -35,9 +38,8 @@ class Leaderboard : ViewController {
         }))
         self.present(alert, animated: true, completion: nil)
     }
-
+    
     //Creates a pop up when user has a new high score
-
     func createHighScoreAlert(title:String, message: String){
         
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
@@ -53,11 +55,15 @@ class Leaderboard : ViewController {
             let textUser = alertController.textFields![0] as UITextField;   //Variable where users name is saved
             let textState = alertController.textFields![1] as UITextField   //Variable where users state is saved
             
-            print("The user entered:%@ & %@", textUser.text!, textState.text!);
             let thisUser = Users(place: 0, name: textUser.text!, state: textState.text!, score: score)
             
-            //find where it goes and put it there
+            //put user into the table
             self.placeUser(thisUser: thisUser)
+            
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "LeaderboardTableViewController") as! LeaderboardTableViewController
+            
+            vc.tableView.reloadData()
+            
         }
         
         alertController.addTextField { (textField) -> Void in
@@ -93,7 +99,7 @@ class Leaderboard : ViewController {
         users.sort { $0.score > $1.score}
         
     }
-    
+
 }
 
 
