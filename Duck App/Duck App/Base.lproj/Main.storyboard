@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -192,8 +192,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Duck Trivia Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eim-Zv-0ch">
-                                <rect key="frame" x="235" y="339" width="555" height="91"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duck Trivia Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eim-Zv-0ch">
+                                <rect key="frame" x="239" y="344" width="548" height="86"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="72"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -528,7 +528,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jba-Cc-Uvc" id="ZfI-rE-VAi">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="99"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="RgO-mE-mBv">
@@ -596,7 +596,6 @@
                             <constraint firstItem="6GN-i4-nNq" firstAttribute="leading" secondItem="WZS-XS-dzK" secondAttribute="leading" constant="365" id="2M8-hq-oEf"/>
                             <constraint firstAttribute="trailing" secondItem="6GN-i4-nNq" secondAttribute="trailing" constant="365" id="Cy9-Wd-CPe"/>
                             <constraint firstItem="6GN-i4-nNq" firstAttribute="leading" secondItem="WZS-XS-dzK" secondAttribute="leadingMargin" constant="345" id="RPW-g5-TqP"/>
-                            <constraint firstItem="9Hy-LU-EBB" firstAttribute="top" secondItem="6GN-i4-nNq" secondAttribute="bottom" constant="60" id="epZ-0c-Vjt"/>
                             <constraint firstItem="9Hy-LU-EBB" firstAttribute="top" secondItem="6GN-i4-nNq" secondAttribute="bottom" constant="90" id="fZw-FV-vqz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6GN-i4-nNq" secondAttribute="trailing" constant="345" id="wSq-wg-hUV"/>
                         </constraints>
@@ -707,7 +706,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HWx-s9-hP7" id="IRY-8V-dhj">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="89"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRi-xq-n5Q">
@@ -955,7 +954,7 @@
                                             <constraint firstAttribute="width" constant="960" id="I6x-10-8BF"/>
                                             <constraint firstAttribute="height" constant="152" id="Zkj-P6-Kgz"/>
                                         </constraints>
-                                        <mutableString key="text">In summary, the good news is that, at least until recently, the overall state of the nation's wetlands had been improving. The bad news, however, is that every year we are still losing more than 80,000 acres of wetlands that are important to waterfowl and wildlife. The really bad news is that wetland loss has likely accelerated, and we are on the verge of having to watch wetlands disappear from the landscape much more rapidly unless we act now. Between the 1950s and 1970s, more than a half-million acres of wetlands were being lost every year. By the mid-1980s, the nation had lost over half its original wetlands. Fortunately for ducks, the rate of net wetland loss across the nation slowed significantly over the last 30 years. A important factor in reducing wetland loss are bills like the North American Wetlands Conservation Act (NAWCA).</mutableString>
+                                        <string key="text">In summary, the good news is that, at least until recently, the overall state of the nation's wetlands had been improving. The bad news, however, is that every year we are still losing more than 80,000 acres of wetlands that are important to waterfowl and wildlife. The really bad news is that wetland loss has likely accelerated, and we are on the verge of having to watch wetlands disappear from the landscape much more rapidly unless we act now. Between the 1950s and 1970s, more than a half-million acres of wetlands were being lost every year. By the mid-1980s, the nation had lost over half its original wetlands. Fortunately for ducks, the rate of net wetland loss across the nation slowed significantly over the last 30 years. A important factor in reducing wetland loss are bills like the North American Wetlands Conservation Act (NAWCA).</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -967,7 +966,7 @@
                                             <constraint firstAttribute="width" constant="960" id="p0Z-HN-eJF"/>
                                             <constraint firstAttribute="height" constant="120" id="rsq-1F-bMc"/>
                                         </constraints>
-                                        <mutableString key="text">The North American Wetlands Conservation Act (NAWCA), passed in 1989, provides matching grants to carry out wetlands conservation projects in the United States, Canada, and Mexico. The NAWCA has been vital for waterfowl conservation efforts. The act has raised over 1 billion dollars in federal grants and 3 billion dollars in private funds. These funds have helped the public and private sectors partner and save over 33.4 billion acres (roughly 2000 times the size of Texas) and work on more than 2,644 projects preserving wetlands.</mutableString>
+                                        <string key="text">The North American Wetlands Conservation Act (NAWCA), passed in 1989, provides matching grants to carry out wetlands conservation projects in the United States, Canada, and Mexico. The NAWCA has been vital for waterfowl conservation efforts. The act has raised over 1 billion dollars in federal grants and 3 billion dollars in private funds. These funds have helped the public and private sectors partner and save over 33.4 billion acres (roughly 2000 times the size of Texas) and work on more than 2,644 projects preserving wetlands.</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -978,7 +977,7 @@
                                             <constraint firstAttribute="width" constant="960" id="TgC-A2-O3M"/>
                                             <constraint firstAttribute="height" constant="150" id="zzg-eA-rzQ"/>
                                         </constraints>
-                                        <mutableString key="text">NAWCA currently has 64 projects either completed or underway. These projects have conserved 1,174,349 acres of wetland habitat. NAWCA funding is more than 47.1 million and has raised partner contributions of more than 123.6 million. These numbers do not include projects going on in states connected to Louisiana. The main project NAWCA has been working on in Louisiana is the “Bayou Monnaie Marsh II”. The project has offset the loss of coastal lands since the 1930s. Louisiana has lost more than 1.2 million acres of coastal wetlands and is expected to lose an additional 1.1 million acres over the next 50 years. A loss of 1.1 million acres over the next 50 years will not only affect your ability to view waterfowl but generations to come also. Without your help, NAWCA will not be able to sustain their funding and ensure that does not happen.</mutableString>
+                                        <string key="text">NAWCA currently has 64 projects either completed or underway. These projects have conserved 1,174,349 acres of wetland habitat. NAWCA funding is more than 47.1 million and has raised partner contributions of more than 123.6 million. These numbers do not include projects going on in states connected to Louisiana. The main project NAWCA has been working on in Louisiana is the “Bayou Monnaie Marsh II”. The project has offset the loss of coastal lands since the 1930s. Louisiana has lost more than 1.2 million acres of coastal wetlands and is expected to lose an additional 1.1 million acres over the next 50 years. A loss of 1.1 million acres over the next 50 years will not only affect your ability to view waterfowl but generations to come also. Without your help, NAWCA will not be able to sustain their funding and ensure that does not happen.</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1023,8 +1022,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is a Duxk Stamp:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZ1-mM-jMF">
-                                        <rect key="frame" x="8" y="889" width="201" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is a Duck Stamp:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZ1-mM-jMF">
+                                        <rect key="frame" x="8" y="889" width="202" height="24"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1035,7 +1034,7 @@
                                             <constraint firstAttribute="height" constant="131" id="nKP-1L-8e0"/>
                                             <constraint firstAttribute="width" constant="955" id="uZG-QF-mtV"/>
                                         </constraints>
-                                        <mutableString key="text">The duck stamp was established in 1934. They allow sportsmen to waterfowl hunt and avid bird lovers to enter National Wildlife Refuges The duck Stamp has raised over 1 billion dollar since it was enacted. This money goes straight to waterfowl in the form of funding for the National Wildlife Refuge System. National Wildlife Refuges are not only for hunters. They are sometimes the only place waterfowl have to rest, eat, and sleep on their migration paths. They are also the only federally funded institution designed around letting people experience waterfowl in a sometimes intimate environment. Without the duck stamp, wetlands would be lost in such a way that waterfowl would not be able to maintain the record population numbers we see today in some species.</mutableString>
+                                        <string key="text">The duck stamp was established in 1934. They allow sportsmen to waterfowl hunt and avid bird lovers to enter National Wildlife Refuges The duck Stamp has raised over 1 billion dollar since it was enacted. This money goes straight to waterfowl in the form of funding for the National Wildlife Refuge System. National Wildlife Refuges are not only for hunters. They are sometimes the only place waterfowl have to rest, eat, and sleep on their migration paths. They are also the only federally funded institution designed around letting people experience waterfowl in a sometimes intimate environment. Without the duck stamp, wetlands would be lost in such a way that waterfowl would not be able to maintain the record population numbers we see today in some species.</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
