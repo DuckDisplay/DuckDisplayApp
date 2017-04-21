@@ -42,7 +42,7 @@ class CreditsViewController: UIViewController, PageScreenProtocol {
         UIGraphicsEndImageContext()
         
         
-        self.creditsView.backgroundColor = UIColor(patternImage: image)
+        self.view.backgroundColor = UIColor(patternImage: image)
         
         
         
