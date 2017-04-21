@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -113,6 +113,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKf-93-fC6">
+                                <rect key="frame" x="20" y="72" width="151" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="K8V-TR-ds0"/>
+                                    <constraint firstAttribute="height" constant="65" id="mJC-JW-Rti"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
@@ -137,7 +147,9 @@
                             <constraint firstItem="SbT-S8-dTw" firstAttribute="trailing" secondItem="Nn1-f0-5By" secondAttribute="trailingMargin" id="bCw-IW-ZMG"/>
                             <constraint firstItem="QN7-8l-7TB" firstAttribute="leading" secondItem="Dcq-o7-2CG" secondAttribute="leading" id="dKc-L6-vzH"/>
                             <constraint firstItem="2zf-4B-HdT" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leadingMargin" id="m4d-I5-4wT"/>
+                            <constraint firstItem="NKf-93-fC6" firstAttribute="top" secondItem="Nxk-aM-qZu" secondAttribute="bottom" constant="8" symbolic="YES" id="mWI-jj-zZf"/>
                             <constraint firstItem="rbV-a7-EZe" firstAttribute="leading" secondItem="QN7-8l-7TB" secondAttribute="leading" id="rvd-1k-uDP"/>
+                            <constraint firstItem="NKf-93-fC6" firstAttribute="leading" secondItem="2zf-4B-HdT" secondAttribute="leading" id="syX-VQ-mkT"/>
                             <constraint firstAttribute="bottom" secondItem="j30-g1-b9f" secondAttribute="bottom" constant="20" symbolic="YES" id="utG-ar-9e7"/>
                             <constraint firstItem="LVQ-hI-RzK" firstAttribute="leading" secondItem="aQ6-WA-4G3" secondAttribute="leading" id="wfu-aI-1g1"/>
                             <constraint firstItem="LVQ-hI-RzK" firstAttribute="trailing" secondItem="aQ6-WA-4G3" secondAttribute="trailing" id="yb0-C1-Jd6"/>
@@ -516,7 +528,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jba-Cc-Uvc" id="ZfI-rE-VAi">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="RgO-mE-mBv">
@@ -695,7 +707,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HWx-s9-hP7" id="IRY-8V-dhj">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="89.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRi-xq-n5Q">
@@ -827,6 +839,7 @@
                         <outlet property="titleLabel" destination="5Ps-Rf-8Ti" id="Kw8-sm-ork"/>
                         <segue destination="zug-So-mik" kind="show" identifier="TriviaGame" id="0p6-5d-yiO"/>
                         <segue destination="aCP-rl-oq6" kind="show" identifier="DuckSpecies" id="LSF-Wt-laQ"/>
+                        <segue destination="Fyk-Oa-hEg" kind="show" identifier="Conservation" id="aeI-gz-u4j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ak9-PR-nu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -880,6 +893,231 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ov2-Kv-jd8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4272.65625" y="1035.9375"/>
+        </scene>
+        <!--Conservtion View Controller-->
+        <scene sceneID="dVl-Wo-Qkx">
+            <objects>
+                <viewController id="Fyk-Oa-hEg" customClass="ConservtionViewController" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wTw-7B-UME"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Ck-Z5-NPt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dUO-4m-twQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1265"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="rOh-0D-a1T">
+                                <rect key="frame" x="20" y="61" width="984" height="1186"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ku-83-Wsb">
+                                        <rect key="frame" x="8" y="25" width="118" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="118" id="80N-Yp-LIh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXy-mQ-saI">
+                                        <rect key="frame" x="8" y="249" width="118" height="24"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buy Duck Stamps:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARx-Or-J0X">
+                                        <rect key="frame" x="8" y="857" width="176" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Buy a Duck Stamp:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xT3-oO-qhC">
+                                        <rect key="frame" x="8" y="1060" width="237" height="24"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAWCA:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OP9-6k-kau">
+                                        <rect key="frame" x="8" y="217" width="118" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAWCA in Louisisana:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOD-OZ-Vl9">
+                                        <rect key="frame" x="8" y="399" width="196" height="24"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="257" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYF-Dg-sUH">
+                                        <rect key="frame" x="8" y="57" width="960" height="152"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="152" id="1Qz-Xy-KeZ"/>
+                                            <constraint firstAttribute="width" constant="960" id="I6x-10-8BF"/>
+                                            <constraint firstAttribute="height" constant="152" id="Zkj-P6-Kgz"/>
+                                        </constraints>
+                                        <mutableString key="text">In summary, the good news is that, at least until recently, the overall state of the nation's wetlands had been improving. The bad news, however, is that every year we are still losing more than 80,000 acres of wetlands that are important to waterfowl and wildlife. The really bad news is that wetland loss has likely accelerated, and we are on the verge of having to watch wetlands disappear from the landscape much more rapidly unless we act now. Between the 1950s and 1970s, more than a half-million acres of wetlands were being lost every year. By the mid-1980s, the nation had lost over half its original wetlands. Fortunately for ducks, the rate of net wetland loss across the nation slowed significantly over the last 30 years. A important factor in reducing wetland loss are bills like the North American Wetlands Conservation Act (NAWCA).</mutableString>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="257" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kH-p6-Hmt">
+                                        <rect key="frame" x="8" y="271" width="960" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="f8U-tu-BoL"/>
+                                            <constraint firstAttribute="width" constant="960" id="p0Z-HN-eJF"/>
+                                            <constraint firstAttribute="height" constant="120" id="rsq-1F-bMc"/>
+                                        </constraints>
+                                        <mutableString key="text">The North American Wetlands Conservation Act (NAWCA), passed in 1989, provides matching grants to carry out wetlands conservation projects in the United States, Canada, and Mexico. The NAWCA has been vital for waterfowl conservation efforts. The act has raised over 1 billion dollars in federal grants and 3 billion dollars in private funds. These funds have helped the public and private sectors partner and save over 33.4 billion acres (roughly 2000 times the size of Texas) and work on more than 2,644 projects preserving wetlands.</mutableString>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="257" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZF-gE-7Op">
+                                        <rect key="frame" x="8" y="431" width="960" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="960" id="TgC-A2-O3M"/>
+                                            <constraint firstAttribute="height" constant="150" id="zzg-eA-rzQ"/>
+                                        </constraints>
+                                        <mutableString key="text">NAWCA currently has 64 projects either completed or underway. These projects have conserved 1,174,349 acres of wetland habitat. NAWCA funding is more than 47.1 million and has raised partner contributions of more than 123.6 million. These numbers do not include projects going on in states connected to Louisiana. The main project NAWCA has been working on in Louisiana is the “Bayou Monnaie Marsh II”. The project has offset the loss of coastal lands since the 1930s. Louisiana has lost more than 1.2 million acres of coastal wetlands and is expected to lose an additional 1.1 million acres over the next 50 years. A loss of 1.1 million acres over the next 50 years will not only affect your ability to view waterfowl but generations to come also. Without your help, NAWCA will not be able to sustain their funding and ensure that does not happen.</mutableString>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How You Can Help:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRX-cO-q2i">
+                                        <rect key="frame" x="8" y="589" width="183" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Your Congressional Representative:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yih-0D-BOc">
+                                        <rect key="frame" x="8" y="621" width="394" height="24"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="257" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcj-lZ-qep">
+                                        <rect key="frame" x="8" y="653" width="960" height="92.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="960" id="KNI-Gt-KV3"/>
+                                            <constraint firstAttribute="height" constant="92.5" id="sOo-7f-A2b"/>
+                                        </constraints>
+                                        <string key="text">Currently, Congressional dear colleague letters are being circulated in both the House of Representatives and the Senate. We ask that you contact your Representative and Senators and urge them to support NAWCA funding, either by signing on to these letters or by including the NAWCA May Forms to contact your members of congress can be found on www.ducks.org. Please fill these out to ensure future generations get to enjoy waterfowl for many years to come.</string>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join an Organization:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljc-jI-mPf">
+                                        <rect key="frame" x="8" y="742.5" width="188" height="24"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="257" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYd-o9-JQZ">
+                                        <rect key="frame" x="8" y="775" width="955" height="74"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="74" id="Kwk-j4-qWF"/>
+                                            <constraint firstAttribute="width" constant="955" id="rtQ-IH-5ek"/>
+                                        </constraints>
+                                        <string key="text">Every $1 of federal money allotted to NAWCA must be matched by $1 or more from non-federal sources. Supporting organizations like Duck Unlimited, Louisiana Wildlife Federation, Vanishing Paradise, and LA Coastal Conservation Association provide the funds needed at the local level to keep the NAWCA going.</string>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is a Duxk Stamp:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZ1-mM-jMF">
+                                        <rect key="frame" x="8" y="889" width="201" height="24"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="257" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de0-G5-6c2">
+                                        <rect key="frame" x="8" y="921" width="955" height="131"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="131" id="nKP-1L-8e0"/>
+                                            <constraint firstAttribute="width" constant="955" id="uZG-QF-mtV"/>
+                                        </constraints>
+                                        <mutableString key="text">The duck stamp was established in 1934. They allow sportsmen to waterfowl hunt and avid bird lovers to enter National Wildlife Refuges The duck Stamp has raised over 1 billion dollar since it was enacted. This money goes straight to waterfowl in the form of funding for the National Wildlife Refuge System. National Wildlife Refuges are not only for hunters. They are sometimes the only place waterfowl have to rest, eat, and sleep on their migration paths. They are also the only federally funded institution designed around letting people experience waterfowl in a sometimes intimate environment. Without the duck stamp, wetlands would be lost in such a way that waterfowl would not be able to maintain the record population numbers we see today in some species.</mutableString>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="257" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdT-PZ-3mq">
+                                        <rect key="frame" x="8" y="1092" width="955" height="73.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="955" id="8A7-oj-3Qp"/>
+                                            <constraint firstAttribute="height" constant="73.5" id="Pgr-SG-90Y"/>
+                                        </constraints>
+                                        <string key="text">Duck stamps can be purchased at any sporting goods store or National Wildlife Refuge. Since 2006, outdoorsman and bird lovers have been able to purchase ducks stamps on-line. With the purchase power being right at your fingertips, is there any excuse to not help further the enjoyment of waterfowl for future generations? Duck stamps may be purchased at www.fws.gov</string>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="0.74692315919999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="iYd-o9-JQZ" firstAttribute="top" secondItem="Ljc-jI-mPf" secondAttribute="bottom" constant="8" symbolic="YES" id="2SN-Ls-OiQ"/>
+                                    <constraint firstItem="cOD-OZ-Vl9" firstAttribute="leading" secondItem="PZF-gE-7Op" secondAttribute="leading" id="2UU-aa-FcR"/>
+                                    <constraint firstItem="eXy-mQ-saI" firstAttribute="top" secondItem="OP9-6k-kau" secondAttribute="bottom" constant="8" symbolic="YES" id="4S7-VM-GjP"/>
+                                    <constraint firstItem="iYd-o9-JQZ" firstAttribute="trailing" secondItem="de0-G5-6c2" secondAttribute="trailing" id="5IX-OM-qjc"/>
+                                    <constraint firstItem="de0-G5-6c2" firstAttribute="leading" secondItem="xT3-oO-qhC" secondAttribute="leading" id="6MU-g6-xPB"/>
+                                    <constraint firstItem="ARx-Or-J0X" firstAttribute="top" secondItem="iYd-o9-JQZ" secondAttribute="bottom" constant="8" symbolic="YES" id="8BS-bN-wJ3"/>
+                                    <constraint firstItem="hYF-Dg-sUH" firstAttribute="top" secondItem="8ku-83-Wsb" secondAttribute="bottom" constant="8" symbolic="YES" id="8jw-ZH-Zbg"/>
+                                    <constraint firstItem="hYF-Dg-sUH" firstAttribute="leading" secondItem="OP9-6k-kau" secondAttribute="leading" id="B1u-45-XIk"/>
+                                    <constraint firstItem="OP9-6k-kau" firstAttribute="leading" secondItem="eXy-mQ-saI" secondAttribute="leading" id="C1L-Px-xv3"/>
+                                    <constraint firstItem="PZF-gE-7Op" firstAttribute="top" secondItem="cOD-OZ-Vl9" secondAttribute="bottom" constant="8" symbolic="YES" id="Cfg-It-FdW"/>
+                                    <constraint firstItem="5kH-p6-Hmt" firstAttribute="leading" secondItem="cOD-OZ-Vl9" secondAttribute="leading" id="D7D-jr-hkP"/>
+                                    <constraint firstItem="Hcj-lZ-qep" firstAttribute="leading" secondItem="Ljc-jI-mPf" secondAttribute="leading" id="E0V-iJ-5ps"/>
+                                    <constraint firstItem="ARx-Or-J0X" firstAttribute="leading" secondItem="wZ1-mM-jMF" secondAttribute="leading" id="F1n-g9-Ca1"/>
+                                    <constraint firstItem="iYd-o9-JQZ" firstAttribute="top" secondItem="Hcj-lZ-qep" secondAttribute="bottom" constant="29" id="FUQ-y6-0Cz"/>
+                                    <constraint firstItem="xT3-oO-qhC" firstAttribute="leading" secondItem="mdT-PZ-3mq" secondAttribute="leading" id="FvC-4A-KEz"/>
+                                    <constraint firstItem="eXy-mQ-saI" firstAttribute="leading" secondItem="5kH-p6-Hmt" secondAttribute="leading" id="GBp-kV-Ctq"/>
+                                    <constraint firstItem="hYF-Dg-sUH" firstAttribute="trailing" secondItem="5kH-p6-Hmt" secondAttribute="trailing" id="Kp3-3n-WNH"/>
+                                    <constraint firstItem="yih-0D-BOc" firstAttribute="leading" secondItem="Hcj-lZ-qep" secondAttribute="leading" id="MfB-iV-TtZ"/>
+                                    <constraint firstItem="8ku-83-Wsb" firstAttribute="leading" secondItem="rOh-0D-a1T" secondAttribute="leadingMargin" id="O1e-3b-qUL"/>
+                                    <constraint firstAttribute="trailing" secondItem="hYF-Dg-sUH" secondAttribute="trailing" constant="16" id="OsN-ue-8R6"/>
+                                    <constraint firstItem="de0-G5-6c2" firstAttribute="trailing" secondItem="mdT-PZ-3mq" secondAttribute="trailing" id="RFx-Ya-OjD"/>
+                                    <constraint firstItem="cOD-OZ-Vl9" firstAttribute="top" secondItem="5kH-p6-Hmt" secondAttribute="bottom" constant="8" symbolic="YES" id="SJD-Aw-z9C"/>
+                                    <constraint firstItem="qRX-cO-q2i" firstAttribute="top" secondItem="PZF-gE-7Op" secondAttribute="bottom" constant="8" symbolic="YES" id="U94-PR-dJL"/>
+                                    <constraint firstItem="Ljc-jI-mPf" firstAttribute="leading" secondItem="iYd-o9-JQZ" secondAttribute="leading" id="YKY-hg-l3R"/>
+                                    <constraint firstItem="iYd-o9-JQZ" firstAttribute="leading" secondItem="ARx-Or-J0X" secondAttribute="leading" id="ZIi-Mx-Tis"/>
+                                    <constraint firstItem="wZ1-mM-jMF" firstAttribute="leading" secondItem="de0-G5-6c2" secondAttribute="leading" id="at6-hJ-RdK"/>
+                                    <constraint firstItem="8ku-83-Wsb" firstAttribute="leading" secondItem="hYF-Dg-sUH" secondAttribute="leading" id="eUV-H6-WTA"/>
+                                    <constraint firstItem="mdT-PZ-3mq" firstAttribute="top" secondItem="xT3-oO-qhC" secondAttribute="bottom" constant="8" symbolic="YES" id="iNT-C5-kzJ"/>
+                                    <constraint firstItem="yih-0D-BOc" firstAttribute="top" secondItem="qRX-cO-q2i" secondAttribute="bottom" constant="8" symbolic="YES" id="jai-JA-X5V"/>
+                                    <constraint firstItem="de0-G5-6c2" firstAttribute="top" secondItem="wZ1-mM-jMF" secondAttribute="bottom" constant="8" symbolic="YES" id="l3U-HI-Utr"/>
+                                    <constraint firstItem="8ku-83-Wsb" firstAttribute="top" secondItem="rOh-0D-a1T" secondAttribute="top" constant="25" id="l5W-t7-0Jo"/>
+                                    <constraint firstItem="xT3-oO-qhC" firstAttribute="top" secondItem="de0-G5-6c2" secondAttribute="bottom" constant="8" symbolic="YES" id="o9X-ug-wop"/>
+                                    <constraint firstItem="PZF-gE-7Op" firstAttribute="trailing" secondItem="Hcj-lZ-qep" secondAttribute="trailing" id="onN-NP-qXm"/>
+                                    <constraint firstItem="qRX-cO-q2i" firstAttribute="leading" secondItem="yih-0D-BOc" secondAttribute="leading" id="rVr-FJ-kSa"/>
+                                    <constraint firstItem="PZF-gE-7Op" firstAttribute="leading" secondItem="qRX-cO-q2i" secondAttribute="leading" id="rv6-OZ-8bq"/>
+                                    <constraint firstItem="Hcj-lZ-qep" firstAttribute="top" secondItem="yih-0D-BOc" secondAttribute="bottom" constant="8" symbolic="YES" id="s23-LY-1ac"/>
+                                    <constraint firstItem="5kH-p6-Hmt" firstAttribute="top" secondItem="OP9-6k-kau" secondAttribute="bottom" constant="30" id="sqI-Pb-MUX"/>
+                                    <constraint firstAttribute="bottom" secondItem="mdT-PZ-3mq" secondAttribute="bottom" constant="20" id="uNZ-Lx-uR2"/>
+                                    <constraint firstItem="OP9-6k-kau" firstAttribute="top" secondItem="hYF-Dg-sUH" secondAttribute="bottom" constant="8" symbolic="YES" id="ulb-5u-bgd"/>
+                                    <constraint firstItem="8ku-83-Wsb" firstAttribute="trailing" secondItem="OP9-6k-kau" secondAttribute="trailing" id="umZ-qw-48t"/>
+                                    <constraint firstItem="wZ1-mM-jMF" firstAttribute="top" secondItem="ARx-Or-J0X" secondAttribute="bottom" constant="8" symbolic="YES" id="xWW-Pk-QIv"/>
+                                    <constraint firstItem="OP9-6k-kau" firstAttribute="trailing" secondItem="eXy-mQ-saI" secondAttribute="trailing" id="zNX-vB-iqI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rOh-0D-a1T" firstAttribute="leading" secondItem="dUO-4m-twQ" secondAttribute="leadingMargin" id="Cre-oo-nzm"/>
+                            <constraint firstItem="3Ck-Z5-NPt" firstAttribute="top" secondItem="rOh-0D-a1T" secondAttribute="bottom" constant="18" id="eNS-9R-plo"/>
+                            <constraint firstItem="rOh-0D-a1T" firstAttribute="trailing" secondItem="dUO-4m-twQ" secondAttribute="trailingMargin" id="hJJ-uB-uDi"/>
+                            <constraint firstItem="rOh-0D-a1T" firstAttribute="top" secondItem="wTw-7B-UME" secondAttribute="bottom" constant="41" id="v3z-9w-SBr"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="1265"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ppj-yM-H3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3987.8906249999995" y="2006.640625"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="uAK-1R-Ntn">
@@ -1101,9 +1339,9 @@ UCBDYW5jaWxsYQ1NYXJrIEdhbGxpZ2hlcg1NYXR0IE1hYnJleQ
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0p6-5d-yiO"/>
+        <segue reference="FDW-fp-6EF"/>
+        <segue reference="8PB-ep-K12"/>
         <segue reference="LSF-Wt-laQ"/>
-        <segue reference="nyD-ln-Khx"/>
-        <segue reference="0cy-i2-9fF"/>
+        <segue reference="ySH-GK-seA"/>
     </inferredMetricsTieBreakers>
 </document>
