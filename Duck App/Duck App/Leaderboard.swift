@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Leaderboard : ViewController {
+class Leaderboard : UIViewController {
     
     override func viewDidLoad() {
         let a = 100

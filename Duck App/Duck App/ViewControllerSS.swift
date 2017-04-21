@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ViewScreenSaver : ViewController {
+class ViewScreenSaver : UIViewController {
     
     // MARK: Properties
     
@@ -27,14 +27,13 @@ class ViewScreenSaver : ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //blinkTimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(blinkingLabel), userInfo: nil, repeats: true)
+        
         screenTimer = Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(transitionBackground), userInfo: nil, repeats: true)
         background()
         
         self.ssAction.layer.borderWidth = 2
         self.ssAction.layer.cornerRadius = 6
         self.ssAction.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
-        
     }
     
     func background(){
@@ -72,17 +71,6 @@ class ViewScreenSaver : ViewController {
         })
         
         ss = ss2
-    }
-    
-    func blinkingLabel () {
-        if (blinkingStatus == 0) {
-            ssAction.backgroundColor = UIColor.clear
-            blinkingStatus = 1
-        }
-        else {
-            ssAction.backgroundColor = UIColor.blue
-            blinkingStatus = 0
-        }
     }
     
 }

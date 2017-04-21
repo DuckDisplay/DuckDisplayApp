@@ -34,7 +34,6 @@
 		B840E7781E992EEC00E820D0 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840E7771E992EEC00E820D0 /* ContentViewController.swift */; };
 		B840E77A1E992F3A00E820D0 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B840E7791E992F3A00E820D0 /* MainMenuViewController.swift */; };
 		B88B2F3E1E47B64100384A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F3D1E47B64100384A02 /* AppDelegate.swift */; };
-		B88B2F401E47B64100384A02 /* ViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F3F1E47B64100384A02 /* ViewControllerMain.swift */; };
 		B88B2F431E47B64100384A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88B2F411E47B64100384A02 /* Main.storyboard */; };
 		B88B2F481E47B64100384A02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88B2F461E47B64100384A02 /* LaunchScreen.storyboard */; };
 		B88B2F531E47B64100384A02 /* Duck_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88B2F521E47B64100384A02 /* Duck_AppTests.swift */; };
@@ -149,7 +148,6 @@
 		B840E7791E992F3A00E820D0 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		B88B2F3A1E47B64100384A02 /* Duck App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duck App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88B2F3D1E47B64100384A02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B88B2F3F1E47B64100384A02 /* ViewControllerMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMain.swift; sourceTree = "<group>"; };
 		B88B2F421E47B64100384A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B88B2F471E47B64100384A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B88B2F491E47B64100384A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -302,7 +300,6 @@
 				A9301FE11EA6D37D00DB1B15 /* Assets.xcassets */,
 				2D17FA881EAA713400D3205D /* Application */,
 				2D17FA891EAA714300D3205D /* ScreenSaver */,
-				B88B2F3F1E47B64100384A02 /* ViewControllerMain.swift */,
 				B840E7761E992EBB00E820D0 /* MainMenu */,
 				B8F61C801E67BF1300699A0E /* DuckCards */,
 				344E178D1E9C395D007E10EB /* TriviaStuff */,
@@ -516,7 +513,6 @@
 				A9DEE1351EA85B7E0018FB36 /* main.swift in Sources */,
 				B840E75F1E96E0A700E820D0 /* Leaderboard.swift in Sources */,
 				B840E7781E992EEC00E820D0 /* ContentViewController.swift in Sources */,
-				B88B2F401E47B64100384A02 /* ViewControllerMain.swift in Sources */,
 				2DC655181EA55DDE00834ED2 /* WelcomeScreenViewController.swift in Sources */,
 				2D326DF51E92E88C00992FFA /* DuckPreview.swift in Sources */,
 				B812D7F51E5D3DF2002152D7 /* ViewControllerSS.swift in Sources */,
