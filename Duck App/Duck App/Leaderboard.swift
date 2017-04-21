@@ -42,7 +42,6 @@ class Leaderboard : UIViewController {
         
         let actionSubmit = UIAlertAction(title: "Submit", style: UIAlertActionStyle.default) { (action:UIAlertAction) in
             //This is called when the user presses the login button.
-            
             let textUser = alertController.textFields![0] as UITextField;   //Variable where users name is saved
             
             let textState = alertController.textFields![1] as UITextField   //Variable where users state is saved
@@ -60,20 +59,19 @@ class Leaderboard : UIViewController {
             textField.placeholder = "Name"
             NotificationCenter.default.addObserver(forName: NSNotification.Name.UITextFieldTextDidChange, object: textField, queue: OperationQueue.main) { (notification) in
                 actionSubmit.isEnabled = textField.text!.characters.count < 12
-                
             }
-            
-            alertController.addTextField { (textField) -> Void in
-                //Configure the attributes of the second text box.
-                textField.placeholder = "State Initials"
-                NotificationCenter.default.addObserver(forName: NSNotification.Name.UITextFieldTextDidChange, object: textField, queue: OperationQueue.main) { (notification) in
-                    actionSubmit.isEnabled = textField.text!.characters.count < 3
-                }
-            }
-            
-            //Present the alert controller
-            self.present(alertController, animated: true, completion:nil)
         }
+        
+        alertController.addTextField { (textField) -> Void in
+            //Configure the attributes of the second text box.
+            textField.placeholder = "State Initials"
+            NotificationCenter.default.addObserver(forName: NSNotification.Name.UITextFieldTextDidChange, object: textField, queue: OperationQueue.main) { (notification) in
+                actionSubmit.isEnabled = textField.text!.characters.count < 3
+            }
+        }
+            
+        //Present the alert controller
+        self.present(alertController, animated: true, completion:nil)
     }
     
 }
