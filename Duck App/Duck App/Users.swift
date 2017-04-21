@@ -12,17 +12,18 @@ class Users {
     
     //MARK: Properties
     var name: String
-    var score: String
+    var score: Int
     var state: String
-    var place: String
+    var place: Int
     
     //MARK: Initilization
     
-    init(place: String, name: String, state: String, score: String) {
-        self.name = name
-        self.score = score
-        self.state = state
-        self.place = place
+    init(place: Int, name: String, state: String, score: Int){
+    
+    self.place = place
+    self.name = name
+    self.score = score
+    self.state = state
     }
     
 }

@@ -10,20 +10,40 @@ import UIKit
 
 class Leaderboard : UIViewController {
     
+    // MARK: Properties
+    
+    // Reference embedded table view controller
+    private var leaderboardTable: LeaderboardTableViewController!
+    
     override func viewDidLoad() {
-        let a = 100
-        if a > 9 {
-            
-            createHighScoreAlert(title: "NEW HIGH SCORE!", message: "Your Score:")
+        let myScore = score
+        let bottomScore = users.last?.score
+        
+        // @todo: Alert should *not* be made if Leaderboard is just viewed from TriviaStartScreen
+        if(myScore > bottomScore! || users.count < 10) {
+            createHighScoreAlert(title: "NEW HIGH SCORE!", message: "Your Score: " + String(myScore))
         }
-//        else {
-//            createGameOverAlert(title: "GAME OVER",message: "Your Score:")
-//        }
+        else {
+            createGameOverAlert(title: "GAME OVER", message: "Your Score: " + String(myScore))
+        }
+        
+        //re-create the place column here so that we don't have multiples of 1st place etc
+        var i: Int = 0
+        for _ in users {
+            users[i].place = i + 1
+            i += 1
+        }
     }
-
-
-    // Creates Alert when trivia game ends
-    func createGameOverAlert(title: String, message: String) {
+    
+    // Prepare for segue to get the embedded view controller pointer
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? LeaderboardTableViewController, segue.identifier == "LeaderboardTableViewEmbed" {
+            self.leaderboardTable = vc
+        }
+    }
+    
+    //Creates Alert when trivia game ends
+    func createGameOverAlert(title: String, message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { action in alert.dismiss(animated: true, completion: nil)
         }))
@@ -37,16 +57,22 @@ class Leaderboard : UIViewController {
         
         let actionCancel = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) { (action:UIAlertAction) in
             //This is called when the user presses the cancel button.
-            print("You've pressed the cancel button");
+            //print("You've pressed the cancel button");
         }
         
         let actionSubmit = UIAlertAction(title: "Submit", style: UIAlertActionStyle.default) { (action:UIAlertAction) in
-            //This is called when the user presses the login button.
-            let textUser = alertController.textFields![0] as UITextField;   //Variable where users name is saved
+            //This is called when the user presses the submit button.
             
+            let textUser = alertController.textFields![0] as UITextField
             let textState = alertController.textFields![1] as UITextField   //Variable where users state is saved
             
-            print("The user entered:%@ & %@",textUser.text!,textState.text!);
+            let thisUser = Users(place: 0, name: textUser.text!, state: textState.text!, score: score)
+            
+            //put user into the table
+            self.placeUser(thisUser: thisUser)
+            
+            self.leaderboardTable.tableView.reloadData()
+            
         }
         
         //Add the buttons
@@ -72,6 +98,22 @@ class Leaderboard : UIViewController {
             
         //Present the alert controller
         self.present(alertController, animated: true, completion:nil)
+        
     }
     
+    //places the user on the leaderboard in the appropriae place
+    func placeUser(thisUser: Users) {
+        //less than 10 on the board, add always
+        if(users.count < 10) {
+            users.append(thisUser)
+        }
+            //10 users already, put this one on the bottom and sort by score
+        else {
+            users[9] = thisUser
+        }
+        //sort by score
+        users.sort { $0.score > $1.score}
+        
+    }
+
 }

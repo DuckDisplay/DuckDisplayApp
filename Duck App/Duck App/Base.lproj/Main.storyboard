@@ -13,7 +13,7 @@
         <!--Trivia Game-->
         <scene sceneID="5cI-ZC-yq7">
             <objects>
-                <viewController id="yMy-ej-eeJ" customClass="TriviaScreen1" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="TriviaScreen1" storyboardIdentifier="TriviaScreen1" id="yMy-ej-eeJ" customClass="TriviaScreen1" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nxk-aM-qZu"/>
                         <viewControllerLayoutGuide type="bottom" id="W1y-zg-ZXk"/>
@@ -123,6 +123,15 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fe-Eo-b9j">
+                                <rect key="frame" x="20" y="62" width="156" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="6G1-1M-giD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
@@ -172,6 +181,7 @@
                         <outlet property="livesCounter" destination="j30-g1-b9f" id="w3Q-rm-vlE"/>
                         <outlet property="questionImage" destination="2zf-4B-HdT" id="HsA-Mk-FeR"/>
                         <outlet property="questionText" destination="Dcq-o7-2CG" id="Gyv-V5-5Zi"/>
+                        <outlet property="scoreLabel" destination="5fe-Eo-b9j" id="H4i-VN-NdR"/>
                         <outlet property="timerOutlet" destination="SbT-S8-dTw" id="7XN-or-2y0"/>
                         <segue destination="wdG-Q5-FrF" kind="show" identifier="gameOver" id="8PB-ep-K12"/>
                     </connections>
@@ -619,7 +629,7 @@
         <!--Leaderboard-->
         <scene sceneID="8Rw-ja-oAY">
             <objects>
-                <viewController title="Leaderboard" id="5rc-lT-Mu8" customClass="Leaderboard" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="Leaderboard" storyboardIdentifier="Leaderboard" title="Leaderboard" id="5rc-lT-Mu8" customClass="Leaderboard" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gfl-Nh-pon"/>
                         <viewControllerLayoutGuide type="bottom" id="3Vl-nr-4ZF"/>
@@ -656,7 +666,7 @@
                                 <rect key="frame" x="0.0" y="175" width="1024" height="593"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <segue destination="vYX-h3-L4P" kind="embed" id="raD-j2-G7p"/>
+                                    <segue destination="vYX-h3-L4P" kind="embed" identifier="LeaderboardTableViewEmbed" id="raD-j2-G7p"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -696,7 +706,7 @@
         <!--Leaderboard Table View Controller-->
         <scene sceneID="KyJ-jp-ZxK">
             <objects>
-                <tableViewController id="vYX-h3-L4P" customClass="LeaderboardTableViewController" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="LeaderboardTableViewController" storyboardIdentifier="LeaderboardTableViewController" id="vYX-h3-L4P" customClass="LeaderboardTableViewController" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="IFc-r0-hPG">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="593"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
