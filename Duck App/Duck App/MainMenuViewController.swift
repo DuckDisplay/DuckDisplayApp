@@ -83,7 +83,7 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
             vc.pageIndex = index
             return vc
         }
-            // Pages 1-3 direct to other parts of the app, the Duck Species, Trivia, or Conservation
+        // Pages 1-3 direct to other parts of the app, the Duck Species, Trivia, or Conservation
         else if (index > 0 && index < self.pageTitles.count - 1) {
             let vc: ContentViewController = self.storyboard?.instantiateViewController(withIdentifier: "ContentViewController") as! ContentViewController
             
@@ -94,7 +94,7 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
             vc.pageIndex = index
             return vc
         }
-            // Final page is the credits page
+        // Final page is the credits page
         else if (index == self.pageTitles.count - 1) {
             let vc: CreditsViewController = self.storyboard?.instantiateViewController(withIdentifier: "CreditsViewController") as! CreditsViewController
             vc.pageIndex = index
@@ -117,7 +117,7 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
         // Error checking: ensure not first view or not found object
         if ((index == 0) || (index == NSNotFound)){
             
-            index = 5
+            index = self.pageTitles.count
         }
         
         // Decrement index
