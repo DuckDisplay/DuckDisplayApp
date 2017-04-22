@@ -19,7 +19,7 @@ class ViewScreenSaver : UIViewController {
     var screenTimer: Timer!
     var blinkTimer: Timer!
     var ducks = ["AmericanBlackDuck","AmericanWigeon","BlueWingedTeal","Canvasback","cinnamonteal","Mallard",
-                 "Gadwall","GreenWingTeal","LesserScaup","NorthernPintail","NorthernShoveler","RedHead","RingNeck", "WoodDuck"]
+                 "Gadwall","GreenWingTeal","LesserScaup","NorthernPintail","NorthernShoveler","RedHead","RingNeck", "WoodDuck","WinterMaleAmericanWigeon","BlueWingedTealFlying","CanvasbackMale","GreenWingTealMale","MallardPair","NorthernShovelerGroup","RedHeadMale","WoodDuckMale"]
     var ss = Int(arc4random_uniform(14))
     var blinkingStatus = 0
     var backgroundImage = UIImageView(frame: UIScreen.main.bounds)
@@ -31,9 +31,8 @@ class ViewScreenSaver : UIViewController {
         screenTimer = Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(transitionBackground), userInfo: nil, repeats: true)
         background()
         
-        self.ssAction.layer.borderWidth = 2
-        self.ssAction.layer.cornerRadius = 6
-        self.ssAction.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
+        self.ssAction.backgroundColor = UIColor.lightGray.withAlphaComponent(0.4
+        )
     }
     
     func background(){
@@ -44,7 +43,7 @@ class ViewScreenSaver : UIViewController {
     
     func transitionBackground(){
         var ss2 = ss
-        if (ss2 < 13) {
+        if (ss2 < 21) {
             ss2 = ss2 + 1
         }
         else {

@@ -17,6 +17,7 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
     // Arrays store data for each page on the Main Menu
     var pageTitles : NSArray!
     var backgrounds: NSArray!
+    var labelBColor: NSArray!
     var pageDesciption: NSArray!
     var segueIdentifiers: NSArray!
     
@@ -34,9 +35,14 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
                                             "Duck-Camo",
                                             "conservationBackground",
                                             "")
+        self.labelBColor = NSArray(objects:   UIColor.clear,
+                                              UIColor.brown.withAlphaComponent(0.3),
+                                              UIColor.brown.withAlphaComponent(0.3),
+                                              UIColor.init(red: 0.0, green: 0.35, blue: 0.65, alpha: 0.2),
+                                              UIColor.clear)
         
         // The following is only for ContentViewController's (the stuff in between WelcomeScreen and Credits)
-        self.pageDesciption = NSArray(objects: "Learn about 15 different species of ducks.",
+        self.pageDesciption = NSArray(objects: "Learn about 14 different species of ducks.",
                                                "Test you knowledge on ducks and their habitat!",
                                                "Our nations wetlands face their greatest risk in 35 years.")
         // These are segues from Main Menu to the different parts of the app
@@ -90,6 +96,7 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
             vc.titleText = self.pageTitles[index] as! String
             vc.background = self.backgrounds[index] as! String
             vc.descriptionText = self.pageDesciption[index - 1] as! String
+            vc.labelColor = self.labelBColor[index] as! UIColor
             vc.segueID = self.segueIdentifiers[index - 1] as! String
             vc.pageIndex = index
             return vc

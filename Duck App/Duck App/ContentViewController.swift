@@ -24,12 +24,15 @@ class ContentViewController: UIViewController, PageScreenProtocol {
     var descriptionText: String!
     var segueID: String!
     var background: String!
+    var labelColor: UIColor!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.titleLabel.text = self.titleText
         self.descriptionLabel.text = self.descriptionText
+        self.titleLabel.backgroundColor = labelColor
+        self.descriptionLabel.backgroundColor = labelColor
         setBackground(background: background)
     }
 

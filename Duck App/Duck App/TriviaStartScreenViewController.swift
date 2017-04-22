@@ -20,7 +20,9 @@ class TriviaStartScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-          setBackground()
+        setBackground()
+        //Timer for blinking button
+        buttonTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(blinkingLabel), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view.
         
         //initial user to prevent nil...
@@ -44,23 +46,9 @@ class TriviaStartScreenViewController: UIViewController {
         
         self.view.backgroundColor = UIColor(patternImage: image)
         
-        //addBlurEffect()
         
     }
     
-    //Function to blur background
-    func addBlurEffect()
-    {
-        
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.regular)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = view.frame
-        
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
-        view.addSubview(blurEffectView)
-        self.view.insertSubview(blurEffectView, at: 0)
-        
-    }
     
     func blinkingLabel () {
         if (blinkingStatus == 0){
