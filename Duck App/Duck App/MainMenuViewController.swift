@@ -2,7 +2,7 @@
 //  MainMenuViewController.swift
 //  Duck App
 //
-//  Created by Austin Mills on 4/8/17.
+//  Created by Auburn University Senior Design on 4/8/17.
 //  Copyright © 2017 Auburn University. All rights reserved.
 //
 
@@ -42,7 +42,7 @@ class MainMenuViewController: UIViewController, UIPageViewControllerDataSource {
                                               UIColor.clear)
         
         // The following is only for ContentViewController's (the stuff in between WelcomeScreen and Credits)
-        self.pageDesciption = NSArray(objects: "Learn about 14 different species of ducks.",
+        self.pageDesciption = NSArray(objects: "Learn about 15 different species of ducks.",
                                                "Test you knowledge on ducks and their habitat!",
                                                "Our nations wetlands face their greatest risk in 35 years.")
         // These are segues from Main Menu to the different parts of the app

@@ -4,7 +4,7 @@
 //
 //  Duck Info object stores details of a duck card when presented
 //
-//  Created by Mark Gallagher Jr on 4/6/17.
+//  Created by Auburn University Senior Design on 4/6/17.
 //  Copyright © 2017 Auburn University. All rights reserved.
 //
 

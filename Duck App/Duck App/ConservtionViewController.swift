@@ -2,7 +2,7 @@
 //  ConservtionViewController.swift
 //  Duck App
 //
-//  Created by John Cancilla on 4/20/17.
+//  Created by Auburn University Senior Design on 4/20/17.
 //  Copyright © 2017 Auburn University. All rights reserved.
 //
 

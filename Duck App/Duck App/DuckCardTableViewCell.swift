@@ -2,7 +2,7 @@
 //  DuckCardTableViewCell.swift
 //  Duck App
 //
-//  Created by Austin Mills on 3/1/17.
+//  Created by Auburn University Senior Design on 3/1/17.
 //  Copyright © 2017 Auburn University. All rights reserved.
 //
 

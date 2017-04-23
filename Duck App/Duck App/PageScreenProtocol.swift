@@ -5,7 +5,7 @@
 //  This protocol defines what any view controller used as a page in a Page View Controller 
 //  should follow.
 //
-//  Created by Mark Gallagher Jr on 4/19/17.
+//  Created by Auburn University Senior Design on 4/19/17.
 //  Copyright © 2017 Auburn University. All rights reserved.
 //
 

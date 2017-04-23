@@ -2,7 +2,7 @@
 //  LeaderboardTableViewCell.swift
 //  Duck App
 //
-//  Created by Austin Mills on 4/2/17.
+//  Created by Auburn University Senior Design on 4/2/17.
 //  Copyright © 2017 Auburn University. All rights reserved.
 //
 

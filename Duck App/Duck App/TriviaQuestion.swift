@@ -2,7 +2,7 @@
 //  TriviaQuestion.swift
 //  Duck App
 //
-//  Created by Matthew Meade Mabrey on 4/5/17.
+//  Created by Auburn University Senior Design on 4/5/17.
 //  Copyright © 2017 Auburn University. All rights reserved.
 //
 

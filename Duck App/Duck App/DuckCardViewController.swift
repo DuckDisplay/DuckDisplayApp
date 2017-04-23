@@ -2,7 +2,7 @@
 //  DuckCardViewController.swift
 //  Duck App
 //
-//  Created by Mark Gallagher Jr on 4/6/17.
+//  Created byAuburn University Senior Design on 4/6/17.
 //  Copyright © 2017 Auburn University. All rights reserved.
 //
 

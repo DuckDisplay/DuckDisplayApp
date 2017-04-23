@@ -188,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQq-6W-xR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4049.4140624999995" y="-546.09375"/>
+            <point key="canvasLocation" x="3909" y="-548"/>
         </scene>
         <!--Trivia Start Screen View Controller-->
         <scene sceneID="wNq-Wv-bHZ">
@@ -276,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VK9-rr-BkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2231.25" y="-546.09375"/>
+            <point key="canvasLocation" x="2358" y="-548"/>
         </scene>
         <!--Duck Information-->
         <scene sceneID="okx-lg-Nk9">
@@ -523,7 +523,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJK-DV-R7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3081.4453125" y="1196.875"/>
+            <point key="canvasLocation" x="3100" y="969"/>
         </scene>
         <!--Duck Species Gallery-->
         <scene sceneID="Nhh-L9-Y0X">
@@ -579,7 +579,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUK-ms-tds" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2182.03125" y="1196.875"/>
+            <point key="canvasLocation" x="2358" y="969"/>
         </scene>
         <!--View Screen Saver-->
         <scene sceneID="fkM-H1-mzg">
@@ -624,7 +624,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1656.4453125" y="185.9375"/>
+            <point key="canvasLocation" x="1646" y="186"/>
         </scene>
         <!--Leaderboard-->
         <scene sceneID="8Rw-ja-oAY">
@@ -701,7 +701,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KTA-Im-zfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5581.640625" y="-547.65625"/>
+            <point key="canvasLocation" x="5486" y="-546"/>
         </scene>
         <!--Leaderboard Table View Controller-->
         <scene sceneID="KyJ-jp-ZxK">
@@ -776,7 +776,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02W-af-f3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6405.46875" y="-546.484375"/>
+            <point key="canvasLocation" x="5939" y="-311"/>
         </scene>
         <!--Main Menu View Controller-->
         <scene sceneID="2Sm-oI-kLS">
@@ -796,7 +796,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gC8-wr-haD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3444.140625" y="185.9375"/>
+            <point key="canvasLocation" x="3100" y="186"/>
         </scene>
         <!--Content View Controller-->
         <scene sceneID="f1n-Bp-n48">
@@ -854,7 +854,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ak9-PR-nu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4273.2421875" y="185.9375"/>
+            <point key="canvasLocation" x="3937" y="186"/>
         </scene>
         <!--Welcome Screen View Controller-->
         <scene sceneID="jlz-BK-FuY">
@@ -902,12 +902,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ov2-Kv-jd8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4272.65625" y="1035.9375"/>
+            <point key="canvasLocation" x="4564" y="1036"/>
         </scene>
-        <!--Conservtion View Controller-->
+        <!--Conservation-->
         <scene sceneID="dVl-Wo-Qkx">
             <objects>
-                <viewController id="Fyk-Oa-hEg" customClass="ConservtionViewController" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Conservation" id="Fyk-Oa-hEg" customClass="ConservtionViewController" customModule="Duck_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wTw-7B-UME"/>
                         <viewControllerLayoutGuide type="bottom" id="3Ck-Z5-NPt"/>
@@ -917,7 +917,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" translatesAutoresizingMaskIntoConstraints="NO" id="rOh-0D-a1T">
-                                <rect key="frame" x="20" y="20" width="984" height="1662"/>
+                                <rect key="frame" x="20" y="64" width="984" height="1618"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ku-83-Wsb">
                                         <rect key="frame" x="8" y="260" width="200" height="24"/>
@@ -1051,7 +1051,7 @@
                                             <constraint firstAttribute="height" constant="131" id="nKP-1L-8e0"/>
                                             <constraint firstAttribute="width" constant="955" id="uZG-QF-mtV"/>
                                         </constraints>
-                                        <mutableString key="text">The duck stamp was established in 1934. They allow sportsmen to waterfowl hunt and avid bird lovers to enter National Wildlife Refuges The duck Stamp has raised over 1 billion dollar since it was enacted. This money goes straight to waterfowl in the form of funding for the National Wildlife Refuge System. National Wildlife Refuges are not only for hunters. They are sometimes the only place waterfowl have to rest, eat, and sleep on their migration paths. They are also the only federally funded institution designed around letting people experience waterfowl in a sometimes intimate environment. Without the duck stamp, wetlands would be lost in such a way that waterfowl would not be able to maintain the record population numbers we see today in some species.</mutableString>
+                                        <string key="text">The duck stamp was established in 1934. They allow sportsmen to waterfowl hunt and avid bird lovers to enter National Wildlife Refuges The duck Stamp has raised over 1 billion dollar since it was enacted. This money goes straight to waterfowl in the form of funding for the National Wildlife Refuge System. National Wildlife Refuges are not only for hunters. They are sometimes the only place waterfowl have to rest, eat, and sleep on their migration paths. They are also the only federally funded institution designed around letting people experience waterfowl in a sometimes intimate environment. Without the duck stamp, wetlands would be lost in such a way that waterfowl would not be able to maintain the record population numbers we see today in some species.</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1146,12 +1146,13 @@
                             <constraint firstItem="rOh-0D-a1T" firstAttribute="top" secondItem="wTw-7B-UME" secondAttribute="bottom" id="qJk-hT-0l6"/>
                         </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1024" height="1700"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ppj-yM-H3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3987.8906249999995" y="2006.25"/>
+            <point key="canvasLocation" x="3843" y="1377"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="uAK-1R-Ntn">
@@ -1159,7 +1160,7 @@
                 <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ZaP-IM-SBJ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nXe-4W-jAx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4962" y="186"/>
+            <point key="canvasLocation" x="4730" y="186"/>
         </scene>
         <!--Credits View Controller-->
         <scene sceneID="wcn-SB-guD">
@@ -1228,14 +1229,14 @@ aW4gQ3lyIA1KUCBDYW5jaWxsYQ1NYXJrIEdhbGxpZ2hlcg1NYXR0IE1hYnJleQ
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="317" id="7Zi-Ql-IVl"/>
                                                 </constraints>
-                                                <mutableString key="text" base64-UTF8="YES">
+                                                <string key="text" base64-UTF8="YES">
 VGV4dCBTb3VyY2VzIFByb3ZpZGVkIGJ5OuKAqC0gVGhlIENvcm5lbGwgTGFiIG9mIE9ybml0aG9sb2d5
 IBHigKgRES0gRHVja3MgVW5saW1pdGVkEQ0tIFVTIEZpc2ggYW5kIFdpbGRsaWZlIFNlcnZpY2Vz4oCo
 LSBEdWNrIENvbW1hbmRlciAN4oCoSW1hZ2VzIFByb3ZpZGVkIGJ5Og0tIER1Y2sgQ29tbWFuZGVyDS0g
 V2lraW1lZGlhIENvbW1vbnMRDS0gRHVja3MgVW5saW1pdGVk4oCoLSBXYWxscGFwZXIgQ2F2ZQ0tIEdy
 YXkgTG9kZ2UgV2lsZGxpZmUgQXJlYSAoUGhvdG8gYnkgQ2FycmllIFdpbHNvbikNDUR1Y2sgU291bmRz
 IFByb3ZpZGVkIGJ5Og0tIER1Y2sgQ29tbWFuZGVyA
-</mutableString>
+</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1289,7 +1290,7 @@ IFByb3ZpZGVkIGJ5Og0tIER1Y2sgQ29tbWFuZGVyA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYB-7U-6Ta" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4961.71875" y="1051.5625"/>
+            <point key="canvasLocation" x="5242" y="1036"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tbp-lP-tn5">
@@ -1307,7 +1308,7 @@ IFByb3ZpZGVkIGJ5Og0tIER1Y2sgQ29tbWFuZGVyA
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pep-0g-T4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1457.8125" y="1196.875"/>
+            <point key="canvasLocation" x="1646" y="969"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="l23-iH-fGU">
@@ -1325,7 +1326,7 @@ IFByb3ZpZGVkIGJ5Og0tIER1Y2sgQ29tbWFuZGVyA
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HiR-d1-lfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2719.921875" y="185.9375"/>
+            <point key="canvasLocation" x="2341" y="186"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GWt-xI-3eC">
@@ -1343,7 +1344,7 @@ IFByb3ZpZGVkIGJ5Og0tIER1Y2sgQ29tbWFuZGVyA
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8jV-cI-vcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4857.421875" y="-547.65625"/>
+            <point key="canvasLocation" x="4708" y="-548"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zH3-dU-SrN">
@@ -1361,7 +1362,7 @@ IFByb3ZpZGVkIGJ5Og0tIER1Y2sgQ29tbWFuZGVyA
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yta-b0-j2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3325.1953125" y="-546.09375"/>
+            <point key="canvasLocation" x="3100" y="-546"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oLo-dx-NvI">
@@ -1379,7 +1380,7 @@ IFByb3ZpZGVkIGJ5Og0tIER1Y2sgQ29tbWFuZGVyA
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dkt-mh-e79" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1507.03125" y="-546.09375"/>
+            <point key="canvasLocation" x="1675" y="-548"/>
         </scene>
     </scenes>
     <resources>
@@ -1388,9 +1389,9 @@ IFByb3ZpZGVkIGJ5Og0tIER1Y2sgQ29tbWFuZGVyA
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="kJa-lM-lrz"/>
         <segue reference="8PB-ep-K12"/>
-        <segue reference="0p6-5d-yiO"/>
-        <segue reference="LSF-Wt-laQ"/>
-        <segue reference="ySH-GK-seA"/>
+        <segue reference="0cy-i2-9fF"/>
+        <segue reference="qW8-xb-N1N"/>
     </inferredMetricsTieBreakers>
 </document>

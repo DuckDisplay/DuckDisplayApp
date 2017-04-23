@@ -2,8 +2,8 @@
 //  ViewControllerSS.swift
 //  Duck App
 //
-//  Created by Austin Mills on 2/21/17.
-//  Copyright © 2017 Austin Mills. All rights reserved.
+//  Created by Auburn Univerity Senior Design on 2/21/17.
+//  Copyright © 2017 Auburn University. All rights reserved.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  TriviaStartScreenViewController.swift
 //  Duck App
 //
-//  Created by John Cancilla on 4/3/17.
+//  Created by Auburn University Senior Design on 4/3/17.
 //  Copyright © 2017 Auburn University. All rights reserved.
 //
 
