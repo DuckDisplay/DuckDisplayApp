@@ -1201,11 +1201,11 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yob-48-lhz">
-                                                <rect key="frame" x="237" y="39" width="270" height="163"/>
+                                                <rect key="frame" x="237" y="39" width="270" height="162.5"/>
                                                 <string key="text" base64-UTF8="YES">
 RGVzaWduIENvb3JkaW5hdG9yOiBSb2JlcnQgRGVhbhHigKhEZXNpZ24gQ29uc3VsdGFudDogTWFya3Vz
-IEtyZWl0emVyDUFubmEgUHJ1aXR0DUF1c3RpbiBNaWxscxERERERERER4oCoQmVuamFtaW4gQ3lyIA1K
-UCBDYW5jaWxsYQ1NYXJrIEdhbGxpZ2hlcg1NYXR0IE1hYnJleQ
+IEtyZWl0emVyDUNhcHRhaW46IEF1c3RpbiBNaWxscxERERERERERERENQW5uYSBQcnVpdHQNQmVuamFt
+aW4gQ3lyIA1KUCBDYW5jaWxsYQ1NYXJrIEdhbGxpZ2hlcg1NYXR0IE1hYnJleQ
 </string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1218,13 +1218,13 @@ UCBDYW5jaWxsYQ1NYXJrIEdhbGxpZ2hlcg1NYXR0IE1hYnJleQ
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="References" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OD9-94-Faf">
-                                                <rect key="frame" x="311.5" y="222" width="121" height="29"/>
+                                                <rect key="frame" x="311.5" y="221.5" width="121" height="29"/>
                                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovc-Mn-WeC">
-                                                <rect key="frame" x="8" y="251" width="728" height="317"/>
+                                                <rect key="frame" x="8" y="250.5" width="728" height="317"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="317" id="7Zi-Ql-IVl"/>
                                                 </constraints>
