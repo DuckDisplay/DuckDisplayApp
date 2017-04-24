@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -529,7 +529,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jba-Cc-Uvc" id="ZfI-rE-VAi">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="99"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="RgO-mE-mBv">
@@ -707,7 +707,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HWx-s9-hP7" id="IRY-8V-dhj">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="89.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRi-xq-n5Q">
@@ -1193,30 +1193,30 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yob-48-lhz">
-                                                <rect key="frame" x="237" y="39" width="270" height="162.5"/>
+                                                <rect key="frame" x="224.5" y="39" width="295.5" height="172"/>
                                                 <string key="text" base64-UTF8="YES">
-RGVzaWduIENvb3JkaW5hdG9yOiBSb2JlcnQgRGVhbhHigKhEZXNpZ24gQ29uc3VsdGFudDogTWFya3Vz
-IEtyZWl0emVyDUNhcHRhaW46IEF1c3RpbiBNaWxscxERERERERERERENQW5uYSBQcnVpdHQNQmVuamFt
-aW4gQ3lyIA1KUCBDYW5jaWxsYQ1NYXJrIEdhbGxpZ2hlcg1NYXR0IE1hYnJleQ
+QXVzdGluIE1pbGxzEREREREREREREQ1Bbm5hIFBydWl0dA1CZW5qYW1pbiBDeXIgDUpQIENhbmNpbGxh
+DU1hcmsgR2FsbGlnaGVyDU1hdHQgTWFicmV5DURlc2lnbiBDb29yZGluYXRvcjogRHIuIFJvYmVydCBE
+ZWFuEeKAqERlc2lnbiBDb25zdWx0YW50OiBNYXJrdXMgS3JlaXR6ZXI
 </string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auburn University Senior Design Team" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRv-As-WMx">
                                                 <rect key="frame" x="168" y="0.0" width="408" height="29"/>
                                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="References" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OD9-94-Faf">
-                                                <rect key="frame" x="311.5" y="221.5" width="121" height="29"/>
+                                                <rect key="frame" x="311.5" y="231" width="121" height="29"/>
                                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovc-Mn-WeC">
-                                                <rect key="frame" x="8" y="250.5" width="728" height="317"/>
+                                                <rect key="frame" x="8" y="260" width="728" height="317"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="317" id="7Zi-Ql-IVl"/>
                                                 </constraints>
