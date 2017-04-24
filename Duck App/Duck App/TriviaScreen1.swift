@@ -40,14 +40,14 @@ class TriviaScreen1: UIViewController {
         score = 0
         //load question and start timer
         getNextQuestion()
-        gameTimer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(gameIsOver), userInfo: nil, repeats: false)
+        gameTimer = Timer.scheduledTimer(timeInterval: 120, target: self, selector: #selector(gameIsOver), userInfo: nil, repeats: false)
         dumbTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
 
     }
 
     //displays score
     @IBOutlet weak var scoreLabel: UILabel!
-    
+
     //outlet for the question text to be put into that textview
     @IBOutlet weak var questionText: UITextView!
     
@@ -246,7 +246,6 @@ class TriviaScreen1: UIViewController {
     func gameIsOver() {
         gameTimer.invalidate()
         score += (chances * 10)
-        
         
         //segue to the leaderboard screen
         self.performSegue(withIdentifier: "gameOver", sender: self)

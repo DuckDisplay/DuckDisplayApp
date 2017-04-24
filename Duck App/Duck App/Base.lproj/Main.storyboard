@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,7 +33,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="xaZ-zb-pbm"/>
                                 </constraints>
-                                <state key="normal" title="Insert Answer A ">
+                                <state key="normal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
@@ -53,7 +53,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="FQ5-pX-7lC"/>
                                 </constraints>
-                                <state key="normal" title="Insert Answer B">
+                                <state key="normal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
@@ -66,7 +66,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="kHs-P9-zu8"/>
                                 </constraints>
-                                <state key="normal" title="Insert Answer D">
+                                <state key="normal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
@@ -79,7 +79,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="N7k-CX-YdJ"/>
                                 </constraints>
-                                <state key="normal" title="Insert Answer C">
+                                <state key="normal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
@@ -106,29 +106,20 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Insert Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dcq-o7-2CG">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dcq-o7-2CG">
                                 <rect key="frame" x="316" y="216" width="686" height="46"/>
                                 <color key="backgroundColor" red="0.42263250998579538" green="0.42059080703900414" blue="0.42467421293258667" alpha="0.74692315924657537" colorSpace="calibratedRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKf-93-fC6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKf-93-fC6">
                                 <rect key="frame" x="20" y="72" width="151" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="151" id="K8V-TR-ds0"/>
                                     <constraint firstAttribute="height" constant="65" id="mJC-JW-Rti"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fe-Eo-b9j">
-                                <rect key="frame" x="20" y="62" width="156" height="96"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="156" id="6G1-1M-giD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -181,7 +172,7 @@
                         <outlet property="livesCounter" destination="j30-g1-b9f" id="w3Q-rm-vlE"/>
                         <outlet property="questionImage" destination="2zf-4B-HdT" id="HsA-Mk-FeR"/>
                         <outlet property="questionText" destination="Dcq-o7-2CG" id="Gyv-V5-5Zi"/>
-                        <outlet property="scoreLabel" destination="5fe-Eo-b9j" id="H4i-VN-NdR"/>
+                        <outlet property="scoreLabel" destination="NKf-93-fC6" id="2U3-Me-NLf"/>
                         <outlet property="timerOutlet" destination="SbT-S8-dTw" id="7XN-or-2y0"/>
                         <segue destination="wdG-Q5-FrF" kind="show" identifier="gameOver" id="8PB-ep-K12"/>
                     </connections>
@@ -538,7 +529,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jba-Cc-Uvc" id="ZfI-rE-VAi">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="99"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="RgO-mE-mBv">
@@ -716,7 +707,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HWx-s9-hP7" id="IRY-8V-dhj">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="89"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRi-xq-n5Q">
@@ -1389,9 +1380,9 @@ IFByb3ZpZGVkIGJ5Og0tIER1Y2sgQ29tbWFuZGVyA
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kJa-lM-lrz"/>
-        <segue reference="8PB-ep-K12"/>
         <segue reference="0cy-i2-9fF"/>
+        <segue reference="8PB-ep-K12"/>
+        <segue reference="FDW-fp-6EF"/>
         <segue reference="qW8-xb-N1N"/>
     </inferredMetricsTieBreakers>
 </document>

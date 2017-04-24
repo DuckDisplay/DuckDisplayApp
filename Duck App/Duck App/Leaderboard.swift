@@ -27,12 +27,6 @@ class Leaderboard : UIViewController {
             createGameOverAlert(title: "GAME OVER", message: "Your Score: " + String(myScore))
         }
         
-        //re-create the place column here so that we don't have multiples of 1st place etc
-        var i: Int = 0
-        for _ in users {
-            users[i].place = i + 1
-            i += 1
-        }
     }
     
     // Prepare for segue to get the embedded view controller pointer
@@ -113,6 +107,13 @@ class Leaderboard : UIViewController {
         }
         //sort by score
         users.sort { $0.score > $1.score}
+        
+        //re-create the place column here so that we don't have multiples of 1st place etc
+        var i: Int = 0
+        for _ in users {
+            users[i].place = i + 1
+            i += 1
+        }
         
     }
 
