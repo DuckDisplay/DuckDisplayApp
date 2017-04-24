@@ -2,7 +2,7 @@
 //  DuckApplication.swift
 //  Duck App
 //
-//  Created by Benjamin Cyr on 4/19/17.
+//  Created by Auburn University Senior Design on 4/19/17.
 //  Copyright © 2017 Auburn University. All rights reserved.
 //
 

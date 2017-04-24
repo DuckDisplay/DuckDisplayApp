@@ -4,7 +4,7 @@
 //
 //  Contains constants to access all database files
 //
-//  Created by Mark Gallagher Jr on 3/30/17.
+//  Created by Auburn University Senior Design on 3/30/17.
 //  Copyright © 2017 Auburn University. All rights reserved.
 //
 
