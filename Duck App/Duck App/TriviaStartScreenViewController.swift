@@ -31,6 +31,16 @@ class TriviaStartScreenViewController: UIViewController {
             users.append(devUser)
         }
     }
+    
+    // Prepare for segue only needed for Leaderboard: tells Leaderboard where it was called from
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "StartScreenToLeaderboard" {
+            if let navigationController = segue.destination as? UINavigationController {
+                let nextVC = navigationController.topViewController as? Leaderboard
+                nextVC?.lastScreen = "StartScreen"
+            }
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

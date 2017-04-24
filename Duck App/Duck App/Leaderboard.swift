@@ -11,6 +11,7 @@ import UIKit
 class Leaderboard : UIViewController {
     
     // MARK: Properties
+    var lastScreen: String?
     
     // Reference embedded table view controller
     private var leaderboardTable: LeaderboardTableViewController!
@@ -19,12 +20,16 @@ class Leaderboard : UIViewController {
         let myScore = score
         let bottomScore = users.last?.score
         
-        // @todo: Alert should *not* be made if Leaderboard is just viewed from TriviaStartScreen
-        if(myScore > bottomScore! || users.count < 10) {
-            createHighScoreAlert(title: "NEW HIGH SCORE!", message: "Your Score: " + String(myScore))
+        if (lastScreen ?? "") == "StartScreen" {
+            // Do nothing
         }
         else {
-            createGameOverAlert(title: "GAME OVER", message: "Your Score: " + String(myScore))
+            if(myScore > bottomScore! || users.count < 10) {
+                createHighScoreAlert(title: "NEW HIGH SCORE!", message: "Your Score: " + String(myScore))
+            }
+            else {
+                createGameOverAlert(title: "GAME OVER", message: "Your Score: " + String(myScore))
+            }
         }
         
     }
