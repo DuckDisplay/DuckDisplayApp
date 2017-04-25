@@ -65,6 +65,7 @@ class TriviaScreen1: UIViewController {
     
     override func viewDidLoad() {
         setBackground()
+        livesCounter.text = "Lives: \(chances)"
     }
     
     override func didReceiveMemoryWarning() {

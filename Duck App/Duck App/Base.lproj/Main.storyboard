@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,7 +29,7 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QN7-8l-7TB" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="316" y="270" width="686" height="61"/>
+                                <rect key="frame" x="316" y="272" width="686" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="xaZ-zb-pbm"/>
                                 </constraints>
@@ -49,7 +49,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbV-a7-EZe" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="316" y="339" width="686" height="61"/>
+                                <rect key="frame" x="316" y="342" width="686" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="FQ5-pX-7lC"/>
                                 </constraints>
@@ -61,21 +61,8 @@
                                     <action selector="answerBChosen:" destination="yMy-ej-eeJ" eventType="touchUpInside" id="bj3-eM-6sr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ6-WA-4G3" userLabel="Insert Answer D" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="316" y="495" width="686" height="61"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="61" id="kHs-P9-zu8"/>
-                                </constraints>
-                                <state key="normal">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="answerDChosen:" destination="yMy-ej-eeJ" eventType="touchUpInside" id="wsx-qF-yao"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVQ-hI-RzK" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
-                                <rect key="frame" x="316" y="417" width="686" height="61"/>
+                                <rect key="frame" x="316" y="412" width="686" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="N7k-CX-YdJ"/>
                                 </constraints>
@@ -85,6 +72,19 @@
                                 </state>
                                 <connections>
                                     <action selector="answerCChosen:" destination="yMy-ej-eeJ" eventType="touchUpInside" id="4nt-Kn-Uyw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ6-WA-4G3" userLabel="Insert Answer D" customClass="duckButton" customModule="Duck_App" customModuleProvider="target">
+                                <rect key="frame" x="316" y="482" width="686" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="kHs-P9-zu8"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerDChosen:" destination="yMy-ej-eeJ" eventType="touchUpInside" id="wsx-qF-yao"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="00:00" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SbT-S8-dTw">
@@ -127,23 +127,23 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
                         <constraints>
-                            <constraint firstItem="aQ6-WA-4G3" firstAttribute="top" secondItem="LVQ-hI-RzK" secondAttribute="bottom" constant="17" id="4n9-v7-UNs"/>
+                            <constraint firstItem="aQ6-WA-4G3" firstAttribute="top" secondItem="LVQ-hI-RzK" secondAttribute="bottom" constant="9" id="4n9-v7-UNs"/>
                             <constraint firstItem="0Ao-df-XgP" firstAttribute="top" secondItem="Nn1-f0-5By" secondAttribute="top" id="5jd-hm-zpf"/>
-                            <constraint firstItem="QN7-8l-7TB" firstAttribute="top" secondItem="Dcq-o7-2CG" secondAttribute="bottom" constant="8" symbolic="YES" id="6bG-aB-Vrm"/>
+                            <constraint firstItem="QN7-8l-7TB" firstAttribute="top" secondItem="Dcq-o7-2CG" secondAttribute="bottom" constant="10" id="6bG-aB-Vrm"/>
                             <constraint firstItem="QN7-8l-7TB" firstAttribute="trailing" secondItem="Dcq-o7-2CG" secondAttribute="trailing" id="DWA-H8-IGW"/>
-                            <constraint firstItem="LVQ-hI-RzK" firstAttribute="top" secondItem="rbV-a7-EZe" secondAttribute="bottom" constant="17" id="E28-jG-enb"/>
+                            <constraint firstItem="LVQ-hI-RzK" firstAttribute="top" secondItem="rbV-a7-EZe" secondAttribute="bottom" constant="9" id="E28-jG-enb"/>
                             <constraint firstItem="j30-g1-b9f" firstAttribute="bottom" secondItem="SbT-S8-dTw" secondAttribute="bottom" id="Hkl-AD-gHI"/>
-                            <constraint firstItem="QN7-8l-7TB" firstAttribute="top" secondItem="2zf-4B-HdT" secondAttribute="top" id="K38-5R-7dJ"/>
+                            <constraint firstItem="QN7-8l-7TB" firstAttribute="top" secondItem="2zf-4B-HdT" secondAttribute="top" constant="2" id="K38-5R-7dJ"/>
                             <constraint firstItem="0Ao-df-XgP" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leading" id="NNY-T7-o0W"/>
                             <constraint firstItem="rbV-a7-EZe" firstAttribute="trailing" secondItem="QN7-8l-7TB" secondAttribute="trailing" id="O0F-01-V0v"/>
                             <constraint firstItem="QN7-8l-7TB" firstAttribute="leading" secondItem="2zf-4B-HdT" secondAttribute="trailing" constant="8" symbolic="YES" id="PYd-to-6yC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Dcq-o7-2CG" secondAttribute="trailing" constant="2" id="RLU-De-dlZ"/>
                             <constraint firstItem="rbV-a7-EZe" firstAttribute="trailing" secondItem="LVQ-hI-RzK" secondAttribute="trailing" id="TCj-IN-eKf"/>
-                            <constraint firstItem="QN7-8l-7TB" firstAttribute="top" secondItem="Nn1-f0-5By" secondAttribute="top" constant="270" id="TSG-ea-SRq"/>
+                            <constraint firstItem="QN7-8l-7TB" firstAttribute="top" secondItem="Nn1-f0-5By" secondAttribute="top" constant="272" id="TSG-ea-SRq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0Ao-df-XgP" secondAttribute="trailing" constant="-40" id="Uk4-CC-9Jx"/>
                             <constraint firstItem="j30-g1-b9f" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leadingMargin" constant="2" id="Veb-J0-MUg"/>
                             <constraint firstItem="rbV-a7-EZe" firstAttribute="leading" secondItem="LVQ-hI-RzK" secondAttribute="leading" id="aon-rI-yp6"/>
-                            <constraint firstItem="rbV-a7-EZe" firstAttribute="top" secondItem="QN7-8l-7TB" secondAttribute="bottom" constant="8" symbolic="YES" id="bAU-fV-VxS"/>
+                            <constraint firstItem="rbV-a7-EZe" firstAttribute="top" secondItem="QN7-8l-7TB" secondAttribute="bottom" constant="9" id="bAU-fV-VxS"/>
                             <constraint firstItem="SbT-S8-dTw" firstAttribute="trailing" secondItem="Nn1-f0-5By" secondAttribute="trailingMargin" id="bCw-IW-ZMG"/>
                             <constraint firstItem="QN7-8l-7TB" firstAttribute="leading" secondItem="Dcq-o7-2CG" secondAttribute="leading" id="dKc-L6-vzH"/>
                             <constraint firstItem="2zf-4B-HdT" firstAttribute="leading" secondItem="Nn1-f0-5By" secondAttribute="leadingMargin" id="m4d-I5-4wT"/>
@@ -529,7 +529,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jba-Cc-Uvc" id="ZfI-rE-VAi">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="99"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="RgO-mE-mBv">
@@ -707,7 +707,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HWx-s9-hP7" id="IRY-8V-dhj">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="89"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRi-xq-n5Q">
@@ -1380,9 +1380,9 @@ IFByb3ZpZGVkIGJ5Og0tIER1Y2sgQ29tbWFuZGVyA
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kJa-lM-lrz"/>
-        <segue reference="nyD-ln-Khx"/>
-        <segue reference="xQV-6E-hJ6"/>
+        <segue reference="8PB-ep-K12"/>
+        <segue reference="FDW-fp-6EF"/>
         <segue reference="qW8-xb-N1N"/>
+        <segue reference="xQV-6E-hJ6"/>
     </inferredMetricsTieBreakers>
 </document>
