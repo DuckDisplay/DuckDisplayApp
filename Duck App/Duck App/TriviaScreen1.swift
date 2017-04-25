@@ -79,21 +79,6 @@ class TriviaScreen1: UIViewController {
         
         self.view.backgroundColor = UIColor(patternImage: image)
         
-        //addBlurEffect()
-        
-    }
-    
-    //Function to blur background
-    func addBlurEffect()
-    {
-        
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.regular)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = view.frame
-        
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
-        view.addSubview(blurEffectView)
-        self.view.insertSubview(blurEffectView, at: 0)
         
     }
     
@@ -115,7 +100,9 @@ class TriviaScreen1: UIViewController {
             buttonA.backgroundColor = UIColor.green
             score += thisPoints
         }
-        getNextQuestion()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+            self.getNextQuestion()
+        })
     }
     
 
@@ -133,7 +120,9 @@ class TriviaScreen1: UIViewController {
             buttonB.backgroundColor = UIColor.green
             score += thisPoints
         }
-        getNextQuestion()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+           self.getNextQuestion()
+        })
     }
     
 
@@ -151,7 +140,9 @@ class TriviaScreen1: UIViewController {
             buttonC.backgroundColor = UIColor.green
             score += thisPoints
         }
-        getNextQuestion()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+            self.getNextQuestion()
+        })
     }
     
 
@@ -169,7 +160,9 @@ class TriviaScreen1: UIViewController {
             buttonD.backgroundColor = UIColor.green
             score += thisPoints
         }
-        getNextQuestion()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+            self.getNextQuestion()
+        })
     }
     
     

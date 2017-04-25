@@ -52,7 +52,7 @@ class LeaderboardTableViewController: UITableViewController{
         cell.leaderboardName.text = user.name
         cell.leaderboardState.text = user.state
         cell.leaderboardScore.text = String(user.score)
-        cell.leaderboardPlace.text = String(user.place)
+        cell.leaderboardPlace.text = String(user.place) + "."
         return cell
     }
     
