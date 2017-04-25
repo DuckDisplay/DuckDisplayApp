@@ -24,12 +24,6 @@ class TriviaStartScreenViewController: UIViewController {
         //Timer for blinking button
         buttonTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(blinkingLabel), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view.
-        
-        //initial user to prevent nil...
-        if(users.count < 1) {
-            let devUser = Users(place: 1, name: "Development Squad", state: "Domination Station", score: 5000)
-            users.append(devUser)
-        }
     }
     
     // Prepare for segue only needed for Leaderboard: tells Leaderboard where it was called from

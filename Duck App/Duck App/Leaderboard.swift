@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 
 class Leaderboard : UIViewController {
     
@@ -17,6 +18,18 @@ class Leaderboard : UIViewController {
     private var leaderboardTable: LeaderboardTableViewController!
     
     override func viewDidLoad() {
+        
+        // Load a saved Leaderboard, if non-existent, load sample data
+        if users.isEmpty {
+            if let savedLeaderboard = loadLeaderboard() {
+                users += savedLeaderboard
+            } else {
+                // Load sample data
+                let devUser = Users(place: 1, name: "Development Squad", state: "Domination Station", score: 10)
+                users.append(devUser)
+            }
+        }
+        
         let myScore = score
         let bottomScore = users.last?.score
         
@@ -40,6 +53,8 @@ class Leaderboard : UIViewController {
             self.leaderboardTable = vc
         }
     }
+    
+    // MARK: Alerts
     
     //Creates Alert when trivia game ends
     func createGameOverAlert(title: String, message: String){
@@ -69,6 +84,9 @@ class Leaderboard : UIViewController {
             
             //put user into the table
             self.placeUser(thisUser: thisUser)
+            
+            // Save the new leaderboard data
+            self.saveLeaderboard()
             
             self.leaderboardTable.tableView.reloadData()
             
@@ -100,26 +118,48 @@ class Leaderboard : UIViewController {
         
     }
     
-    //places the user on the leaderboard in the appropriae place
-    func placeUser(thisUser: Users) {
+    // MARK: Private Methods
+    
+    // Places the user on the leaderboard in the appropriae place
+    private func placeUser(thisUser: Users) {
+        
         //less than 10 on the board, add always
-        if(users.count < 10) {
+        if (users.count < 10) {
             users.append(thisUser)
         }
-            //10 users already, put this one on the bottom and sort by score
+        //10 users already, put this one on the bottom and sort by score
         else {
             users[9] = thisUser
         }
         //sort by score
         users.sort { $0.score > $1.score}
         
-        //re-create the place column here so that we don't have multiples of 1st place etc
+        //re-create the place column here so that we don't have multiples of 1st place, etc.
         var i: Int = 0
         for _ in users {
             users[i].place = i + 1
             i += 1
         }
         
+    }
+    
+    // Save leaderboard data
+    private func saveLeaderboard() {
+        
+        // Attempt to save to file
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(users, toFile: Users.ArchiveURL.path)
+        
+        // Depending on results, write to console 
+        if isSuccessfulSave {
+            os_log("Leaderboard successfully saved!", log: OSLog.default, type: .debug)
+        } else {
+            os_log("Leaderboard failed to save", log: OSLog.default, type: .debug)
+        }
+    }
+    
+    // Load leaderboard data from file
+    private func loadLeaderboard() -> [Users]? {
+        return NSKeyedUnarchiver.unarchiveObject(withFile: Users.ArchiveURL.path) as? [Users]
     }
 
 }
