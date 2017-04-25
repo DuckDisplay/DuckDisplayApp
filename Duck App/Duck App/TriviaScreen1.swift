@@ -19,7 +19,7 @@ class TriviaScreen1: UIViewController {
     var gameTimer: Timer!
     var dumbTimer: Timer!
     
-    var chances = 3 //game will end when no more chances are available to prevent guess spamming
+    var chances = 5 //game will end when no more chances are available to prevent guess spamming
     var randNum: Int = Int(arc4random_uniform(44)) + 1//check this bound against rows in table
     var secondsRemaining = 120
     
@@ -34,6 +34,9 @@ class TriviaScreen1: UIViewController {
     var thisPoints: Int = 0
     var thisPicture: String = ""
     var nextQuestion = 0
+    var i = 0
+    var randNumbers = [Int]()
+
     
     
     override func viewDidAppear(_ animated: Bool) {
@@ -100,6 +103,8 @@ class TriviaScreen1: UIViewController {
             buttonA.backgroundColor = UIColor.green
             score += thisPoints
         }
+        
+        disableButtons() //Disable buttons so user can't answer multiples times
         DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
             self.getNextQuestion()
         })
@@ -120,6 +125,8 @@ class TriviaScreen1: UIViewController {
             buttonB.backgroundColor = UIColor.green
             score += thisPoints
         }
+
+        disableButtons() //Disable buttons so user can't answer multiples times
         DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
            self.getNextQuestion()
         })
@@ -140,6 +147,8 @@ class TriviaScreen1: UIViewController {
             buttonC.backgroundColor = UIColor.green
             score += thisPoints
         }
+
+        disableButtons() //Disable buttons so user can't answer multiples times
         DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
             self.getNextQuestion()
         })
@@ -160,6 +169,7 @@ class TriviaScreen1: UIViewController {
             buttonD.backgroundColor = UIColor.green
             score += thisPoints
         }
+        disableButtons() //Disable buttons so user can't answer multiples times
         DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
             self.getNextQuestion()
         })
@@ -169,13 +179,15 @@ class TriviaScreen1: UIViewController {
     
     //gets the next question info from the database
     func getNextQuestion() {
+        //reeable buttons
+        enableButtons()
         //reset button colors
         buttonA.backgroundColor = UIColor.white
         buttonB.backgroundColor = UIColor.white
         buttonC.backgroundColor = UIColor.white
         buttonD.backgroundColor = UIColor.white
         
-        randNum = Int(arc4random_uniform(44)) + 1//re-randomize to get a new question
+        getNewNumber()
         
         nextQuestion += 1
         
@@ -244,5 +256,42 @@ class TriviaScreen1: UIViewController {
         self.performSegue(withIdentifier: "gameOver", sender: self)
         
     }
+    func getNewNumber() {
+        
+        var a = 0
+        randNum = Int(arc4random_uniform(44)) + 1//re-randomize to get a new question
+        
+        //Check to see if question has been asked
+        while (a < randNumbers.count){
+            if (randNum == randNumbers[a]){
+                randNum = Int(arc4random_uniform(44)) + 1//re-randomize to get a new question
+                a = 0
+            }
+            else{
+                a = a + 1
+            }
+        }
+        
+        randNumbers.insert(randNum, at: i) //Store new questions in array of questions already asked
+        
+        i = i + 1
+        if (i == 45){
+            gameIsOver()
+        }
+    }
+    //Function that disables buttons
+    func disableButtons(){
+       buttonA.isUserInteractionEnabled = false
+       buttonB.isUserInteractionEnabled = false
+       buttonC.isUserInteractionEnabled = false
+       buttonD.isUserInteractionEnabled = false
+    }
     
+    //Function that enables buttons
+    func enableButtons(){
+        buttonA.isUserInteractionEnabled = true
+        buttonB.isUserInteractionEnabled = true
+        buttonC.isUserInteractionEnabled = true
+        buttonD.isUserInteractionEnabled = true
+    }
 }
