@@ -31,8 +31,7 @@ class ViewScreenSaver : UIViewController {
         screenTimer = Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(transitionBackground), userInfo: nil, repeats: true)
         background()
         
-        self.ssAction.backgroundColor = UIColor.lightGray.withAlphaComponent(0.4
-        )
+        self.ssAction.backgroundColor = UIColor.lightGray.withAlphaComponent(0.4)
     }
     
     func background(){
