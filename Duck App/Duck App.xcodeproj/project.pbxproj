@@ -241,14 +241,14 @@
 			name = Database;
 			sourceTree = "<group>";
 		};
-		344E178D1E9C395D007E10EB /* TriviaStuff */ = {
+		344E178D1E9C395D007E10EB /* TriviaGame */ = {
 			isa = PBXGroup;
 			children = (
 				B2DDBE551E92C2E200C7B0EF /* TriviaStartScreenViewController.swift */,
 				344E17851E9C36D3007E10EB /* TriviaQuestion.swift */,
 				34DDCB521E9EBE62002507D9 /* TriviaScreen1.swift */,
 			);
-			name = TriviaStuff;
+			name = TriviaGame;
 			sourceTree = "<group>";
 		};
 		B840E7631E96E0B100E820D0 /* Leaderboard */ = {
@@ -302,7 +302,7 @@
 				2D17FA891EAA714300D3205D /* ScreenSaver */,
 				B840E7761E992EBB00E820D0 /* MainMenu */,
 				B8F61C801E67BF1300699A0E /* DuckCards */,
-				344E178D1E9C395D007E10EB /* TriviaStuff */,
+				344E178D1E9C395D007E10EB /* TriviaGame */,
 				B840E7631E96E0B100E820D0 /* Leaderboard */,
 				2D17FA811EAA710200D3205D /* Conservation */,
 				2D720AA91E8DCC1300B797A4 /* DatabaseBackend */,
