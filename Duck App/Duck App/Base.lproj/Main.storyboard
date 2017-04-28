@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UYA-dJ-Ufi">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -529,7 +529,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jba-Cc-Uvc" id="ZfI-rE-VAi">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="RgO-mE-mBv">
@@ -707,7 +707,7 @@
                                 <rect key="frame" x="0.0" y="28" width="1024" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HWx-s9-hP7" id="IRY-8V-dhj">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="89.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRi-xq-n5Q">
@@ -959,7 +959,7 @@
                                             <constraint firstAttribute="width" constant="960" id="I6x-10-8BF"/>
                                             <constraint firstAttribute="height" constant="152" id="Zkj-P6-Kgz"/>
                                         </constraints>
-                                        <string key="text">In summary, the good news is that, at least until recently, the overall state of the nation's wetlands had been improving. The bad news, however, is that every year we are still losing more than 80,000 acres of wetlands that are important to waterfowl and wildlife. The really bad news is that wetland loss has likely accelerated, and we are on the verge of having to watch wetlands disappear from the landscape much more rapidly unless we act now. Between the 1950s and 1970s, more than a half-million acres of wetlands were being lost every year. By the mid-1980s, the nation had lost over half its original wetlands. Fortunately for ducks, the rate of net wetland loss across the nation slowed significantly over the last 30 years. A important factor in reducing wetland loss are bills like the North American Wetlands Conservation Act (NAWCA).</string>
+                                        <mutableString key="text">In summary, the overall state of the nation's wetlands has been improving. The bad news, however, is that every year we are still losing more than 80,000 acres of wetlands that are important to waterfowl and wildlife. The really bad news is that wetland loss has likely accelerated, and we are on the verge of having to watch wetlands disappear from the landscape much more rapidly unless we act now. Between the 1950s and 1970s, more than a half-million acres of wetlands were being lost every year. By the mid-1980s, the nation has lost over half its original wetlands. Fortunately for ducks, the rate of net wetland loss across the nation slowed significantly over the last 30 years. An important factor in reducing wetland loss are bills like the North American Wetlands Conservation Act (NAWCA).</mutableString>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -971,7 +971,7 @@
                                             <constraint firstAttribute="width" constant="960" id="p0Z-HN-eJF"/>
                                             <constraint firstAttribute="height" constant="120" id="rsq-1F-bMc"/>
                                         </constraints>
-                                        <string key="text">The North American Wetlands Conservation Act (NAWCA), passed in 1989, provides matching grants to carry out wetlands conservation projects in the United States, Canada, and Mexico. The NAWCA has been vital for waterfowl conservation efforts. The act has raised over 1 billion dollars in federal grants and 3 billion dollars in private funds. These funds have helped the public and private sectors partner and save over 33.4 billion acres (roughly 2000 times the size of Texas) and work on more than 2,644 projects preserving wetlands.</string>
+                                        <mutableString key="text">The North American Wetlands Conservation Act (NAWCA), passed in 1989, provides matching grants to carry out wetlands conservation projects in the United States, Canada, and Mexico. The NAWCA has been vital for waterfowl conservation efforts. The act has raised over 1 billion dollars in federal grants and 3 billion dollars in private funds. These funds have helped the public and private sectors partner and save over 33.4 billion acres (roughly 2000 times the size of Texas) and work on more than 2,644 projects preserving wetlands.</mutableString>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1005,7 +1005,7 @@
                                             <constraint firstAttribute="width" constant="960" id="KNI-Gt-KV3"/>
                                             <constraint firstAttribute="height" constant="92.5" id="sOo-7f-A2b"/>
                                         </constraints>
-                                        <string key="text">Currently, Congressional dear colleague letters are being circulated in both the House of Representatives and the Senate. We ask that you contact your Representative and Senators and urge them to support NAWCA funding, either by signing on to these letters or by including the NAWCA May Forms to contact your members of congress can be found on www.ducks.org. Please fill these out to ensure future generations get to enjoy waterfowl for many years to come.</string>
+                                        <string key="text">Currently, Congressional dear colleague letters are being circulated in both the House of Representatives and the Senate. We ask that you contact your Representative and Senators and urge them to support NAWCA funding.   They can support NAWCA funding either by signing on to these letters or by including the NAWCA May Forms. To contact your members of congress, information can be found on www.ducks.org. Please fill these out to ensure future generations get to enjoy waterfowl for many years to come.</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
