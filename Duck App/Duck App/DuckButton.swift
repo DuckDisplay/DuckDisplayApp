@@ -16,7 +16,6 @@ class duckButton: UIButton {
         
         self.layer.borderWidth = 2
         self.layer.cornerRadius = 10
-       // self.setImage(UIImage(named: "FlyingDuck"), for: UIControlState.normal)
         self.tintColor = UIColor.black
         self.backgroundColor = UIColor.clear
     }

@@ -244,6 +244,7 @@
 		344E178D1E9C395D007E10EB /* TriviaGame */ = {
 			isa = PBXGroup;
 			children = (
+				B8F61C781E6219FE00699A0E /* DuckButton.swift */,
 				B2DDBE551E92C2E200C7B0EF /* TriviaStartScreenViewController.swift */,
 				344E17851E9C36D3007E10EB /* TriviaQuestion.swift */,
 				34DDCB521E9EBE62002507D9 /* TriviaScreen1.swift */,
@@ -309,7 +310,6 @@
 				B88B2F411E47B64100384A02 /* Main.storyboard */,
 				B88B2F461E47B64100384A02 /* LaunchScreen.storyboard */,
 				B88B2F491E47B64100384A02 /* Info.plist */,
-				B8F61C771E6219DC00699A0E /* Custom Buttons */,
 			);
 			path = "Duck App";
 			sourceTree = "<group>";
@@ -321,14 +321,6 @@
 				B88B2F541E47B64100384A02 /* Info.plist */,
 			);
 			path = "Duck AppTests";
-			sourceTree = "<group>";
-		};
-		B8F61C771E6219DC00699A0E /* Custom Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				B8F61C781E6219FE00699A0E /* DuckButton.swift */,
-			);
-			name = "Custom Buttons";
 			sourceTree = "<group>";
 		};
 		B8F61C801E67BF1300699A0E /* DuckCards */ = {
