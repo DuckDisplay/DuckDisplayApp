@@ -49,7 +49,7 @@ class DuckInfo {
     // MARK: Initialization
     init? (duckImage: UIImage?, textInfoArray: [String]) {
         // Init fails if string array is empty OR improper number of elements present
-        guard !textInfoArray.isEmpty && (textInfoArray.count == 12) else {
+        guard !textInfoArray.isEmpty && (textInfoArray.count == DuckInfo.NUM_TEXT_SLOTS) else {
             return nil
         }
         
