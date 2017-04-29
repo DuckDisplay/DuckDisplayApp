@@ -142,15 +142,6 @@ class DuckCardViewController: UIViewController, UIScrollViewDelegate {
         picturePageControl.currentPage = Int(pageNumber)
     }
     
-    func resize(){
-        let textView: Array<UITextView>! = [duckCardDesc, duckCardBehavior, duckCardFood, duckCardHabitat, duckCardNesting, duckCardConservation, duckCardFunFacts]
-        for view in textView {
-            let fixedWidth = view.frame.size.width
-            let newSize = view.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
-            view.frame.size = CGSize(width: fixedWidth, height: newSize.height)
-        }
-    }
-    
     func playSound(nameOfAudioFileInAssetCatalog: String) -> AVAudioPlayer? {
         var audioPlayer: AVAudioPlayer?
         if let sound = NSDataAsset(name: nameOfAudioFileInAssetCatalog) {
