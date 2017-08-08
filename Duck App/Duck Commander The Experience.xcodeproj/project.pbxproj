@@ -146,12 +146,12 @@
 		B840E75E1E96E0A700E820D0 /* LeaderboardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewController.swift; sourceTree = "<group>"; };
 		B840E7771E992EEC00E820D0 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		B840E7791E992F3A00E820D0 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
-		B88B2F3A1E47B64100384A02 /* Duck App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duck App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88B2F3A1E47B64100384A02 /* Duck Commander The Experience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Duck Commander The Experience.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88B2F3D1E47B64100384A02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B88B2F421E47B64100384A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B88B2F471E47B64100384A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B88B2F491E47B64100384A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B88B2F4E1E47B64100384A02 /* Duck AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Duck AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88B2F4E1E47B64100384A02 /* Duck Commander The ExperienceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Duck Commander The ExperienceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88B2F521E47B64100384A02 /* Duck_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Duck_AppTests.swift; sourceTree = "<group>"; };
 		B88B2F541E47B64100384A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8F61C781E6219FE00699A0E /* DuckButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuckButton.swift; sourceTree = "<group>"; };
@@ -289,8 +289,8 @@
 		B88B2F3B1E47B64100384A02 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B88B2F3A1E47B64100384A02 /* Duck App.app */,
-				B88B2F4E1E47B64100384A02 /* Duck AppTests.xctest */,
+				B88B2F3A1E47B64100384A02 /* Duck Commander The Experience.app */,
+				B88B2F4E1E47B64100384A02 /* Duck Commander The ExperienceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -338,9 +338,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B88B2F391E47B64100384A02 /* Duck App */ = {
+		B88B2F391E47B64100384A02 /* Duck Commander The Experience */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B88B2F571E47B64100384A02 /* Build configuration list for PBXNativeTarget "Duck App" */;
+			buildConfigurationList = B88B2F571E47B64100384A02 /* Build configuration list for PBXNativeTarget "Duck Commander The Experience" */;
 			buildPhases = (
 				B88B2F361E47B64100384A02 /* Sources */,
 				B88B2F371E47B64100384A02 /* Frameworks */,
@@ -352,14 +352,14 @@
 			dependencies = (
 				2D5FB00F1EA554850092E706 /* PBXTargetDependency */,
 			);
-			name = "Duck App";
+			name = "Duck Commander The Experience";
 			productName = "Duck App";
-			productReference = B88B2F3A1E47B64100384A02 /* Duck App.app */;
+			productReference = B88B2F3A1E47B64100384A02 /* Duck Commander The Experience.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B88B2F4D1E47B64100384A02 /* Duck AppTests */ = {
+		B88B2F4D1E47B64100384A02 /* Duck Commander The ExperienceTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B88B2F5A1E47B64100384A02 /* Build configuration list for PBXNativeTarget "Duck AppTests" */;
+			buildConfigurationList = B88B2F5A1E47B64100384A02 /* Build configuration list for PBXNativeTarget "Duck Commander The ExperienceTests" */;
 			buildPhases = (
 				B88B2F4A1E47B64100384A02 /* Sources */,
 				B88B2F4B1E47B64100384A02 /* Frameworks */,
@@ -370,9 +370,9 @@
 			dependencies = (
 				B88B2F501E47B64100384A02 /* PBXTargetDependency */,
 			);
-			name = "Duck AppTests";
+			name = "Duck Commander The ExperienceTests";
 			productName = "Duck AppTests";
-			productReference = B88B2F4E1E47B64100384A02 /* Duck AppTests.xctest */;
+			productReference = B88B2F4E1E47B64100384A02 /* Duck Commander The ExperienceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -383,20 +383,22 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "Auburn University";
+				ORGANIZATIONNAME = "GEX II, LLC";
 				TargetAttributes = {
 					B88B2F391E47B64100384A02 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = ETB296NS7M;
+						ProvisioningStyle = Automatic;
 					};
 					B88B2F4D1E47B64100384A02 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = U52D5FDU3P;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B88B2F391E47B64100384A02;
 					};
 				};
 			};
-			buildConfigurationList = B88B2F351E47B64100384A02 /* Build configuration list for PBXProject "Duck App" */;
+			buildConfigurationList = B88B2F351E47B64100384A02 /* Build configuration list for PBXProject "Duck Commander The Experience" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -415,8 +417,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				B88B2F391E47B64100384A02 /* Duck App */,
-				B88B2F4D1E47B64100384A02 /* Duck AppTests */,
+				B88B2F391E47B64100384A02 /* Duck Commander The Experience */,
+				B88B2F4D1E47B64100384A02 /* Duck Commander The ExperienceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -545,7 +547,7 @@
 		};
 		B88B2F501E47B64100384A02 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B88B2F391E47B64100384A02 /* Duck App */;
+			target = B88B2F391E47B64100384A02 /* Duck Commander The Experience */;
 			targetProxy = B88B2F4F1E47B64100384A02 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -591,9 +593,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = U52D5FDU3P;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -610,9 +614,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Duck Commander: The Experience";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos10.3]" = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphonesimulator10.3]" = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -641,9 +648,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = U52D5FDU3P;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -654,8 +663,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "Duck Commander: The Experience";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos10.3]" = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -669,13 +680,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ETB296NS7M;
 				INFOPLIST_FILE = "Duck App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.auburn.Duck-App";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.auburn.DuckConservation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -685,13 +699,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ETB296NS7M;
 				INFOPLIST_FILE = "Duck App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.auburn.Duck-App";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.auburn.DuckConservation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -705,7 +722,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Auburn.Duck-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Duck App.app/Duck App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Duck Commander The Experience.app/Duck Commander The Experience";
 			};
 			name = Debug;
 		};
@@ -719,14 +736,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Auburn.Duck-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Duck App.app/Duck App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Duck Commander The Experience.app/Duck Commander The Experience";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B88B2F351E47B64100384A02 /* Build configuration list for PBXProject "Duck App" */ = {
+		B88B2F351E47B64100384A02 /* Build configuration list for PBXProject "Duck Commander The Experience" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B88B2F551E47B64100384A02 /* Debug */,
@@ -735,7 +752,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B88B2F571E47B64100384A02 /* Build configuration list for PBXNativeTarget "Duck App" */ = {
+		B88B2F571E47B64100384A02 /* Build configuration list for PBXNativeTarget "Duck Commander The Experience" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B88B2F581E47B64100384A02 /* Debug */,
@@ -744,7 +761,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B88B2F5A1E47B64100384A02 /* Build configuration list for PBXNativeTarget "Duck AppTests" */ = {
+		B88B2F5A1E47B64100384A02 /* Build configuration list for PBXNativeTarget "Duck Commander The ExperienceTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B88B2F5B1E47B64100384A02 /* Debug */,
